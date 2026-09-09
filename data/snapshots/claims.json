@@ -1,0 +1,3773 @@
+[
+  {
+    "field": "committeeId",
+    "id": "claim:00c4b9473df2",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:1fb66be97354",
+    "subjectType": "committeeMembership",
+    "value": "committee:economy",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:00db11bc56db",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:498abc766e31",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:037ef4e37256",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:65f4b141b644",
+    "subjectType": "committeeMembership",
+    "value": "committee:foreign-defense",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:03a9736419b8",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:ee438aad24d0",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:0406f2055489",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:18",
+    "subjectType": "candidacy",
+    "value": "18",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:04754576ee78",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:27",
+    "subjectType": "candidacy",
+    "value": "27",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:07733d142223",
+    "sourceId": "source:1807e041e236",
+    "subjectId": "party:kol-haam",
+    "subjectType": "party",
+    "value": "קול העם",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:078339d934d8",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:c1839231734d",
+    "subjectType": "person",
+    "value": "דפנה בלומנטל",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:07b3ddd4ca7e",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:82a006f1ee28",
+    "subjectType": "person",
+    "value": "רותם אבוטבול",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:097ac7a1384b",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:16f699ffb544",
+    "subjectType": "committeeMembership",
+    "value": "committee:economy",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:09cc9bc085c0",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:1c3d9dec2393",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:0c672d836f92",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:3f710ef197fa",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:0c704766cba0",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:969a93ea8ffa",
+    "subjectType": "person",
+    "value": "יונתן אשכנזי",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:0d08e22123a1",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:0a365c5605ce",
+    "subjectType": "person",
+    "value": "אלה בן שמעון",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:0d19c1814c05",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:034083b75ada",
+    "subjectType": "person",
+    "value": "מאיה אוריון",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:0d3adca881e9",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:e5987cb99f40",
+    "subjectType": "person",
+    "value": "אפרת גולדשטיין",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:0de34d158978",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:9b346c7b3bf2",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:0df158b218c6",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:11",
+    "subjectType": "candidacy",
+    "value": "11",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:0e996e151213",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:e94d179640f1",
+    "subjectType": "person",
+    "value": "תמר קפלן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:0f186a1d043f",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:19",
+    "subjectType": "candidacy",
+    "value": "19",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:10a9b8ef5367",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:2ed414d38a10",
+    "subjectType": "person",
+    "value": "יואב ביטון",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:10e08d12d192",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:12",
+    "subjectType": "candidacy",
+    "value": "12",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:112311466fec",
+    "sourceId": "source:567f806f5101",
+    "subjectId": "pollresult:kantar-2026-09-03:kol-haam",
+    "subjectType": "pollResult",
+    "value": "9",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:118c7c6b6b25",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:98d4a35917c6",
+    "subjectType": "person",
+    "value": "ענבר לוינסון",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:11b53c931633",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:0fbe7be3248c",
+    "subjectType": "person",
+    "value": "עומר נוימן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:11daa10cf4a6",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:ff45a6f4cb38",
+    "subjectType": "person",
+    "value": "ליאור בלומנטל",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:11f2d853518f",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:4",
+    "subjectType": "candidacy",
+    "value": "4",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:129c2b2ec695",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:21ad85d0ac18",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:136f502ffb1c",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:1",
+    "subjectType": "candidacy",
+    "value": "1",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:13b0df95ac3c",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:bayit-yarok:1",
+    "subjectType": "candidacy",
+    "value": "1",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:13bf20dc5036",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:8791c3f1e4b7",
+    "subjectType": "person",
+    "value": "קרן לביא",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:13c58e1a2eec",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:1c4a6b8586cf",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:150959e964f4",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:86730342b24b",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:154836f5f2da",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:5f43aa816cbb",
+    "subjectType": "committeeMembership",
+    "value": "committee:economy",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:1613b0e79c51",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:b767c00e5f90",
+    "subjectType": "committeeMembership",
+    "value": "committee:economy",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:1658f04c87bd",
+    "sourceId": "source:d48f9872a639",
+    "subjectId": "pollresult:midgam-2026-09-08:kol-haam",
+    "subjectType": "pollResult",
+    "value": "6",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:16664111cdeb",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:f8e6fcce587b",
+    "subjectType": "person",
+    "value": "יואב חזן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:1691c044ce6f",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:d3b544ce5222",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:173882a66e47",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:30851108cc23",
+    "subjectType": "person",
+    "value": "אלה נחמיאס",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:17ee3835bad4",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:76b4b0c45175",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:182675e05710",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:3",
+    "subjectType": "candidacy",
+    "value": "3",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:19c4948e25b5",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:af2a9141e6ab",
+    "subjectType": "person",
+    "value": "אמיר ביטון",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:1a58904c80fe",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:3d1ad09918ae",
+    "subjectType": "person",
+    "value": "סיון אלמוג",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:1aaf4100e01f",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:0effe6b52b47",
+    "subjectType": "person",
+    "value": "יונתן בן שמעון",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:1afaf81e81ea",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:f2a5e586cb38",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:1b22ffe65b0c",
+    "sourceId": "source:d48f9872a639",
+    "subjectId": "pollresult:midgam-2026-09-08:ofek",
+    "subjectType": "pollResult",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:1b66a8fa0b4d",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:9955f34fc5e0",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "ballotLetters",
+    "id": "claim:1bb7f2c34e01",
+    "sourceId": "source:1807e041e236",
+    "subjectId": "party:kol-haam",
+    "subjectType": "party",
+    "value": "קע",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:1bbd8ac0a104",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:a824ad7d6c39",
+    "subjectType": "committeeMembership",
+    "value": "committee:economy",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:1cbae03ba414",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:804209479a73",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:1d1594fc12b1",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:11",
+    "subjectType": "candidacy",
+    "value": "11",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:1e398ad50167",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:c00af386f9bd",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "publishedAt",
+    "id": "claim:1e3aa7764150",
+    "sourceId": "source:567f806f5101",
+    "subjectId": "poll:kantar-2026-09-03",
+    "subjectType": "poll",
+    "value": "2026-09-03",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:1e7d743ec47e",
+    "sourceId": "source:1807e041e236",
+    "subjectId": "person:3710d66fd695",
+    "subjectType": "person",
+    "value": "רונן אבוטבול",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:20a0efb3caa6",
+    "sourceId": "source:1807e041e236",
+    "subjectId": "person:89164ed0826f",
+    "subjectType": "person",
+    "value": "נעמה שטרן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:21049f556800",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:882a0dbfe0a2",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:21277b56873d",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:e6c7c9c5c2b7",
+    "subjectType": "committeeMembership",
+    "value": "committee:foreign-defense",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:215337c1a7e1",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:7",
+    "subjectType": "candidacy",
+    "value": "7",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:218b7c763469",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:21",
+    "subjectType": "candidacy",
+    "value": "21",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:223f6b2fe93f",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:e17495aff620",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "publishedAt",
+    "id": "claim:22fe27fd9c32",
+    "sourceId": "source:d48f9872a639",
+    "subjectId": "poll:midgam-2026-09-08",
+    "subjectType": "poll",
+    "value": "2026-09-08",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:233cb1cbcd6b",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:16",
+    "subjectType": "candidacy",
+    "value": "16",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:23ddb727261b",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:79a9ddcc1e6f",
+    "subjectType": "person",
+    "value": "רונן סבן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:240e1fd4c869",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:16",
+    "subjectType": "candidacy",
+    "value": "16",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:243a8130bd81",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:21967e74a745",
+    "subjectType": "person",
+    "value": "תמר אבוטבול",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:248163b34ddb",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:775d055278f7",
+    "subjectType": "person",
+    "value": "יואב שרעבי",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:24ab30a2b1ef",
+    "sourceId": "source:c6672f4afef9",
+    "subjectId": "pollresult:panels-2026-09-06:ofek",
+    "subjectType": "pollResult",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:25097e4b93ab",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:25",
+    "subjectType": "candidacy",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:250eed255dd5",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:8260ea6eb86e",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:253a3dcef160",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:17",
+    "subjectType": "candidacy",
+    "value": "17",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:254a36a6dba3",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:10",
+    "subjectType": "candidacy",
+    "value": "10",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:25b85b1cbf71",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:bayit-yarok:2",
+    "subjectType": "candidacy",
+    "value": "2",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:2683c193ae44",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:13",
+    "subjectType": "candidacy",
+    "value": "13",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:26a6e8aeb288",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:f6f7ad1b3313",
+    "subjectType": "committeeMembership",
+    "value": "committee:economy",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:271d25c28db5",
+    "sourceId": "source:567f806f5101",
+    "subjectId": "pollresult:kantar-2026-09-03:haatzama",
+    "subjectType": "pollResult",
+    "value": "12",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:272028344d91",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:3ef1ac2d4f50",
+    "subjectType": "committeeMembership",
+    "value": "committee:economy",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:29571e0e4f68",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:bayit-yarok:11",
+    "subjectType": "candidacy",
+    "value": "11",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:295d31d6f750",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:bd12f1f6ce05",
+    "subjectType": "person",
+    "value": "תמר רביבו",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:296beaf944ac",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:aded412b9b7d",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:297d83ec4b54",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:26",
+    "subjectType": "candidacy",
+    "value": "26",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:29a0905c2e7d",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:17",
+    "subjectType": "candidacy",
+    "value": "17",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:29fccdd2d83e",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:be281e67da8b",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:2a6326ab16f5",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:edcec03c9393",
+    "subjectType": "committeeMembership",
+    "value": "committee:economy",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:2bf8d168cfea",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:5",
+    "subjectType": "candidacy",
+    "value": "5",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:2c7baaf9002c",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:eadf1275b809",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:2d1a8c9476ba",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:72a5dffa3e2d",
+    "subjectType": "committeeMembership",
+    "value": "committee:education",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:2e391d1b55d5",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:7ccfd532b1a7",
+    "subjectType": "person",
+    "value": "אורית אבוטבול",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:2f416f61e5f9",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:3ecb5c84e473",
+    "subjectType": "committeeMembership",
+    "value": "committee:economy",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:2f504556f2d7",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:6efa2ca92a87",
+    "subjectType": "person",
+    "value": "יואב בלומנטל",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:303c9dbdff2b",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:41e116135e0e",
+    "subjectType": "committeeMembership",
+    "value": "committee:education",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:316de9dbb83f",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:9f800889c25b",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:3247f13ab820",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:ab5845a375cd",
+    "subjectType": "person",
+    "value": "גלעד אוחיון",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:3390546fbaf2",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:1930ca41cdc5",
+    "subjectType": "committeeMembership",
+    "value": "committee:economy",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:33995ba3d6e9",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:ebf420e05e37",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:33bfcc88617d",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:213624fea193",
+    "subjectType": "person",
+    "value": "מאיה הרשקוביץ",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:35355e16feca",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:55191c7cb042",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:35c672804876",
+    "sourceId": "source:781e1aa1fb41",
+    "subjectId": "pollresult:lazar-2026-09-05:bayit-yarok",
+    "subjectType": "pollResult",
+    "value": "4",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:35d2d2232d08",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:df1b499af726",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:364b14c4f297",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:bayit-yarok:9",
+    "subjectType": "candidacy",
+    "value": "9",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:368d3c9593fa",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:62003723af5f",
+    "subjectType": "person",
+    "value": "יעל שטרן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:369ae74ecd77",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:6",
+    "subjectType": "candidacy",
+    "value": "6",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:37347ec2838b",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:5cc150304430",
+    "subjectType": "person",
+    "value": "דור סבן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:375f858cd6ca",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:bayit-yarok:12",
+    "subjectType": "candidacy",
+    "value": "12",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:37ec05a7a154",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:bd62246165c1",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:388d4b9d5b69",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:7e3dd6bdc6ff",
+    "subjectType": "person",
+    "value": "עדי אסולין",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:38e5ea23d703",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:3",
+    "subjectType": "candidacy",
+    "value": "3",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:3a844cf1bfa6",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:26",
+    "subjectType": "candidacy",
+    "value": "26",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:3b5feb92f21e",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:d96b8a9db770",
+    "subjectType": "person",
+    "value": "בועז שפירא",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:3c274ac77172",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:8dde2724c260",
+    "subjectType": "committeeMembership",
+    "value": "committee:finance",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:3ddcbb076c9c",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:16af6301a7d6",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:400b1efc17ac",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:9029e794396f",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:40302a3287df",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:1aa76b4730e1",
+    "subjectType": "person",
+    "value": "הילה בן ארי",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:40785065f182",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:1eb21f916fe2",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "ballotLetters",
+    "id": "claim:4093b82bbde9",
+    "sourceId": "source:1807e041e236",
+    "subjectId": "party:haatzama",
+    "subjectType": "party",
+    "value": "עח",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:41426de3ab9b",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:7e530952d894",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:414ff96736af",
+    "sourceId": "source:89f4cd22b5b1",
+    "subjectId": "pollresult:direct-2026-09-02:yachad-kadima",
+    "subjectType": "pollResult",
+    "value": "21",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:41fcaebb2e46",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:91c094fe9980",
+    "subjectType": "person",
+    "value": "אסף נוימן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:4216446f7a55",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:b5bafbf8f8ab",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:422ed26a9801",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:e88fe66773d1",
+    "subjectType": "committeeMembership",
+    "value": "committee:finance",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:43239a091a58",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:0aa2449ba1e6",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:432989f92b3b",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:4",
+    "subjectType": "candidacy",
+    "value": "4",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:43db28dce7c7",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:770b8a88472d",
+    "subjectType": "person",
+    "value": "גלית בן שמעון",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:43df47fb9d08",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:7",
+    "subjectType": "candidacy",
+    "value": "7",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:43ea2ca5eafa",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:a618e7faf522",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:45135d24aa1a",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:53eac64e1d37",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:46181843cdf4",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:dae487b23512",
+    "subjectType": "person",
+    "value": "ליאור שמעוני",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:487d7bcc8896",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:888e9411aa43",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:48a6ee5ce0e3",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:bayit-yarok:10",
+    "subjectType": "candidacy",
+    "value": "10",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:48d0be0d4330",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:16",
+    "subjectType": "candidacy",
+    "value": "16",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:4a4c6e45413a",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:4",
+    "subjectType": "candidacy",
+    "value": "4",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:4af6b0b55ae4",
+    "sourceId": "source:c6672f4afef9",
+    "subjectId": "pollresult:panels-2026-09-06:yachad-kadima",
+    "subjectType": "pollResult",
+    "value": "21",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:4b08ef4f0b34",
+    "sourceId": "source:1807e041e236",
+    "subjectId": "party:ofek",
+    "subjectType": "party",
+    "value": "אופק",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:4b2bc77374c6",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:d89a95f5b84b",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:4c216166b6b0",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:84f4104dfe4a",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:4cb3f8e12b55",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:57e5de0a6237",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:4ceefe2e8500",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:bf2ed8f98272",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:4e7d0e856f0b",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:2",
+    "subjectType": "candidacy",
+    "value": "2",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:51b383defa86",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:18",
+    "subjectType": "candidacy",
+    "value": "18",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:51ee7e632a00",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:f166d4bbd9da",
+    "subjectType": "person",
+    "value": "תומר אבוטבול",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:52577c8e8c74",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:20",
+    "subjectType": "candidacy",
+    "value": "20",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:5261a0d55095",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:d9be16cf417c",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:529bdfca133b",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:569c1797aca5",
+    "subjectType": "person",
+    "value": "אסף אסולין",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:52e529e01540",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:809fa51896a2",
+    "subjectType": "person",
+    "value": "ניר הרשקוביץ",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:53a149e265ed",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:4782fc34175c",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:540ff556d959",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:a17b626abed6",
+    "subjectType": "person",
+    "value": "מתן אוריון",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:545df449c489",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:11",
+    "subjectType": "candidacy",
+    "value": "11",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:54dbf9392adf",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:073c3bc11cbd",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:56750baedffc",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:ec2db588700a",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:57a653e9de8e",
+    "sourceId": "source:1807e041e236",
+    "subjectId": "person:97d4a54e6cdc",
+    "subjectType": "person",
+    "value": "דנה אלמוג",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:58e9f1f8d9b3",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:44bd915f2a4e",
+    "subjectType": "person",
+    "value": "ליאור בן ארי",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:5a343339d936",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:0adea137cbcd",
+    "subjectType": "person",
+    "value": "עדי שטרן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:5a77c2a0c351",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:69a775797dcb",
+    "subjectType": "person",
+    "value": "קרן נגר",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:5ad790414e69",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:a27e55114f5c",
+    "subjectType": "person",
+    "value": "דנה חזן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:5bce01496605",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:8196ac32e992",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:5c8863cf8a54",
+    "sourceId": "source:d48f9872a639",
+    "subjectId": "pollresult:midgam-2026-09-08:haatzama",
+    "subjectType": "pollResult",
+    "value": "12",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:5c9c0adb65be",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:20",
+    "subjectType": "candidacy",
+    "value": "20",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "ballotLetters",
+    "id": "claim:5cb5617bda2b",
+    "sourceId": "source:1807e041e236",
+    "subjectId": "party:ofek",
+    "subjectType": "party",
+    "value": "אפ",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:5cba36d74bd7",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:28188b59c8ca",
+    "subjectType": "person",
+    "value": "יסמין מזרחי",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:5e5fb56fc07e",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:22",
+    "subjectType": "candidacy",
+    "value": "22",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:5ebd6b070f6d",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:23",
+    "subjectType": "candidacy",
+    "value": "23",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:5ec7c3ed0598",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:d107338d90b6",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:5ed6104048f9",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:11",
+    "subjectType": "candidacy",
+    "value": "11",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:5f1b99a4021c",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:10",
+    "subjectType": "candidacy",
+    "value": "10",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:5f914df64292",
+    "sourceId": "source:1807e041e236",
+    "subjectId": "party:yachad-kadima",
+    "subjectType": "party",
+    "value": "יחד קדימה",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:5f9424c101dc",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:22",
+    "subjectType": "candidacy",
+    "value": "22",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:611267d526f6",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:21",
+    "subjectType": "candidacy",
+    "value": "21",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:61132547274c",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:026b274c56d3",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:61b1292eb313",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:6ff802666383",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:62f2b54b75d4",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:0014d2353d63",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:63ac77e08881",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:8d8e743de259",
+    "subjectType": "person",
+    "value": "גיא אסולין",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:64e29a15fd03",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:7cc63a1692a1",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:650190c7cba2",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:5d8307eb0ccd",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:651b011430aa",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:7fb61da49201",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:658dd0f77c53",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:7ab28695fe99",
+    "subjectType": "person",
+    "value": "אלה נוימן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:65f75eddf48c",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:3f9aac8218ec",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:661d1c3afffb",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:ed7810d9beba",
+    "subjectType": "person",
+    "value": "ניר אלמוג",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:6647ff1ead50",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:92edf1482cbd",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:67e83cf2b71d",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:30",
+    "subjectType": "candidacy",
+    "value": "30",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:68a0eaab8090",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:6619f355233c",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:68b35471a1bd",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:8",
+    "subjectType": "candidacy",
+    "value": "8",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:6930cc25349f",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:19",
+    "subjectType": "candidacy",
+    "value": "19",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:696aa351b703",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:14",
+    "subjectType": "candidacy",
+    "value": "14",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:69afb5c19a94",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:0c0f143d5c8e",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:69f31e3e2391",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:20",
+    "subjectType": "candidacy",
+    "value": "20",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:6a61f5f799ac",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:bayit-yarok:14",
+    "subjectType": "candidacy",
+    "value": "14",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:6aa89a25a63c",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:56d7abe3da0b",
+    "subjectType": "committeeMembership",
+    "value": "committee:foreign-defense",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:6c66c745c83d",
+    "sourceId": "source:c6672f4afef9",
+    "subjectId": "pollresult:panels-2026-09-06:kol-haam",
+    "subjectType": "pollResult",
+    "value": "8",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:6cd8a7fd2500",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:498670b0c08e",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:6dcb2600cd51",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:723ad1a91860",
+    "subjectType": "person",
+    "value": "שחר שפירא",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:6dd991be7b83",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:d2d209319765",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:6df8d9a848e1",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:12",
+    "subjectType": "candidacy",
+    "value": "12",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:6e0abc71ff3f",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:ffe655efd8bc",
+    "subjectType": "committeeMembership",
+    "value": "committee:education",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:70e91b04fa76",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:945ef64e060b",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "ballotLetters",
+    "id": "claim:713ffba07221",
+    "sourceId": "source:1807e041e236",
+    "subjectId": "party:bayit-yarok",
+    "subjectType": "party",
+    "value": "בי",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:718f98a85556",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:22",
+    "subjectType": "candidacy",
+    "value": "22",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:71f45e0460e2",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:e672d5122125",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:7246b8478a4c",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:a7d2ece4d8d5",
+    "subjectType": "person",
+    "value": "בועז ארבל",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:728b0c4f7aa6",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:36597592d9bd",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:72b54e2e5ec7",
+    "sourceId": "source:c6672f4afef9",
+    "subjectId": "pollresult:panels-2026-09-06:bayit-yarok",
+    "subjectType": "pollResult",
+    "value": "6",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:732b1b05fb10",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:777c8b98d0d1",
+    "subjectType": "person",
+    "value": "סהר ארבל",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:7486be3aa3b2",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:bdb6e3b26466",
+    "subjectType": "committeeMembership",
+    "value": "committee:foreign-defense",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:751be779c9a5",
+    "sourceId": "source:781e1aa1fb41",
+    "subjectId": "pollresult:lazar-2026-09-05:ofek",
+    "subjectType": "pollResult",
+    "value": "26",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:7547ff5354a5",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:4ad339c1efb8",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:7586562e392b",
+    "sourceId": "source:1807e041e236",
+    "subjectId": "person:17bc5d69ccfd",
+    "subjectType": "person",
+    "value": "תמר לביא",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:77e93b0d92ae",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:e251bd04f1ce",
+    "subjectType": "person",
+    "value": "תומר קדוש",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:77fac4f99cbb",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:ae0d7269c09c",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:77fad0a7c43d",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:51328de8b169",
+    "subjectType": "person",
+    "value": "יהונתן קפלן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:78105be6a1bd",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:169179cf998b",
+    "subjectType": "committeeMembership",
+    "value": "committee:foreign-defense",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:79fc19cb2e77",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:3a8cd0628642",
+    "subjectType": "person",
+    "value": "חן נחמיאס",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:7aac69d23850",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:38751dcc7b14",
+    "subjectType": "person",
+    "value": "רונן מלכה",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:7ab87e0ce9d8",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:fe816b6cb3f2",
+    "subjectType": "person",
+    "value": "יונתן רביבו",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:7ac5db3f1166",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:7c4e4c3d14cd",
+    "subjectType": "person",
+    "value": "תמר בן ארי",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:7cc77fddc5a8",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:25",
+    "subjectType": "candidacy",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:7cd4631129db",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:bayit-yarok:4",
+    "subjectType": "candidacy",
+    "value": "4",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:7d84ca2b16b1",
+    "sourceId": "source:89f4cd22b5b1",
+    "subjectId": "pollresult:direct-2026-09-02:bayit-yarok",
+    "subjectType": "pollResult",
+    "value": "4",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:7dc787c76f50",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:f15f8bfd1290",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:7e1732670081",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:566e2a8f18f6",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:7e6aadafea43",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:41a708961953",
+    "subjectType": "person",
+    "value": "ליאת שטרן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:809083ddf169",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:13",
+    "subjectType": "candidacy",
+    "value": "13",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:81e4c432b43a",
+    "sourceId": "source:1807e041e236",
+    "subjectId": "person:6d9fb318ddfe",
+    "subjectType": "person",
+    "value": "איתן ברקוביץ",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:830a8d345667",
+    "sourceId": "source:1807e041e236",
+    "subjectId": "party:bayit-yarok",
+    "subjectType": "party",
+    "value": "הבית הירוק",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:8445ce798e52",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:576f1c914f04",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:844a0e1a1902",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:7fe268d46c05",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:844d099edaf1",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:8",
+    "subjectType": "candidacy",
+    "value": "8",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:84657a6fe7f8",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:1fd5cbb2c6b0",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:8468d9ebe929",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:322d95a41d8a",
+    "subjectType": "person",
+    "value": "תומר רביבו",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:85255de06b10",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:ec720b956a75",
+    "subjectType": "person",
+    "value": "סהר שטרן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:8552d5ab5076",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:29",
+    "subjectType": "candidacy",
+    "value": "29",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:8572e4e7372b",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:74859d92b71e",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:85ad624b22cc",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:9",
+    "subjectType": "candidacy",
+    "value": "9",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:85ff19033f22",
+    "sourceId": "source:781e1aa1fb41",
+    "subjectId": "pollresult:lazar-2026-09-05:kol-haam",
+    "subjectType": "pollResult",
+    "value": "8",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:87f047e159a4",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:2",
+    "subjectType": "candidacy",
+    "value": "2",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:8842e730891e",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:28",
+    "subjectType": "candidacy",
+    "value": "28",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:889fd8f35a7f",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:1dd9f02e3aa6",
+    "subjectType": "person",
+    "value": "איתן לוינסון",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:897a478e310b",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:d83b9e6044d3",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:8aeaceb16164",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:d06bb990e1cb",
+    "subjectType": "person",
+    "value": "רונן מזרחי",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:8b02e38c67aa",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:ae5c86e032c4",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:8b2cd6149116",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:5a7e8cd5528e",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:8f270dbe7e6b",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:59045a609ed5",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:90bf482cdbbf",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:4d70c74fdfc3",
+    "subjectType": "person",
+    "value": "יעל רביבו",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:90f216cbe1d3",
+    "sourceId": "source:89f4cd22b5b1",
+    "subjectId": "pollresult:direct-2026-09-02:haatzama",
+    "subjectType": "pollResult",
+    "value": "11",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:91b6b543347f",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:a0e2751b511c",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:91e09385ba49",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:12",
+    "subjectType": "candidacy",
+    "value": "12",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:923308aafb50",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:83387ff4572c",
+    "subjectType": "person",
+    "value": "יסמין רביבו",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:92a8b0018499",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:15831e9d27d0",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:9430bc943431",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:2b3a2dbe7f67",
+    "subjectType": "person",
+    "value": "עומר סגל",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:94c8a135e009",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:3157b48bde52",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:955005eb1d8e",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:63b249d4ead5",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "status",
+    "id": "claim:9565ae030bda",
+    "sourceId": "source:2989827faada",
+    "subjectId": "list:26:yachad-kadima",
+    "subjectType": "candidateList",
+    "value": "submitted",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "publishedAt",
+    "id": "claim:958be3811e4d",
+    "sourceId": "source:89f4cd22b5b1",
+    "subjectId": "poll:direct-2026-09-02",
+    "subjectType": "poll",
+    "value": "2026-09-02",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "status",
+    "id": "claim:965944897991",
+    "sourceId": "source:2989827faada",
+    "subjectId": "list:26:haatzama",
+    "subjectType": "candidateList",
+    "value": "approved",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:96ab19fec7ef",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:e90ffbbc1ca5",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:987af5eb6f60",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:6",
+    "subjectType": "candidacy",
+    "value": "6",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:98be3b3a5b8d",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:f4af46b5a42a",
+    "subjectType": "person",
+    "value": "חן ארבל",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:98eee47cc83b",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:2cb626328078",
+    "subjectType": "committeeMembership",
+    "value": "committee:foreign-defense",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:99650c26a1ba",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:5",
+    "subjectType": "candidacy",
+    "value": "5",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:9a1362d0e23b",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:28",
+    "subjectType": "candidacy",
+    "value": "28",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:9a3c876bce05",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:75bd79f484d7",
+    "subjectType": "person",
+    "value": "רונן בלומנטל",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:9c46dafc6207",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:afe2d36a8d82",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:9db839727997",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:98626442af35",
+    "subjectType": "person",
+    "value": "נדב ברקוביץ",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:9e7b4cf0d2dc",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:ad53ab569205",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:a011358be393",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:7",
+    "subjectType": "candidacy",
+    "value": "7",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:a04a46c30a02",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:0dd4a0906420",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "publishedAt",
+    "id": "claim:a0fa33e2ef3e",
+    "sourceId": "source:c6672f4afef9",
+    "subjectId": "poll:panels-2026-09-06",
+    "subjectType": "poll",
+    "value": "2026-09-06",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:a1751286d8d0",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:5",
+    "subjectType": "candidacy",
+    "value": "5",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:a18574304e81",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:2734a096cca7",
+    "subjectType": "person",
+    "value": "דור חזן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:a1c5867b649b",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:d1a4acc6e8a1",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:a2998fd5df95",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:9976cdb6a2da",
+    "subjectType": "committeeMembership",
+    "value": "committee:economy",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:a32490028882",
+    "sourceId": "source:c6672f4afef9",
+    "subjectId": "pollresult:panels-2026-09-06:haatzama",
+    "subjectType": "pollResult",
+    "value": "13",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:a47c288fcc82",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:14",
+    "subjectType": "candidacy",
+    "value": "14",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:a7a671d2ebae",
+    "sourceId": "source:89f4cd22b5b1",
+    "subjectId": "pollresult:direct-2026-09-02:kol-haam",
+    "subjectType": "pollResult",
+    "value": "8",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:a7af4c31e16d",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:3debf737e36b",
+    "subjectType": "person",
+    "value": "גלית דנינו",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:a7ed2b2adcea",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:e4ea648fb01a",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:a83af4153605",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:51e313f4199a",
+    "subjectType": "person",
+    "value": "שחר נגר",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:a86248238c05",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:9",
+    "subjectType": "candidacy",
+    "value": "9",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:a86c922397ba",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:24",
+    "subjectType": "candidacy",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:a98cb651c02c",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:1b2378e58b55",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:a9efda3fca61",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:81b90da9fad9",
+    "subjectType": "person",
+    "value": "רוני בן ארי",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:aa70a4d4692c",
+    "sourceId": "source:781e1aa1fb41",
+    "subjectId": "pollresult:lazar-2026-09-05:haatzama",
+    "subjectType": "pollResult",
+    "value": "12",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:aae7298b5d23",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:6",
+    "subjectType": "candidacy",
+    "value": "6",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:acc20c613fc3",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:dea4556fcc92",
+    "subjectType": "committeeMembership",
+    "value": "committee:foreign-defense",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:ad7e7bda941b",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:287295ba1825",
+    "subjectType": "person",
+    "value": "רותם דיין",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:ad86c176bc94",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:7ee12d620c0f",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:ae403e1d9d67",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:30ce97b0997e",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:ae5ce6a63b91",
+    "sourceId": "source:d48f9872a639",
+    "subjectId": "pollresult:midgam-2026-09-08:yachad-kadima",
+    "subjectType": "pollResult",
+    "value": "20",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:af6f3be36b88",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:9dad3c8e7132",
+    "subjectType": "person",
+    "value": "יעל סגל",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:af80e747424f",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:6",
+    "subjectType": "candidacy",
+    "value": "6",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:aff9cb07e01f",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:4e77590b0030",
+    "subjectType": "person",
+    "value": "ליאת פלדמן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:b068e740346d",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:c6a1968af792",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:b0cbe541e9a6",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:274b5f68bba2",
+    "subjectType": "committeeMembership",
+    "value": "committee:finance",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:b1f5313ccd55",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:35eac2fd4f80",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:b343459161c1",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:15",
+    "subjectType": "candidacy",
+    "value": "15",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:b35c3d654462",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:b3d9c651e642",
+    "subjectType": "committeeMembership",
+    "value": "committee:education",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:b479e89b2436",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:1",
+    "subjectType": "candidacy",
+    "value": "1",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:b4cd6b8e4dc8",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:c063516e69c4",
+    "subjectType": "committeeMembership",
+    "value": "committee:education",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:b55afc240d0c",
+    "sourceId": "source:567f806f5101",
+    "subjectId": "pollresult:kantar-2026-09-03:yachad-kadima",
+    "subjectType": "pollResult",
+    "value": "19",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:b5830151ca06",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:8eae21fe3bc3",
+    "subjectType": "person",
+    "value": "הילה רוזנברג",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:b666c2317698",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:7782cf49a68c",
+    "subjectType": "person",
+    "value": "מתן זיו",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:b67307314723",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:2b558f27ffbf",
+    "subjectType": "person",
+    "value": "מתן לביא",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:b6b64ef03607",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:ebf6d4bbd4ce",
+    "subjectType": "person",
+    "value": "דנה קפלן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:b70b8bc800ac",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:9f112ee4b378",
+    "subjectType": "committeeMembership",
+    "value": "committee:economy",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "status",
+    "id": "claim:b79cc5927c25",
+    "sourceId": "source:2989827faada",
+    "subjectId": "list:26:kol-haam",
+    "subjectType": "candidateList",
+    "value": "submitted",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:b819ce0ffecc",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:6eb2b4ee64a5",
+    "subjectType": "person",
+    "value": "יואב נוימן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:b8ad44261ac2",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:921f3f19033a",
+    "subjectType": "person",
+    "value": "שירה קפלן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:b8bdf204628a",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:7c5a24879921",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:b99af1b9a320",
+    "sourceId": "source:d48f9872a639",
+    "subjectId": "pollresult:midgam-2026-09-08:bayit-yarok",
+    "subjectType": "pollResult",
+    "value": "0",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:b9d9aca448f8",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:244cb6c9b539",
+    "subjectType": "committeeMembership",
+    "value": "committee:economy",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:b9de30124687",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:b7a85b2ac12d",
+    "subjectType": "person",
+    "value": "נדב לביא",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:ba5e96fbf1d8",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:2c2839c5058b",
+    "subjectType": "person",
+    "value": "שחר לביא",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:ba78234aa669",
+    "sourceId": "source:567f806f5101",
+    "subjectId": "pollresult:kantar-2026-09-03:bayit-yarok",
+    "subjectType": "pollResult",
+    "value": "0",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:ba79e8da6fa3",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:f5445b63c681",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:bae23c45ba82",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:17",
+    "subjectType": "candidacy",
+    "value": "17",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:bc799f6daeea",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:7ad4739ea692",
+    "subjectType": "person",
+    "value": "אפרת לביא",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:bca411b79733",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:21",
+    "subjectType": "candidacy",
+    "value": "21",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:bdd5b0f85d7e",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:14",
+    "subjectType": "candidacy",
+    "value": "14",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:be2b757c515b",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:19",
+    "subjectType": "candidacy",
+    "value": "19",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:be4cdde2adc5",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:83b6f089bcea",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:bea69e71d051",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:b270b6870f94",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:beaefdc75b7d",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:17",
+    "subjectType": "candidacy",
+    "value": "17",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:bf0dbf6e67a1",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:70a2f36da673",
+    "subjectType": "person",
+    "value": "שני אזולאי",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:bf34810eed6e",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:9cd328cb02eb",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:bf7b699656e4",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:90168f1d2583",
+    "subjectType": "person",
+    "value": "רותם מזרחי",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:bf83eb8c318c",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:bayit-yarok:6",
+    "subjectType": "candidacy",
+    "value": "6",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:c0dc8202dd92",
+    "sourceId": "source:89f4cd22b5b1",
+    "subjectId": "pollresult:direct-2026-09-02:ofek",
+    "subjectType": "pollResult",
+    "value": "22",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:c0ffa07f9f24",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:87f41eac8fe9",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:c1730f889759",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:18",
+    "subjectType": "candidacy",
+    "value": "18",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:c2c1fda4b922",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:bayit-yarok:8",
+    "subjectType": "candidacy",
+    "value": "8",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:c323f54dcb0a",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:8",
+    "subjectType": "candidacy",
+    "value": "8",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:c39d796b180f",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:bayit-yarok:13",
+    "subjectType": "candidacy",
+    "value": "13",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:c499509e6c16",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:3",
+    "subjectType": "candidacy",
+    "value": "3",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:c4ba8b44a5eb",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:15",
+    "subjectType": "candidacy",
+    "value": "15",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:c5dc43438aa7",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:bayit-yarok:7",
+    "subjectType": "candidacy",
+    "value": "7",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:c706f37ad58a",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:9",
+    "subjectType": "candidacy",
+    "value": "9",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:c78ce079d478",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:234ff050418a",
+    "subjectType": "person",
+    "value": "נדב בלומנטל",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:c7d8fec52f26",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:fcf3839c87c1",
+    "subjectType": "committeeMembership",
+    "value": "committee:foreign-defense",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:c7f4abb17f2a",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:da58412fa9e1",
+    "subjectType": "person",
+    "value": "מאיה שטרן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:c93a83612a1b",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:bayit-yarok:3",
+    "subjectType": "candidacy",
+    "value": "3",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:c96c3821b5af",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:12",
+    "subjectType": "candidacy",
+    "value": "12",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:ca2bc0827a58",
+    "sourceId": "source:567f806f5101",
+    "subjectId": "pollresult:kantar-2026-09-03:ofek",
+    "subjectType": "pollResult",
+    "value": "26",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:cadc70e3675c",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:7",
+    "subjectType": "candidacy",
+    "value": "7",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:cb2239cc6084",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:d09edf850ae4",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:cb235c07c382",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:9",
+    "subjectType": "candidacy",
+    "value": "9",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:cce625cd2f2e",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:4",
+    "subjectType": "candidacy",
+    "value": "4",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:cf1829246e04",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:9ef14f0758ff",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:d036a99a9d67",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:2e4d66441821",
+    "subjectType": "person",
+    "value": "יואב אזולאי",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:d039f73cd56c",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:e88953a45d67",
+    "subjectType": "committeeMembership",
+    "value": "committee:constitution",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:d14e32f96073",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:f3975eab32ca",
+    "subjectType": "committeeMembership",
+    "value": "committee:education",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:d16eee292ec2",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:1b9340989fbd",
+    "subjectType": "person",
+    "value": "תמר ארבל",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:d2a1e37c4488",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:cd579cd4a003",
+    "subjectType": "committeeMembership",
+    "value": "committee:foreign-defense",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:d3fbd894469b",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:2ae8485e87fb",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:d4c883e5af7a",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:5",
+    "subjectType": "candidacy",
+    "value": "5",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:d51a8d4b7628",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:23",
+    "subjectType": "candidacy",
+    "value": "23",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:d5f8f942a455",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:68e12e5ab387",
+    "subjectType": "committeeMembership",
+    "value": "committee:finance",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "status",
+    "id": "claim:d76491681962",
+    "sourceId": "source:2989827faada",
+    "subjectId": "list:26:ofek",
+    "subjectType": "candidateList",
+    "value": "submitted",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:d7a780306c96",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:de2ebec964b3",
+    "subjectType": "person",
+    "value": "אפרת ברקוביץ",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:d8523d6b04a7",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:1",
+    "subjectType": "candidacy",
+    "value": "1",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:d8deed762d6d",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:14",
+    "subjectType": "candidacy",
+    "value": "14",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "ballotLetters",
+    "id": "claim:da03a5e0f2aa",
+    "sourceId": "source:1807e041e236",
+    "subjectId": "party:yachad-kadima",
+    "subjectType": "party",
+    "value": "יק",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:db65f2a9091a",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:0aa2288790a4",
+    "subjectType": "person",
+    "value": "רונן אזולאי",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:dba47759cc58",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:e3b29a86e0b4",
+    "subjectType": "person",
+    "value": "גלית אוחיון",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:dbfd00e0407e",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:1",
+    "subjectType": "candidacy",
+    "value": "1",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:dd9876d9b5b8",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:18",
+    "subjectType": "candidacy",
+    "value": "18",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "status",
+    "id": "claim:de0771f293b3",
+    "sourceId": "source:2989827faada",
+    "subjectId": "list:26:bayit-yarok",
+    "subjectType": "candidateList",
+    "value": "submitted",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:df48a16f8c04",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:2",
+    "subjectType": "candidacy",
+    "value": "2",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:df852af6dff7",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:15",
+    "subjectType": "candidacy",
+    "value": "15",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:e06259db6c5c",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:bff5725597a7",
+    "subjectType": "person",
+    "value": "אורית רוזנברג",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:e083d1ee602e",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:47d886ccd47d",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:e13de8d7a75d",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:31b4344cd3f4",
+    "subjectType": "person",
+    "value": "ארז ורדי",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:e144b0d36537",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:c22cd9f8e959",
+    "subjectType": "person",
+    "value": "אסף בן שמעון",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:e1960400c5f6",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:adf928341adb",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:e32031ecae5e",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:27",
+    "subjectType": "candidacy",
+    "value": "27",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:e361e9adc2de",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:24",
+    "subjectType": "candidacy",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:e3b5c89e3399",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:2de47a687720",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:e428a60e0e61",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:87d770f583fa",
+    "subjectType": "person",
+    "value": "עומר וייס",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:e55e6bc31620",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:e60753845583",
+    "subjectType": "person",
+    "value": "עדי זיו",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:e560ea863f09",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:8",
+    "subjectType": "candidacy",
+    "value": "8",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:e65106d26cf7",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:08e2bd89b5b2",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:e71cfd1fefcc",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:haatzama:16",
+    "subjectType": "candidacy",
+    "value": "16",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "mandates",
+    "id": "claim:e739ab4c88db",
+    "sourceId": "source:781e1aa1fb41",
+    "subjectId": "pollresult:lazar-2026-09-05:yachad-kadima",
+    "subjectType": "pollResult",
+    "value": "22",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:e7ab6cda613e",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:16fd09d8fbcc",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:e82dad02058c",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:13",
+    "subjectType": "candidacy",
+    "value": "13",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:e84ac2f8e76c",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:51969d86b159",
+    "subjectType": "person",
+    "value": "חן ברקוביץ",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:e91118302720",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:47617e8d28d2",
+    "subjectType": "committeeMembership",
+    "value": "committee:education",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:e915877e0040",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:10",
+    "subjectType": "candidacy",
+    "value": "10",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:e9e40e9a56bb",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:6160351bc329",
+    "subjectType": "committeeMembership",
+    "value": "committee:finance",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:e9fe65255016",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:a6a615af8bb5",
+    "subjectType": "person",
+    "value": "נדב נוימן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:eaec4fe9954a",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:9cd258d5c73e",
+    "subjectType": "committeeMembership",
+    "value": "committee:education",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:ed24ebe1110a",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:4b33666d526c",
+    "subjectType": "person",
+    "value": "מאיה ורדי",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:ed707a5ff203",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:d5eb39279558",
+    "subjectType": "committeeMembership",
+    "value": "committee:foreign-defense",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:ed866f903363",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:091401805fad",
+    "subjectType": "person",
+    "value": "נועה סגל",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:ed96ea447fbe",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:0f2ebeca0c55",
+    "subjectType": "person",
+    "value": "שני פרץ",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:ee39f4bba20f",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:73167a2fc56b",
+    "subjectType": "knessetMembership",
+    "value": "24",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:ee8decb46046",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:d3dc1ae8e42a",
+    "subjectType": "committeeMembership",
+    "value": "committee:foreign-defense",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:ee933edfb693",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:c65bbd38f00f",
+    "subjectType": "person",
+    "value": "יעל בן שמעון",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:efeaf2f1fa62",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:7547fcbdc6a8",
+    "subjectType": "person",
+    "value": "ענבר נחמיאס",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:f1b9cf9bc3c5",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:fd4880656344",
+    "subjectType": "person",
+    "value": "אורית בן ארי",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:f1e82c270f88",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:7f79a4d449d2",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:f2dd216da7ae",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:f764698fc1ca",
+    "subjectType": "committeeMembership",
+    "value": "committee:foreign-defense",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:f31570d18a78",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:8e47859025cc",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:f357c2d1909a",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:ofek:2",
+    "subjectType": "candidacy",
+    "value": "2",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:f3c1aad60f6e",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:f596893e8a4e",
+    "subjectType": "committeeMembership",
+    "value": "committee:education",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:f410f9cad508",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:bayit-yarok:5",
+    "subjectType": "candidacy",
+    "value": "5",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:f4141d4eb72d",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:49e9dd8abccf",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:f4d9c6950c7b",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:1d2ada8485cf",
+    "subjectType": "committeeMembership",
+    "value": "committee:foreign-defense",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:f53652573423",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:10",
+    "subjectType": "candidacy",
+    "value": "10",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:f54efb313d17",
+    "sourceId": "source:1807e041e236",
+    "subjectId": "party:haatzama",
+    "subjectType": "party",
+    "value": "העצמה החברתית",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:f5d2c438a988",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:0864e0faa3e0",
+    "subjectType": "person",
+    "value": "ליאת רוזנברג",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:f75800f1ad60",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:38726ac0c741",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:f78d33875ffe",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:kol-haam:3",
+    "subjectType": "candidacy",
+    "value": "3",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:f7db23ea9d0a",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:a9ed972b58f0",
+    "subjectType": "person",
+    "value": "תומר פרץ",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:f91b27d67257",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:a9fc300aaacc",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:fa31792ea1b2",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:291e7c305038",
+    "subjectType": "person",
+    "value": "מתן ארבל",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:fb506368ce08",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:b40fdf6af995",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "nameHe",
+    "id": "claim:fb5dc7e1a574",
+    "sourceId": "source:2989827faada",
+    "subjectId": "person:720d9a9ea0c8",
+    "subjectType": "person",
+    "value": "חן שטרן",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:fc0db436cb85",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:15",
+    "subjectType": "candidacy",
+    "value": "15",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "knessetNumber",
+    "id": "claim:fcebe8c564c4",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "membership:c7ea4a1ef3be",
+    "subjectType": "knessetMembership",
+    "value": "25",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "committeeId",
+    "id": "claim:fe5034d1edb4",
+    "sourceId": "source:766f969eaa98",
+    "subjectId": "cmt-membership:6a55dffa54f4",
+    "subjectType": "committeeMembership",
+    "value": "committee:health",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "publishedAt",
+    "id": "claim:fe5e2889ad2f",
+    "sourceId": "source:781e1aa1fb41",
+    "subjectId": "poll:lazar-2026-09-05",
+    "subjectType": "poll",
+    "value": "2026-09-05",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  },
+  {
+    "field": "position",
+    "id": "claim:feb32d49e8bf",
+    "sourceId": "source:2989827faada",
+    "subjectId": "candidacy:list:26:yachad-kadima:13",
+    "subjectType": "candidacy",
+    "value": "13",
+    "verifiedAt": "2026-09-09T11:07:32.344Z"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "electionId": "election:26",
+    "id": "poll:direct-2026-09-02",
+    "pollster": "דיירקט פולס",
+    "publishedAt": "2026-09-02",
+    "publisher": "חדשות 13",
+    "sampleSize": 550,
+    "sourceUrl": "https://example.org/polls/direct/2026-09-02"
+  },
+  {
+    "electionId": "election:26",
+    "id": "poll:kantar-2026-09-03",
+    "pollster": "קנטר",
+    "publishedAt": "2026-09-03",
+    "publisher": "כאן 11",
+    "sampleSize": 700,
+    "sourceUrl": "https://example.org/polls/kantar/2026-09-03"
+  },
+  {
+    "electionId": "election:26",
+    "id": "poll:lazar-2026-09-05",
+    "pollster": "לזר מחקרים",
+    "publishedAt": "2026-09-05",
+    "publisher": "מעריב",
+    "sampleSize": 505,
+    "sourceUrl": "https://example.org/polls/lazar/2026-09-05"
+  },
+  {
+    "electionId": "election:26",
+    "id": "poll:midgam-2026-09-08",
+    "pollster": "מדגם",
+    "publishedAt": "2026-09-08",
+    "publisher": "חדשות 12",
+    "sampleSize": 751,
+    "sourceUrl": "https://example.org/polls/midgam/2026-09-08"
+  },
+  {
+    "electionId": "election:26",
+    "id": "poll:panels-2026-09-06",
+    "pollster": "פאנלס פוליטיקס",
+    "publishedAt": "2026-09-06",
+    "publisher": "מעריב",
+    "sampleSize": 620,
+    "sourceUrl": "https://example.org/polls/panels/2026-09-06"
+  }
+]

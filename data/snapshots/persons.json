@@ -1,0 +1,786 @@
+[
+  {
+    "gender": "unknown",
+    "id": "person:034083b75ada",
+    "nameHe": "מאיה אוריון",
+    "nameNormalized": "מאיה אוריונ",
+    "slug": "mya-aoryon"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:0864e0faa3e0",
+    "nameHe": "ליאת רוזנברג",
+    "nameNormalized": "ליאת רוזנברג",
+    "slug": "lyt-roznbrg"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:091401805fad",
+    "nameHe": "נועה סגל",
+    "nameNormalized": "נועה סגל",
+    "slug": "noa-sgl"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:0a365c5605ce",
+    "nameHe": "אלה בן שמעון",
+    "nameNormalized": "אלה בנ שמעונ",
+    "slug": "ala-bn-shmon"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:0aa2288790a4",
+    "nameHe": "רונן אזולאי",
+    "nameNormalized": "רוננ אזולאי",
+    "slug": "ronn-azoli"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:0adea137cbcd",
+    "nameHe": "עדי שטרן",
+    "nameNormalized": "עדי שטרנ",
+    "slug": "adi-shtrn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:0effe6b52b47",
+    "nameHe": "יונתן בן שמעון",
+    "nameNormalized": "יונתנ בנ שמעונ",
+    "slug": "yontn-bn-shmon"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:0f2ebeca0c55",
+    "nameHe": "שני פרץ",
+    "nameNormalized": "שני פרצ",
+    "slug": "shni-prtz"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:0fbe7be3248c",
+    "nameHe": "עומר נוימן",
+    "nameNormalized": "עומר נוימנ",
+    "slug": "aomr-noymn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:17bc5d69ccfd",
+    "nameHe": "תמר לביא",
+    "nameNormalized": "תמר לביא",
+    "slug": "tmr-lby"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:1aa76b4730e1",
+    "nameHe": "הילה בן ארי",
+    "nameNormalized": "הילה בנ ארי",
+    "slug": "hyla-bn-ari"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:1b9340989fbd",
+    "nameHe": "תמר ארבל",
+    "nameNormalized": "תמר ארבל",
+    "slug": "tmr-arbl"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:1dd9f02e3aa6",
+    "nameHe": "איתן לוינסון",
+    "nameNormalized": "איתנ לוינסונ",
+    "slug": "aytn-loynson"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:213624fea193",
+    "nameHe": "מאיה הרשקוביץ",
+    "nameNormalized": "מאיה הרשקוביצ",
+    "slug": "mya-hrshkobytz"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:21967e74a745",
+    "nameHe": "תמר אבוטבול",
+    "nameNormalized": "תמר אבוטבול",
+    "slug": "tmr-abotbol"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:234ff050418a",
+    "nameHe": "נדב בלומנטל",
+    "nameNormalized": "נדב בלומנטל",
+    "slug": "ndb-blomntl"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:2734a096cca7",
+    "nameHe": "דור חזן",
+    "nameNormalized": "דור חזנ",
+    "slug": "dor-chzn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:28188b59c8ca",
+    "nameHe": "יסמין מזרחי",
+    "nameNormalized": "יסמינ מזרחי",
+    "slug": "ysmyn-mzrchi"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:287295ba1825",
+    "nameHe": "רותם דיין",
+    "nameNormalized": "רותמ דיינ",
+    "slug": "rotm-dyyn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:291e7c305038",
+    "nameHe": "מתן ארבל",
+    "nameNormalized": "מתנ ארבל",
+    "slug": "mtn-arbl"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:2b3a2dbe7f67",
+    "nameHe": "עומר סגל",
+    "nameNormalized": "עומר סגל",
+    "slug": "aomr-sgl"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:2b558f27ffbf",
+    "nameHe": "מתן לביא",
+    "nameNormalized": "מתנ לביא",
+    "slug": "mtn-lby"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:2c2839c5058b",
+    "nameHe": "שחר לביא",
+    "nameNormalized": "שחר לביא",
+    "slug": "shchr-lby"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:2e4d66441821",
+    "nameHe": "יואב אזולאי",
+    "nameNormalized": "יואב אזולאי",
+    "slug": "yob-azoli"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:2ed414d38a10",
+    "nameHe": "יואב ביטון",
+    "nameNormalized": "יואב ביטונ",
+    "slug": "yob-byton"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:30851108cc23",
+    "nameHe": "אלה נחמיאס",
+    "nameNormalized": "אלה נחמיאס",
+    "slug": "ala-nchmys"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:31b4344cd3f4",
+    "nameHe": "ארז ורדי",
+    "nameNormalized": "ארז ורדי",
+    "slug": "arz-vrdi"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:322d95a41d8a",
+    "nameHe": "תומר רביבו",
+    "nameNormalized": "תומר רביבו",
+    "slug": "tomr-rbybo"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:3710d66fd695",
+    "nameHe": "רונן אבוטבול",
+    "nameNormalized": "רוננ אבוטבול",
+    "slug": "ronn-abotbol"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:38751dcc7b14",
+    "nameHe": "רונן מלכה",
+    "nameNormalized": "רוננ מלכה",
+    "slug": "ronn-mlka"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:3a8cd0628642",
+    "nameHe": "חן נחמיאס",
+    "nameNormalized": "חנ נחמיאס",
+    "slug": "chn-nchmys"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:3d1ad09918ae",
+    "nameHe": "סיון אלמוג",
+    "nameNormalized": "סיונ אלמוג",
+    "slug": "syon-almog"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:3debf737e36b",
+    "nameHe": "גלית דנינו",
+    "nameNormalized": "גלית דנינו",
+    "slug": "glyt-dnyno"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:41a708961953",
+    "nameHe": "ליאת שטרן",
+    "nameNormalized": "ליאת שטרנ",
+    "slug": "lyt-shtrn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:44bd915f2a4e",
+    "nameHe": "ליאור בן ארי",
+    "nameNormalized": "ליאור בנ ארי",
+    "slug": "lyor-bn-ari"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:4b33666d526c",
+    "nameHe": "מאיה ורדי",
+    "nameNormalized": "מאיה ורדי",
+    "slug": "mya-vrdi"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:4d70c74fdfc3",
+    "nameHe": "יעל רביבו",
+    "nameNormalized": "יעל רביבו",
+    "slug": "yl-rbybo"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:4e77590b0030",
+    "nameHe": "ליאת פלדמן",
+    "nameNormalized": "ליאת פלדמנ",
+    "slug": "lyt-pldmn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:51328de8b169",
+    "nameHe": "יהונתן קפלן",
+    "nameNormalized": "יהונתנ קפלנ",
+    "slug": "yhontn-kpln"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:51969d86b159",
+    "nameHe": "חן ברקוביץ",
+    "nameNormalized": "חנ ברקוביצ",
+    "slug": "chn-brkobytz"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:51e313f4199a",
+    "nameHe": "שחר נגר",
+    "nameNormalized": "שחר נגר",
+    "slug": "shchr-ngr"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:569c1797aca5",
+    "nameHe": "אסף אסולין",
+    "nameNormalized": "אספ אסולינ",
+    "slug": "asp-asolyn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:5cc150304430",
+    "nameHe": "דור סבן",
+    "nameNormalized": "דור סבנ",
+    "slug": "dor-sbn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:62003723af5f",
+    "nameHe": "יעל שטרן",
+    "nameNormalized": "יעל שטרנ",
+    "slug": "yl-shtrn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:69a775797dcb",
+    "nameHe": "קרן נגר",
+    "nameNormalized": "קרנ נגר",
+    "slug": "krn-ngr"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:6d9fb318ddfe",
+    "nameHe": "איתן ברקוביץ",
+    "nameNormalized": "איתנ ברקוביצ",
+    "slug": "aytn-brkobytz"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:6eb2b4ee64a5",
+    "nameHe": "יואב נוימן",
+    "nameNormalized": "יואב נוימנ",
+    "slug": "yob-noymn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:6efa2ca92a87",
+    "nameHe": "יואב בלומנטל",
+    "nameNormalized": "יואב בלומנטל",
+    "slug": "yob-blomntl"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:70a2f36da673",
+    "nameHe": "שני אזולאי",
+    "nameNormalized": "שני אזולאי",
+    "slug": "shni-azoli"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:720d9a9ea0c8",
+    "nameHe": "חן שטרן",
+    "nameNormalized": "חנ שטרנ",
+    "slug": "chn-shtrn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:723ad1a91860",
+    "nameHe": "שחר שפירא",
+    "nameNormalized": "שחר שפירא",
+    "slug": "shchr-shpyr"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:7547fcbdc6a8",
+    "nameHe": "ענבר נחמיאס",
+    "nameNormalized": "ענבר נחמיאס",
+    "slug": "anbr-nchmys"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:75bd79f484d7",
+    "nameHe": "רונן בלומנטל",
+    "nameNormalized": "רוננ בלומנטל",
+    "slug": "ronn-blomntl"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:770b8a88472d",
+    "nameHe": "גלית בן שמעון",
+    "nameNormalized": "גלית בנ שמעונ",
+    "slug": "glyt-bn-shmon"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:775d055278f7",
+    "nameHe": "יואב שרעבי",
+    "nameNormalized": "יואב שרעבי",
+    "slug": "yob-shrbi"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:777c8b98d0d1",
+    "nameHe": "סהר ארבל",
+    "nameNormalized": "סהר ארבל",
+    "slug": "shr-arbl"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:7782cf49a68c",
+    "nameHe": "מתן זיו",
+    "nameNormalized": "מתנ זיו",
+    "slug": "mtn-zyo"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:79a9ddcc1e6f",
+    "nameHe": "רונן סבן",
+    "nameNormalized": "רוננ סבנ",
+    "slug": "ronn-sbn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:7ab28695fe99",
+    "nameHe": "אלה נוימן",
+    "nameNormalized": "אלה נוימנ",
+    "slug": "ala-noymn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:7ad4739ea692",
+    "nameHe": "אפרת לביא",
+    "nameNormalized": "אפרת לביא",
+    "slug": "aprt-lby"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:7c4e4c3d14cd",
+    "nameHe": "תמר בן ארי",
+    "nameNormalized": "תמר בנ ארי",
+    "slug": "tmr-bn-ari"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:7ccfd532b1a7",
+    "nameHe": "אורית אבוטבול",
+    "nameNormalized": "אורית אבוטבול",
+    "slug": "aoryt-abotbol"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:7e3dd6bdc6ff",
+    "nameHe": "עדי אסולין",
+    "nameNormalized": "עדי אסולינ",
+    "slug": "adi-asolyn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:809fa51896a2",
+    "nameHe": "ניר הרשקוביץ",
+    "nameNormalized": "ניר הרשקוביצ",
+    "slug": "nyr-hrshkobytz"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:81b90da9fad9",
+    "nameHe": "רוני בן ארי",
+    "nameNormalized": "רוני בנ ארי",
+    "slug": "roni-bn-ari"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:82a006f1ee28",
+    "nameHe": "רותם אבוטבול",
+    "nameNormalized": "רותמ אבוטבול",
+    "slug": "rotm-abotbol"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:83387ff4572c",
+    "nameHe": "יסמין רביבו",
+    "nameNormalized": "יסמינ רביבו",
+    "slug": "ysmyn-rbybo"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:8791c3f1e4b7",
+    "nameHe": "קרן לביא",
+    "nameNormalized": "קרנ לביא",
+    "slug": "krn-lby"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:87d770f583fa",
+    "nameHe": "עומר וייס",
+    "nameNormalized": "עומר וייס",
+    "slug": "aomr-vyys"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:89164ed0826f",
+    "nameHe": "נעמה שטרן",
+    "nameNormalized": "נעמה שטרנ",
+    "slug": "nma-shtrn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:8d8e743de259",
+    "nameHe": "גיא אסולין",
+    "nameNormalized": "גיא אסולינ",
+    "slug": "gy-asolyn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:8eae21fe3bc3",
+    "nameHe": "הילה רוזנברג",
+    "nameNormalized": "הילה רוזנברג",
+    "slug": "hyla-roznbrg"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:90168f1d2583",
+    "nameHe": "רותם מזרחי",
+    "nameNormalized": "רותמ מזרחי",
+    "slug": "rotm-mzrchi"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:91c094fe9980",
+    "nameHe": "אסף נוימן",
+    "nameNormalized": "אספ נוימנ",
+    "slug": "asp-noymn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:921f3f19033a",
+    "nameHe": "שירה קפלן",
+    "nameNormalized": "שירה קפלנ",
+    "slug": "shyra-kpln"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:969a93ea8ffa",
+    "nameHe": "יונתן אשכנזי",
+    "nameNormalized": "יונתנ אשכנזי",
+    "slug": "yontn-ashknzi"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:97d4a54e6cdc",
+    "nameHe": "דנה אלמוג",
+    "nameNormalized": "דנה אלמוג",
+    "slug": "dna-almog"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:98626442af35",
+    "nameHe": "נדב ברקוביץ",
+    "nameNormalized": "נדב ברקוביצ",
+    "slug": "ndb-brkobytz"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:98d4a35917c6",
+    "nameHe": "ענבר לוינסון",
+    "nameNormalized": "ענבר לוינסונ",
+    "slug": "anbr-loynson"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:9dad3c8e7132",
+    "nameHe": "יעל סגל",
+    "nameNormalized": "יעל סגל",
+    "slug": "yl-sgl"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:a17b626abed6",
+    "nameHe": "מתן אוריון",
+    "nameNormalized": "מתנ אוריונ",
+    "slug": "mtn-aoryon"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:a27e55114f5c",
+    "nameHe": "דנה חזן",
+    "nameNormalized": "דנה חזנ",
+    "slug": "dna-chzn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:a6a615af8bb5",
+    "nameHe": "נדב נוימן",
+    "nameNormalized": "נדב נוימנ",
+    "slug": "ndb-noymn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:a7d2ece4d8d5",
+    "nameHe": "בועז ארבל",
+    "nameNormalized": "בועז ארבל",
+    "slug": "boz-arbl"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:a9ed972b58f0",
+    "nameHe": "תומר פרץ",
+    "nameNormalized": "תומר פרצ",
+    "slug": "tomr-prtz"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:ab5845a375cd",
+    "nameHe": "גלעד אוחיון",
+    "nameNormalized": "גלעד אוחיונ",
+    "slug": "gld-aochyon"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:af2a9141e6ab",
+    "nameHe": "אמיר ביטון",
+    "nameNormalized": "אמיר ביטונ",
+    "slug": "amyr-byton"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:b7a85b2ac12d",
+    "nameHe": "נדב לביא",
+    "nameNormalized": "נדב לביא",
+    "slug": "ndb-lby"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:bd12f1f6ce05",
+    "nameHe": "תמר רביבו",
+    "nameNormalized": "תמר רביבו",
+    "slug": "tmr-rbybo"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:bff5725597a7",
+    "nameHe": "אורית רוזנברג",
+    "nameNormalized": "אורית רוזנברג",
+    "slug": "aoryt-roznbrg"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:c1839231734d",
+    "nameHe": "דפנה בלומנטל",
+    "nameNormalized": "דפנה בלומנטל",
+    "slug": "dpna-blomntl"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:c22cd9f8e959",
+    "nameHe": "אסף בן שמעון",
+    "nameNormalized": "אספ בנ שמעונ",
+    "slug": "asp-bn-shmon"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:c65bbd38f00f",
+    "nameHe": "יעל בן שמעון",
+    "nameNormalized": "יעל בנ שמעונ",
+    "slug": "yl-bn-shmon"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:d06bb990e1cb",
+    "nameHe": "רונן מזרחי",
+    "nameNormalized": "רוננ מזרחי",
+    "slug": "ronn-mzrchi"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:d96b8a9db770",
+    "nameHe": "בועז שפירא",
+    "nameNormalized": "בועז שפירא",
+    "slug": "boz-shpyr"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:da58412fa9e1",
+    "nameHe": "מאיה שטרן",
+    "nameNormalized": "מאיה שטרנ",
+    "slug": "mya-shtrn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:dae487b23512",
+    "nameHe": "ליאור שמעוני",
+    "nameNormalized": "ליאור שמעוני",
+    "slug": "lyor-shmoni"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:de2ebec964b3",
+    "nameHe": "אפרת ברקוביץ",
+    "nameNormalized": "אפרת ברקוביצ",
+    "slug": "aprt-brkobytz"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:e251bd04f1ce",
+    "nameHe": "תומר קדוש",
+    "nameNormalized": "תומר קדוש",
+    "slug": "tomr-kdosh"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:e3b29a86e0b4",
+    "nameHe": "גלית אוחיון",
+    "nameNormalized": "גלית אוחיונ",
+    "slug": "glyt-aochyon"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:e5987cb99f40",
+    "nameHe": "אפרת גולדשטיין",
+    "nameNormalized": "אפרת גולדשטיינ",
+    "slug": "aprt-goldshtyyn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:e60753845583",
+    "nameHe": "עדי זיו",
+    "nameNormalized": "עדי זיו",
+    "slug": "adi-zyo"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:e94d179640f1",
+    "nameHe": "תמר קפלן",
+    "nameNormalized": "תמר קפלנ",
+    "slug": "tmr-kpln"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:ebf6d4bbd4ce",
+    "nameHe": "דנה קפלן",
+    "nameNormalized": "דנה קפלנ",
+    "slug": "dna-kpln"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:ec720b956a75",
+    "nameHe": "סהר שטרן",
+    "nameNormalized": "סהר שטרנ",
+    "slug": "shr-shtrn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:ed7810d9beba",
+    "nameHe": "ניר אלמוג",
+    "nameNormalized": "ניר אלמוג",
+    "slug": "nyr-almog"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:f166d4bbd9da",
+    "nameHe": "תומר אבוטבול",
+    "nameNormalized": "תומר אבוטבול",
+    "slug": "tomr-abotbol"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:f4af46b5a42a",
+    "nameHe": "חן ארבל",
+    "nameNormalized": "חנ ארבל",
+    "slug": "chn-arbl"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:f8e6fcce587b",
+    "nameHe": "יואב חזן",
+    "nameNormalized": "יואב חזנ",
+    "slug": "yob-chzn"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:fd4880656344",
+    "nameHe": "אורית בן ארי",
+    "nameNormalized": "אורית בנ ארי",
+    "slug": "aoryt-bn-ari"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:fe816b6cb3f2",
+    "nameHe": "יונתן רביבו",
+    "nameNormalized": "יונתנ רביבו",
+    "slug": "yontn-rbybo"
+  },
+  {
+    "gender": "unknown",
+    "id": "person:ff45a6f4cb38",
+    "nameHe": "ליאור בלומנטל",
+    "nameNormalized": "ליאור בלומנטל",
+    "slug": "lyor-blomntl"
+  }
+]

@@ -1,0 +1,177 @@
+[
+  {
+    "key": "midgam-2026-09-08",
+    "pollster": "מדגם",
+    "publisher": "חדשות 12",
+    "publishedAt": "2026-09-08",
+    "sampleSize": 751,
+    "sourceUrl": "https://example.org/polls/midgam/2026-09-08",
+    "results": [
+      {
+        "partyKey": "ofek",
+        "mandates": 25,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "yachad-kadima",
+        "mandates": 20,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "haatzama",
+        "mandates": 12,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "kol-haam",
+        "mandates": 6,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "bayit-yarok",
+        "mandates": 0,
+        "belowThreshold": true
+      }
+    ]
+  },
+  {
+    "key": "panels-2026-09-06",
+    "pollster": "פאנלס פוליטיקס",
+    "publisher": "מעריב",
+    "publishedAt": "2026-09-06",
+    "sampleSize": 620,
+    "sourceUrl": "https://example.org/polls/panels/2026-09-06",
+    "results": [
+      {
+        "partyKey": "ofek",
+        "mandates": 24,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "yachad-kadima",
+        "mandates": 21,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "haatzama",
+        "mandates": 13,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "kol-haam",
+        "mandates": 8,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "bayit-yarok",
+        "mandates": 6,
+        "belowThreshold": false
+      }
+    ]
+  },
+  {
+    "key": "lazar-2026-09-05",
+    "pollster": "לזר מחקרים",
+    "publisher": "מעריב",
+    "publishedAt": "2026-09-05",
+    "sampleSize": 505,
+    "sourceUrl": "https://example.org/polls/lazar/2026-09-05",
+    "results": [
+      {
+        "partyKey": "ofek",
+        "mandates": 26,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "yachad-kadima",
+        "mandates": 22,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "haatzama",
+        "mandates": 12,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "kol-haam",
+        "mandates": 8,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "bayit-yarok",
+        "mandates": 4,
+        "belowThreshold": false
+      }
+    ]
+  },
+  {
+    "key": "kantar-2026-09-03",
+    "pollster": "קנטר",
+    "publisher": "כאן 11",
+    "publishedAt": "2026-09-03",
+    "sampleSize": 700,
+    "sourceUrl": "https://example.org/polls/kantar/2026-09-03",
+    "results": [
+      {
+        "partyKey": "ofek",
+        "mandates": 26,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "yachad-kadima",
+        "mandates": 19,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "haatzama",
+        "mandates": 12,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "kol-haam",
+        "mandates": 9,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "bayit-yarok",
+        "mandates": 0,
+        "belowThreshold": true
+      }
+    ]
+  },
+  {
+    "key": "direct-2026-09-02",
+    "pollster": "דיירקט פולס",
+    "publisher": "חדשות 13",
+    "publishedAt": "2026-09-02",
+    "sampleSize": 550,
+    "sourceUrl": "https://example.org/polls/direct/2026-09-02",
+    "results": [
+      {
+        "partyKey": "ofek",
+        "mandates": 22,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "yachad-kadima",
+        "mandates": 21,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "haatzama",
+        "mandates": 11,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "kol-haam",
+        "mandates": 8,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "bayit-yarok",
+        "mandates": 4,
+        "belowThreshold": false
+      }
+    ]
+  }
+]
