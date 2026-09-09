@@ -1,0 +1,27 @@
+{
+  "name": "elections26",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Knesset 26 elections dashboard — verifiable candidate lists, parliamentary records and poll projections",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "typecheck": "tsc -b packages/schema packages/data packages/ingest && npm run typecheck -w apps/web",
+    "test": "vitest run",
+    "ingest": "tsx packages/ingest/src/cli.ts",
+    "validate": "tsx scripts/validate.ts",
+    "dev": "npm run dev -w apps/web",
+    "build": "npm run validate && npm run build -w apps/web"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=20.11"
+  }
+}
