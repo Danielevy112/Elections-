@@ -1,0 +1,58 @@
+name: Sync data
+
+on:
+  schedule:
+    # Every 6 hours. GitHub Actions has open egress, which is where ingestion belongs.
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      knesset:
+        description: "Knesset numbers to pull, comma separated"
+        default: "24,25"
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Pull upstream sources
+        run: npm run ingest -- --live --knesset=${{ inputs.knesset || '24,25' }}
+
+      - name: Validate
+        run: npm run validate
+
+      # A pull request rather than a direct push: on an elections site every data change
+      # deserves a human look before it reaches the public build, and the snapshot diff is
+      # exactly the review surface for that.
+      - name: Open a data pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: data/sync
+          base: main
+          commit-message: "data: scheduled sync"
+          title: "data: scheduled sync"
+          body: |
+            Automated sync of the committed snapshot.
+
+            Review the diff under `data/snapshots/` before merging — it is the data the
+            public site will serve. Check `data/unmatched.json` for candidates that could
+            not be linked to a Knesset record; those are resolved by adding entries to
+            `data/manual_overrides/person_links.json`, never by loosening the matcher.
+          add-paths: |
+            data/snapshots
+            data/fixtures
+            data/unmatched.json
+          delete-branch: true

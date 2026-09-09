@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Test
+        run: npm test
+
+      # The snapshot in the repo is what the site ships, so its integrity is a CI concern,
+      # not just a sync-time one.
+      - name: Validate committed snapshot
+        run: npm run validate
+
+      - name: Build site
+        run: npm run build -w apps/web
