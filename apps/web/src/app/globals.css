@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* Numbers stay left-to-right inside RTL prose. */
+.ltr-nums {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+}
