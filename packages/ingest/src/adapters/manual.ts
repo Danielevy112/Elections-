@@ -32,6 +32,9 @@ export const ManualParty = z.object({
   nameEn: z.string().optional(),
   shortNameHe: z.string().optional(),
   leaderName: z.string().optional(),
+  /** Name this party appears under in the data.gov.il candidate-list dataset, when it
+   *  differs from nameHe. Lets the official feed be matched without renaming our party. */
+  datagovName: z.string().optional(),
   ballotLetters: z.string().optional(),
   logoUrl: z.string().url().optional(),
   websiteUrl: z.string().url().optional(),

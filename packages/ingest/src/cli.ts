@@ -4,7 +4,14 @@ import { fileURLToPath } from "node:url";
 import { Fetcher, type FetchMode } from "./http";
 import { loadManualBundle } from "./adapters/manual";
 import { pullKnesset, type KnessetPull } from "./adapters/knesset";
+import {
+  describeProbe,
+  fetchCandidateLists,
+  probeCandidateLists,
+  type CandidateListRow,
+} from "./adapters/datagov";
 import { buildSnapshot } from "./build";
+import type { FieldReport } from "./odata";
 import { writeSnapshot, stableJson } from "./write";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../../..");
@@ -12,6 +19,9 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../../..");
 interface Options {
   mode: FetchMode;
   skipKnesset: boolean;
+  skipDatagov: boolean;
+  /** Report on data.gov.il coverage and exit without writing anything. */
+  probeOnly: boolean;
   knessetNumbers: number[];
 }
 
@@ -21,6 +31,8 @@ function parseArgs(argv: string[]): Options {
     // stray script invocation on someone's laptop.
     mode: "offline",
     skipKnesset: false,
+    skipDatagov: false,
+    probeOnly: false,
     knessetNumbers: [24, 25],
   };
 
@@ -28,6 +40,8 @@ function parseArgs(argv: string[]): Options {
     if (arg === "--live") options.mode = "live";
     else if (arg === "--offline") options.mode = "offline";
     else if (arg === "--skip-knesset") options.skipKnesset = true;
+    else if (arg === "--skip-datagov") options.skipDatagov = true;
+    else if (arg === "--probe") options.probeOnly = true;
     else if (arg.startsWith("--knesset=")) {
       options.knessetNumbers = arg
         .slice("--knesset=".length)
@@ -55,6 +69,38 @@ async function main(): Promise<void> {
   );
 
   const fetcher = new Fetcher(options.mode, fixtureDir);
+  const electionKnesset = manual.election.knessetNumber;
+
+  if (options.probeOnly) {
+    console.log(describeProbe(await probeCandidateLists(fetcher, electionKnesset)));
+    return;
+  }
+
+  // Official candidate lists, if data.gov.il covers this election yet.
+  let datagovLists: CandidateListRow[] | undefined;
+  if (options.skipDatagov) {
+    console.log("  data.gov.il: skipped (--skip-datagov)");
+  } else {
+    try {
+      const probe = await probeCandidateLists(fetcher, electionKnesset);
+      if (probe.matched) {
+        const pull = await fetchCandidateLists(fetcher, probe.matched.id);
+        datagovLists = pull.rows;
+        console.log(
+          `  data.gov.il: Knesset ${electionKnesset} IS covered — ${pull.rows.length} rows; ` +
+            "official lists take precedence over the manual layer",
+        );
+        reportFieldNames("data.gov.il", pull.report);
+      } else {
+        console.log(
+          `  data.gov.il: Knesset ${electionKnesset} not covered yet — using manual lists`,
+        );
+      }
+    } catch (error) {
+      if (options.mode === "live") throw error;
+      console.warn(`  data.gov.il: unavailable offline — ${firstLine(error)}`);
+    }
+  }
   let knesset: KnessetPull | undefined;
 
   if (options.skipKnesset) {
@@ -71,7 +117,7 @@ async function main(): Promise<void> {
       if (options.mode === "live") throw error;
       // Offline with no recorded Knesset responses is the normal state of a fresh clone.
       // Build what we can from the manual layer rather than failing the whole run.
-      console.warn(`  knesset: unavailable offline — ${(error as Error).message.split("\n")[0]}`);
+      console.warn(`  knesset: unavailable offline — ${firstLine(error)}`);
       console.warn("  knesset: continuing without parliamentary data from OData");
     }
   }
@@ -79,6 +125,7 @@ async function main(): Promise<void> {
   const { snapshot, unmatched } = buildSnapshot({
     manual,
     knesset,
+    datagovLists,
     mode: options.mode,
     generatedAt: new Date().toISOString(),
   });
@@ -101,15 +148,25 @@ async function main(): Promise<void> {
   }
 }
 
+function firstLine(error: unknown): string {
+  return (error instanceof Error ? error.message : String(error)).split("\n")[0] ?? "";
+}
+
 function reportFields(knesset: KnessetPull): void {
-  const surprises = knesset.report.surprises;
-  const missing = knesset.report.missing;
-  if (surprises.length > 0) {
-    console.log("  field aliases that differed from the documented name:");
-    for (const row of surprises) console.log(`    ${row.canonical} -> ${row.actual}`);
+  reportFieldNames("knesset", knesset.report);
+}
+
+/**
+ * Print what upstream actually called its fields. Neither source's column names could be
+ * confirmed when the adapters were written, so this output is how a live run tells us the
+ * real shape rather than silently producing rows full of undefined.
+ */
+function reportFieldNames(label: string, report: FieldReport): void {
+  for (const row of report.surprises) {
+    console.log(`  ${label}: field "${row.canonical}" actually arrived as "${row.actual}"`);
   }
-  if (missing.length > 0) {
-    console.log(`  fields upstream never supplied: ${missing.join(", ")}`);
+  if (report.missing.length > 0) {
+    console.log(`  ${label}: never supplied ${report.missing.join(", ")}`);
   }
 }
 

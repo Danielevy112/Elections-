@@ -18,7 +18,8 @@ import type {
   SourceKind,
 } from "@elections26/schema";
 import { BillStatus } from "@elections26/schema";
-import type { ManualBundle } from "./adapters/manual";
+import type { ManualBundle, ManualList, ManualParty } from "./adapters/manual";
+import type { CandidateListRow } from "./adapters/datagov";
 import { mapBillStatus, type KnessetPull } from "./adapters/knesset";
 import { matchPerson, normalizeHebrewName, slugifyHebrew, uniqueSlug } from "./match";
 
@@ -89,12 +90,103 @@ export interface BuildResult {
 export interface BuildInput {
   manual: ManualBundle;
   knesset: KnessetPull | undefined;
+  /** Official candidate lists, when data.gov.il covers this election. */
+  datagovLists: CandidateListRow[] | undefined;
+  datagovSourceUrl?: string;
   mode: "live" | "offline";
   generatedAt: string;
 }
 
+/**
+ * Choose which candidate lists to build from.
+ *
+ * The official feed outranks the manual layer, per the precedence in docs/sources.md: as
+ * soon as data.gov.il carries this election, its rows replace the hand-entered ones.
+ *
+ * Two details are deliberate. Status stays with the manual override where one exists and
+ * otherwise falls back to "submitted" — the dataset lists candidates but does not say
+ * whether the Elections Committee approved the list, and claiming approval we cannot
+ * source is exactly the failure this project is built to avoid. And a party appearing in
+ * the feed that we have never seen still gets a list; a real filing must not be dropped
+ * because it was missing from our own table.
+ */
+export function resolveLists(
+  manual: ManualBundle,
+  datagovRows: CandidateListRow[] | undefined,
+): { lists: ManualList[]; parties: ManualParty[]; origin: "datagov" | "manual" } {
+  if (!datagovRows || datagovRows.length === 0) {
+    return { lists: manual.lists, parties: manual.parties, origin: "manual" };
+  }
+
+  const byNormalizedName = new Map<string, ManualParty>();
+  for (const party of manual.parties) {
+    byNormalizedName.set(normalizeHebrewName(party.nameHe), party);
+    if (party.datagovName) byNormalizedName.set(normalizeHebrewName(party.datagovName), party);
+  }
+
+  const grouped = new Map<string, CandidateListRow[]>();
+  for (const row of datagovRows) {
+    const key = normalizeHebrewName(row.partyName);
+    const bucket = grouped.get(key);
+    if (bucket) bucket.push(row);
+    else grouped.set(key, [row]);
+  }
+
+  const listsByKey = new Map(manual.lists.map((list) => [list.partyKey, list]));
+  const parties: ManualParty[] = [];
+  const lists: ManualList[] = [];
+
+  for (const [normalized, rows] of grouped) {
+    const known = byNormalizedName.get(normalized);
+    const displayName = rows[0]?.partyName ?? normalized;
+    const key = known?.key ?? `datagov-${hash(normalized).slice(0, 8)}`;
+    const override = known ? listsByKey.get(known.key) : undefined;
+
+    parties.push(
+      known ?? {
+        key,
+        nameHe: displayName,
+        ...(rows[0]?.ballotLetters ? { ballotLetters: rows[0].ballotLetters } : {}),
+        sourceTitle: "רשימות המועמדים לכנסת — ועדת הבחירות המרכזית (data.gov.il)",
+      },
+    );
+
+    lists.push({
+      partyKey: key,
+      status: override?.status ?? "submitted",
+      ...(override?.submittedAt ? { submittedAt: override.submittedAt } : {}),
+      ...(override?.statusChangedAt ? { statusChangedAt: override.statusChangedAt } : {}),
+      ...(override?.statusNote ? { statusNote: override.statusNote } : {}),
+      sourceTitle: "רשימות המועמדים לכנסת — ועדת הבחירות המרכזית (data.gov.il)",
+      candidates: [...rows]
+        .sort((a, b) => a.position - b.position)
+        .map((row) => ({ position: row.position, nameHe: row.candidateName })),
+    });
+  }
+
+  // Parties we know of that the feed did not mention keep their manual list, so a party
+  // page never vanishes mid-election because of a gap upstream.
+  for (const party of manual.parties) {
+    if (parties.some((p) => p.key === party.key)) continue;
+    const list = listsByKey.get(party.key);
+    if (!list) continue;
+    parties.push(party);
+    lists.push(list);
+  }
+
+  return { lists, parties, origin: "datagov" };
+}
+
 export function buildSnapshot(input: BuildInput): BuildResult {
-  const { manual, knesset } = input;
+  const { knesset } = input;
+  const resolved = resolveLists(input.manual, input.datagovLists);
+  // Downstream code reads lists and parties from `manual`; swapping them here keeps the
+  // official feed and the hand-entered layer on one code path.
+  const manual: ManualBundle = {
+    ...input.manual,
+    parties: resolved.parties,
+    lists: resolved.lists,
+  };
   const registry = new SourceRegistry(input.generatedAt);
   const unmatched: UnmatchedCandidate[] = [];
 
