@@ -28,6 +28,18 @@ jobs:
 
       - run: npm ci
 
+      # Reported before ingestion and carried into the PR body, so the six-hourly run
+      # says in plain words whether the official 26th-Knesset lists have appeared yet.
+      # Nobody should have to check the portal by hand.
+      - name: Probe data.gov.il coverage
+        id: probe
+        run: |
+          {
+            echo "report<<PROBE_EOF"
+            npm run --silent probe 2>&1 || echo "probe failed — see the job log"
+            echo "PROBE_EOF"
+          } >> "$GITHUB_OUTPUT"
+
       - name: Pull upstream sources
         run: npm run ingest -- --live --knesset=${{ inputs.knesset || '24,25' }}
 
@@ -51,6 +63,18 @@ jobs:
             public site will serve. Check `data/unmatched.json` for candidates that could
             not be linked to a Knesset record; those are resolved by adding entries to
             `data/manual_overrides/person_links.json`, never by loosening the matcher.
+
+            ### data.gov.il coverage
+
+            ```
+            ${{ steps.probe.outputs.report }}
+            ```
+
+            If the probe reports that the 26th Knesset **is** covered, this sync has already
+            ingested the official lists and they now outrank the manual layer. Read the
+            snapshot diff, then flip `dataset` to `"real"` in
+            `data/manual_overrides/election.json` to drop the example banner and open
+            indexing. That flip stays a human decision on purpose.
           add-paths: |
             data/snapshots
             data/fixtures

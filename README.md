@@ -22,10 +22,13 @@ before real data is loaded. The site shows a standing banner while `meta.dataset
 
 ```bash
 npm install
-npm test                                     # 62 tests
+npm test                                     # 102 tests
 npm run ingest -- --offline --skip-knesset   # rebuild snapshots from the manual layer
 npm run validate                             # schema + referential integrity + provenance
 npm run dev                                  # http://localhost:3000
+
+npm run probe                                # has data.gov.il published the K26 lists yet?
+npm run add-poll -- --help                   # record a new poll
 ```
 
 ## How it fits together
@@ -57,18 +60,43 @@ never reach a visitor.
 
 ## Loading real data
 
-1. Put the filed lists into `data/manual_overrides/lists.json` and the polls into
-   `polls.json`, each with its `sourceUrl` / `sourceTitle`.
-2. Set `"dataset": "real"` in `data/manual_overrides/election.json`.
-3. Run the sync from a network that can reach the Israeli government hosts:
-   `npm run ingest -- --live`. GitHub Actions works; many corporate and sandboxed networks
-   do not.
-4. Resolve anything in `data/unmatched.json` by adding entries to
-   `person_links.json`. Never loosen the matcher to make an unmatched name go away.
-5. `npm run validate`, then commit the snapshot diff.
+Candidate lists arrive on their own. The six-hourly `Sync data` workflow probes
+data.gov.il, reports coverage in its PR body, and ingests the official lists the moment the
+26th Knesset appears there — at which point they outrank the manual layer automatically.
 
-The `Sync data` workflow does steps 3–5 every six hours and opens a **pull request** rather
-than pushing, so a human reviews each data change before it reaches the public site.
+Polls never arrive on their own; Israel has no polling API. Record one with:
+
+```bash
+npm run add-poll -- --pollster "מדגם" --publisher "חדשות 12"   --date 2026-09-10 --sample 751 --source "https://..."   --seats "ofek=24,yachad-kadima=21,bayit-yarok=0!"
+```
+
+A trailing `!` marks a party below the threshold. Every rule `validate.ts` applies to a
+finished snapshot is checked here first, so a missing source or a 130-seat total is rejected
+before anything is written.
+
+### Going from example data to real data
+
+1. Wait for a sync PR whose probe reports the 26th Knesset **is** covered; that PR already
+   carries the official lists.
+2. Review the `data/snapshots/` diff, and resolve anything in `data/unmatched.json` by
+   adding entries to `person_links.json`. Never loosen the matcher to make a name go away.
+3. Flip `"dataset": "real"` in `data/manual_overrides/election.json`.
+4. `npm run ingest -- --offline && npm run validate`, then merge.
+
+Step 3 drops the example banner, switches `robots.txt` from `Disallow: /` to allow, emits
+the sitemap and removes `noindex` — one edit, no second switch to forget. `validate.ts`
+refuses the flip while example-sourced rows remain, and because `vercel.json` runs
+`validate` before the build, a premature flip fails the deploy rather than publishing
+fiction as fact.
+
+## Deployment
+
+Production builds from `main` on Vercel; every PR gets a preview. The build command is
+`npm run validate && npm run build -w apps/web`, so **the deploy gate is the same gate as
+CI** — a snapshot that fails referential integrity cannot reach the public site.
+
+While `meta.dataset` is `example` the site is reachable by link but carries `noindex` and a
+`Disallow: /` robots.txt, so fictional candidate data cannot turn up in a search result.
 
 ## Documentation
 

@@ -23,6 +23,11 @@ it stays in `sources.json` so the disagreement is visible:
 | data.gov.il (CKAN) | `https://data.gov.il/api/3/action` | `packages/ingest/src/adapters/datagov.ts` | candidate lists (`candidates-lists` dataset) |
 | Manual overrides | `data/manual_overrides/` | `packages/ingest/src/adapters/manual.ts` | 26th-Knesset lists, polls, corrections |
 
+Candidate-list precedence, enforced in `resolveLists` (`packages/ingest/src/build.ts`):
+data.gov.il outranks the manual layer for any party it covers, a party the feed omits keeps
+its manual list so a page never vanishes mid-election, and a party in the feed we have never
+seen gets a list created for it.
+
 ### A note on field names
 
 The Knesset service's field casing is inconsistent between entity sets, and it could not
@@ -31,6 +36,29 @@ through `pick()` with the plausible spellings, and a `FieldReport` prints which 
 upstream actually used and which fields never arrived. **The first live sync is the
 verification step** — run it with `workflow_dispatch` and read that report before trusting
 the output.
+
+## The cutover to official lists
+
+The 26th-Knesset lists are not in the `candidates-lists` dataset yet. Rather than have
+someone check the portal by hand, the sync watches for them:
+
+1. Every six-hourly sync runs `npm run probe`, which lists the dataset's resources and says
+   whether one covers the 26th Knesset. Its output goes into the sync PR body.
+2. The moment a matching resource appears, the same run ingests it. Official rows outrank
+   the manual layer automatically — no code change needed.
+3. `dataset` stays `"example"` until a human flips it in
+   `data/manual_overrides/election.json`. That flip drops the banner, opens indexing and
+   populates the sitemap in one edit, and `validate.ts` refuses it while example-sourced
+   rows are still present.
+
+Two deliberate limits on the automatic half:
+
+- **Resource matching never falls back to the nearest election.** If no resource names the
+  26th Knesset, the probe reports "not covered". Ingesting the 25th Knesset's lists as the
+  26th's would be far worse than reporting an absence.
+- **List status is never inferred from the feed.** The dataset names candidates; it does not
+  say whether the Elections Committee approved the list. An ingested list is `submitted`
+  unless a manual override carries a sourced status. Approval we cannot cite is not claimed.
 
 ## Why the 26th-Knesset lists and the polls are entered by hand
 
