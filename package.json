@@ -2,7 +2,7 @@
   "name": "elections26",
   "private": true,
   "version": "0.1.0",
-  "description": "Knesset 26 elections dashboard — verifiable candidate lists, parliamentary records and poll projections",
+  "description": "Knesset 26 elections dashboard \u2014 verifiable candidate lists, parliamentary records and poll projections",
   "workspaces": [
     "packages/*",
     "apps/*"
@@ -13,7 +13,9 @@
     "ingest": "tsx packages/ingest/src/cli.ts",
     "validate": "tsx scripts/validate.ts",
     "dev": "npm run dev -w apps/web",
-    "build": "npm run validate && npm run build -w apps/web"
+    "build": "npm run validate && npm run build -w apps/web",
+    "add-poll": "tsx scripts/add-poll.ts",
+    "probe": "tsx packages/ingest/src/cli.ts --probe"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
