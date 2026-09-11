@@ -1,12 +1,27 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
-import { site, formatDateTime } from "@/lib/site";
+import { SITE_URL, isRealData, site, formatDateTime } from "@/lib/site";
+
+const DESCRIPTION =
+  "כל רשימות המועמדים לכנסת ה-26, הסדר המלא, הרקע הפרלמנטרי של כל מועמד, וממוצע הסקרים — עם מקור לכל נתון.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "בחירות 2026 — הכנסת ה-26",
-  description:
-    "כל רשימות המועמדים לכנסת ה-26, הסדר המלא, הרקע הפרלמנטרי של כל מועמד, וממוצע הסקרים — עם מקור לכל נתון.",
+  description: DESCRIPTION,
+  // Keeps example data out of search results and out of link previews. Paired with
+  // robots.ts so a crawler that ignores one still meets the other.
+  robots: isRealData()
+    ? { index: true, follow: true }
+    : { index: false, follow: false, nocache: true },
+  openGraph: {
+    type: "website",
+    locale: "he_IL",
+    siteName: "בחירות 2026",
+    title: "בחירות 2026 — הכנסת ה-26",
+    description: DESCRIPTION,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -1,5 +1,26 @@
 import { buildSite, loadSnapshot, type SiteData } from "@elections26/data";
 
+/**
+ * Public origin of the site, used for canonical URLs and the sitemap. Vercel supplies
+ * VERCEL_PROJECT_PRODUCTION_URL on every build; the fallback only matters locally.
+ */
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL
+  ? process.env.NEXT_PUBLIC_SITE_URL
+  : process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "http://localhost:3000";
+
+/**
+ * Whether the snapshot currently describes reality.
+ *
+ * Everything about public exposure hangs off this one field: the banner, robots, the
+ * sitemap and the noindex tag. Flipping `dataset` to "real" in the election override is
+ * the single switch, so there is no second place to forget.
+ */
+export function isRealData(): boolean {
+  return site().snapshot.meta.dataset === "real";
+}
+
 let cached: SiteData | undefined;
 
 /**
