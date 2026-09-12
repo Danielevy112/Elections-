@@ -83,7 +83,12 @@ async function main(): Promise<void> {
   } else {
     try {
       const probe = await probeCandidateLists(fetcher, electionKnesset);
-      if (probe.matched) {
+      if (probe.matched && !probe.matched.datastoreActive) {
+        console.warn(
+          `  data.gov.il: a Knesset ${electionKnesset} resource exists but is not queryable ` +
+            "through datastore_search — keeping the manual lists",
+        );
+      } else if (probe.matched) {
         const pull = await fetchCandidateLists(fetcher, probe.matched.id);
         datagovLists = pull.rows;
         console.log(

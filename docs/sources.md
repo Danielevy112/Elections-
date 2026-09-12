@@ -85,6 +85,22 @@ Two deliberate limits on the automatic half:
   say whether the Elections Committee approved the list. An ingested list is `submitted`
   unless a manual override carries a sourced status. Approval we cannot cite is not claimed.
 
+### How far behind the candidate-list dataset actually runs
+
+The first live probe recorded what `candidates-lists` holds: resources for the **19th to
+24th** Knesset, and nothing newer. The 24th Knesset's file was uploaded in **November 2024**,
+roughly three and a half years after that election, and the 25th Knesset — elected in
+November 2022 — is still absent.
+
+So the 26th-Knesset lists are very unlikely to appear on this portal before the election on
+27 October 2026. The cutover stays armed and costs nothing, but it should not be treated as
+the plan for getting real candidate data onto the site in time.
+
+Every resource is published as an XLSX upload that the portal then indexes; the source format
+is therefore not a useful signal, and `datastore_active` is what decides whether the rows can
+be read. The probe reports it, and an un-indexed resource is called out rather than counted
+as zero rows.
+
 ## Why the 26th-Knesset lists and the polls are entered by hand
 
 This is a deliberate design decision, not a gap:

@@ -4,6 +4,7 @@ import { mkdtempSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
+  describeProbe,
   fetchCandidateLists,
   findElectionResource,
   hebrewNumeral,
@@ -56,8 +57,8 @@ describe("resourceMatchesKnesset", () => {
 
 describe("findElectionResource", () => {
   const resources: CkanResource[] = [
-    { id: "r19", name: "רשימות המועמדים לכנסת ה-19", format: "CSV" },
-    { id: "r25", name: "רשימות המועמדים לכנסת ה-25", format: "CSV" },
+    { id: "r19", name: "רשימות המועמדים לכנסת ה-19", format: "CSV", datastoreActive: true },
+    { id: "r25", name: "רשימות המועמדים לכנסת ה-25", format: "CSV", datastoreActive: true },
   ];
 
   it("finds the right election", () => {
@@ -161,7 +162,9 @@ describe("probeCandidateLists", () => {
       [`${BASE}/package_show?id=candidates-lists`]: {
         success: true,
         result: {
-          resources: [{ id: "r25", name: "רשימות המועמדים לכנסת ה-25", format: "CSV" }],
+          resources: [
+            { id: "r25", name: "רשימות המועמדים לכנסת ה-25", format: "XLSX", datastore_active: true },
+          ],
         },
       },
     });
@@ -172,12 +175,34 @@ describe("probeCandidateLists", () => {
     expect(probe.resources).toHaveLength(1);
   });
 
+  it("reports a resource that exists but cannot be queried", async () => {
+    // An upload the portal has not indexed would otherwise report zero rows and look
+    // exactly like an empty list.
+    const fetcher = fixtureFetcher({
+      [`${BASE}/package_show?id=candidates-lists`]: {
+        success: true,
+        result: {
+          resources: [
+            { id: "r26", name: "רשימות המועמדים לכנסת ה-26", format: "XLSX", datastore_active: false },
+          ],
+        },
+      },
+    });
+
+    const probe = await probeCandidateLists(fetcher, 26);
+    expect(probe.matched?.datastoreActive).toBe(false);
+    expect(probe.rowCount).toBe(0);
+    expect(describeProbe(probe)).toContain("not queryable");
+  });
+
   it("reports coverage and a row count once the resource appears", async () => {
     const fetcher = fixtureFetcher({
       [`${BASE}/package_show?id=candidates-lists`]: {
         success: true,
         result: {
-          resources: [{ id: "r26", name: "רשימות המועמדים לכנסת ה-26", format: "CSV" }],
+          resources: [
+            { id: "r26", name: "רשימות המועמדים לכנסת ה-26", format: "XLSX", datastore_active: true },
+          ],
         },
       },
       [`${BASE}/datastore_search?resource_id=r26&limit=1000&offset=0`]: {

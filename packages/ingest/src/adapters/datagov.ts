@@ -10,6 +10,12 @@ export interface CkanResource {
   id: string;
   name: string;
   format: string;
+  /**
+   * Whether the rows are queryable through datastore_search. The portal publishes these
+   * as XLSX uploads that it then indexes, so the source format says nothing useful; this
+   * flag is what decides whether we can read the rows at all.
+   */
+  datastoreActive: boolean;
 }
 
 /**
@@ -46,6 +52,7 @@ export async function listResources(
       id: raw.id as string,
       name: typeof raw.name === "string" ? raw.name : "",
       format: typeof raw.format === "string" ? raw.format.toUpperCase() : "",
+      datastoreActive: raw.datastore_active === true,
     }));
 }
 
@@ -203,7 +210,12 @@ export async function probeCandidateLists(
 ): Promise<CandidateListProbe> {
   const resources = await listResources(fetcher, datasetId);
   const matched = findElectionResource(resources, knessetNumber);
-  const rowCount = matched ? (await fetchCandidateLists(fetcher, matched.id)).rows.length : 0;
+  // Only readable resources are worth counting; an un-indexed upload would otherwise
+  // report zero rows and look indistinguishable from an empty list.
+  const rowCount =
+    matched?.datastoreActive === true
+      ? (await fetchCandidateLists(fetcher, matched.id)).rows.length
+      : 0;
 
   return { datasetId, knessetNumber, resources, matched, rowCount };
 }
@@ -214,13 +226,25 @@ export function describeProbe(probe: CandidateListProbe): string {
   ];
   for (const resource of probe.resources) {
     const mark = resource.id === probe.matched?.id ? "->" : "  ";
-    lines.push(`  ${mark} ${resource.name || "(unnamed)"} [${resource.format}] ${resource.id}`);
+    const queryable = resource.datastoreActive ? "" : " (not queryable)";
+    lines.push(
+      `  ${mark} ${resource.name || "(unnamed)"} [${resource.format}]${queryable} ${resource.id}`,
+    );
   }
 
-  lines.push(
-    probe.matched
-      ? `  Knesset ${probe.knessetNumber} IS covered — ${probe.rowCount} candidate row(s) available.`
-      : `  Knesset ${probe.knessetNumber} is NOT covered yet; the manual lists remain in use.`,
-  );
+  if (!probe.matched) {
+    lines.push(
+      `  Knesset ${probe.knessetNumber} is NOT covered yet; the manual lists remain in use.`,
+    );
+  } else if (!probe.matched.datastoreActive) {
+    lines.push(
+      `  Knesset ${probe.knessetNumber} has a resource but it is not queryable through ` +
+        "datastore_search, so its rows cannot be read yet.",
+    );
+  } else {
+    lines.push(
+      `  Knesset ${probe.knessetNumber} IS covered — ${probe.rowCount} candidate row(s) available.`,
+    );
+  }
   return lines.join("\n");
 }
