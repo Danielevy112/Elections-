@@ -95,6 +95,23 @@ Production builds from `main` on Vercel; every PR gets a preview. The build comm
 `npm run validate && npm run build -w apps/web`, so **the deploy gate is the same gate as
 CI** — a snapshot that fails referential integrity cannot reach the public site.
 
+Everything Vercel needs is in `vercel.json`, so importing the repo at `vercel.com/new` needs
+no settings typed by hand. Leave **Root Directory** at the repo root; the values it should
+pick up are:
+
+| Setting | Value |
+| --- | --- |
+| Framework Preset | Other |
+| Install Command | `npm ci` |
+| Build Command | `npm run validate && npm run build -w apps/web` |
+| Output Directory | `apps/web/out` |
+
+The preset is deliberately **Other**, not Next.js. `apps/web/next.config.mjs` sets
+`output: "export"`, so the build produces a plain static site in `apps/web/out` rather than
+the `.next` directory the Next.js preset looks for. The site has no server-side behaviour at
+all — it reads committed snapshots at build time — so serving it as static files is an
+accurate description rather than a workaround.
+
 While `meta.dataset` is `example` the site is reachable by link but carries `noindex` and a
 `Disallow: /` robots.txt, so fictional candidate data cannot turn up in a search result.
 
