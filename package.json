@@ -15,7 +15,7 @@
     "dev": "npm run dev -w apps/web",
     "build": "npm run validate && npm run build -w apps/web",
     "add-poll": "tsx scripts/add-poll.ts",
-    "probe": "tsx packages/ingest/src/cli.ts --probe"
+    "probe": "tsx packages/ingest/src/cli.ts --probe --live"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

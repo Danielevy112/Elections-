@@ -28,14 +28,39 @@ data.gov.il outranks the manual layer for any party it covers, a party the feed 
 its manual list so a page never vanishes mid-election, and a party in the feed we have never
 seen gets a list created for it.
 
-### A note on field names
+### What the first live sync established
 
-The Knesset service's field casing is inconsistent between entity sets, and it could not
-be reached from the environment this code was written in. Every read therefore goes
-through `pick()` with the plausible spellings, and a `FieldReport` prints which alias
-upstream actually used and which fields never arrived. **The first live sync is the
-verification step** — run it with `workflow_dispatch` and read that report before trusting
-the output.
+The adapters were written blind, against a host the build environment cannot reach. The
+first scheduled runs settled the open questions, and the responses they recorded are now the
+offline corpus in `data/fixtures/`. The findings, because they are not obvious:
+
+- **Pages are capped at 100 rows**, whatever `$top` asks for, and the service continues with
+  `odata.nextLink` carrying a `$skiptoken` — a continuation cursor, not an offset. Paging by
+  `$skip` and stopping on a short page, as the first version did, silently truncated every
+  entity set to its first 100 rows. `odataCollect` now follows the links.
+- **`KNS_Bill` has no status text.** It carries a numeric `StatusID`; the words live in the
+  `KNS_Status` lookup. `SubTypeDesc` — which the first version read as a status — is the
+  bill's *type* (`ממשלתית` / `פרטית`). When the lookup is unavailable a bill's status stays
+  `unknown`, and unknown is never counted as a passed law.
+- **`KNS_Person` has no image path.** Candidate photos need another source; none is claimed
+  meanwhile, and the candidate page renders correctly without one.
+- **`KNS_PersonToPosition` did not carry committee data** in the sampled rows (`DutyDesc` and
+  `CommitteeID` were empty), so committee memberships do not come from it. They are left
+  empty rather than inferred.
+- `KNS_BillInitiator` marks a real initiator with `IsInitiator`; `Ordinal` is the position in
+  the signature list, so lead authorship is `Ordinal === 1`, not `IsInitiator` alone.
+
+Every read still goes through `pick()` with a `FieldReport` that names the alias upstream
+actually used and the fields that never arrived, so the next surprise is reported rather than
+absorbed.
+
+### Fetching only what is needed
+
+`KNS_Bill` and `KNS_BillInitiator` run to hundreds of thousands of rows, which at 100 rows a
+request is thousands of calls. Instead of pulling them whole and discarding almost all of it,
+the join is pushed to the service: initiators are fetched filtered to the Knesset persons the
+candidate lists resolve to, then bills are fetched filtered to the ids those rows name
+(`idFilterChunks` in `packages/ingest/src/odata.ts` builds the chunked `$filter` clauses).
 
 ## The cutover to official lists
 
