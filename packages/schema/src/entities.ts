@@ -126,6 +126,9 @@ export const BillStatus = z.enum([
 ]);
 export type BillStatus = z.infer<typeof BillStatus>;
 
+export const BillType = z.enum(["government", "private", "committee", "unknown"]);
+export type BillType = z.infer<typeof BillType>;
+
 export const Bill = z.object({
   id: Id,
   knessetBillId: z.number().int().positive().optional(),
@@ -134,6 +137,12 @@ export const Bill = z.object({
   status: BillStatus.default("unknown"),
   /** Raw upstream status text, kept so a mis-mapped status is always traceable. */
   statusRawHe: z.string().optional(),
+  /**
+   * Whether this is a government bill or a private member's bill. The distinction matters
+   * for reading an MK's record: a private bill is their own initiative, a government one
+   * is the cabinet's that they signed.
+   */
+  billType: BillType.default("unknown"),
   lastUpdatedAt: IsoDate.optional(),
   url: Url.optional(),
 });

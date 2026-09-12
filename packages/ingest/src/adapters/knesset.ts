@@ -1,6 +1,7 @@
 import type { Fetcher } from "../http";
 import { parseODataDate } from "../http";
-import { FieldReport, odataCollect, pickInt, pickString, type Row } from "../odata";
+import { FieldReport, idFilterChunks, odataCollect, pickInt, pickString, type Row } from "../odata";
+import { normalizeHebrewName } from "../match";
 
 /**
  * Adapter for the Knesset's OData service — the source of record for everything that
@@ -38,13 +39,24 @@ export interface KnessetBill {
   knessetBillId: number;
   nameHe: string;
   knessetNumber: number | undefined;
+  /** KNS_Bill.StatusID — a numeric code; the text lives in the KNS_Status lookup. */
+  statusId: number | undefined;
+  /** Resolved from KNS_Status when that lookup is available. */
   statusRawHe: string | undefined;
+  /** "ממשלתית" / "פרטית" — whether the bill is a government or private member's bill. */
+  billTypeHe: string | undefined;
 }
 
 export interface KnessetBillInitiator {
   knessetBillId: number;
   knessetPersonId: number;
   isPrimary: boolean;
+}
+
+/** KNS_Status lookup row: the text behind KNS_Bill.StatusID. */
+export interface KnessetStatus {
+  statusId: number;
+  descHe: string;
 }
 
 export interface KnessetPull {
@@ -66,7 +78,19 @@ function readGender(row: Row, report: FieldReport): "male" | "female" | "unknown
 
 export async function pullKnesset(
   fetcher: Fetcher,
-  options: { knessetNumbers: number[]; billLimit?: number },
+  options: {
+    knessetNumbers: number[];
+    billLimit?: number;
+    /**
+     * Names of the people whose legislative record we actually need — the candidates on
+     * the lists. Bills and initiators are fetched by filtering server-side on the Knesset
+     * persons these resolve to, instead of pulling those entity sets whole.
+     *
+     * Matching here only narrows a query, so a loose hit costs a few extra rows and
+     * nothing else; the authoritative person matching still happens in build.ts.
+     */
+    candidateNames?: string[];
+  },
 ): Promise<KnessetPull> {
   const report = new FieldReport();
   const knessetFilter = options.knessetNumbers
@@ -124,45 +148,106 @@ export async function pullKnesset(
     });
   }
 
-  const billRows = await odataCollect(fetcher, "KNS_Bill", {
-    filter: knessetFilter,
-    hardLimit: options.billLimit ?? 40_000,
-  });
-  const bills: KnessetBill[] = [];
-  const billIds = new Set<number>();
-  for (const row of billRows) {
-    const id = pickInt(row, ["BillID", "billID", "BillId"], report);
-    const nameHe = pickString(row, ["Name", "BillName", "name"], report);
-    if (id === undefined || !nameHe) continue;
-    billIds.add(id);
-    bills.push({
-      knessetBillId: id,
-      nameHe,
-      knessetNumber: pickInt(row, ["KnessetNum", "knessetNum"], report),
-      statusRawHe: pickString(row, ["StatusDesc", "SubTypeDesc", "StatusID"], report),
+  // Bills and initiators are the two entity sets that run to hundreds of thousands of
+  // rows. Rather than pull them whole and discard almost everything, push the join to the
+  // service: initiators for the people we track, then only the bills those rows name.
+  const wantedNames = new Set((options.candidateNames ?? []).map(normalizeHebrewName));
+  const tracked = persons
+    .filter((person) => wantedNames.has(normalizeHebrewName(person.nameHe)))
+    .map((person) => person.knessetPersonId);
+
+  if (wantedNames.size > 0 && tracked.length === 0) {
+    // Worth saying out loud: it means no candidate on any list has ever sat in the
+    // Knesset, which is possible with example data and very unlikely with real lists.
+    report.miss("__matched_candidates__");
+  }
+  const billInitiators: KnessetBillInitiator[] = [];
+  const wantedBillIds = new Set<number>();
+
+  for (const filter of idFilterChunks("PersonID", tracked)) {
+    const rows = await odataCollect(fetcher, "KNS_BillInitiator", {
+      filter,
+      hardLimit: 50_000,
     });
+    for (const row of rows) {
+      const billId = pickInt(row, ["BillID", "billID", "BillId"], report);
+      const personId = pickInt(row, ["PersonID", "personID", "PersonId"], report);
+      if (billId === undefined || personId === undefined) continue;
+
+      // IsInitiator marks a real initiator rather than another kind of signatory;
+      // Ordinal is the position in the signature list, so first place is the lead.
+      const isInitiator = row.IsInitiator;
+      if (isInitiator === false) continue;
+      report.hit("IsInitiator", "IsInitiator");
+
+      wantedBillIds.add(billId);
+      billInitiators.push({
+        knessetBillId: billId,
+        knessetPersonId: personId,
+        isPrimary: pickInt(row, ["Ordinal", "ordinal"], report) === 1,
+      });
+    }
   }
 
-  const initiatorRows = await odataCollect(fetcher, "KNS_BillInitiator", {
-    hardLimit: 200_000,
-    pageSize: 5_000,
-  });
-  const billInitiators: KnessetBillInitiator[] = [];
-  for (const row of initiatorRows) {
-    const billId = pickInt(row, ["BillID", "billID", "BillId"], report);
-    const personId = pickInt(row, ["PersonID", "personID", "PersonId"], report);
-    if (billId === undefined || personId === undefined) continue;
-    // Only keep initiators of bills we actually pulled, or the join explodes.
-    if (!billIds.has(billId)) continue;
-    const ordinal = pickInt(row, ["Ordinal", "IsInitiator", "ordinal"], report);
-    billInitiators.push({
-      knessetBillId: billId,
-      knessetPersonId: personId,
-      isPrimary: ordinal === 1,
-    });
+  const bills: KnessetBill[] = [];
+  const billLimit = options.billLimit ?? 40_000;
+  for (const filter of idFilterChunks("BillID", [...wantedBillIds])) {
+    const rows = await odataCollect(fetcher, "KNS_Bill", { filter, hardLimit: billLimit });
+    for (const row of rows) {
+      const id = pickInt(row, ["BillID", "billID", "BillId"], report);
+      const nameHe = pickString(row, ["Name", "BillName", "name"], report);
+      if (id === undefined || !nameHe) continue;
+      bills.push({
+        knessetBillId: id,
+        nameHe,
+        knessetNumber: pickInt(row, ["KnessetNum", "knessetNum"], report),
+        statusId: pickInt(row, ["StatusID", "statusID"], report),
+        statusRawHe: undefined,
+        billTypeHe: pickString(row, ["SubTypeDesc", "subTypeDesc"], report),
+      });
+    }
+  }
+
+  // Resolve the numeric StatusID against the lookup table. Without this a bill's status is
+  // unknown, which is the correct answer: KNS_Bill carries no status text of its own, and
+  // an earlier version of this adapter read SubTypeDesc ("ממשלתית"/"פרטית") as though it
+  // were a status, turning a bill's type into a confident claim about it becoming law.
+  const statuses = await pullStatuses(fetcher, report);
+  for (const bill of bills) {
+    if (bill.statusId !== undefined) bill.statusRawHe = statuses.get(bill.statusId);
   }
 
   return { persons, positions, committees, bills, billInitiators, report };
+}
+
+/** Map KNS_Bill.SubTypeDesc ("ממשלתית" / "פרטית" / "ועדה") onto our enum. */
+export function mapBillType(raw: string | undefined): string {
+  if (!raw) return "unknown";
+  if (/ממשלתית/.test(raw)) return "government";
+  if (/פרטית/.test(raw)) return "private";
+  if (/ועדה|ועדת/.test(raw)) return "committee";
+  return "unknown";
+}
+
+/**
+ * Read the KNS_Status lookup. Failure is not fatal: bills then keep a numeric statusId and
+ * a status of `unknown`, which is honest, where guessing from another field is not.
+ */
+export async function pullStatuses(
+  fetcher: Fetcher,
+  report: FieldReport,
+): Promise<Map<number, string>> {
+  const statuses = new Map<number, string>();
+  try {
+    for (const row of await odataCollect(fetcher, "KNS_Status", { hardLimit: 5_000 })) {
+      const id = pickInt(row, ["StatusID", "statusID"], report);
+      const desc = pickString(row, ["Desc", "StatusDesc", "Name", "TypeDesc"], report);
+      if (id !== undefined && desc) statuses.set(id, desc);
+    }
+  } catch {
+    // Entity set absent or unreachable — leave the map empty.
+  }
+  return statuses;
 }
 
 /**

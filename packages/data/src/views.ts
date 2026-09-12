@@ -30,6 +30,13 @@ export interface BillStats {
   initiated: number;
   coInitiated: number;
   passed: number;
+  /**
+   * Private member's bills the person signed. This is the figure that actually reflects an
+   * MK's own initiative; a government bill they co-signed is the cabinet's.
+   */
+  privateBills: number;
+  /** Bills whose status the Knesset lookup did not resolve — never counted as passed. */
+  statusUnknown: number;
 }
 
 export interface CandidateOnList {
@@ -173,6 +180,8 @@ function buildCandidateViews(
       initiated: rows.filter((r) => r.initiation.isPrimary).length,
       coInitiated: rows.filter((r) => !r.initiation.isPrimary).length,
       passed: rows.filter((r) => r.bill.status === "passed").length,
+      privateBills: rows.filter((r) => r.bill.billType === "private").length,
+      statusUnknown: rows.filter((r) => r.bill.status === "unknown").length,
     });
 
     const knessetNumbers = [

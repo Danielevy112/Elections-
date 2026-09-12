@@ -107,7 +107,10 @@ async function main(): Promise<void> {
     console.log("  knesset: skipped (--skip-knesset)");
   } else {
     try {
-      knesset = await pullKnesset(fetcher, { knessetNumbers: options.knessetNumbers });
+      knesset = await pullKnesset(fetcher, {
+        knessetNumbers: options.knessetNumbers,
+        candidateNames: candidateNames(manual, datagovLists),
+      });
       console.log(
         `  knesset: ${knesset.persons.length} persons, ${knesset.positions.length} positions, ` +
           `${knesset.bills.length} bills`,
@@ -146,6 +149,17 @@ async function main(): Promise<void> {
       console.warn(`    - ${row.name} (${row.partyKey} #${row.position}) — ${row.reason}`);
     }
   }
+}
+
+/** Every name that appears on a list, from whichever source is currently authoritative. */
+function candidateNames(
+  manual: ReturnType<typeof loadManualBundle>,
+  datagovLists: CandidateListRow[] | undefined,
+): string[] {
+  if (datagovLists && datagovLists.length > 0) {
+    return datagovLists.map((row) => row.candidateName);
+  }
+  return manual.lists.flatMap((list) => list.candidates.map((c) => c.nameHe));
 }
 
 function firstLine(error: unknown): string {

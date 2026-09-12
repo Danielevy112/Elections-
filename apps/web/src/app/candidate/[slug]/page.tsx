@@ -62,8 +62,23 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
       <section className="grid gap-3 sm:grid-cols-4">
         <Stat label="הצעות חוק כיוזם" value={billStats.initiated} />
         <Stat label="כיוזם משותף" value={billStats.coInitiated} />
-        <Stat label="הגיעו לחקיקה" value={billStats.passed} />
+        <Stat
+          label="הצעות חוק פרטיות"
+          value={billStats.privateBills}
+          hint="יוזמה עצמאית, להבדיל מהצעה ממשלתית"
+        />
         <Stat label="כהונות בכנסת" value={memberships.length} />
+      </section>
+
+      <section className="grid gap-3 sm:grid-cols-2">
+        <Stat label="הגיעו לחקיקה" value={billStats.passed} />
+        {billStats.statusUnknown > 0 ? (
+          <Stat
+            label="סטטוס לא ידוע"
+            value={billStats.statusUnknown}
+            hint="מאגר הכנסת לא סיפק סטטוס להצעות אלה; הן אינן נספרות כחקיקה"
+          />
+        ) : null}
       </section>
 
       {memberships.length > 0 ? (

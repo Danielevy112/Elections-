@@ -17,10 +17,10 @@ import type {
   Source,
   SourceKind,
 } from "@elections26/schema";
-import { BillStatus } from "@elections26/schema";
+import { BillStatus, BillType } from "@elections26/schema";
 import type { ManualBundle, ManualList, ManualParty } from "./adapters/manual";
 import type { CandidateListRow } from "./adapters/datagov";
-import { mapBillStatus, type KnessetPull } from "./adapters/knesset";
+import { mapBillStatus, mapBillType, type KnessetPull } from "./adapters/knesset";
 import { matchPerson, normalizeHebrewName, slugifyHebrew, uniqueSlug } from "./match";
 
 /** Deduplicates sources by URL (or title, for manual entries) and hands back stable ids. */
@@ -528,6 +528,7 @@ function buildParliamentary(input: ParliamentaryInput): {
         ...(bill.knessetNumber ? { knessetNumber: bill.knessetNumber } : {}),
         status: BillStatus.parse(mapBillStatus(bill.statusRawHe)),
         ...(bill.statusRawHe ? { statusRawHe: bill.statusRawHe } : {}),
+        billType: BillType.parse(mapBillType(bill.billTypeHe)),
       });
     }
 
@@ -603,6 +604,7 @@ function buildParliamentary(input: ParliamentaryInput): {
     ...(b.knessetNumber ? { knessetNumber: b.knessetNumber } : {}),
     status: BillStatus.parse(BillStatus.safeParse(b.status).success ? b.status : mapBillStatus(b.status)),
     statusRawHe: b.status,
+    billType: "private",
     ...(b.url ? { url: b.url } : {}),
   }));
   const billKeys = new Set(bills.map((b) => b.id));
