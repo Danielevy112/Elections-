@@ -16,7 +16,7 @@
     "build": "npm run validate && npm run build -w apps/web",
     "add-poll": "tsx scripts/add-poll.ts",
     "probe": "tsx packages/ingest/src/cli.ts --probe --live",
-    "vercel-build": "npx tsx scripts/validate.ts && npm run build -w apps/web && rm -rf out && cp -r apps/web/out out"
+    "vercel-build": "npx tsx scripts/validate.ts && npm run build -w apps/web"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

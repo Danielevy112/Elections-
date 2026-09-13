@@ -101,17 +101,20 @@ pick up are:
 
 | Setting | Value |
 | --- | --- |
-| Framework Preset | Other |
+| Framework Preset | Next.js |
 | Install Command | `npm ci` |
-| Build Command | `npm run vercel-build` |
-| Output Directory | `apps/web/out` |
-| Root Directory | repo root (`./`) |
+| Build Command | auto-detected (`vercel-build`) |
+| Output Directory | auto-detected |
 
-**Root Directory matters.** Vercel's import suggested `apps/web`, and the build then ran with
-that as its working directory, where the root `package.json` and `scripts/` are not visible.
-Both the root and `apps/web` therefore define a `vercel-build` script that validates and then
-builds, so the command succeeds from either directory. `outputDirectory` is still interpreted
-relative to the Root Directory, so that one setting does need to be the repo root.
+The app is built by Vercel's Next.js preset, not as a static export. Every page is still
+prerendered at build time and the data layer is still read from committed snapshots during the
+build — nothing is dynamic — but Vercel handles the output itself rather than a static export
+having to be matched against an Output Directory setting.
+
+Both the root `package.json` and `apps/web/package.json` define `vercel-build`, which runs
+`validate` before `next build`. Vercel runs whichever one it resolves, so validation happens no
+matter which working directory the build starts from, and a settings change cannot silently
+skip it.
 
 The preset is deliberately **Other**, not Next.js. `apps/web/next.config.mjs` sets
 `output: "export"`, so the build produces a plain static site in `apps/web/out` rather than
