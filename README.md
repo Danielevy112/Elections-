@@ -103,15 +103,15 @@ pick up are:
 | --- | --- |
 | Framework Preset | Other |
 | Install Command | `npm ci` |
-| Build Command | `npx tsx scripts/validate.ts && npm run build -w apps/web` |
+| Build Command | `npm run vercel-build` |
 | Output Directory | `apps/web/out` |
+| Root Directory | repo root (`./`) |
 
-The build command calls `tsx` directly rather than going through the root `validate` npm
-script. npm 12 expands `npm run <script>` across every workspace, and `apps/web` has no
-`validate` script of its own, so that workspace's miss failed the whole command. A binary
-invocation has no script name for npm to resolve. `engines.node` is pinned to `22.x` for the
-same reason: CI and local development both run Node 22, and a deployment should not be the
-only place this code meets a different package manager.
+**Root Directory matters.** Vercel's import suggested `apps/web`, and the build then ran with
+that as its working directory, where the root `package.json` and `scripts/` are not visible.
+Both the root and `apps/web` therefore define a `vercel-build` script that validates and then
+builds, so the command succeeds from either directory. `outputDirectory` is still interpreted
+relative to the Root Directory, so that one setting does need to be the repo root.
 
 The preset is deliberately **Other**, not Next.js. `apps/web/next.config.mjs` sets
 `output: "export"`, so the build produces a plain static site in `apps/web/out` rather than
