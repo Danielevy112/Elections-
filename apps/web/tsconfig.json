@@ -15,6 +15,9 @@
     "incremental": true,
     "skipLibCheck": true,
     "plugins": [{ "name": "next" }],
+    // baseUrl is required alongside paths: without it the "@/" alias resolves against the
+    // working directory rather than this file, which built locally but not on Vercel.
+    "baseUrl": ".",
     "paths": { "@/*": ["./src/*"] }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
