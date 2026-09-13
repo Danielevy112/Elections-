@@ -103,8 +103,15 @@ pick up are:
 | --- | --- |
 | Framework Preset | Other |
 | Install Command | `npm ci` |
-| Build Command | `npm run validate && npm run build -w apps/web` |
+| Build Command | `npx tsx scripts/validate.ts && npm run build -w apps/web` |
 | Output Directory | `apps/web/out` |
+
+The build command calls `tsx` directly rather than going through the root `validate` npm
+script. npm 12 expands `npm run <script>` across every workspace, and `apps/web` has no
+`validate` script of its own, so that workspace's miss failed the whole command. A binary
+invocation has no script name for npm to resolve. `engines.node` is pinned to `22.x` for the
+same reason: CI and local development both run Node 22, and a deployment should not be the
+only place this code meets a different package manager.
 
 The preset is deliberately **Other**, not Next.js. `apps/web/next.config.mjs` sets
 `output: "export"`, so the build produces a plain static site in `apps/web/out` rather than
