@@ -7,7 +7,7 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "build": "next build",
-    "vercel-build": "tsx ../../scripts/validate.ts && next build && rm -rf ../../out && cp -r out ../../out"
+    "vercel-build": "tsx ../../scripts/validate.ts && next build && echo \"--- DIAG cwd=$(pwd)\" && echo \"--- DIAG ls .\" && ls -1 . && echo \"--- DIAG ls ../..\" && ls -1 ../.. && rm -rf ../../out && cp -r out ../../out && echo \"--- DIAG copied; repo-root out:\" && ls -1 ../../out | head -5"
   },
   "dependencies": {
     "@elections26/data": "*",
