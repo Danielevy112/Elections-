@@ -139,16 +139,27 @@ export function validateSnapshot(snapshot: Snapshot): Problem[] {
   }
 
   // ---- example data must never be published as real -------------------------------
-  if (snapshot.meta.dataset === "real") {
+  if (snapshot.meta.dataset !== "example") {
     const exampleSources = snapshot.sources.filter(
       (s) => s.kind === "manual" && /דוגמה|example|placeholder/i.test(s.title),
     );
     for (const source of exampleSources) {
-      fail("example-data-in-real-snapshot", `source ${source.id} ("${source.title}") is example data but the snapshot is marked real`);
+      fail("example-data-in-real-snapshot", `source ${source.id} ("${source.title}") is example data but the snapshot is marked ${snapshot.meta.dataset}`);
     }
     const unsourced = snapshot.sources.filter((s) => !s.url && s.kind !== "manual");
     for (const source of unsourced) {
-      fail("unretrievable-source", `source ${source.id} ("${source.title}") has no URL in a real snapshot`);
+      fail("unretrievable-source", `source ${source.id} ("${source.title}") has no URL in a ${snapshot.meta.dataset} snapshot`);
+    }
+  }
+  // A final snapshot cannot rest on press copies of the lists: once "real", list positions
+  // and statuses must come from the Elections Committee (or its data.gov.il feed).
+  if (snapshot.meta.dataset === "real") {
+    const pressSources = new Set(snapshot.sources.filter((s) => s.kind === "press").map((s) => s.id));
+    for (const claim of snapshot.claims) {
+      if (claim.subjectType === "candidacy" && claim.field === "position" && pressSources.has(claim.sourceId)) {
+        fail("press-sourced-list-in-real-snapshot", `candidacy ${claim.subjectId} position rests on a press source; keep the dataset "preliminary" until official lists are loaded`);
+        break;
+      }
     }
   }
 

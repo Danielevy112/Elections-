@@ -128,10 +128,11 @@ export function matchPerson(
   const override = overrides[rawName] ?? overrides[normalized];
   if (override) return { kind: "matched", personId: override, via: "override" };
 
-  const hits = targets.filter((t) => t.nameNormalized === normalized);
-  if (hits.length === 1) return { kind: "matched", personId: hits[0]!.id, via: "exact" };
+  // One person can be a target under several name forms; count people, not forms.
+  const hits = [...new Set(targets.filter((t) => t.nameNormalized === normalized).map((t) => t.id))];
+  if (hits.length === 1) return { kind: "matched", personId: hits[0]!, via: "exact" };
   if (hits.length > 1) {
-    return { kind: "unmatched", reason: "ambiguous", candidates: hits.map((h) => h.id) };
+    return { kind: "unmatched", reason: "ambiguous", candidates: hits };
   }
   return { kind: "unmatched", reason: "no-candidate", candidates: [] };
 }

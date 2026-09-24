@@ -29,7 +29,13 @@ export const SnapshotMeta = z.object({
    * present an `example` snapshot without a standing warning, and `validate.ts` refuses
    * to let example-sourced rows into a `real` one.
    */
-  dataset: z.enum(["example", "real"]),
+  /**
+   * `preliminary` sits between the two: real filings, but taken from a source that is not
+   * yet the final official record (e.g. a press publication of the filed lists before the
+   * Central Elections Committee approves them). It is held to every rule of `real` except
+   * that the site keeps a standing banner and stays out of search indexes.
+   */
+  dataset: z.enum(["example", "preliminary", "real"]),
   counts: z.record(z.string(), z.number().int().min(0)),
 });
 export type SnapshotMeta = z.infer<typeof SnapshotMeta>;

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { SITE_URL, isRealData, site, formatDateTime } from "@/lib/site";
 
 const DESCRIPTION =
@@ -29,46 +30,51 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const election = snapshot.elections[0];
 
   return (
-    <html lang="he" dir="rtl">
-      <body className="min-h-screen font-sans antialiased">
+    <html lang="he" dir="rtl" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{if(localStorage.getItem("theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}`,
+          }}
+        />
+      </head>
+      <body className="min-h-screen bg-ink-page font-sans text-fg antialiased">
         {snapshot.meta.dataset === "example" ? (
-          <div className="bg-rose-700 px-4 py-2 text-center text-sm font-medium text-white">
+          <div className="bg-rose-700 px-4 py-2 text-center text-xs font-medium text-fg">
             נתוני דוגמה בלבד — השמות, הרשימות והסקרים באתר זה בדיוניים ואינם נתוני אמת.
           </div>
         ) : null}
+        {snapshot.meta.dataset === "preliminary" ? (
+          <div className="bg-[#3a2a06] px-4 py-2 text-center text-[11px] leading-snug text-amber-200">
+            נתונים מקדימים: הרשימות כפי שהוגשו, מתוך פרסום של ערוץ כנסת, לפני האישור הסופי של
+            ועדת הבחירות המרכזית (27.9). עשויים להשתנות.
+          </div>
+        ) : null}
 
-        <header className="border-b border-slate-200 bg-white">
-          <div className="mx-auto flex max-w-5xl flex-wrap items-baseline justify-between gap-2 px-4 py-4">
-            <Link href="/" className="text-lg font-bold text-slate-900">
+        <header className="sticky top-0 z-20 border-b border-ink-line bg-ink-page/95 backdrop-blur">
+          <div className="mx-auto flex max-w-3xl items-center justify-between gap-2 px-4 py-3">
+            <Link href="/" className="text-base font-bold tracking-tight">
               בחירות 2026
             </Link>
-            <div className="text-xs text-slate-500">
+            <div className="flex items-center gap-3 text-[11px] text-ink-muted">
               {election ? (
                 <>
-                  הבחירות לכנסת ה-<span className="ltr-nums">{election.knessetNumber}</span> ·{" "}
-                  {new Date(`${election.electionDate}T12:00:00Z`).toLocaleDateString("he-IL", {
-                    day: "numeric",
-                    month: "long",
-                    year: "numeric",
-                  })}
-                  {" · "}
+                  הכנסת ה-<span className="ltr-nums">{election.knessetNumber}</span> ·{" "}
+                  {new Date(`${election.electionDate}T12:00:00Z`).toLocaleDateString("he-IL", { day: "numeric", month: "numeric", year: "numeric" })}
                 </>
               ) : null}
-              עודכן: {formatDateTime(snapshot.meta.generatedAt)}
+              <ThemeToggle />
             </div>
           </div>
         </header>
 
-        <main className="mx-auto max-w-5xl px-4 py-6">{children}</main>
+        <main className="mx-auto max-w-3xl px-4 py-4">{children}</main>
 
-        <footer className="mx-auto max-w-5xl px-4 py-10 text-xs leading-relaxed text-slate-500">
+        <footer className="mx-auto max-w-3xl px-4 pb-10 pt-4 text-[11px] leading-relaxed text-ink-dim">
           <p>
-            נתוני הכנסת מגיעים ממאגר המידע הפרלמנטרי הרשמי; סטטוס הרשימות מוועדת הבחירות
-            המרכזית. לכל נתון באתר נשמר המקור שממנו הגיע.
-          </p>
-          <p className="mt-1">
-            שיטת החישוב של ממוצע הסקרים ושל חלוקת המנדטים מתועדת במלואה במסמך המתודולוגיה
-            שבמאגר הקוד.
+            נתוני פעילות מהמאגר הפרלמנטרי של הכנסת. תמונות מועמדים רק מפרסומי המפלגות עצמן, עם
+            קרדיט וקישור למקור; תוסר כל תמונה לבקשת המפלגה או המועמד. לכל נתון באתר יש קישור
+            למקור שלו. עודכן: {formatDateTime(snapshot.meta.generatedAt)}
           </p>
         </footer>
       </body>
