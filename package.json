@@ -16,7 +16,7 @@
     "build": "npm run validate && npm run build -w apps/web",
     "add-poll": "tsx scripts/add-poll.ts",
     "probe": "tsx packages/ingest/src/cli.ts --probe --live",
-    "vercel-build": "npx tsx scripts/validate.ts && npx tsx scripts/publish-db.ts --preview-only && npm run build -w apps/web",
+    "vercel-build": "npx tsx scripts/validate.ts && npx tsx scripts/publish-db.ts --from-build && npm run build -w apps/web",
     "publish-db": "tsx scripts/publish-db.ts"
   },
   "devDependencies": {
