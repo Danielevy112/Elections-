@@ -1,4 +1,4 @@
-import { writeFileSync } from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { Fetcher, type FetchMode } from "./http";
@@ -115,6 +115,7 @@ async function main(): Promise<void> {
       knesset = await pullKnesset(fetcher, {
         knessetNumbers: options.knessetNumbers,
         candidateNames: candidateNames(manual, datagovLists),
+        linkedPersonIds: manual.knessetLinks.map((link) => link.knessetPersonId),
       });
       console.log(
         `  knesset: ${knesset.persons.length} persons, ${knesset.positions.length} positions, ` +
@@ -130,7 +131,7 @@ async function main(): Promise<void> {
     }
   }
 
-  const { snapshot, unmatched } = buildSnapshot({
+  const { snapshot, unmatched, quarantined } = buildSnapshot({
     manual,
     knesset,
     datagovLists,
@@ -140,6 +141,12 @@ async function main(): Promise<void> {
 
   writeSnapshot(snapshotDir, snapshot);
   writeFileSync(join(ROOT, "data", "unmatched.json"), stableJson(unmatched), "utf8");
+  mkdirSync(join(ROOT, "data", "review"), { recursive: true });
+  writeFileSync(join(ROOT, "data", "review", "knesset_links_quarantine.json"), stableJson(quarantined), "utf8");
+  if (quarantined.length > 0) {
+    console.warn(`\n  ${quarantined.length} name-matched Knesset link(s) held back for review (older MK, no second source).`);
+    console.warn("  See data/review/knesset_links_quarantine.json; confirm one by adding it to knesset_links.json with a reason.");
+  }
 
   console.log("  wrote:");
   for (const [name, count] of Object.entries(snapshot.meta.counts)) {

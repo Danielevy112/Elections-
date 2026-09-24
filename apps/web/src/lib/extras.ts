@@ -1,4 +1,6 @@
 
+import { verifyKnessetLink } from "@elections26/schema";
+
 /**
  * Side data that is not (yet) part of the snapshot schema: Knesset records fetched
  * straight from the Knesset OData service, and party-published photos. Both are keyed
@@ -54,6 +56,8 @@ let current: ExtrasData | undefined;
 let profiles: Record<string, KnessetProfile> = {};
 let photos = new Map<string, PartyPhoto>();
 let bios = new Map<string, PartyBio>();
+/** Sourced bio page per filed name: independent evidence for an older Knesset link. */
+let bioPageByName = new Map<string, string>();
 
 export function setExtras(data: ExtrasData): void {
   if (current === data) return;
@@ -61,13 +65,27 @@ export function setExtras(data: ExtrasData): void {
   profiles = data.knessetProfiles;
   photos = new Map(data.photos.map((p) => [`${p.partyKey}:${p.position}`, p]));
   bios = new Map(data.bios.map((b) => [`${b.partyKey}:${b.position}`, b]));
+  bioPageByName = new Map(data.bios.map((b) => [norm(b.nameHe), b.sourcePage]));
 }
 
 const norm = (s: string) =>
   s.replace(/״/g, '"').replace(/׳/g, "'").replace(/–/g, "-").replace(/\s+/g, " ").trim();
 
+/**
+ * The candidate's Knesset record, only when the link passes verifyKnessetLink: recent MKs
+ * on an exact name match, older ones only with a reviewed manual link or a sourced bio.
+ * A quarantined link returns undefined, so the page shows no record rather than someone
+ * else's.
+ */
 export function knessetProfile(filedName: string): KnessetProfile | undefined {
-  return profiles[norm(filedName)];
+  const key = norm(filedName);
+  const profile = profiles[key];
+  if (!profile) return undefined;
+  const verdict = verifyKnessetLink(Math.max(0, ...profile.knessetTerms) || undefined, {
+    manualReason: profile.linkReason,
+    bioSourcePage: bioPageByName.get(key),
+  });
+  return verdict.accepted ? profile : undefined;
 }
 
 export function partyPhoto(partyId: string | undefined, position: number | undefined): PartyPhoto | undefined {

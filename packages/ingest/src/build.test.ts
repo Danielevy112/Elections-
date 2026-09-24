@@ -33,6 +33,9 @@ const manual: ManualBundle = {
   ],
   polls: [],
   personLinks: {},
+  knessetLinks: [],
+  bioPages: new Map(),
+  knessetTermsById: new Map(),
   parliamentary: undefined,
 };
 

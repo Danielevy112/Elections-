@@ -12,6 +12,9 @@ export type FetchMode = "live" | "offline";
  * government hosts, and it doubles as the regression corpus: once a real sync records a
  * response, its parsing is testable forever without hitting the source again.
  */
+/** An offline replay asked for a URL no live run has recorded yet. Never thrown live. */
+export class MissingFixtureError extends Error {}
+
 export class Fetcher {
   readonly mode: FetchMode;
   private readonly fixtureDir: string;
@@ -45,7 +48,7 @@ export class Fetcher {
 
     if (this.mode === "offline") {
       if (!existsSync(path)) {
-        throw new Error(
+        throw new MissingFixtureError(
           `No fixture for ${url}\n` +
             `  expected: ${path}\n` +
             `  Record it with a live run (npm run ingest -- --live) from a network that ` +
