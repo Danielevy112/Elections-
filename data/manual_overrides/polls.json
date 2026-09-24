@@ -1,175 +1,145 @@
 [
   {
-    "key": "midgam-2026-09-08",
-    "pollster": "מדגם",
+    "key": "midgam-n12-2026-09-22",
+    "pollster": "מדגם ייעוץ ומחקר",
     "publisher": "חדשות 12",
-    "publishedAt": "2026-09-08",
-    "sampleSize": 751,
-    "sourceUrl": "https://example.org/polls/midgam/2026-09-08",
+    "publishedAt": "2026-09-22",
+    "fieldworkStart": "2026-09-22",
+    "fieldworkEnd": "2026-09-22",
+    "sampleSize": 501,
+    "marginOfError": 4.4,
+    "sourceUrl": "https://www.mako.co.il/news-israel-elections/2026/Article-fad59e819c9c0a1027.htm",
     "results": [
       {
-        "partyKey": "ofek",
-        "mandates": 25,
+        "partyKey": "k26-02",
+        "mandates": 23,
         "belowThreshold": false
       },
       {
-        "partyKey": "yachad-kadima",
+        "partyKey": "k26-29",
         "mandates": 20,
         "belowThreshold": false
       },
       {
-        "partyKey": "haatzama",
-        "mandates": 12,
-        "belowThreshold": false
-      },
-      {
-        "partyKey": "kol-haam",
-        "mandates": 6,
-        "belowThreshold": false
-      },
-      {
-        "partyKey": "bayit-yarok",
-        "mandates": 0,
-        "belowThreshold": true
-      }
-    ]
-  },
-  {
-    "key": "panels-2026-09-06",
-    "pollster": "פאנלס פוליטיקס",
-    "publisher": "מעריב",
-    "publishedAt": "2026-09-06",
-    "sampleSize": 620,
-    "sourceUrl": "https://example.org/polls/panels/2026-09-06",
-    "results": [
-      {
-        "partyKey": "ofek",
-        "mandates": 24,
-        "belowThreshold": false
-      },
-      {
-        "partyKey": "yachad-kadima",
-        "mandates": 21,
-        "belowThreshold": false
-      },
-      {
-        "partyKey": "haatzama",
+        "partyKey": "k26-01",
         "mandates": 13,
         "belowThreshold": false
       },
       {
-        "partyKey": "kol-haam",
-        "mandates": 8,
-        "belowThreshold": false
-      },
-      {
-        "partyKey": "bayit-yarok",
-        "mandates": 6,
-        "belowThreshold": false
-      }
-    ]
-  },
-  {
-    "key": "lazar-2026-09-05",
-    "pollster": "לזר מחקרים",
-    "publisher": "מעריב",
-    "publishedAt": "2026-09-05",
-    "sampleSize": 505,
-    "sourceUrl": "https://example.org/polls/lazar/2026-09-05",
-    "results": [
-      {
-        "partyKey": "ofek",
-        "mandates": 26,
-        "belowThreshold": false
-      },
-      {
-        "partyKey": "yachad-kadima",
-        "mandates": 22,
-        "belowThreshold": false
-      },
-      {
-        "partyKey": "haatzama",
-        "mandates": 12,
-        "belowThreshold": false
-      },
-      {
-        "partyKey": "kol-haam",
-        "mandates": 8,
-        "belowThreshold": false
-      },
-      {
-        "partyKey": "bayit-yarok",
-        "mandates": 4,
-        "belowThreshold": false
-      }
-    ]
-  },
-  {
-    "key": "kantar-2026-09-03",
-    "pollster": "קנטר",
-    "publisher": "כאן 11",
-    "publishedAt": "2026-09-03",
-    "sampleSize": 700,
-    "sourceUrl": "https://example.org/polls/kantar/2026-09-03",
-    "results": [
-      {
-        "partyKey": "ofek",
-        "mandates": 26,
-        "belowThreshold": false
-      },
-      {
-        "partyKey": "yachad-kadima",
-        "mandates": 19,
-        "belowThreshold": false
-      },
-      {
-        "partyKey": "haatzama",
-        "mandates": 12,
-        "belowThreshold": false
-      },
-      {
-        "partyKey": "kol-haam",
+        "partyKey": "k26-17",
         "mandates": 9,
         "belowThreshold": false
       },
       {
-        "partyKey": "bayit-yarok",
-        "mandates": 0,
-        "belowThreshold": true
-      }
-    ]
-  },
-  {
-    "key": "direct-2026-09-02",
-    "pollster": "דיירקט פולס",
-    "publisher": "חדשות 13",
-    "publishedAt": "2026-09-02",
-    "sampleSize": 550,
-    "sourceUrl": "https://example.org/polls/direct/2026-09-02",
-    "results": [
-      {
-        "partyKey": "ofek",
-        "mandates": 22,
+        "partyKey": "k26-11",
+        "mandates": 9,
         "belowThreshold": false
       },
       {
-        "partyKey": "yachad-kadima",
-        "mandates": 21,
-        "belowThreshold": false
-      },
-      {
-        "partyKey": "haatzama",
-        "mandates": 11,
-        "belowThreshold": false
-      },
-      {
-        "partyKey": "kol-haam",
+        "partyKey": "k26-37",
         "mandates": 8,
         "belowThreshold": false
       },
       {
-        "partyKey": "bayit-yarok",
+        "partyKey": "k26-35",
+        "mandates": 7,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "k26-19",
+        "mandates": 7,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "k26-14",
+        "mandates": 6,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "k26-31",
+        "mandates": 5,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "k26-18",
+        "mandates": 5,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "k26-06",
         "mandates": 4,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "k26-16",
+        "mandates": 4,
+        "belowThreshold": false
+      }
+    ]
+  },
+  {
+    "key": "nextdata-c14-2026-09-23",
+    "pollster": "NEXT DATA",
+    "publisher": "חדשות 14",
+    "publishedAt": "2026-09-23",
+    "fieldworkStart": "2026-09-23",
+    "fieldworkEnd": "2026-09-23",
+    "sampleSize": 647,
+    "sourceUrl": "https://www.c14.co.il/article/1711606",
+    "results": [
+      {
+        "partyKey": "k26-29",
+        "mandates": 32,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "k26-02",
+        "mandates": 22,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "k26-19",
+        "mandates": 11,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "k26-17",
+        "mandates": 9,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "k26-01",
+        "mandates": 7,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "k26-37",
+        "mandates": 7,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "k26-31",
+        "mandates": 7,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "k26-35",
+        "mandates": 7,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "k26-11",
+        "mandates": 7,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "k26-14",
+        "mandates": 6,
+        "belowThreshold": false
+      },
+      {
+        "partyKey": "k26-18",
+        "mandates": 5,
         "belowThreshold": false
       }
     ]
