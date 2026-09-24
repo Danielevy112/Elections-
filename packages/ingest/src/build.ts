@@ -192,7 +192,7 @@ export function buildSnapshot(input: BuildInput): BuildResult {
 
   const electionId = `election:${manual.election.knessetNumber}`;
   const electionSource = registry.use(
-    manual.election.sourceUrl ? "cec" : "manual",
+    manual.election.sourceKind ?? (manual.election.sourceUrl ? "cec" : "manual"),
     manual.election.sourceTitle,
     manual.election.sourceUrl,
   );
@@ -216,10 +216,15 @@ export function buildSnapshot(input: BuildInput): BuildResult {
   const knessetByPersonId = new Map<number, KnessetPull["persons"][number]>();
   for (const person of knesset?.persons ?? []) knessetByPersonId.set(person.knessetPersonId, person);
 
-  const matchTargets = (knesset?.persons ?? []).map((p) => ({
-    id: `person:knesset-${p.knessetPersonId}`,
-    nameNormalized: normalizeHebrewName(p.nameHe),
-  }));
+  // The Knesset writes "first last"; the Elections Committee (and the press copying it)
+  // writes "last first". Both orders are exact targets for the same person — still no
+  // fuzzy tier, and a name that hits two different people stays ambiguous.
+  const matchTargets = (knesset?.persons ?? []).flatMap((p) => {
+    const id = `person:knesset-${p.knessetPersonId}`;
+    const forms = new Set([normalizeHebrewName(p.nameHe)]);
+    if (p.nameHeReversed) forms.add(normalizeHebrewName(p.nameHeReversed));
+    return [...forms].map((nameNormalized) => ({ id, nameNormalized }));
+  });
 
   const persons = new Map<string, Person>();
   const slugs = new Set<string>();
@@ -269,7 +274,7 @@ export function buildSnapshot(input: BuildInput): BuildResult {
   for (const manualParty of manual.parties) {
     const id = `party:${manualParty.key}`;
     const sourceId = registry.use(
-      manualParty.sourceUrl ? "party" : "manual",
+      manualParty.sourceKind ?? (manualParty.sourceUrl ? "party" : "manual"),
       manualParty.sourceTitle,
       manualParty.sourceUrl,
     );
@@ -317,10 +322,17 @@ export function buildSnapshot(input: BuildInput): BuildResult {
     }
     const listId = `list:${manual.election.knessetNumber}:${manualList.partyKey}`;
     const sourceId = registry.use(
-      manualList.sourceUrl ? "cec" : "manual",
+      manualList.sourceKind ?? (manualList.sourceUrl ? "cec" : "manual"),
       manualList.sourceTitle,
       manualList.sourceUrl,
     );
+    const statusSourceId = manualList.statusSourceUrl
+      ? registry.use(
+          manualList.statusSourceKind ?? "press",
+          manualList.statusSourceTitle ?? manualList.sourceTitle,
+          manualList.statusSourceUrl,
+        )
+      : sourceId;
 
     candidateLists.push({
       id: listId,
@@ -331,7 +343,7 @@ export function buildSnapshot(input: BuildInput): BuildResult {
       ...(manualList.statusChangedAt ? { statusChangedAt: manualList.statusChangedAt } : {}),
       ...(manualList.statusNote ? { statusNote: manualList.statusNote } : {}),
     });
-    registry.assert("candidateList", listId, "status", manualList.status, sourceId);
+    registry.assert("candidateList", listId, "status", manualList.status, statusSourceId);
 
     for (const candidate of manualList.candidates) {
       const outcome = matchPerson(candidate.nameHe, matchTargets, manual.personLinks);
