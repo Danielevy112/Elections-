@@ -65,6 +65,11 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
             <Stat label="כנסות" value={profile.knessetTerms.length} hint={`הכנסות ${profile.knessetTerms.join(", ")}`} href={profile.sources.positions} />
             <Stat label="הצעות חוק שעברו" value={profile.billsPassed} hint={`מתוך ${profile.billsInitiated} שיזם/ה`} href={profile.sources.bills} />
             <Stat label="שאילתות" value={profile.parliamentaryQuestions ?? "–"} href={profile.sources.questions} />
+            {profile.linkReason ? (
+              <p className="col-span-2 px-1 pt-1 text-[11px] leading-5 text-ink-dim">
+                שם ברשומת הכנסת: {profile.nameKnesset}. קישור ידני לרשומה: {profile.linkReason}.
+              </p>
+            ) : null}
           </div>
         ) : (
           <p className="p-4 text-sm text-ink-muted">
