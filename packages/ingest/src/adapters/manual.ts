@@ -1,7 +1,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { z } from "zod";
-import { CandidateListStatus } from "@elections26/schema";
+import { CandidateListStatus, SourceKind } from "@elections26/schema";
 
 const IsoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
 
@@ -15,7 +15,7 @@ const IsoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
  */
 export const ManualElection = z.object({
   /** Required, and deliberately unset by default: see SnapshotMeta.dataset. */
-  dataset: z.enum(["example", "real"]),
+  dataset: z.enum(["example", "preliminary", "real"]),
   knessetNumber: z.number().int().positive(),
   electionDate: IsoDate,
   totalSeats: z.number().int().positive().default(120),
@@ -23,6 +23,8 @@ export const ManualElection = z.object({
   listSubmissionOpensAt: IsoDate.optional(),
   listSubmissionClosesAt: IsoDate.optional(),
   sourceUrl: z.string().url().optional(),
+  /** What kind of document sourceUrl is. Defaults to "cec" when a URL is given. */
+  sourceKind: SourceKind.optional(),
   sourceTitle: z.string().min(1),
 });
 
@@ -39,6 +41,8 @@ export const ManualParty = z.object({
   logoUrl: z.string().url().optional(),
   websiteUrl: z.string().url().optional(),
   sourceUrl: z.string().url().optional(),
+  /** What kind of document sourceUrl is. Defaults to "party" when a URL is given. */
+  sourceKind: SourceKind.optional(),
   sourceTitle: z.string().min(1),
 });
 
@@ -57,7 +61,16 @@ export const ManualList = z.object({
   statusChangedAt: IsoDate.optional(),
   statusNote: z.string().optional(),
   sourceUrl: z.string().url().optional(),
+  /**
+   * What kind of document sourceUrl is. Defaults to "cec" when a URL is given, so a list
+   * taken from a newspaper MUST say "press" — otherwise it would be labelled as official.
+   */
+  sourceKind: SourceKind.optional(),
   sourceTitle: z.string().min(1),
+  /** Separate source for the status, when it changed after filing (e.g. a disqualification). */
+  statusSourceUrl: z.string().url().optional(),
+  statusSourceKind: SourceKind.optional(),
+  statusSourceTitle: z.string().min(1).optional(),
   candidates: z.array(ManualCandidate).min(1),
 });
 

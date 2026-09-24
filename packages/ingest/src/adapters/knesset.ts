@@ -16,6 +16,8 @@ import { normalizeHebrewName } from "../match";
 export interface KnessetPerson {
   knessetPersonId: number;
   nameHe: string;
+  /** "last first" — the order the Elections Committee lists candidates in. */
+  nameHeReversed?: string;
   gender: "male" | "female" | "unknown";
   photoUrl: string | undefined;
 }
@@ -108,6 +110,7 @@ export async function pullKnesset(
     persons.push({
       knessetPersonId: id,
       nameHe,
+      ...(first && last ? { nameHeReversed: `${last} ${first}` } : {}),
       gender: readGender(row, report),
       photoUrl: pickString(row, ["PersonImagePath", "ImagePath", "PhotoUrl"], report),
     });
@@ -153,7 +156,12 @@ export async function pullKnesset(
   // service: initiators for the people we track, then only the bills those rows name.
   const wantedNames = new Set((options.candidateNames ?? []).map(normalizeHebrewName));
   const tracked = persons
-    .filter((person) => wantedNames.has(normalizeHebrewName(person.nameHe)))
+    .filter(
+      (person) =>
+        wantedNames.has(normalizeHebrewName(person.nameHe)) ||
+        (person.nameHeReversed !== undefined &&
+          wantedNames.has(normalizeHebrewName(person.nameHeReversed))),
+    )
     .map((person) => person.knessetPersonId);
 
   if (wantedNames.size > 0 && tracked.length === 0) {
