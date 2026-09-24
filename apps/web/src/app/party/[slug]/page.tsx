@@ -5,15 +5,17 @@ import { Avatar, BackLink, BandDot, Card, Pills, Sources, StatusBadge } from "@/
 import { LIST_STATUS_HINT, formatDate, formatSeats, site } from "@/lib/site";
 import { bioLine, displayName, knessetProfile, partyBio, partyPhoto, roleLabel, topRole } from "@/lib/extras";
 
-export function generateStaticParams() {
-  return site().parties.map(({ party }) => ({ slug: party.slug }));
+export const revalidate = 3600;
+
+export async function generateStaticParams() {
+  return (await site()).parties.map(({ party }) => ({ slug: party.slug }));
 }
 
 const COLS = "grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_3.25rem_2.5rem]";
 
 export default async function PartyPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const data = site();
+  const data = await site();
   const view = data.parties.find((p) => p.party.slug === slug);
   if (!view) notFound();
 
