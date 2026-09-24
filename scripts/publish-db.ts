@@ -13,7 +13,15 @@ import { Pool } from "@neondatabase/serverless";
 import { loadSnapshot, repoRoot } from "@elections26/data";
 import { migrate, publish, type Db } from "@elections26/db";
 
-const url = process.env.DATABASE_URL;
+// --preview-only: used by the build. Seeds the database only on a Vercel preview build
+// that has one attached; production builds and local builds skip it.
+if (process.argv.includes("--preview-only") && (process.env.VERCEL_ENV !== "preview" || !process.env.DATABASE_URL)) {
+  console.log("publish-db: not a preview build with a database, skipping");
+  process.exit(0);
+}
+
+async function main() {
+const url = process.env.DATABASE_URL_UNPOOLED || process.env.DATABASE_URL;
 if (!url) throw new Error("DATABASE_URL is not set");
 
 const ov = (f: string) => JSON.parse(readFileSync(join(repoRoot(), "data", "manual_overrides", f), "utf8"));
@@ -43,3 +51,9 @@ if (process.env.REVALIDATE_URL && process.env.REVALIDATE_SECRET) {
   console.log(`revalidate: ${res.status} ${await res.text()}`);
   if (!res.ok) process.exitCode = 1;
 }
+}
+
+main().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
