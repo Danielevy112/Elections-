@@ -90,10 +90,25 @@ describe("validateSnapshot", () => {
     expect(rules(validateSnapshot(snapshot))).toContain("unexplained-disqualification");
   });
 
-  it("refuses to let example data be published as a real snapshot", () => {
+  it("refuses to let example data be published outside the example dataset", () => {
     const snapshot = clone();
+    snapshot.sources[0] = { ...snapshot.sources[0]!, kind: "manual", title: "נתוני דוגמה" };
+    for (const dataset of ["preliminary", "real"] as const) {
+      snapshot.meta.dataset = dataset;
+      expect(rules(validateSnapshot(snapshot))).toContain("example-data-in-real-snapshot");
+    }
+  });
+
+  it("keeps press-sourced lists out of a real snapshot", () => {
+    const snapshot = clone();
+    const pressId = snapshot.sources.find((s) => s.kind === "press")?.id ?? snapshot.sources[0]!.id;
+    snapshot.sources = snapshot.sources.map((s) => (s.id === pressId ? { ...s, kind: "press" } : s));
+    const claim = snapshot.claims.find((c) => c.subjectType === "candidacy" && c.field === "position")!;
+    claim.sourceId = pressId;
+    snapshot.meta.dataset = "preliminary";
+    expect(rules(validateSnapshot(snapshot))).not.toContain("press-sourced-list-in-real-snapshot");
     snapshot.meta.dataset = "real";
-    expect(rules(validateSnapshot(snapshot))).toContain("example-data-in-real-snapshot");
+    expect(rules(validateSnapshot(snapshot))).toContain("press-sourced-list-in-real-snapshot");
   });
 
   it("catches meta counts drifting from the actual rows", () => {
