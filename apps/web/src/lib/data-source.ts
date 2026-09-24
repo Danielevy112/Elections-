@@ -30,16 +30,22 @@ function fromFiles(): Published {
 }
 
 /**
- * DATA_SOURCE=db reads the published version from Postgres; anything else reads the
+ * DATA_SOURCE=db (or any Vercel preview with a database attached) reads the published
+ * version from Postgres; anything else reads the
  * committed JSON. If the database is unreachable or returns invalid data, the committed
  * JSON is served instead, so a database outage can never take the site down.
  */
+export function useDb(): boolean {
+  if (!process.env.DATABASE_URL) return false;
+  return process.env.DATA_SOURCE === "db" || process.env.VERCEL_ENV === "preview";
+}
+
 export async function loadPublished(): Promise<Published> {
-  if (process.env.DATA_SOURCE !== "db" || !process.env.DATABASE_URL) return fromFiles();
+  if (!useDb()) return fromFiles();
   try {
     const { neon } = await import("@neondatabase/serverless");
     const { loadSnapshotFromDb, loadExtrasFromDb } = await import("@elections26/db");
-    const sql = neon(process.env.DATABASE_URL);
+    const sql = neon(process.env.DATABASE_URL as string);
     const db = { query: async (text: string, params?: unknown[]) => ({ rows: (await sql.query(text, params ?? [])) as never[] }) };
     const [snapshot, extras] = await Promise.all([loadSnapshotFromDb(db), loadExtrasFromDb(db)]);
     return { snapshot, extras: extras as unknown as ExtrasData, from: "db" };

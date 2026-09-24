@@ -30,7 +30,7 @@ export async function isRealData(): Promise<boolean> {
  * the hourly revalidate is only a safety net. Visitors are served from the CDN, so the
  * database is read once per data change, not once per visit.
  */
-const published = unstable_cache(loadPublished, ["published-data"], { tags: ["data"], revalidate: 3600 });
+export const published = unstable_cache(loadPublished, ["published-data"], { tags: ["data"], revalidate: 3600 });
 
 let built: { key: string; data: SiteData } | undefined;
 
