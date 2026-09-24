@@ -30,14 +30,13 @@ function fromFiles(): Published {
 }
 
 /**
- * DATA_SOURCE=db (or any Vercel preview with a database attached) reads the published
- * version from Postgres; anything else reads the
+ * DATA_SOURCE=db reads the published version from Postgres; anything else reads the
  * committed JSON. If the database is unreachable or returns invalid data, the committed
  * JSON is served instead, so a database outage can never take the site down.
  */
 export function useDb(): boolean {
   if (!process.env.DATABASE_URL) return false;
-  return process.env.DATA_SOURCE === "db" || process.env.VERCEL_ENV === "preview";
+  return process.env.DATA_SOURCE === "db";
 }
 
 export async function loadPublished(): Promise<Published> {
