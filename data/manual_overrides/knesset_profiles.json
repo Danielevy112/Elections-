@@ -896,6 +896,31 @@
    },
    "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
   },
+  "אל הואשלה ואליד": {
+   "knessetPersonId": 30840,
+   "nameKnesset": "ואליד אלהואשלה",
+   "knessetTerms": [
+    25
+   ],
+   "firstMkDate": "2022-11-15",
+   "yearsAsMk": 3.9,
+   "roles": [],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "רע\"ם"
+    }
+   ],
+   "billsInitiated": 399,
+   "billsPassed": 7,
+   "parliamentaryQuestions": 67,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030840",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030840%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030840"
+   },
+   "linkReason": "במאגר 'ואליד אלהואשלה' (כתיב מחובר); האדם היחיד במאגר בשם זה, סיעת רע\"ם בכנסת ה-25"
+  },
   "אליהו עמיחי": {
    "knessetPersonId": 30857,
    "nameKnesset": "עמיחי אליהו",
@@ -6615,6 +6640,92 @@
    },
    "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
   },
+  "טרופר יחיאל משה": {
+   "knessetPersonId": 30683,
+   "nameKnesset": "חילי טרופר",
+   "knessetTerms": [
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2019-04-30",
+   "yearsAsMk": 5.2,
+   "roles": [
+    {
+     "title": "שר",
+     "of": "בלי תיק",
+     "knesset": 25,
+     "start": "2023-10-12",
+     "end": "2024-06-13",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד המדע והטכנולוגיה",
+     "knesset": 24,
+     "start": "2021-05-03",
+     "end": "2021-06-13",
+     "knessets": [
+      24
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד התרבות והספורט",
+     "knesset": 25,
+     "start": "2020-05-17",
+     "end": "2022-12-29",
+     "knessets": [
+      23,
+      24,
+      25
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "כחול לבן - המחנה הממלכתי"
+    },
+    {
+     "knesset": 25,
+     "name": "המחנה הממלכתי"
+    },
+    {
+     "knesset": 24,
+     "name": "כחול לבן"
+    },
+    {
+     "knesset": 23,
+     "name": "כחול לבן בראשות בנימין גנץ"
+    },
+    {
+     "knesset": 23,
+     "name": "כחול לבן"
+    },
+    {
+     "knesset": 22,
+     "name": "כחול לבן"
+    },
+    {
+     "knesset": 21,
+     "name": "כחול לבן"
+    }
+   ],
+   "billsInitiated": 53,
+   "billsPassed": 4,
+   "parliamentaryQuestions": 4,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030683",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030683%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030683"
+   },
+   "linkReason": "במאגר 'חילי טרופר' (כינוי); האדם היחיד במאגר בשם משפחה טרופר. שמו המלא 'יחיאל (חילי) משה טרופר' לפי ויקיפדיה: https://he.wikipedia.org/wiki/חילי_טרופר"
+  },
   "טרכטנברג מנואל": {
    "knessetPersonId": 30060,
    "nameKnesset": "מנואל טרכטנברג",
@@ -9122,6 +9233,31 @@
     "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%20427%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%20427"
    }
+  },
+  "לסקי שוץ גבריאלה": {
+   "knessetPersonId": 30818,
+   "nameKnesset": "גבי לסקי",
+   "knessetTerms": [
+    24
+   ],
+   "firstMkDate": "2021-06-16",
+   "yearsAsMk": 1.4,
+   "roles": [],
+   "factions": [
+    {
+     "knesset": 24,
+     "name": "מרצ"
+    }
+   ],
+   "billsInitiated": 128,
+   "billsPassed": 2,
+   "parliamentaryQuestions": 7,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030818",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030818%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030818"
+   },
+   "linkReason": "במאגר 'גבי לסקי' (כינוי); האדם היחיד במאגר בשם משפחה לסקי, סיעת מרצ בכנסת ה-24. שמה המלא 'גבריאלה (גבי) לסקי-שוץ' לפי ויקיפדיה: https://he.wikipedia.org/wiki/גבי_לסקי"
   },
   "לפיד יאיר": {
    "knessetPersonId": 23594,
