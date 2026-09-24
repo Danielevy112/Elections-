@@ -16,7 +16,7 @@ const nextConfig = {
   },
   // Workspace packages ship TypeScript source rather than a build artifact, so Next
   // compiles them alongside the app. Keeps the data layer free of a build step.
-  transpilePackages: ["@elections26/data", "@elections26/schema"],
+  transpilePackages: ["@elections26/data", "@elections26/db", "@elections26/schema"],
   // No `output: "export"`. Every page is still prerendered at build time via
   // generateStaticParams, and the data layer is still read from committed snapshots during
   // the build — nothing became dynamic. What changed is that Vercel's Next.js preset now
