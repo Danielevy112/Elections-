@@ -7,13 +7,15 @@ import { SITE_URL, isRealData, site, formatDateTime } from "@/lib/site";
 const DESCRIPTION =
   "כל רשימות המועמדים לכנסת ה-26, הסדר המלא, הרקע הפרלמנטרי של כל מועמד, וממוצע הסקרים — עם מקור לכל נתון.";
 
-export const metadata: Metadata = {
+export async function generateMetadata(): Promise<Metadata> {
+  const real = await isRealData();
+  return {
   metadataBase: new URL(SITE_URL),
   title: "בחירות 2026 — הכנסת ה-26",
   description: DESCRIPTION,
   // Keeps example data out of search results and out of link previews. Paired with
   // robots.ts so a crawler that ignores one still meets the other.
-  robots: isRealData()
+  robots: real
     ? { index: true, follow: true }
     : { index: false, follow: false, nocache: true },
   openGraph: {
@@ -23,10 +25,14 @@ export const metadata: Metadata = {
     title: "בחירות 2026 — הכנסת ה-26",
     description: DESCRIPTION,
   },
-};
+  };
+}
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const { snapshot } = site();
+/** Pages are cached on the CDN and regenerated when the data layer publishes (see /api/revalidate). */
+export const revalidate = 3600;
+
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const { snapshot } = await site();
   const election = snapshot.elections[0];
 
   return (

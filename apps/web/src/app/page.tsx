@@ -3,8 +3,10 @@ import { Avatar, Card, Pills, StatusBadge } from "@/components/ui";
 import { formatDate, site } from "@/lib/site";
 import { displayName, partyPhoto } from "@/lib/extras";
 
-export default function HomePage() {
-  const { parties, projection } = site();
+export const revalidate = 3600;
+
+export default async function HomePage() {
+  const { parties, projection } = await site();
   const polled = parties
     .filter((p) => p.projection)
     .sort((a, b) => (b.projection!.projectedSeats - a.projection!.projectedSeats) || (b.projection!.mean - a.projection!.mean));
