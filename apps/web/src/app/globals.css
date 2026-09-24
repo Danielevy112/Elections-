@@ -3,12 +3,34 @@
 @tailwind utilities;
 
 :root {
+  color-scheme: dark;
+  --ink-page: 0 0 0;
+  --ink-card: 21 30 35;
+  --ink-row: 9 17 20;
+  --ink-pill: 20 25 29;
+  --ink-line: 34 44 50;
+  --ink-muted: 138 150 156;
+  --ink-dim: 93 104 110;
+  --ink-hero: 29 42 49;
+  --fg: 255 255 255;
+}
+
+:root[data-theme="light"] {
   color-scheme: light;
+  --ink-page: 242 244 246;
+  --ink-card: 255 255 255;
+  --ink-row: 246 248 250;
+  --ink-pill: 231 235 238;
+  --ink-line: 226 231 235;
+  --ink-muted: 90 102 110;
+  --ink-dim: 128 139 146;
+  --ink-hero: 232 239 244;
+  --fg: 12 18 22;
 }
 
 body {
-  background: #f8fafc;
-  color: #0f172a;
+  background: rgb(var(--ink-page));
+  color: rgb(var(--fg));
 }
 
 /* Numbers stay left-to-right inside RTL prose. */
@@ -16,4 +38,15 @@ body {
   direction: ltr;
   unicode-bidi: isolate;
   display: inline-block;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
 }
