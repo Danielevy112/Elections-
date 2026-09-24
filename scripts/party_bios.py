@@ -28,7 +28,18 @@ def be_yahad():
         paras = [p for p in paras if p]
         if paras: yield text(name.group(1)), paras[0], url
 
-SITES = {"k26-01": ("ביחד", be_yahad)}
+def extracted(path):
+    # Pages that only render in a browser: (printed name, first bio paragraph, page URL)
+    # were extracted there and kept in data/photo_sources/.
+    def run():
+        for row in json.load(open(path, encoding="utf8")):
+            yield norm(row["name"]), norm(row["text"]), row["sourcePage"]
+    return run
+
+SITES = {
+    "k26-01": ("ביחד", be_yahad),
+    "k26-02": ("ישר! עם איזנקוט", extracted("data/photo_sources/k26-02-bios.json")),
+}
 
 def main(root):
     lists = {l["partyKey"]: l for l in json.load(open(f"{root}/data/manual_overrides/lists.json", encoding="utf8"))}

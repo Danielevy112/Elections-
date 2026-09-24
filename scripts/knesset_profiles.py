@@ -53,7 +53,17 @@ def main(root):
         ids = forms.get(name, set())
         if len(ids) == 1: matched[name] = next(iter(ids))
         elif len(ids) > 1: ambiguous[name] = sorted(ids)
-    print("persons", len(persons), "matched names", len(matched), "ambiguous", len(ambiguous), file=sys.stderr)
+    # Reviewed manual links (data/manual_overrides/knesset_links.json) for filed legal names
+    # that differ from the Knesset's form, e.g. an extra middle name. Never generated here.
+    linked = {}
+    try:
+        for l in json.load(open(f"{root}/data/manual_overrides/knesset_links.json", encoding="utf8"))["links"]:
+            n = norm(l["nameHe"])
+            if n in wanted and n not in matched:
+                matched[n] = l["knessetPersonId"]; linked[n] = l["reason"]; ambiguous.pop(n, None)
+    except FileNotFoundError:
+        pass
+    print("persons", len(persons), "matched names", len(matched), "linked", len(linked), "ambiguous", len(ambiguous), file=sys.stderr)
 
     def profile(pid):
         try:
@@ -128,7 +138,7 @@ def main(root):
         res = dict(zip(matched, ex.map(lambda n: profile(matched[n]), matched)))
     out = {"retrievedAt": date.today().isoformat(), "source": B,
            "note": "Exact name match between the filed lists and KNS_Person; ambiguous names are left unmatched.",
-           "profiles": {n: p for n, p in sorted(res.items()) if p}, "ambiguous": ambiguous}
+           "profiles": {n: ({**p, "linkReason": linked[n]} if n in linked else p) for n, p in sorted(res.items()) if p}, "ambiguous": ambiguous}
     json.dump(out, open(f"{root}/data/manual_overrides/knesset_profiles.json", "w", encoding="utf8"), ensure_ascii=False, indent=1)
     print("profiles", len(out["profiles"]), file=sys.stderr)
 
