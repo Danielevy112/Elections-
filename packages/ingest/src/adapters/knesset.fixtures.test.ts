@@ -13,8 +13,10 @@ import { mapBillType } from "./knesset";
 async function fixture(entity: string): Promise<Record<string, unknown>[]> {
   const matches: string[] = [];
   for await (const path of glob(`data/fixtures/*svc-${entity}.*.json`)) matches.push(path);
-  expect(matches, `fixture for ${entity}`).toHaveLength(1);
-  return unwrap(JSON.parse(readFileSync(matches[0]!, "utf8")));
+  // One file per recorded page: a full sync follows every nextLink, so an entity set is
+  // usually many pages. Every one of them is checked.
+  expect(matches.length, `fixtures for ${entity}`).toBeGreaterThan(0);
+  return matches.sort().flatMap((path) => unwrap(JSON.parse(readFileSync(path, "utf8"))));
 }
 
 describe("real KNS_Person responses", () => {
@@ -79,7 +81,9 @@ describe("real KNS_BillInitiator responses", () => {
     // Lead authorship is Ordinal === 1; IsInitiator alone does not distinguish it.
     const rows = await fixture("kns-billinitiator");
     const ordinals = new Set(rows.map((row) => row.Ordinal));
-    expect(rows.every((row) => typeof row.IsInitiator === "boolean")).toBe(true);
+    // IsInitiator is true or null in the real data (never false); only true is kept.
+    expect(rows.every((row) => row.IsInitiator === true || row.IsInitiator === null)).toBe(true);
+    expect(rows.some((row) => row.IsInitiator === null)).toBe(true);
     expect(ordinals.size).toBeGreaterThan(1);
   });
 });

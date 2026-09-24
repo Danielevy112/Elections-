@@ -1,5 +1,5 @@
 import type { Fetcher } from "../http";
-import { parseODataDate } from "../http";
+import { MissingFixtureError, parseODataDate } from "../http";
 import { FieldReport, idFilterChunks, odataCollect, pickInt, pickString, type Row } from "../odata";
 import { normalizeHebrewName } from "../match";
 
@@ -92,6 +92,11 @@ export async function pullKnesset(
      * nothing else; the authoritative person matching still happens in build.ts.
      */
     candidateNames?: string[];
+    /**
+     * Knesset person ids linked to a list slot by a reviewed manual link — people whose
+     * filed name doesn't match the Knesset's exactly (a second name, a nickname).
+     */
+    linkedPersonIds?: number[];
   },
 ): Promise<KnessetPull> {
   const report = new FieldReport();
@@ -172,11 +177,25 @@ export async function pullKnesset(
   const billInitiators: KnessetBillInitiator[] = [];
   const wantedBillIds = new Set<number>();
 
-  for (const filter of idFilterChunks("PersonID", tracked)) {
-    const rows = await odataCollect(fetcher, "KNS_BillInitiator", {
-      filter,
-      hardLimit: 50_000,
-    });
+  // Manually linked people are queried as a second series appended after the name-tracked
+  // one, so adding a link never changes the earlier queries: recorded fixtures keep
+  // replaying, and only the new series waits for the next live run to record it.
+  const trackedSet = new Set(tracked);
+  const linked = [...new Set(options.linkedPersonIds ?? [])].filter((id) => !trackedSet.has(id)).sort((a, b) => a - b);
+  const initiatorSeries = [idFilterChunks("PersonID", tracked), idFilterChunks("PersonID", linked)];
+  const namedBillIds = new Set<number>();
+
+  for (const [series, filters] of initiatorSeries.entries()) for (const filter of filters) {
+    let rows: Row[];
+    try {
+      rows = await odataCollect(fetcher, "KNS_BillInitiator", { filter, hardLimit: 50_000 });
+    } catch (error) {
+      if (series === 1 && error instanceof MissingFixtureError) {
+        report.miss("__linked_not_recorded__");
+        break;
+      }
+      throw error;
+    }
     for (const row of rows) {
       const billId = pickInt(row, ["BillID", "billID", "BillId"], report);
       const personId = pickInt(row, ["PersonID", "personID", "PersonId"], report);
@@ -184,11 +203,18 @@ export async function pullKnesset(
 
       // IsInitiator marks a real initiator rather than another kind of signatory;
       // Ordinal is the position in the signature list, so first place is the lead.
+      // Only an explicit true counts: the recorded responses carry 3,751 rows with a null
+      // IsInitiator, and null is not a claim of initiatorship (the record counts shown
+      // beside the bill list use IsInitiator eq true too). Their bills are still requested
+      // below so the query stays the one the fixtures recorded; build.ts drops a bill no
+      // kept initiator names.
       const isInitiator = row.IsInitiator;
       if (isInitiator === false) continue;
       report.hit("IsInitiator", "IsInitiator");
 
       wantedBillIds.add(billId);
+      if (series === 0) namedBillIds.add(billId);
+      if (isInitiator !== true) continue;
       billInitiators.push({
         knessetBillId: billId,
         knessetPersonId: personId,
@@ -199,7 +225,13 @@ export async function pullKnesset(
 
   const bills: KnessetBill[] = [];
   const billLimit = options.billLimit ?? 40_000;
-  for (const filter of idFilterChunks("BillID", [...wantedBillIds])) {
+  // Same two-series split for the bills: those the name-tracked initiators name, then any
+  // only the manually linked people add.
+  const billSeries = [
+    idFilterChunks("BillID", [...namedBillIds]),
+    idFilterChunks("BillID", [...wantedBillIds].filter((id) => !namedBillIds.has(id)).sort((a, b) => a - b)),
+  ];
+  for (const filter of billSeries.flat()) {
     const rows = await odataCollect(fetcher, "KNS_Bill", { filter, hardLimit: billLimit });
     for (const row of rows) {
       const id = pickInt(row, ["BillID", "billID", "BillId"], report);
@@ -266,11 +298,14 @@ export async function pullStatuses(
 export function mapBillStatus(raw: string | undefined): string {
   if (!raw) return "unknown";
   const text = raw.trim();
-  if (/התקבל|אושר.*קריאה שלישית|חוק/.test(text)) return "passed";
+  // Only a third reading makes a law. "מוזגה עם הצעת חוק אחרת" (merged into another bill)
+  // contains the word "חוק" and was once matched as passed, crediting 642 merged bills as laws.
+  if (/^התקבל(ה)? בקריאה שלישית/.test(text)) return "passed";
+  if (/מוזג/.test(text)) return "merged";
   if (/קריאה שלישית|קריאה שנייה/.test(text)) return "second_third_reading";
   if (/ועדה/.test(text)) return "committee";
-  if (/קריאה ראשונה/.test(text)) return "first_reading";
-  if (/טרומית/.test(text)) return "preliminary";
+  if (/קריאה ראשונה|הקריאה הראשונה/.test(text)) return "first_reading";
+  if (/טרומית|לדיון מוקדם/.test(text) && !/^הונח/.test(text)) return "preliminary";
   if (/נדחה|לא אושר/.test(text)) return "rejected";
   if (/הוסר|הוסרה|משיכה/.test(text)) return "withdrawn";
   if (/הוקפא/.test(text)) return "frozen";
