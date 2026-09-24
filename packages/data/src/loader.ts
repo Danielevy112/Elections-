@@ -26,10 +26,16 @@ function readJson(path: string): unknown {
  * Read and validate every snapshot file. Throws on the first schema violation — a build
  * that ships malformed data is worse than a build that fails.
  */
-export function loadSnapshot(dir = snapshotDir()): Snapshot {
+export function loadSnapshot(dir = snapshotDir(), options: { omit?: readonly CollectionName[] } = {}): Snapshot {
   const out: Record<string, unknown> = {};
+  const omit = new Set<string>(options.omit ?? []);
 
   for (const name of COLLECTION_NAMES) {
+    // Omitted collections are left empty and never read (meta.counts still has the totals).
+    if (omit.has(name)) {
+      out[name] = [];
+      continue;
+    }
     const path = join(dir, `${name}.json`);
     const raw = readJson(path);
     if (!Array.isArray(raw)) {

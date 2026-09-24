@@ -2,7 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sourcesForField } from "@elections26/data";
 import { Avatar, BackLink, BandChip, Card, SourceLink, Sources, Stat } from "@/components/ui";
-import { formatSeats, site } from "@/lib/site";
+import { BillRecordSection } from "@/components/bill-record";
+import { billRecord, formatSeats, site } from "@/lib/site";
 import { displayName, knessetProfile, partyBio, partyPhoto, roleLabel } from "@/lib/extras";
 
 export const revalidate = 3600;
@@ -26,6 +27,10 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
   const bio = partyBio(party?.id, position);
   const photo = partyPhoto(party?.id, position);
   const name = displayName(person.nameHe, party?.id, position);
+  // The bill list is shown only when the verified profile and the snapshot person are the
+  // same Knesset person; otherwise nothing, never a record matched some other way.
+  const record =
+    profile && person.knessetPersonId === profile.knessetPersonId ? await billRecord(person.id) : undefined;
   const nameSources = sourcesForField(data, "person", person.id, "nameHe");
   // The Knesset lists the prime minister also as minister of the PM's office; show one row.
   const pmStarts = new Set(profile?.roles.filter((r) => r.title === "ראש הממשלה").map((r) => r.start) ?? []);
@@ -69,7 +74,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
             <Stat label="שאילתות" value={profile.parliamentaryQuestions ?? "–"} href={profile.sources.questions} />
           </div>
         ) : bio ? null : (
-          <p className="p-4 text-sm text-ink-muted">לא כיהן/ה בכנסת</p>
+          <p className="p-4 text-sm text-ink-muted">לא נמצאה רשומה מאומתת במאגר הכנסת</p>
         )}
       </Card>
 
@@ -82,6 +87,8 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
           </div>
         </Card>
       ) : null}
+
+      {record && profile ? <BillRecordSection record={record} sourceHref={profile.sources.bills} /> : null}
 
       {roles.length > 0 ? (
         <Card className="overflow-hidden">

@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
@@ -25,8 +25,14 @@ export interface Extras {
 
 const here = dirname(fileURLToPath(import.meta.url));
 
+/** Every migration, in file-name order. Each is idempotent, so all run on every publish. */
 export function migrationSql(): string {
-  return readFileSync(join(here, "..", "migrations", "001_init.sql"), "utf8");
+  const dir = join(here, "..", "migrations");
+  return readdirSync(dir)
+    .filter((f) => f.endsWith(".sql"))
+    .sort()
+    .map((f) => readFileSync(join(dir, f), "utf8"))
+    .join("\n");
 }
 
 export async function migrate(db: Db): Promise<void> {
@@ -44,9 +50,14 @@ function castExpr([key, , type]: Column): string {
 }
 
 /** Read the published data back in exactly the Snapshot shape the JSON loader returns. */
-export async function loadSnapshotFromDb(db: Db): Promise<Snapshot> {
+export async function loadSnapshotFromDb(db: Db, options: { omit?: readonly CollectionName[] } = {}): Promise<Snapshot> {
   const out: Record<string, unknown> = {};
+  const omit = new Set<string>(options.omit ?? []);
   for (const name of COLLECTION_NAMES) {
+    if (omit.has(name)) {
+      out[name] = [];
+      continue;
+    }
     const { table, columns } = TABLES[name];
     // jsonb_build_object caps at 100 args; our widest table has 11 columns.
     const { rows } = await db.query<{ row: unknown }>(
@@ -81,6 +92,58 @@ export async function loadExtrasFromDb(db: Db): Promise<Extras> {
     knessetProfiles: Object.fromEntries(profiles.rows.map((r) => [r.filed_name, r.profile])),
     photos: photos.rows.map((r) => r.row),
     bios: bios.rows.map((r) => r.row),
+  };
+}
+
+export interface BillRecordRow {
+  knessetBillId?: number;
+  nameHe: string;
+  knessetNumber?: number;
+  status: string;
+  statusRawHe?: string;
+  billType: string;
+  isPrimary: boolean;
+}
+
+/**
+ * One person's legislative record straight from Postgres: counts aggregated in SQL and the
+ * two lists capped, so a veteran with 3,000 bills costs three indexed queries, not a scan
+ * of every bill. Mirrors billRecordFromItems in packages/data.
+ */
+export async function loadBillRecord(
+  db: Db,
+  personId: string,
+  limits: { passed: number; recentLead: number },
+): Promise<{ counts: { initiated: number; lead: number; passed: number; privateLead: number }; passed: BillRecordRow[]; recentLead: BillRecordRow[] }> {
+  const item = `jsonb_strip_nulls(jsonb_build_object('knessetBillId', b.knesset_bill_id, 'nameHe', b.name_he,
+    'knessetNumber', b.knesset_number, 'status', b.status, 'statusRawHe', b.status_raw_he, 'billType', b.bill_type,
+    'isPrimary', bi.is_primary)) AS row`;
+  const order = `ORDER BY b.knesset_number DESC NULLS LAST, b.knesset_bill_id DESC NULLS LAST`;
+  const [counts, passed, recentLead] = await Promise.all([
+    db.query<{ initiated: number; lead: number; passed: number; private_lead: number }>(
+      `SELECT count(*)::int AS initiated,
+              count(*) FILTER (WHERE bi.is_primary)::int AS lead,
+              count(*) FILTER (WHERE b.status = 'passed')::int AS passed,
+              count(*) FILTER (WHERE bi.is_primary AND b.bill_type = 'private')::int AS private_lead
+         FROM bill_initiators bi JOIN bills b ON b.id = bi.bill_id WHERE bi.person_id = $1`,
+      [personId],
+    ),
+    db.query<{ row: BillRecordRow }>(
+      `SELECT ${item} FROM bill_initiators bi JOIN bills b ON b.id = bi.bill_id
+        WHERE bi.person_id = $1 AND b.status = 'passed' ${order} LIMIT $2`,
+      [personId, limits.passed],
+    ),
+    db.query<{ row: BillRecordRow }>(
+      `SELECT ${item} FROM bill_initiators bi JOIN bills b ON b.id = bi.bill_id
+        WHERE bi.person_id = $1 AND bi.is_primary AND b.bill_type = 'private' ${order} LIMIT $2`,
+      [personId, limits.recentLead],
+    ),
+  ]);
+  const c = counts.rows[0]!;
+  return {
+    counts: { initiated: c.initiated, lead: c.lead, passed: c.passed, privateLead: c.private_lead },
+    passed: passed.rows.map((r) => r.row),
+    recentLead: recentLead.rows.map((r) => r.row),
   };
 }
 

@@ -1,6 +1,6 @@
 import { unstable_cache } from "next/cache";
 import { buildSite, type SiteData } from "@elections26/data";
-import { loadPublished } from "./data-source";
+import { loadPublished, loadRecord } from "./data-source";
 import { setExtras } from "./extras";
 
 /**
@@ -34,6 +34,13 @@ export async function isRealData(): Promise<boolean> {
 // data version first) starts from fresh data instead of the previous deploy's cache.
 const DEPLOY_KEY = process.env.VERCEL_DEPLOYMENT_ID ?? process.env.VERCEL_GIT_COMMIT_SHA ?? "local";
 export const published = unstable_cache(loadPublished, ["published-data", DEPLOY_KEY], { tags: ["data"], revalidate: 3600 });
+
+/**
+ * One candidate's legislative record, cached per person under the same "data" tag, so a
+ * publish refreshes it along with everything else. Each entry is one person's bills, not
+ * the whole record.
+ */
+export const billRecord = unstable_cache(loadRecord, ["bill-record", DEPLOY_KEY], { tags: ["data"], revalidate: 3600 });
 
 let built: { key: string; data: SiteData } | undefined;
 

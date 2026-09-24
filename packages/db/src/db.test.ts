@@ -3,8 +3,8 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { COLLECTION_NAMES } from "@elections26/schema";
-import { loadSnapshot, repoRoot } from "@elections26/data";
-import { loadExtrasFromDb, loadSnapshotFromDb, migrate, publish, type Db, type Extras } from "./index";
+import { billRecordFromItems, indexBillItems, loadSnapshot, RECORD_COLLECTIONS, RECORD_LIMITS, repoRoot } from "@elections26/data";
+import { loadBillRecord, loadExtrasFromDb, loadSnapshotFromDb, migrate, publish, type Db, type Extras } from "./index";
 
 function extrasFromRepo(): Extras {
   const ov = (f: string) => JSON.parse(readFileSync(join(repoRoot(), "data", "manual_overrides", f), "utf8"));
@@ -68,4 +68,34 @@ describe("column map", () => {
       expect(TABLES[name].columns.map((c) => c[0]).sort(), name).toEqual(keys);
     }
   });
+});
+
+describe("per-candidate legislative record", () => {
+  it("serves one candidate's record from SQL exactly as the JSON path computes it", async () => {
+    const db = await freshDb();
+    const snapshot = loadSnapshot();
+    await publish(db, snapshot, extrasFromRepo());
+    const byPerson = indexBillItems(snapshot);
+    // The three people with the most initiations, plus one with none.
+    const people = [...byPerson.entries()].sort((a, b) => b[1].length - a[1].length).slice(0, 3).map(([id]) => id);
+    people.push(snapshot.persons.find((p) => !byPerson.has(p.id))!.id);
+    for (const personId of people) {
+      const expected = billRecordFromItems(byPerson.get(personId) ?? []);
+      expect(await loadBillRecord(db, personId, RECORD_LIMITS), personId).toEqual(expected);
+    }
+
+    // The site snapshot leaves the record collections out entirely.
+    const light = await loadSnapshotFromDb(db, { omit: RECORD_COLLECTIONS });
+    expect(light.bills).toEqual([]);
+    expect(light.bill_initiators).toEqual([]);
+    expect(light.candidacies.length).toBe(snapshot.candidacies.length);
+
+    // And the per-person lookup is an index lookup, not a scan of every initiation.
+    await db.query("ANALYZE");
+    const plan = await db.query<{ "QUERY PLAN": string }>(
+      "EXPLAIN SELECT * FROM bill_initiators WHERE person_id = $1",
+      [people[0]],
+    );
+    expect(plan.rows.map((r) => r["QUERY PLAN"]).join("\n")).toContain("bill_initiators_person");
+  }, 120_000);
 });
