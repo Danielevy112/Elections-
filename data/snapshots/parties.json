@@ -1,42 +1,230 @@
 [
   {
-    "ballotLetters": "בי",
-    "id": "party:bayit-yarok",
-    "leaderPersonId": "person:17bc5d69ccfd",
-    "nameEn": "The Green Home",
-    "nameHe": "הבית הירוק",
-    "slug": "hbyt-hyrok"
+    "id": "party:k26-01",
+    "leaderPersonId": "person:eb8619655302",
+    "nameHe": "ביחד",
+    "slug": "bychd"
   },
   {
-    "ballotLetters": "עח",
-    "id": "party:haatzama",
-    "leaderPersonId": "person:89164ed0826f",
-    "nameEn": "Social Empowerment",
-    "nameHe": "העצמה החברתית",
-    "slug": "htzma-hchbrtyt"
+    "id": "party:k26-02",
+    "leaderPersonId": "person:cf18d6b449d7",
+    "nameHe": "ישר! עם איזנקוט – מאחדים את ישראל",
+    "slug": "yshr-am-ayznkot-mchdym-at-yshrl"
   },
   {
-    "ballotLetters": "קע",
-    "id": "party:kol-haam",
-    "leaderPersonId": "person:3710d66fd695",
-    "nameEn": "Kol HaAm",
-    "nameHe": "קול העם",
-    "slug": "kol-hm"
+    "id": "party:k26-03",
+    "leaderPersonId": "person:cfebb233bf69",
+    "nameHe": "שרשר – לאהבה ואחדות העם",
+    "slug": "shrshr-lhba-vchdot-hm"
   },
   {
-    "ballotLetters": "אפ",
-    "id": "party:ofek",
-    "leaderPersonId": "person:97d4a54e6cdc",
-    "nameEn": "Ofek",
-    "nameHe": "אופק",
-    "slug": "aopk"
+    "id": "party:k26-04",
+    "leaderPersonId": "person:457d90c3033a",
+    "nameHe": "השותפות לכולם",
+    "slug": "hshotpot-lkolm"
   },
   {
-    "ballotLetters": "יק",
-    "id": "party:yachad-kadima",
-    "leaderPersonId": "person:6d9fb318ddfe",
-    "nameEn": "Yachad Kadima",
-    "nameHe": "יחד קדימה",
-    "slug": "ychd-kdyma"
+    "id": "party:k26-05",
+    "leaderPersonId": "person:374e29f5bb98",
+    "nameHe": "הפיראטים צפים לטוב",
+    "slug": "hpyrtym-tzpym-ltob"
+  },
+  {
+    "id": "party:k26-06",
+    "leaderPersonId": "person:3ccb736e127e",
+    "nameHe": "עמך ישראל",
+    "slug": "amk-yshrl"
+  },
+  {
+    "id": "party:k26-07",
+    "leaderPersonId": "person:5ccddf077e66",
+    "nameHe": "ישראל תחילה",
+    "slug": "yshrl-tchyla"
+  },
+  {
+    "id": "party:k26-08",
+    "leaderPersonId": "person:801f52c4c308",
+    "nameHe": "גן עדן",
+    "slug": "gn-adn"
+  },
+  {
+    "id": "party:k26-09",
+    "leaderPersonId": "person:6d38abd28420",
+    "nameHe": "קול הנשים",
+    "slug": "kol-hnshym"
+  },
+  {
+    "id": "party:k26-10",
+    "leaderPersonId": "person:30a73bfbc136",
+    "nameHe": "ביחד נצליח – רשימה משותפת ערבית יהודית",
+    "slug": "bychd-ntzlych-rshyma-mshotpt-arbyt-yhodyt"
+  },
+  {
+    "id": "party:k26-11",
+    "leaderPersonId": "person:38868d94d940",
+    "nameHe": "ישראל ביתנו",
+    "slug": "yshrl-bytno"
+  },
+  {
+    "id": "party:k26-12",
+    "leaderPersonId": "person:0f3e1feeaaf2",
+    "nameHe": "משפט צדק",
+    "slug": "mshpt-tzdk"
+  },
+  {
+    "id": "party:k26-13",
+    "leaderPersonId": "person:47d0b5f254e8",
+    "nameHe": "שמע",
+    "slug": "shm"
+  },
+  {
+    "id": "party:k26-14",
+    "leaderPersonId": "person:e94e944fc463",
+    "nameHe": "עוצמה יהודית",
+    "slug": "aotzma-yhodyt"
+  },
+  {
+    "id": "party:k26-15",
+    "leaderPersonId": "person:27d5c2d8d6fd",
+    "nameHe": "סדר חדש",
+    "slug": "sdr-chdsh"
+  },
+  {
+    "id": "party:k26-16",
+    "leaderPersonId": "person:ba26b533882c",
+    "nameHe": "המילואימניקים והכלכלית",
+    "slug": "hmyloymnykym-vhklklyt"
+  },
+  {
+    "id": "party:k26-17",
+    "leaderPersonId": "person:21782c374a74",
+    "nameHe": "הדמוקרטים",
+    "slug": "hdmokrtym"
+  },
+  {
+    "id": "party:k26-18",
+    "leaderPersonId": "person:469e1449a69e",
+    "nameHe": "רע\"ם – הרשימה הערבית המאוחדת",
+    "slug": "rm-hrshyma-hrbyt-hmochdt"
+  },
+  {
+    "id": "party:k26-19",
+    "leaderPersonId": "person:e0f7ce224b2e",
+    "nameHe": "ש\"ס",
+    "slug": "shs"
+  },
+  {
+    "id": "party:k26-20",
+    "leaderPersonId": "person:70551067697a",
+    "nameHe": "הציבור החרדי",
+    "slug": "htzybor-hchrdi"
+  },
+  {
+    "id": "party:k26-21",
+    "leaderPersonId": "person:ea1e2c501601",
+    "nameHe": "אני ואתה – מפלגת העם הישראלית",
+    "slug": "ani-vta-mplgt-hm-hyshrlyt"
+  },
+  {
+    "id": "party:k26-22",
+    "leaderPersonId": "person:0aa3ffb6fb63",
+    "nameHe": "ברית עולם",
+    "slug": "bryt-aolm"
+  },
+  {
+    "id": "party:k26-23",
+    "leaderPersonId": "person:512d17493a97",
+    "nameHe": "התיקון לשיטת הבחירות והממשל",
+    "slug": "htykon-lshytt-hbchyrot-vhmmshl"
+  },
+  {
+    "id": "party:k26-24",
+    "leaderPersonId": "person:6199db2202c9",
+    "nameHe": "גה\"ת – גוש התנ\"כי",
+    "slug": "ght-gosh-htnki"
+  },
+  {
+    "id": "party:k26-25",
+    "leaderPersonId": "person:2b0a49319ac4",
+    "nameHe": "בטחון חברתי",
+    "slug": "btchon-chbrti"
+  },
+  {
+    "id": "party:k26-26",
+    "leaderPersonId": "person:bc94bd899b7d",
+    "nameHe": "אורות השחר – מפלגה של כולם",
+    "slug": "aorot-hshchr-mplga-shl-kolm"
+  },
+  {
+    "id": "party:k26-27",
+    "leaderPersonId": "person:191b62ca3ba7",
+    "nameHe": "בטחון אישי",
+    "slug": "btchon-ayshi"
+  },
+  {
+    "id": "party:k26-28",
+    "leaderPersonId": "person:4cf90f15d177",
+    "nameHe": "צבע שחור – מגן עולם התורה",
+    "slug": "tzb-shchor-mgn-aolm-htora"
+  },
+  {
+    "id": "party:k26-29",
+    "leaderPersonId": "person:7f41cfc0f73d",
+    "nameHe": "הליכוד עם בנימין נתניהו לראשות הממשלה",
+    "slug": "hlykod-am-bnymyn-ntnyho-lrshot-hmmshla"
+  },
+  {
+    "id": "party:k26-30",
+    "leaderPersonId": "person:5de42b68277a",
+    "nameHe": "כחול לבן",
+    "slug": "kchol-lbn"
+  },
+  {
+    "id": "party:k26-31",
+    "leaderPersonId": "person:0daaddbe6fd1",
+    "nameHe": "הציונות הדתית",
+    "slug": "htzyonot-hdtyt"
+  },
+  {
+    "id": "party:k26-32",
+    "leaderPersonId": "person:f78dd41d0cb5",
+    "nameHe": "תנועת אח\"י",
+    "slug": "tnot-achi"
+  },
+  {
+    "id": "party:k26-33",
+    "leaderPersonId": "person:c05512611430",
+    "nameHe": "צומת בית ישראל",
+    "slug": "tzomt-byt-yshrl"
+  },
+  {
+    "id": "party:k26-34",
+    "leaderPersonId": "person:81d9e21186a6",
+    "nameHe": "מפלגת תקומה",
+    "slug": "mplgt-tkoma"
+  },
+  {
+    "id": "party:k26-35",
+    "leaderPersonId": "person:88a49e5525d9",
+    "nameHe": "הרשימה המשותפת",
+    "slug": "hrshyma-hmshotpt"
+  },
+  {
+    "id": "party:k26-36",
+    "leaderPersonId": "person:11df99a1275a",
+    "nameHe": "מפלגת הקהל – מפלגה כלל חרדית",
+    "slug": "mplgt-hkhl-mplga-kll-chrdyt"
+  },
+  {
+    "id": "party:k26-37",
+    "leaderPersonId": "person:b37329bc0bd3",
+    "nameHe": "יהדות התורה – אגודת ישראל – דגל התורה",
+    "slug": "yhdot-htora-agodt-yshrl-dgl-htora"
+  },
+  {
+    "id": "party:k26-38",
+    "leaderPersonId": "person:6b88dbe63ae4",
+    "nameHe": "נעם לישראל",
+    "slug": "nm-lyshrl"
   }
 ]

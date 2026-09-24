@@ -1,47 +1,25 @@
 [
   {
     "electionId": "election:26",
-    "id": "poll:direct-2026-09-02",
-    "pollster": "דיירקט פולס",
-    "publishedAt": "2026-09-02",
-    "publisher": "חדשות 13",
-    "sampleSize": 550,
-    "sourceUrl": "https://example.org/polls/direct/2026-09-02"
-  },
-  {
-    "electionId": "election:26",
-    "id": "poll:kantar-2026-09-03",
-    "pollster": "קנטר",
-    "publishedAt": "2026-09-03",
-    "publisher": "כאן 11",
-    "sampleSize": 700,
-    "sourceUrl": "https://example.org/polls/kantar/2026-09-03"
-  },
-  {
-    "electionId": "election:26",
-    "id": "poll:lazar-2026-09-05",
-    "pollster": "לזר מחקרים",
-    "publishedAt": "2026-09-05",
-    "publisher": "מעריב",
-    "sampleSize": 505,
-    "sourceUrl": "https://example.org/polls/lazar/2026-09-05"
-  },
-  {
-    "electionId": "election:26",
-    "id": "poll:midgam-2026-09-08",
-    "pollster": "מדגם",
-    "publishedAt": "2026-09-08",
+    "fieldworkEnd": "2026-09-22",
+    "fieldworkStart": "2026-09-22",
+    "id": "poll:midgam-n12-2026-09-22",
+    "marginOfError": 4.4,
+    "pollster": "מדגם ייעוץ ומחקר",
+    "publishedAt": "2026-09-22",
     "publisher": "חדשות 12",
-    "sampleSize": 751,
-    "sourceUrl": "https://example.org/polls/midgam/2026-09-08"
+    "sampleSize": 501,
+    "sourceUrl": "https://www.mako.co.il/news-israel-elections/2026/Article-fad59e819c9c0a1027.htm"
   },
   {
     "electionId": "election:26",
-    "id": "poll:panels-2026-09-06",
-    "pollster": "פאנלס פוליטיקס",
-    "publishedAt": "2026-09-06",
-    "publisher": "מעריב",
-    "sampleSize": 620,
-    "sourceUrl": "https://example.org/polls/panels/2026-09-06"
+    "fieldworkEnd": "2026-09-23",
+    "fieldworkStart": "2026-09-23",
+    "id": "poll:nextdata-c14-2026-09-23",
+    "pollster": "NEXT DATA",
+    "publishedAt": "2026-09-23",
+    "publisher": "חדשות 14",
+    "sampleSize": 647,
+    "sourceUrl": "https://www.c14.co.il/article/1711606"
   }
 ]

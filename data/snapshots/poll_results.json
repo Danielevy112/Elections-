@@ -1,177 +1,170 @@
 [
   {
     "belowThreshold": false,
-    "id": "pollresult:direct-2026-09-02:bayit-yarok",
-    "mandates": 4,
-    "partyId": "party:bayit-yarok",
-    "pollId": "poll:direct-2026-09-02"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:direct-2026-09-02:haatzama",
-    "mandates": 11,
-    "partyId": "party:haatzama",
-    "pollId": "poll:direct-2026-09-02"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:direct-2026-09-02:kol-haam",
-    "mandates": 8,
-    "partyId": "party:kol-haam",
-    "pollId": "poll:direct-2026-09-02"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:direct-2026-09-02:ofek",
-    "mandates": 22,
-    "partyId": "party:ofek",
-    "pollId": "poll:direct-2026-09-02"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:direct-2026-09-02:yachad-kadima",
-    "mandates": 21,
-    "partyId": "party:yachad-kadima",
-    "pollId": "poll:direct-2026-09-02"
-  },
-  {
-    "belowThreshold": true,
-    "id": "pollresult:kantar-2026-09-03:bayit-yarok",
-    "mandates": 0,
-    "partyId": "party:bayit-yarok",
-    "pollId": "poll:kantar-2026-09-03"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:kantar-2026-09-03:haatzama",
-    "mandates": 12,
-    "partyId": "party:haatzama",
-    "pollId": "poll:kantar-2026-09-03"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:kantar-2026-09-03:kol-haam",
-    "mandates": 9,
-    "partyId": "party:kol-haam",
-    "pollId": "poll:kantar-2026-09-03"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:kantar-2026-09-03:ofek",
-    "mandates": 26,
-    "partyId": "party:ofek",
-    "pollId": "poll:kantar-2026-09-03"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:kantar-2026-09-03:yachad-kadima",
-    "mandates": 19,
-    "partyId": "party:yachad-kadima",
-    "pollId": "poll:kantar-2026-09-03"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:lazar-2026-09-05:bayit-yarok",
-    "mandates": 4,
-    "partyId": "party:bayit-yarok",
-    "pollId": "poll:lazar-2026-09-05"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:lazar-2026-09-05:haatzama",
-    "mandates": 12,
-    "partyId": "party:haatzama",
-    "pollId": "poll:lazar-2026-09-05"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:lazar-2026-09-05:kol-haam",
-    "mandates": 8,
-    "partyId": "party:kol-haam",
-    "pollId": "poll:lazar-2026-09-05"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:lazar-2026-09-05:ofek",
-    "mandates": 26,
-    "partyId": "party:ofek",
-    "pollId": "poll:lazar-2026-09-05"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:lazar-2026-09-05:yachad-kadima",
-    "mandates": 22,
-    "partyId": "party:yachad-kadima",
-    "pollId": "poll:lazar-2026-09-05"
-  },
-  {
-    "belowThreshold": true,
-    "id": "pollresult:midgam-2026-09-08:bayit-yarok",
-    "mandates": 0,
-    "partyId": "party:bayit-yarok",
-    "pollId": "poll:midgam-2026-09-08"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:midgam-2026-09-08:haatzama",
-    "mandates": 12,
-    "partyId": "party:haatzama",
-    "pollId": "poll:midgam-2026-09-08"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:midgam-2026-09-08:kol-haam",
-    "mandates": 6,
-    "partyId": "party:kol-haam",
-    "pollId": "poll:midgam-2026-09-08"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:midgam-2026-09-08:ofek",
-    "mandates": 25,
-    "partyId": "party:ofek",
-    "pollId": "poll:midgam-2026-09-08"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:midgam-2026-09-08:yachad-kadima",
-    "mandates": 20,
-    "partyId": "party:yachad-kadima",
-    "pollId": "poll:midgam-2026-09-08"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:panels-2026-09-06:bayit-yarok",
-    "mandates": 6,
-    "partyId": "party:bayit-yarok",
-    "pollId": "poll:panels-2026-09-06"
-  },
-  {
-    "belowThreshold": false,
-    "id": "pollresult:panels-2026-09-06:haatzama",
+    "id": "pollresult:midgam-n12-2026-09-22:k26-01",
     "mandates": 13,
-    "partyId": "party:haatzama",
-    "pollId": "poll:panels-2026-09-06"
+    "partyId": "party:k26-01",
+    "pollId": "poll:midgam-n12-2026-09-22"
   },
   {
     "belowThreshold": false,
-    "id": "pollresult:panels-2026-09-06:kol-haam",
+    "id": "pollresult:midgam-n12-2026-09-22:k26-02",
+    "mandates": 23,
+    "partyId": "party:k26-02",
+    "pollId": "poll:midgam-n12-2026-09-22"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:midgam-n12-2026-09-22:k26-06",
+    "mandates": 4,
+    "partyId": "party:k26-06",
+    "pollId": "poll:midgam-n12-2026-09-22"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:midgam-n12-2026-09-22:k26-11",
+    "mandates": 9,
+    "partyId": "party:k26-11",
+    "pollId": "poll:midgam-n12-2026-09-22"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:midgam-n12-2026-09-22:k26-14",
+    "mandates": 6,
+    "partyId": "party:k26-14",
+    "pollId": "poll:midgam-n12-2026-09-22"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:midgam-n12-2026-09-22:k26-16",
+    "mandates": 4,
+    "partyId": "party:k26-16",
+    "pollId": "poll:midgam-n12-2026-09-22"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:midgam-n12-2026-09-22:k26-17",
+    "mandates": 9,
+    "partyId": "party:k26-17",
+    "pollId": "poll:midgam-n12-2026-09-22"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:midgam-n12-2026-09-22:k26-18",
+    "mandates": 5,
+    "partyId": "party:k26-18",
+    "pollId": "poll:midgam-n12-2026-09-22"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:midgam-n12-2026-09-22:k26-19",
+    "mandates": 7,
+    "partyId": "party:k26-19",
+    "pollId": "poll:midgam-n12-2026-09-22"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:midgam-n12-2026-09-22:k26-29",
+    "mandates": 20,
+    "partyId": "party:k26-29",
+    "pollId": "poll:midgam-n12-2026-09-22"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:midgam-n12-2026-09-22:k26-31",
+    "mandates": 5,
+    "partyId": "party:k26-31",
+    "pollId": "poll:midgam-n12-2026-09-22"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:midgam-n12-2026-09-22:k26-35",
+    "mandates": 7,
+    "partyId": "party:k26-35",
+    "pollId": "poll:midgam-n12-2026-09-22"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:midgam-n12-2026-09-22:k26-37",
     "mandates": 8,
-    "partyId": "party:kol-haam",
-    "pollId": "poll:panels-2026-09-06"
+    "partyId": "party:k26-37",
+    "pollId": "poll:midgam-n12-2026-09-22"
   },
   {
     "belowThreshold": false,
-    "id": "pollresult:panels-2026-09-06:ofek",
-    "mandates": 24,
-    "partyId": "party:ofek",
-    "pollId": "poll:panels-2026-09-06"
+    "id": "pollresult:nextdata-c14-2026-09-23:k26-01",
+    "mandates": 7,
+    "partyId": "party:k26-01",
+    "pollId": "poll:nextdata-c14-2026-09-23"
   },
   {
     "belowThreshold": false,
-    "id": "pollresult:panels-2026-09-06:yachad-kadima",
-    "mandates": 21,
-    "partyId": "party:yachad-kadima",
-    "pollId": "poll:panels-2026-09-06"
+    "id": "pollresult:nextdata-c14-2026-09-23:k26-02",
+    "mandates": 22,
+    "partyId": "party:k26-02",
+    "pollId": "poll:nextdata-c14-2026-09-23"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:nextdata-c14-2026-09-23:k26-11",
+    "mandates": 7,
+    "partyId": "party:k26-11",
+    "pollId": "poll:nextdata-c14-2026-09-23"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:nextdata-c14-2026-09-23:k26-14",
+    "mandates": 6,
+    "partyId": "party:k26-14",
+    "pollId": "poll:nextdata-c14-2026-09-23"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:nextdata-c14-2026-09-23:k26-17",
+    "mandates": 9,
+    "partyId": "party:k26-17",
+    "pollId": "poll:nextdata-c14-2026-09-23"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:nextdata-c14-2026-09-23:k26-18",
+    "mandates": 5,
+    "partyId": "party:k26-18",
+    "pollId": "poll:nextdata-c14-2026-09-23"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:nextdata-c14-2026-09-23:k26-19",
+    "mandates": 11,
+    "partyId": "party:k26-19",
+    "pollId": "poll:nextdata-c14-2026-09-23"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:nextdata-c14-2026-09-23:k26-29",
+    "mandates": 32,
+    "partyId": "party:k26-29",
+    "pollId": "poll:nextdata-c14-2026-09-23"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:nextdata-c14-2026-09-23:k26-31",
+    "mandates": 7,
+    "partyId": "party:k26-31",
+    "pollId": "poll:nextdata-c14-2026-09-23"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:nextdata-c14-2026-09-23:k26-35",
+    "mandates": 7,
+    "partyId": "party:k26-35",
+    "pollId": "poll:nextdata-c14-2026-09-23"
+  },
+  {
+    "belowThreshold": false,
+    "id": "pollresult:nextdata-c14-2026-09-23:k26-37",
+    "mandates": 7,
+    "partyId": "party:k26-37",
+    "pollId": "poll:nextdata-c14-2026-09-23"
   }
 ]
