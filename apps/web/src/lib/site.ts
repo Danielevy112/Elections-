@@ -30,7 +30,10 @@ export async function isRealData(): Promise<boolean> {
  * the hourly revalidate is only a safety net. Visitors are served from the CDN, so the
  * database is read once per data change, not once per visit.
  */
-export const published = unstable_cache(loadPublished, ["published-data"], { tags: ["data"], revalidate: 3600 });
+// The cache key includes the deployment, so every deploy (each of which publishes a new
+// data version first) starts from fresh data instead of the previous deploy's cache.
+const DEPLOY_KEY = process.env.VERCEL_DEPLOYMENT_ID ?? process.env.VERCEL_GIT_COMMIT_SHA ?? "local";
+export const published = unstable_cache(loadPublished, ["published-data", DEPLOY_KEY], { tags: ["data"], revalidate: 3600 });
 
 let built: { key: string; data: SiteData } | undefined;
 
