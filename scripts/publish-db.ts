@@ -13,10 +13,14 @@ import { Pool } from "@neondatabase/serverless";
 import { loadSnapshot, repoRoot } from "@elections26/data";
 import { migrate, publish, type Db } from "@elections26/db";
 
-// --preview-only: used by the build. Seeds the database only on a Vercel preview build
-// that has one attached; production builds and local builds skip it.
-if (process.argv.includes("--preview-only") && (process.env.VERCEL_ENV !== "preview" || !process.env.DATABASE_URL)) {
-  console.log("publish-db: not a preview build with a database, skipping");
+// --from-build: used by the Vercel build. Publishes only on production builds with
+// DATA_SOURCE=db. Preview builds never write, so a branch preview can't overwrite the
+// data the live site serves (both environments share one database).
+if (
+  process.argv.includes("--from-build") &&
+  (process.env.VERCEL_ENV !== "production" || process.env.DATA_SOURCE !== "db" || !process.env.DATABASE_URL)
+) {
+  console.log("publish-db: not a production build with DATA_SOURCE=db, skipping");
   process.exit(0);
 }
 
