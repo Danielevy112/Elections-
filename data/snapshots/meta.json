@@ -1,21 +1,21 @@
 {
   "counts": {
-    "bill_initiators": 0,
-    "bills": 0,
+    "bill_initiators": 45612,
+    "bills": 23246,
     "candidacies": 1386,
     "candidate_lists": 38,
-    "claims": 2888,
+    "claims": 3037,
     "committee_memberships": 0,
-    "committees": 0,
+    "committees": 156,
     "elections": 1,
-    "knesset_memberships": 0,
+    "knesset_memberships": 149,
     "parties": 38,
     "persons": 1384,
     "poll_results": 39,
     "polls": 3,
-    "sources": 7
+    "sources": 8
   },
   "dataset": "preliminary",
-  "generatedAt": "2026-09-24T07:28:02.289Z",
-  "mode": "offline"
+  "generatedAt": "2026-09-24T21:06:30.363Z",
+  "mode": "live"
 }
