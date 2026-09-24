@@ -11,6 +11,7 @@ export interface KnessetRole {
   title: string;
   of: string | null;
   knesset: number;
+  knessets?: number[];
   start: string | null;
   end: string | null;
 }
