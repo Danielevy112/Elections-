@@ -24,7 +24,12 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
   const photo = partyPhoto(party?.id, position);
   const name = displayName(person.nameHe, party?.id, position);
   const nameSources = sourcesForField(data, "person", person.id, "nameHe");
-  const roles = profile?.roles.filter((r) => r.title !== 'יו"ר סיעה') ?? [];
+  // The Knesset lists the prime minister also as minister of the PM's office; show one row.
+  const pmStarts = new Set(profile?.roles.filter((r) => r.title === "ראש הממשלה").map((r) => r.start) ?? []);
+  const roles =
+    profile?.roles.filter(
+      (r) => r.title !== 'יו"ר סיעה' && !(r.title === "שר" && r.of === "משרד ראש הממשלה" && pmStarts.has(r.start)),
+    ) ?? [];
 
   return (
     <div className="space-y-4">
@@ -75,7 +80,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
               <li key={i} className="flex items-center justify-between gap-3 border-t border-ink-line/60 px-4 py-2.5">
                 <span className="min-w-0">
                   <span className="block truncate text-[13px] font-medium">{roleLabel(r)}</span>
-                  <span className="block text-[11px] text-ink-dim">הכנסת ה-{r.knesset}</span>
+                  <span className="block text-[11px] text-ink-dim">{r.knessets && r.knessets.length > 1 ? `הכנסות ${Math.min(...r.knessets)}–${Math.max(...r.knessets)}` : `הכנסת ה-${r.knesset}`}</span>
                 </span>
                 <span className="shrink-0 text-xs text-ink-muted tabular ltr-nums">
                   {yearOf(r.start)}–{yearOf(r.end) ?? "היום"}
