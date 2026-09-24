@@ -792,6 +792,42 @@
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030836"
    }
   },
+  "אילוז דן אליהו יעקב": {
+   "knessetPersonId": 30839,
+   "nameKnesset": "דן אילוז",
+   "knessetTerms": [
+    25
+   ],
+   "firstMkDate": "2023-01-06",
+   "yearsAsMk": 3.6,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לפיתוח סחר בינלאומי",
+     "knesset": 25,
+     "start": "2023-05-01",
+     "end": "2026-08-13",
+     "knessets": [
+      25
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "הליכוד "
+    }
+   ],
+   "billsInitiated": 174,
+   "billsPassed": 20,
+   "parliamentaryQuestions": 4,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030839",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030839%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030839"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
+  },
   "אליהו עמיחי": {
    "knessetPersonId": 30857,
    "nameKnesset": "עמיחי אליהו",
@@ -1684,6 +1720,72 @@
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030880"
    }
   },
+  "בוסו אוריאל מנחם": {
+   "knessetPersonId": 30765,
+   "nameKnesset": "אוריאל בוסו",
+   "knessetTerms": [
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2020-06-21",
+   "yearsAsMk": 6.3,
+   "roles": [
+    {
+     "title": "שר",
+     "of": "משרד הבריאות",
+     "knesset": 25,
+     "start": "2023-10-12",
+     "end": "2025-07-20",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת הבריאות",
+     "knesset": 25,
+     "start": "2023-02-01",
+     "end": "2023-10-12",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "סגן יושב ראש הכנסת",
+     "of": "סגן יושב-ראש הכנסת",
+     "knesset": 25,
+     "start": "2022-12-28",
+     "end": "2023-10-12",
+     "knessets": [
+      25
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל"
+    },
+    {
+     "knesset": 24,
+     "name": "ש\"ס"
+    },
+    {
+     "knesset": 23,
+     "name": "ש\"ס"
+    }
+   ],
+   "billsInitiated": 203,
+   "billsPassed": 7,
+   "parliamentaryQuestions": 7,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030765",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030765%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030765"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
+  },
   "ביטון חיים": {
    "knessetPersonId": 30804,
    "nameKnesset": "חיים ביטון",
@@ -1883,6 +1985,122 @@
     "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2023558%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2023558"
    }
+  },
+  "ביסמוט בעז": {
+   "knessetPersonId": 30835,
+   "nameKnesset": "בועז ביסמוט",
+   "knessetTerms": [
+    25
+   ],
+   "firstMkDate": "2022-11-15",
+   "yearsAsMk": 3.9,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לענייני עורף",
+     "knesset": 25,
+     "start": "2026-02-18",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לבחינת תחקירי ארועי השבעה באוקטובר ומלחמת חרבות ברזל",
+     "knesset": 25,
+     "start": "2025-11-04",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לפי סעיף 5 לחוק הכנסת לעניין חסיון קצא\"א",
+     "knesset": 25,
+     "start": "2025-09-07",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת של ועדת החוץ והביטחון וועדת הכספים לתקציב הביטחון",
+     "knesset": 25,
+     "start": "2025-09-02",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת של ועדת החוץ והביטחון וועדת החוקה, חוק ומשפט לעניין הכרזה על מצב חירום, לפי סעיף 68 לתקנון הכנסת",
+     "knesset": 25,
+     "start": "2025-09-02",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה למודיעין, שירותים חשאיים ושו\"ן",
+     "knesset": 25,
+     "start": "2025-08-12",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת החוץ והביטחון",
+     "knesset": 25,
+     "start": "2025-08-04",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה לביטחון לאומי",
+     "knesset": 25,
+     "start": "2025-02-04",
+     "end": "2025-05-05",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המיוחדת למאבק בשימוש בסמים ובאלכוהול",
+     "knesset": 25,
+     "start": "2023-01-08",
+     "end": "2025-01-21",
+     "knessets": [
+      25
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "הליכוד "
+    }
+   ],
+   "billsInitiated": 102,
+   "billsPassed": 17,
+   "parliamentaryQuestions": 0,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030835",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030835%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030835"
+   },
+   "linkReason": "וריאנט כתיב של השם הפרטי (בעז/בועז); האדם היחיד במאגר בשם משפחה ביסמוט, סיעת הליכוד בכנסת ה-25"
   },
   "בירן מיכל": {
    "knessetPersonId": 23570,
@@ -2969,6 +3187,94 @@
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030700"
    }
   },
+  "גבארה חוסניה": {
+   "knessetPersonId": 2229,
+   "nameKnesset": "חוסניה ג'בארה",
+   "knessetTerms": [
+    15
+   ],
+   "firstMkDate": "1999-06-07",
+   "yearsAsMk": 3.7,
+   "roles": [],
+   "factions": [
+    {
+     "knesset": 15,
+     "name": "מרצ"
+    }
+   ],
+   "billsInitiated": 129,
+   "billsPassed": 11,
+   "parliamentaryQuestions": 0,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%202229",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%202229%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%202229"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה (במאגר: ג'בארה)"
+  },
+  "גבארין יוסף": {
+   "knessetPersonId": 30069,
+   "nameKnesset": "יוסף ג'בארין",
+   "knessetTerms": [
+    20,
+    21,
+    22,
+    23
+   ],
+   "firstMkDate": "2015-03-31",
+   "yearsAsMk": 6.0,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המיוחדת לזכויות הילד",
+     "knesset": 23,
+     "start": "2020-07-01",
+     "end": "2021-04-06",
+     "knessets": [
+      23
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 23,
+     "name": "הרשימה המשותפת חד\"ש, רע\"מ, תע\"ל, בל\"ד"
+    },
+    {
+     "knesset": 23,
+     "name": "הרשימה המשותפת"
+    },
+    {
+     "knesset": 22,
+     "name": "חד\"ש - חזית דמוקרטית לשלום ושוויון"
+    },
+    {
+     "knesset": 22,
+     "name": "הרשימה המשותפת חד\"ש, רע\"ם, תע\"ל, בל\"ד"
+    },
+    {
+     "knesset": 21,
+     "name": "חד\"ש תע\"ל בראשות איימן עודה ואחמד טיבי"
+    },
+    {
+     "knesset": 21,
+     "name": "חד\"ש"
+    },
+    {
+     "knesset": 20,
+     "name": "הרשימה המשותפת (חד\"ש, רע\"ם, בל\"ד ותע\"ל)"
+    }
+   ],
+   "billsInitiated": 868,
+   "billsPassed": 19,
+   "parliamentaryQuestions": 129,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030069",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030069%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030069"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה (במאגר: ג'בארין)"
+  },
   "גואטה ששון ששי": {
    "knessetPersonId": 30879,
    "nameKnesset": "ששון ששי גואטה",
@@ -3003,6 +3309,31 @@
     "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030879%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030879"
    }
+  },
+  "גוטליב רויטל טלי": {
+   "knessetPersonId": 30860,
+   "nameKnesset": "טלי גוטליב",
+   "knessetTerms": [
+    25
+   ],
+   "firstMkDate": "2022-11-15",
+   "yearsAsMk": 3.9,
+   "roles": [],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "הליכוד "
+    }
+   ],
+   "billsInitiated": 114,
+   "billsPassed": 15,
+   "parliamentaryQuestions": 3,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030860",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030860%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030860"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
   },
   "גולדמן מיכה": {
    "knessetPersonId": 2238,
@@ -3083,6 +3414,52 @@
     "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%202238%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%202238"
    }
+  },
+  "גולדקנופ יצחק יששכר": {
+   "knessetPersonId": 30846,
+   "nameKnesset": "יצחק גולדקנופ",
+   "knessetTerms": [
+    25
+   ],
+   "firstMkDate": "2022-11-15",
+   "yearsAsMk": 1.4,
+   "roles": [
+    {
+     "title": "שר",
+     "of": "משרד הבינוי והשיכון",
+     "knesset": 25,
+     "start": "2022-12-29",
+     "end": "2025-06-15",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד ראש הממשלה",
+     "knesset": 25,
+     "start": "2022-12-29",
+     "end": "2025-03-26",
+     "knessets": [
+      25
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "יהדות התורה"
+    }
+   ],
+   "billsInitiated": 1,
+   "billsPassed": 0,
+   "parliamentaryQuestions": 0,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030846",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030846%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030846"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
   },
   "גולדשמידט אלי": {
    "knessetPersonId": 860,
@@ -3483,6 +3860,161 @@
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%20504"
    }
   },
+  "גמליאל דמרי גילה": {
+   "knessetPersonId": 1025,
+   "nameKnesset": "גילה גמליאל",
+   "knessetTerms": [
+    16,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2003-02-17",
+   "yearsAsMk": 20.7,
+   "roles": [
+    {
+     "title": "שרה",
+     "of": "משרד החדשנות, המדע והטכנולוגיה",
+     "knesset": 25,
+     "start": "2024-03-18",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שרה",
+     "of": "משרד המודיעין",
+     "knesset": 25,
+     "start": "2023-01-02",
+     "end": "2024-03-18",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שרה",
+     "of": "המשרד להגנת הסביבה",
+     "knesset": 24,
+     "start": "2020-05-17",
+     "end": "2021-06-13",
+     "knessets": [
+      23,
+      24
+     ]
+    },
+    {
+     "title": "שרה",
+     "of": "המשרד לשוויון חברתי",
+     "knesset": 23,
+     "start": "2015-05-14",
+     "end": "2020-05-17",
+     "knessets": [
+      20,
+      21,
+      22,
+      23
+     ]
+    },
+    {
+     "title": "סגנית יושב ראש הכנסת",
+     "of": null,
+     "knesset": 19,
+     "start": "2013-05-02",
+     "end": "2015-03-31",
+     "knessets": [
+      19
+     ]
+    },
+    {
+     "title": "סגנית שר",
+     "of": "משרד ראש הממשלה",
+     "knesset": 19,
+     "start": "2009-04-01",
+     "end": "2013-03-18",
+     "knessets": [
+      18,
+      19
+     ]
+    },
+    {
+     "title": "סגנית שר",
+     "of": "משרד החקלאות ופיתוח הכפר",
+     "knesset": 16,
+     "start": "2005-03-30",
+     "end": "2006-01-15",
+     "knessets": [
+      16
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה לקידום מעמד האישה",
+     "knesset": 16,
+     "start": "2003-03-11",
+     "end": "2004-08-04",
+     "knessets": [
+      16
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "הליכוד "
+    },
+    {
+     "knesset": 24,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 23,
+     "name": "הליכוד"
+    },
+    {
+     "knesset": 22,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 21,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 20,
+     "name": "הליכוד"
+    },
+    {
+     "knesset": 19,
+     "name": "הליכוד - תנועה לאומית ליברלית"
+    },
+    {
+     "knesset": 19,
+     "name": "הליכוד - ישראל ביתנו "
+    },
+    {
+     "knesset": 18,
+     "name": "הליכוד - אח\"י בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 16,
+     "name": "הליכוד"
+    }
+   ],
+   "billsInitiated": 362,
+   "billsPassed": 26,
+   "parliamentaryQuestions": 27,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%201025",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%201025%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%201025"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
+  },
   "גנאים מאזן": {
    "knessetPersonId": 30803,
    "nameKnesset": "מאזן גנאים",
@@ -3709,6 +4241,379 @@
     "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030657%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030657"
    }
+  },
+  "גפני משה רפאל": {
+   "knessetPersonId": 526,
+   "nameKnesset": "משה גפני",
+   "knessetTerms": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "1988-11-21",
+   "yearsAsMk": 35.3,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת הכספים",
+     "knesset": 25,
+     "start": "2022-11-21",
+     "end": "2025-07-14",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר סיעה",
+     "of": "יהדות התורה",
+     "knesset": 25,
+     "start": "2022-11-15",
+     "end": "2023-01-23",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת הכספים ולוועדת החוץ והביטחון לתקציב הביטחון",
+     "knesset": 23,
+     "start": "2020-10-21",
+     "end": "2021-04-06",
+     "knessets": [
+      23
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת הכספים",
+     "knesset": 24,
+     "start": "2020-05-27",
+     "end": "2021-06-16",
+     "knessets": [
+      23,
+      24
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת של ועדת הכספים וועדת החוץ והביטחון לתקציב הביטחון (זמנית)",
+     "knesset": 22,
+     "start": "2019-11-04",
+     "end": "2020-03-16",
+     "knessets": [
+      22
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת החוץ והביטחון ולוועדת הכספים לנושא תקציב הביטחון",
+     "knesset": 21,
+     "start": "2019-06-30",
+     "end": "2019-10-03",
+     "knessets": [
+      21
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לדיון בפרק י' (תשתיות להולכה ולאחסון של נפט), בצעת חוק ההתייעלות הכלכלית (תיקוני חקיקה להשגת יעדי התקציב לשנות 2017 ו-2018)",
+     "knesset": 20,
+     "start": "2017-01-11",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת החוץ והביטחון ולוועדת הכספים לדיון בפרק ה', סעיף 57 (תקציב הגופים הביטחוניים) בהצעת חוק ההתייעלות הכלכלית ובהצעת חוק משק המדינה",
+     "knesset": 20,
+     "start": "2016-11-08",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת הכספים ולוועדת העבודה, הרווחה והבריאות לדיון בסעיפים 31 ו-32 בהצעת חוק ההתייעלות הכלכלית (תיקוני חקיקה להשגת יעדי התקציב לשנות התקציב 2015 ו-2016)",
+     "knesset": 20,
+     "start": "2015-09-07",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת הכספים",
+     "knesset": 22,
+     "start": "2015-06-01",
+     "end": "2020-03-16",
+     "knessets": [
+      20,
+      21,
+      22
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת המדע ולוועדת החוקה, חוק ומשפט לדיון בהצעת חוק פיקוח אלקטרוני על עצור ועל אסיר משוחרר על תנאי",
+     "knesset": 19,
+     "start": "2014-07-28",
+     "end": "2015-03-31",
+     "knessets": [
+      19
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המדע והטכנולוגיה",
+     "knesset": 19,
+     "start": "2013-05-07",
+     "end": "2015-03-31",
+     "knessets": [
+      19
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לעניינים חסויים לפי סעיף 5 לחוק הכנסת",
+     "knesset": 18,
+     "start": "2010-10-25",
+     "end": "2013-02-05",
+     "knessets": [
+      18
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת הכספים ולוועדת החוקה, חוק ומשפט לדיון בהצעת חוק התייעלות כלכלית ותקציב המדינה לשנים 2009 - 2010",
+     "knesset": 18,
+     "start": "2010-03-17",
+     "end": "2013-02-05",
+     "knessets": [
+      18
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לדיון בהצעת חוק לתיקון פקודת הקרקעות",
+     "knesset": 18,
+     "start": "2009-10-26",
+     "end": "2013-02-05",
+     "knessets": [
+      18
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת הכספים",
+     "knesset": 19,
+     "start": "2009-05-05",
+     "end": "2013-04-10",
+     "knessets": [
+      18,
+      19
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת החקירה הפרלמנטרית בנושא אתר הרשב\"י במירון",
+     "knesset": 17,
+     "start": "2006-04-17",
+     "end": "2009-02-24",
+     "knessets": [
+      17
+     ]
+    },
+    {
+     "title": "יו\"ר סיעה",
+     "of": "דגל התורה",
+     "knesset": 16,
+     "start": "2005-01-13",
+     "end": "2006-04-17",
+     "knessets": [
+      16
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת הפנים ואיכות הסביבה",
+     "knesset": 15,
+     "start": "2000-05-02",
+     "end": "2003-02-17",
+     "knessets": [
+      15
+     ]
+    },
+    {
+     "title": "סגן שר",
+     "of": "המשרד לענייני דתות",
+     "knesset": 12,
+     "start": "1990-07-23",
+     "end": "1992-07-13",
+     "knessets": [
+      12
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "יהדות התורה"
+    },
+    {
+     "knesset": 24,
+     "name": "יהדות התורה והשבת - אגודת ישראל דגל התורה"
+    },
+    {
+     "knesset": 24,
+     "name": "דגל התורה"
+    },
+    {
+     "knesset": 23,
+     "name": "יהדות התורה והשבת אגודת ישראל - דגל התורה"
+    },
+    {
+     "knesset": 23,
+     "name": "דגל התורה"
+    },
+    {
+     "knesset": 22,
+     "name": "יהדות התורה והשבת אגודת ישראל - דגל התורה"
+    },
+    {
+     "knesset": 22,
+     "name": "דגל התורה"
+    },
+    {
+     "knesset": 21,
+     "name": "יהדות התורה"
+    },
+    {
+     "knesset": 21,
+     "name": "דגל התורה"
+    },
+    {
+     "knesset": 20,
+     "name": "יהדות התורה"
+    },
+    {
+     "knesset": 20,
+     "name": "דגל התורה"
+    },
+    {
+     "knesset": 19,
+     "name": "יהדות התורה והשבת, אגודת ישראל - דגל התורה"
+    },
+    {
+     "knesset": 18,
+     "name": "יהדות התורה והשבת אגודת ישראל - דגל התורה"
+    },
+    {
+     "knesset": 17,
+     "name": "יהדות התורה והשבת אגודת ישראל-דגל התורה"
+    },
+    {
+     "knesset": 17,
+     "name": "דגל התורה"
+    },
+    {
+     "knesset": 16,
+     "name": "יהדות התורה והשבת אגודת ישראל - דגל התורה"
+    },
+    {
+     "knesset": 16,
+     "name": "דגל התורה"
+    },
+    {
+     "knesset": 15,
+     "name": "יהדות התורה"
+    },
+    {
+     "knesset": 14,
+     "name": "יהדות התורה"
+    },
+    {
+     "knesset": 13,
+     "name": "יהדות התורה"
+    },
+    {
+     "knesset": 13,
+     "name": "דגל התורה"
+    },
+    {
+     "knesset": 12,
+     "name": "דגל התורה"
+    }
+   ],
+   "billsInitiated": 2147,
+   "billsPassed": 191,
+   "parliamentaryQuestions": 69,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%20526",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%20526%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%20526"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
+  },
+  "דהאמשה עבד אלמאלכ": {
+   "knessetPersonId": 550,
+   "nameKnesset": "עבד-אלמאלכ דהאמשה",
+   "knessetTerms": [
+    14,
+    15,
+    16
+   ],
+   "firstMkDate": "1996-06-17",
+   "yearsAsMk": 9.8,
+   "roles": [
+    {
+     "title": "סגן יושב ראש הכנסת",
+     "of": null,
+     "knesset": 16,
+     "start": "2005-01-17",
+     "end": "2006-04-17",
+     "knessets": [
+      16
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 16,
+     "name": "הרשימה הערבית המאוחדת"
+    },
+    {
+     "knesset": 15,
+     "name": "רע\"ם"
+    },
+    {
+     "knesset": 14,
+     "name": "מד\"ע - רע\"ם"
+    }
+   ],
+   "billsInitiated": 219,
+   "billsPassed": 6,
+   "parliamentaryQuestions": 0,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%20550",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%20550%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%20550"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
   },
   "דוידסון סימון": {
    "knessetPersonId": 30820,
@@ -4456,6 +5361,237 @@
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030847"
    }
   },
+  "זוהר מכלוף": {
+   "knessetPersonId": 30058,
+   "nameKnesset": "מכלוף מיקי זוהר",
+   "knessetTerms": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2015-03-31",
+   "yearsAsMk": 7.8,
+   "roles": [
+    {
+     "title": "שר",
+     "of": "משרד התרבות והספורט",
+     "knesset": 25,
+     "start": "2022-12-29",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המסדרת ",
+     "knesset": 24,
+     "start": "2021-04-19",
+     "end": "2021-05-05",
+     "knessets": [
+      24
+     ]
+    },
+    {
+     "title": "סגן יושב ראש הכנסת",
+     "of": null,
+     "knesset": 23,
+     "start": "2020-05-27",
+     "end": "2021-04-06",
+     "knessets": [
+      23
+     ]
+    },
+    {
+     "title": "יושב ראש הקואליציה",
+     "of": null,
+     "knesset": 23,
+     "start": "2020-05-25",
+     "end": "2021-04-06",
+     "knessets": [
+      23
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המיוחדת לדיון בהצעת חוק התפזרות הכנסת העשרים ואחת",
+     "knesset": 21,
+     "start": "2019-05-27",
+     "end": "2019-10-03",
+     "knessets": [
+      21
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המיוחדת לדיון בהצעת חוק-יסוד: הממשלה (תיקון מס' 8) (ביטול המגבלה על מספרם המרבי של השרים וסגני השרים",
+     "knesset": 21,
+     "start": "2019-05-20",
+     "end": "2019-10-03",
+     "knessets": [
+      21
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המסדרת",
+     "knesset": 21,
+     "start": "2019-04-30",
+     "end": "2019-10-03",
+     "knessets": [
+      21
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדה משותפת לוועדת הכנסת ולוועדת החוקה, חוק ומשפט לדיון בהצעות חוק לשכת עורכי הדין",
+     "knesset": 20,
+     "start": "2019-01-01",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת החינוך, התרבות והספורט וועדת הכספים לדיון בהצעת חוק להסדר ההימורים בספורט ( תיקון מס' 14 והוראת שעה)",
+     "knesset": 20,
+     "start": "2018-12-19",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת הכנסת ולוועדת המדע והטכנולוגיה לדיון בהצעת חוק התקשורת (בזק ושידורים) (תיקון-חובת סינון אתרים פוגעניים), התשע\"ו-2016",
+     "knesset": 20,
+     "start": "2018-11-28",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת הכנסת ולוועדת החוקה, חוק ומשפט לדיון בהצעת חוק שחרור על תנאי ממאסר (תיקון-ביטול קיצור מאסר לאסירים ביטחוניים), התשע\"ט-2018",
+     "knesset": 20,
+     "start": "2018-11-05",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת הכנסת ולוועדת הפנים והגנת הסביבה לדיון בהצעת חוק הרשויות המקומיות (בחירות) (תיקון - תשלום לחברי ועדות קלפי)",
+     "knesset": 20,
+     "start": "2018-07-10",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת הכנסת ולוועדת העבודה, הרווחה והבריאות לדיון בהצעת חוק שעות עבודה ומנוחה (תיקון - סמכות יושב-ראש הכנסת לעניין עובדי הכנסת)",
+     "knesset": 20,
+     "start": "2018-07-10",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת הכנסת ולוועדת הכלכלה לדיון בהצעת חוק השידור הציבורי הישראלי (תיקון מס' 8) (תיקון)",
+     "knesset": 20,
+     "start": "2018-07-04",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת הכספים ולוועדת הכנסת לתקציב הכנסת",
+     "knesset": 20,
+     "start": "2018-01-29",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת הכנסת",
+     "knesset": 20,
+     "start": "2018-01-23",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המיוחדת לצדק חלוקתי ולשוויון חברתי",
+     "knesset": 20,
+     "start": "2016-08-01",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לספורט",
+     "knesset": 20,
+     "start": "2015-07-28",
+     "end": "2017-10-22",
+     "knessets": [
+      20
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "הליכוד "
+    },
+    {
+     "knesset": 24,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 23,
+     "name": "הליכוד"
+    },
+    {
+     "knesset": 22,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 21,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 20,
+     "name": "הליכוד"
+    }
+   ],
+   "billsInitiated": 628,
+   "billsPassed": 59,
+   "parliamentaryQuestions": 8,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030058",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030058%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030058"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה (במאגר: מכלוף מיקי)"
+  },
   "זנדברג תמר": {
    "knessetPersonId": 23651,
    "nameKnesset": "תמר זנדברג",
@@ -4575,6 +5711,102 @@
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2023651"
    }
   },
+  "חוגיראת יאסר": {
+   "knessetPersonId": 30843,
+   "nameKnesset": "יאסר חוג'יראת",
+   "knessetTerms": [
+    25
+   ],
+   "firstMkDate": "2022-11-15",
+   "yearsAsMk": 3.9,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המדע והטכנולוגיה",
+     "knesset": 25,
+     "start": "2025-01-21",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "רע\"ם"
+    }
+   ],
+   "billsInitiated": 152,
+   "billsPassed": 1,
+   "parliamentaryQuestions": 55,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030843",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030843%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030843"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
+  },
+  "חטיב יאסין אימאן": {
+   "knessetPersonId": 30758,
+   "nameKnesset": "אימאן ח'טיב יאסין",
+   "knessetTerms": [
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2020-03-16",
+   "yearsAsMk": 6.1,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לשיבוץ מורים ערבים בבתי הספר",
+     "knesset": 24,
+     "start": "2021-11-15",
+     "end": "2022-11-15",
+     "knessets": [
+      24
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת משנה לקידום ופיתוח התחבורה הציבורית בחברה הערבית",
+     "knesset": 23,
+     "start": "2020-10-14",
+     "end": "2021-04-06",
+     "knessets": [
+      23
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "רע\"ם"
+    },
+    {
+     "knesset": 24,
+     "name": "הרשימה הערבית המאוחדת"
+    },
+    {
+     "knesset": 23,
+     "name": "רע\"מ – רשימת האיחוד הערבי"
+    },
+    {
+     "knesset": 23,
+     "name": "הרשימה המשותפת חד\"ש, רע\"מ, תע\"ל, בל\"ד"
+    }
+   ],
+   "billsInitiated": 460,
+   "billsPassed": 12,
+   "parliamentaryQuestions": 30,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030758",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030758%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030758"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
+  },
   "חיים יהודה": {
    "knessetPersonId": 2372,
    "nameKnesset": "חיים יהודה",
@@ -4627,6 +5859,77 @@
     "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030916%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030916"
    }
+  },
+  "חנין דב בוריס": {
+   "knessetPersonId": 4416,
+   "nameKnesset": "דב חנין",
+   "knessetTerms": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "firstMkDate": "2006-04-17",
+   "yearsAsMk": 13.0,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לתחבורה ציבורית",
+     "knesset": 20,
+     "start": "2015-07-07",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לבדיקת סוגיית תכנון וסביבה במפרץ חיפה",
+     "knesset": 19,
+     "start": "2013-02-05",
+     "end": "2015-03-31",
+     "knessets": [
+      19
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת הפנים ולוועדת העבודה לענייני סביבה ובריאות",
+     "knesset": 18,
+     "start": "2009-10-27",
+     "end": "2013-02-05",
+     "knessets": [
+      18
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 20,
+     "name": "הרשימה המשותפת (חד\"ש, רע\"ם, בל\"ד ותע\"ל)"
+    },
+    {
+     "knesset": 19,
+     "name": "חד\"ש - החזית הדמוקרטית לשלום ושוויון"
+    },
+    {
+     "knesset": 18,
+     "name": "חזית דמוקרטית לשלום ושוויון"
+    },
+    {
+     "knesset": 17,
+     "name": "חזית דמוקרטית לשלום ושוויון"
+    }
+   ],
+   "billsInitiated": 2974,
+   "billsPassed": 135,
+   "parliamentaryQuestions": 13,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%204416",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%204416%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%204416"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
   },
   "טאהא ווליד": {
    "knessetPersonId": 30752,
@@ -4705,6 +6008,72 @@
     "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030752%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030752"
    }
+  },
+  "טור-פז משה יהודה": {
+   "knessetPersonId": 30777,
+   "nameKnesset": "משה טור פז",
+   "knessetTerms": [
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2021-01-05",
+   "yearsAsMk": 5.5,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה למדיניות חוץ והסברה",
+     "knesset": 25,
+     "start": "2025-02-13",
+     "end": "2026-02-18",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "סגן יושב ראש הכנסת",
+     "of": "סגן יושב-ראש הכנסת",
+     "knesset": 25,
+     "start": "2022-12-13",
+     "end": "2025-03-05",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לחוק חינוך ממלכתי דתי",
+     "knesset": 24,
+     "start": "2021-12-21",
+     "end": "2022-03-13",
+     "knessets": [
+      24
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "יש עתיד"
+    },
+    {
+     "knesset": 24,
+     "name": "יש עתיד"
+    },
+    {
+     "knesset": 23,
+     "name": "יש עתיד - תל\"ם"
+    }
+   ],
+   "billsInitiated": 227,
+   "billsPassed": 7,
+   "parliamentaryQuestions": 50,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030777",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030777%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030777"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
   },
   "טיבי אחמד": {
    "knessetPersonId": 560,
@@ -5061,6 +6430,123 @@
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030830"
    }
   },
+  "טל מירון שלי": {
+   "knessetPersonId": 30871,
+   "nameKnesset": "שלי טל מירון",
+   "knessetTerms": [
+    25
+   ],
+   "firstMkDate": "2023-02-01",
+   "yearsAsMk": 3.6,
+   "roles": [],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "יש עתיד"
+    }
+   ],
+   "billsInitiated": 143,
+   "billsPassed": 9,
+   "parliamentaryQuestions": 38,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030871",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030871%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030871"
+   },
+   "linkReason": "השם שהוגש 'טל מירון שלי' = 'שלי טל מירון' במאגר, בסדר מילים אחר; סיעת יש עתיד בכנסת ה-25"
+  },
+  "טסלר יואל יעקב": {
+   "knessetPersonId": 30671,
+   "nameKnesset": "יעקב טסלר",
+   "knessetTerms": [
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2019-04-30",
+   "yearsAsMk": 6.4,
+   "roles": [
+    {
+     "title": "סגן שר",
+     "of": "משרד התרבות והספורט",
+     "knesset": 25,
+     "start": "2023-01-03",
+     "end": "2025-07-17",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "סגן יושב ראש הכנסת",
+     "of": "סגן יושב-ראש הכנסת",
+     "knesset": 25,
+     "start": "2022-12-07",
+     "end": "2022-12-14",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המיוחדת לפניות הציבור",
+     "knesset": 23,
+     "start": "2020-06-03",
+     "end": "2021-04-06",
+     "knessets": [
+      23
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "יהדות התורה"
+    },
+    {
+     "knesset": 24,
+     "name": "יהדות התורה והשבת - אגודת ישראל דגל התורה"
+    },
+    {
+     "knesset": 24,
+     "name": "אגודת ישראל"
+    },
+    {
+     "knesset": 23,
+     "name": "יהדות התורה והשבת אגודת ישראל - דגל התורה"
+    },
+    {
+     "knesset": 23,
+     "name": "אגודת ישראל"
+    },
+    {
+     "knesset": 22,
+     "name": "יהדות התורה והשבת אגודת ישראל - דגל התורה"
+    },
+    {
+     "knesset": 22,
+     "name": "אגודת ישראל"
+    },
+    {
+     "knesset": 21,
+     "name": "יהדות התורה"
+    },
+    {
+     "knesset": 21,
+     "name": "אגודת ישראל"
+    }
+   ],
+   "billsInitiated": 72,
+   "billsPassed": 3,
+   "parliamentaryQuestions": 3,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030671",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030671%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030671"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
+  },
   "טרכטנברג מנואל": {
    "knessetPersonId": 30060,
    "nameKnesset": "מנואל טרכטנברג",
@@ -5084,6 +6570,256 @@
     "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030060%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030060"
    }
+  },
+  "יברקן דסטה": {
+   "knessetPersonId": 30724,
+   "nameKnesset": "דסטה גדי יברקן",
+   "knessetTerms": [
+    21,
+    22,
+    23,
+    24
+   ],
+   "firstMkDate": "2019-04-30",
+   "yearsAsMk": 3.1,
+   "roles": [
+    {
+     "title": "סגן שר",
+     "of": "המשרד לביטחון הפנים",
+     "knesset": 24,
+     "start": "2020-05-25",
+     "end": "2021-06-13",
+     "knessets": [
+      23,
+      24
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 24,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 23,
+     "name": "הליכוד"
+    },
+    {
+     "knesset": 22,
+     "name": "כחול לבן"
+    },
+    {
+     "knesset": 21,
+     "name": "כחול לבן"
+    }
+   ],
+   "billsInitiated": 60,
+   "billsPassed": 2,
+   "parliamentaryQuestions": 1,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030724",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030724%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030724"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה (במאגר: דסטה גדי)"
+  },
+  "יצחק זאב פינדרוס": {
+   "knessetPersonId": 30672,
+   "nameKnesset": "יצחק פינדרוס",
+   "knessetTerms": [
+    21,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2019-04-30",
+   "yearsAsMk": 6.0,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לעניין פיקוח על גופים נותני שירותים פיננסיים בתחום שוק ההון",
+     "knesset": 25,
+     "start": "2024-06-25",
+     "end": "2025-07-17",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר סיעה",
+     "of": "יהדות התורה",
+     "knesset": 25,
+     "start": "2023-01-23",
+     "end": "2025-07-17",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המיוחדת לפניות הציבור",
+     "knesset": 25,
+     "start": "2023-01-10",
+     "end": "2025-07-17",
+     "knessets": [
+      25
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "יהדות התורה"
+    },
+    {
+     "knesset": 24,
+     "name": "יהדות התורה והשבת - אגודת ישראל דגל התורה"
+    },
+    {
+     "knesset": 24,
+     "name": "דגל התורה"
+    },
+    {
+     "knesset": 23,
+     "name": "יהדות התורה והשבת אגודת ישראל - דגל התורה"
+    },
+    {
+     "knesset": 23,
+     "name": "דגל התורה"
+    },
+    {
+     "knesset": 21,
+     "name": "יהדות התורה"
+    },
+    {
+     "knesset": 21,
+     "name": "דגל התורה"
+    }
+   ],
+   "billsInitiated": 396,
+   "billsPassed": 22,
+   "parliamentaryQuestions": 74,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030672",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030672%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030672"
+   },
+   "linkReason": "השם הוגש בסדר 'יצחק זאב פינדרוס'; במאגר 'יצחק פינדרוס', סיעת יהדות התורה"
+  },
+  "כהן אליהו": {
+   "knessetPersonId": 30083,
+   "nameKnesset": "אלי כהן",
+   "knessetTerms": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2015-03-31",
+   "yearsAsMk": 7.9,
+   "roles": [
+    {
+     "title": "שר",
+     "of": "משרד האנרגיה והתשתיות",
+     "knesset": 25,
+     "start": "2024-01-01",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד החוץ",
+     "knesset": 25,
+     "start": "2022-12-29",
+     "end": "2024-01-01",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד המודיעין",
+     "knesset": 24,
+     "start": "2020-05-17",
+     "end": "2021-06-13",
+     "knessets": [
+      23,
+      24
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד הכלכלה",
+     "knesset": 23,
+     "start": "2017-01-23",
+     "end": "2020-05-17",
+     "knessets": [
+      20,
+      21,
+      22,
+      23
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדה המיוחדת ולוועדת הכלכלה לדיון בהצעת חוק התקנים (תיקון - מעבדה מוסמכת לאישור ייבוא טובין) ובפרק י\"ג (תקינה) בהצעת חוק ההסדרים",
+     "knesset": 20,
+     "start": "2016-02-17",
+     "end": "2017-01-23",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המיוחדת לעניין הצעות חוק מסוימות שהועברו לדיון בה",
+     "knesset": 20,
+     "start": "2015-07-14",
+     "end": "2017-02-08",
+     "knessets": [
+      20
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "הליכוד "
+    },
+    {
+     "knesset": 24,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 23,
+     "name": "הליכוד"
+    },
+    {
+     "knesset": 22,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 21,
+     "name": "כולנו בראשות משה כחלון"
+    },
+    {
+     "knesset": 20,
+     "name": "כולנו בראשות משה כחלון"
+    }
+   ],
+   "billsInitiated": 134,
+   "billsPassed": 19,
+   "parliamentaryQuestions": 13,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030083",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030083%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030083"
+   },
+   "linkReason": "שם פרטי אליהו/אלי; מבין שני 'אלי כהן' במאגר - זה שכיהן בסיעת הליכוד בכנסות 23-25"
   },
   "כהן אלמוג": {
    "knessetPersonId": 30833,
@@ -5399,6 +7135,46 @@
     "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030686%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030686"
    }
+  },
+  "כהן פארן יעל": {
+   "knessetPersonId": 30289,
+   "nameKnesset": "יעל כהן-פארן",
+   "knessetTerms": [
+    20
+   ],
+   "firstMkDate": "2015-11-25",
+   "yearsAsMk": 3.4,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לקידום טכנולוגיות לאנרגיה מתחדשת - פיקוח ומעקב אחר יישום החלטות ועידת פריז",
+     "knesset": 20,
+     "start": "2016-02-16",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 20,
+     "name": "התנועה"
+    },
+    {
+     "knesset": 20,
+     "name": "המחנה הציוני"
+    }
+   ],
+   "billsInitiated": 327,
+   "billsPassed": 12,
+   "parliamentaryQuestions": 53,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030289",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030289%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030289"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
   },
   "כהן רן": {
    "knessetPersonId": 507,
@@ -6509,6 +8285,308 @@
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%20536"
    }
   },
+  "לוין יריב גדעון": {
+   "knessetPersonId": 12951,
+   "nameKnesset": "יריב לוין",
+   "knessetTerms": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2009-02-24",
+   "yearsAsMk": 17.6,
+   "roles": [
+    {
+     "title": "שר",
+     "of": "משרד ירושלים ומסורת ישראל",
+     "knesset": 25,
+     "start": "2025-11-24",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד הפנים",
+     "knesset": 25,
+     "start": "2025-07-29",
+     "end": "2025-12-24",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד העבודה",
+     "knesset": 25,
+     "start": "2025-07-29",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "המשרד לשירותי דת",
+     "knesset": 25,
+     "start": "2025-07-29",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד המשפטים",
+     "knesset": 25,
+     "start": "2022-12-29",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "סגן ראש הממשלה",
+     "of": "משרד ראש הממשלה",
+     "knesset": 25,
+     "start": "2022-12-29",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד המודיעין",
+     "knesset": 25,
+     "start": "2022-12-29",
+     "end": "2023-01-02",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יושב ראש הכנסת",
+     "of": "יושב–ראש הכנסת",
+     "knesset": 25,
+     "start": "2022-12-13",
+     "end": "2022-12-29",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר סיעה",
+     "of": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה",
+     "knesset": 24,
+     "start": "2021-04-06",
+     "end": "2022-11-15",
+     "knessets": [
+      24
+     ]
+    },
+    {
+     "title": "יושב ראש הכנסת",
+     "of": "יושב–ראש הכנסת",
+     "knesset": 24,
+     "start": "2020-05-17",
+     "end": "2021-06-13",
+     "knessets": [
+      23,
+      24
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד העלייה והקליטה",
+     "knesset": 20,
+     "start": "2018-12-24",
+     "end": "2019-01-09",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד התיירות",
+     "knesset": 23,
+     "start": "2015-05-14",
+     "end": "2020-05-17",
+     "knessets": [
+      20,
+      21,
+      22,
+      23
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "המשרד לביטחון הפנים",
+     "knesset": 20,
+     "start": "2015-05-14",
+     "end": "2015-05-25",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד הקשר בין הממשלה לכנסת",
+     "knesset": 23,
+     "start": "2015-05-14",
+     "end": "2020-05-17",
+     "knessets": [
+      20,
+      21,
+      22,
+      23
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת הכנסת",
+     "knesset": 19,
+     "start": "2014-06-02",
+     "end": "2015-01-01",
+     "knessets": [
+      19
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת החוקה, חוק ומשפט ולוועדת הכנסת להצעות חוק יסוד: משאל עם",
+     "knesset": 19,
+     "start": "2013-11-04",
+     "end": "2015-03-31",
+     "knessets": [
+      19
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת החוץ והביטחון ולוועדת החוקה, חוק ומשפט לאישור תקנות (סדרי הדין בוועדה לבחינת פטור מטעמי הכרה דתית והרכבה)",
+     "knesset": 19,
+     "start": "2013-10-21",
+     "end": "2015-03-31",
+     "knessets": [
+      19
+     ]
+    },
+    {
+     "title": "יושב ראש הקואליציה",
+     "of": null,
+     "knesset": 19,
+     "start": "2013-04-25",
+     "end": "2015-03-31",
+     "knessets": [
+      19
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המיוחדת לדיון בהצעת חוק הרבנות הראשית לישראל",
+     "knesset": 19,
+     "start": "2013-03-19",
+     "end": "2015-03-31",
+     "knessets": [
+      19
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת החוץ והביטחון",
+     "knesset": 19,
+     "start": "2013-01-01",
+     "end": "2015-03-31",
+     "knessets": [
+      19
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת הכנסת",
+     "knesset": 18,
+     "start": "2009-08-03",
+     "end": "2013-02-05",
+     "knessets": [
+      18
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לדיון בהצעת חוק סדרי השלטון והמשפט (משאל עם)",
+     "knesset": 18,
+     "start": "2009-07-22",
+     "end": "2013-02-05",
+     "knessets": [
+      18
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת הכנסת ולוועדת הכספים לעניין תקציב הכנסת",
+     "knesset": 18,
+     "start": "2009-06-08",
+     "end": "2013-02-05",
+     "knessets": [
+      18
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "הליכוד "
+    },
+    {
+     "knesset": 24,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 23,
+     "name": "הליכוד"
+    },
+    {
+     "knesset": 22,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 21,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 20,
+     "name": "הליכוד"
+    },
+    {
+     "knesset": 19,
+     "name": "הליכוד - תנועה לאומית ליברלית"
+    },
+    {
+     "knesset": 19,
+     "name": "הליכוד - ישראל ביתנו "
+    },
+    {
+     "knesset": 18,
+     "name": "הליכוד - אח\"י בהנהגת בנימין נתניהו לראשות הממשלה"
+    }
+   ],
+   "billsInitiated": 577,
+   "billsPassed": 84,
+   "parliamentaryQuestions": 28,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2012951",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2012951%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2012951"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
+  },
   "לזימי נעמה": {
    "knessetPersonId": 30106,
    "nameKnesset": "נעמה לזימי",
@@ -7210,6 +9288,189 @@
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030873"
    }
   },
+  "מלינובסקי קונין יוליה": {
+   "knessetPersonId": 23560,
+   "nameKnesset": "יוליה מלינובסקי",
+   "knessetTerms": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2016-06-01",
+   "yearsAsMk": 9.9,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת מיזמי תשתית לאומיים מיוחדים ושירותי דת יהודיים ",
+     "knesset": 24,
+     "start": "2021-08-11",
+     "end": "2022-11-15",
+     "knessets": [
+      24
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "ישראל ביתנו"
+    },
+    {
+     "knesset": 24,
+     "name": "ישראל ביתנו"
+    },
+    {
+     "knesset": 23,
+     "name": "ישראל ביתנו בראשות אביגדור ליברמן"
+    },
+    {
+     "knesset": 22,
+     "name": "ישראל ביתנו בראשות אביגדור ליברמן"
+    },
+    {
+     "knesset": 21,
+     "name": "ישראל ביתנו בראשות אביגדור ליברמן"
+    },
+    {
+     "knesset": 20,
+     "name": "ישראל ביתנו"
+    }
+   ],
+   "billsInitiated": 866,
+   "billsPassed": 50,
+   "parliamentaryQuestions": 37,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2023560",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2023560%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2023560"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
+  },
+  "מלכיאלי מיכאל משה": {
+   "knessetPersonId": 30470,
+   "nameKnesset": "מיכאל מלכיאלי",
+   "knessetTerms": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2016-11-02",
+   "yearsAsMk": 9.9,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המיוחדת לצמצום פערים חברתיים בפריפריה",
+     "knesset": 25,
+     "start": "2025-08-04",
+     "end": "2025-10-23",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד הפנים",
+     "knesset": 25,
+     "start": "2023-01-24",
+     "end": "2023-04-19",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "המשרד לשירותי דת",
+     "knesset": 25,
+     "start": "2022-12-29",
+     "end": "2025-07-20",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר סיעה",
+     "of": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+     "knesset": 25,
+     "start": "2022-11-15",
+     "end": "2023-01-02",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר סיעה",
+     "of": "ש\"ס",
+     "knesset": 24,
+     "start": "2021-04-06",
+     "end": "2022-11-15",
+     "knessets": [
+      24
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה להגנת העורף",
+     "knesset": 24,
+     "start": "2020-10-21",
+     "end": "2021-06-14",
+     "knessets": [
+      23,
+      24
+     ]
+    },
+    {
+     "title": "סגן יושב ראש הכנסת",
+     "of": null,
+     "knesset": 20,
+     "start": "2019-01-09",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל"
+    },
+    {
+     "knesset": 24,
+     "name": "ש\"ס"
+    },
+    {
+     "knesset": 23,
+     "name": "ש\"ס"
+    },
+    {
+     "knesset": 22,
+     "name": "ש\"ס"
+    },
+    {
+     "knesset": 21,
+     "name": "ש\"ס"
+    },
+    {
+     "knesset": 20,
+     "name": "ש\"ס"
+    }
+   ],
+   "billsInitiated": 673,
+   "billsPassed": 25,
+   "parliamentaryQuestions": 17,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030470",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030470%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030470"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
+  },
   "מצנע עמרם": {
    "knessetPersonId": 1042,
    "nameKnesset": "עמרם מצנע",
@@ -7283,6 +9544,193 @@
     "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%201042%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%201042"
    }
+  },
+  "מקלב ישראל מאיר אורי": {
+   "knessetPersonId": 11835,
+   "nameKnesset": "אורי מקלב",
+   "knessetTerms": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2008-07-31",
+   "yearsAsMk": 14.7,
+   "roles": [
+    {
+     "title": "סגן שר",
+     "of": "משרד ראש הממשלה",
+     "knesset": 25,
+     "start": "2023-01-03",
+     "end": "2025-07-16",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "סגן שר",
+     "of": "משרד התחבורה והבטיחות בדרכים",
+     "knesset": 25,
+     "start": "2023-01-03",
+     "end": "2025-07-16",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "סגן שר",
+     "of": "משרד התחבורה והבטיחות בדרכים",
+     "knesset": 24,
+     "start": "2020-05-25",
+     "end": "2021-06-13",
+     "knessets": [
+      23,
+      24
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לעניין מעקב אחר ניתוק החקיקה ממצב חירום",
+     "knesset": 20,
+     "start": "2016-01-01",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לבטיחות בדרכים",
+     "knesset": 20,
+     "start": "2015-08-04",
+     "end": "2016-08-01",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המדע והטכנולוגיה",
+     "knesset": 20,
+     "start": "2015-06-01",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת המדע והטכנולוגיה ולוועדת החוקה, חוק ומשפט, לפי חוק פיקוח אלקטרוני על עצור ועל אסיר משוחרר על תנאי (תיקוני חקיקה), התשע\"ד-2014",
+     "knesset": 20,
+     "start": "2015-03-22",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "סגן יושב ראש הכנסת",
+     "of": null,
+     "knesset": 19,
+     "start": "2013-10-21",
+     "end": "2015-03-31",
+     "knessets": [
+      19
+     ]
+    },
+    {
+     "title": "סגן יושב ראש הכנסת",
+     "of": null,
+     "knesset": 18,
+     "start": "2009-05-06",
+     "end": "2012-07-18",
+     "knessets": [
+      18
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המיוחדת לפניות הציבור",
+     "knesset": 18,
+     "start": "2009-05-04",
+     "end": "2011-08-03",
+     "knessets": [
+      18
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "יהדות התורה"
+    },
+    {
+     "knesset": 24,
+     "name": "יהדות התורה והשבת - אגודת ישראל דגל התורה"
+    },
+    {
+     "knesset": 24,
+     "name": "דגל התורה"
+    },
+    {
+     "knesset": 23,
+     "name": "יהדות התורה והשבת אגודת ישראל - דגל התורה"
+    },
+    {
+     "knesset": 22,
+     "name": "יהדות התורה והשבת אגודת ישראל - דגל התורה"
+    },
+    {
+     "knesset": 22,
+     "name": "דגל התורה"
+    },
+    {
+     "knesset": 21,
+     "name": "יהדות התורה"
+    },
+    {
+     "knesset": 21,
+     "name": "דגל התורה"
+    },
+    {
+     "knesset": 20,
+     "name": "יהדות התורה"
+    },
+    {
+     "knesset": 20,
+     "name": "דגל התורה"
+    },
+    {
+     "knesset": 19,
+     "name": "יהדות התורה והשבת, אגודת ישראל - דגל התורה"
+    },
+    {
+     "knesset": 18,
+     "name": "יהדות התורה והשבת אגודת ישראל - דגל התורה"
+    },
+    {
+     "knesset": 17,
+     "name": "יהדות התורה והשבת אגודת ישראל-דגל התורה"
+    },
+    {
+     "knesset": 17,
+     "name": "דגל התורה"
+    }
+   ],
+   "billsInitiated": 1288,
+   "billsPassed": 107,
+   "parliamentaryQuestions": 76,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2011835",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2011835%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2011835"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
   },
   "מרגי יעקב": {
    "knessetPersonId": 1056,
@@ -8268,6 +10716,71 @@
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%20965"
    }
   },
+  "סגלוביץ יואב": {
+   "knessetPersonId": 30695,
+   "nameKnesset": "יואב סגלוביץ'",
+   "knessetTerms": [
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2019-04-30",
+   "yearsAsMk": 7.3,
+   "roles": [
+    {
+     "title": "סגן שר",
+     "of": "המשרד לביטחון הפנים",
+     "knesset": 25,
+     "start": "2021-06-28",
+     "end": "2022-12-29",
+     "knessets": [
+      24,
+      25
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "יש עתיד"
+    },
+    {
+     "knesset": 24,
+     "name": "יש עתיד"
+    },
+    {
+     "knesset": 23,
+     "name": "כחול לבן בראשות בנימין גנץ"
+    },
+    {
+     "knesset": 23,
+     "name": "יש עתיד - תל\"ם"
+    },
+    {
+     "knesset": 23,
+     "name": "יש עתיד"
+    },
+    {
+     "knesset": 22,
+     "name": "כחול לבן"
+    },
+    {
+     "knesset": 21,
+     "name": "כחול לבן"
+    }
+   ],
+   "billsInitiated": 154,
+   "billsPassed": 7,
+   "parliamentaryQuestions": 35,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030695",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030695%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030695"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה (במאגר עם גרש)"
+  },
   "סובה יבגני": {
    "knessetPersonId": 30722,
    "nameKnesset": "יבגני סובה",
@@ -8417,6 +10930,66 @@
     "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030874%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030874"
    }
+  },
+  "סון הר-מלך לימור": {
+   "knessetPersonId": 30849,
+   "nameKnesset": "לימור סון הר מלך",
+   "knessetTerms": [
+    25
+   ],
+   "firstMkDate": "2022-11-15",
+   "yearsAsMk": 3.9,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת הבריאות",
+     "knesset": 25,
+     "start": "2025-12-23",
+     "end": "2026-02-23",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "סגנית יושב ראש הכנסת",
+     "of": null,
+     "knesset": 25,
+     "start": "2025-05-26",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה לפיקוח על הקרן לאזרחי ישראל",
+     "knesset": 25,
+     "start": "2023-01-17",
+     "end": "2025-01-20",
+     "knessets": [
+      25
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "עוצמה יהודית בראשות איתמר בן גביר"
+    },
+    {
+     "knesset": 25,
+     "name": "הציונות הדתית"
+    }
+   ],
+   "billsInitiated": 221,
+   "billsPassed": 27,
+   "parliamentaryQuestions": 3,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030849",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030849%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030849"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
   },
   "סטרוק אורית מלכה": {
    "knessetPersonId": 23551,
@@ -8610,6 +11183,131 @@
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030921"
    }
   },
+  "סמוטריץ בצלאל יואל": {
+   "knessetPersonId": 30055,
+   "nameKnesset": "בצלאל סמוטריץ'",
+   "knessetTerms": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2015-03-31",
+   "yearsAsMk": 7.9,
+   "roles": [
+    {
+     "title": "שר",
+     "of": "משרד האוצר",
+     "knesset": 25,
+     "start": "2022-12-29",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד הביטחון",
+     "knesset": 25,
+     "start": "2022-12-29",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר סיעה",
+     "of": "הציונות הדתית בראשות בצלאל סמוטריץ'",
+     "knesset": 25,
+     "start": "2022-11-15",
+     "end": "2022-12-15",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד התחבורה והבטיחות בדרכים",
+     "knesset": 23,
+     "start": "2019-06-23",
+     "end": "2020-05-17",
+     "knessets": [
+      21,
+      22,
+      23
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת החוקה, חוק ומשפט ולוועדת הפנים והגנת הסביבה לדיון בהצעת חוק יישובים ושכונות בהליכי הסדרה, התשע\"ח-2018",
+     "knesset": 20,
+     "start": "2018-12-24",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "סגן יושב ראש הכנסת",
+     "of": null,
+     "knesset": 20,
+     "start": "2015-06-01",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "הציונות הדתית בראשות בצלאל סמוטריץ'"
+    },
+    {
+     "knesset": 25,
+     "name": "הציונות הדתית"
+    },
+    {
+     "knesset": 24,
+     "name": "הציונות הדתית"
+    },
+    {
+     "knesset": 23,
+     "name": "ימינה"
+    },
+    {
+     "knesset": 23,
+     "name": "האיחוד הלאומי"
+    },
+    {
+     "knesset": 22,
+     "name": "ימינה בראשות איילת שקד הבית היהודי – האיחוד הלאומי – הימין החדש"
+    },
+    {
+     "knesset": 22,
+     "name": "הבית היהודי - האיחוד הלאומי"
+    },
+    {
+     "knesset": 21,
+     "name": "הבית היהודי - האיחוד הלאומי"
+    },
+    {
+     "knesset": 20,
+     "name": "הבית היהודי בראשות נפתלי בנט"
+    }
+   ],
+   "billsInitiated": 490,
+   "billsPassed": 53,
+   "parliamentaryQuestions": 26,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030055",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030055%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030055"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה (במאגר עם גרש: סמוטריץ')"
+  },
   "סנה אפרים": {
    "knessetPersonId": 454,
    "nameKnesset": "אפרים סנה",
@@ -8769,6 +11467,262 @@
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030853"
    }
   },
+  "סער גדעון משה": {
+   "knessetPersonId": 1027,
+   "nameKnesset": "גדעון סער",
+   "knessetTerms": [
+    16,
+    17,
+    18,
+    19,
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2003-02-17",
+   "yearsAsMk": 16.2,
+   "roles": [
+    {
+     "title": "שר",
+     "of": "משרד החוץ",
+     "knesset": 25,
+     "start": "2024-11-08",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "בלי תיק",
+     "knesset": 25,
+     "start": "2024-09-30",
+     "end": "2024-11-08",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה למדיניות חוץ והסברה",
+     "knesset": 25,
+     "start": "2024-04-02",
+     "end": "2024-09-30",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "בלי תיק",
+     "knesset": 25,
+     "start": "2023-10-12",
+     "end": "2024-03-27",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה למדיניות חוץ והסברה",
+     "knesset": 25,
+     "start": "2023-02-05",
+     "end": "2023-10-12",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד המשפטים",
+     "knesset": 25,
+     "start": "2021-06-13",
+     "end": "2022-12-29",
+     "knessets": [
+      24,
+      25
+     ]
+    },
+    {
+     "title": "סגן ראש הממשלה",
+     "of": "משרד ראש הממשלה",
+     "knesset": 24,
+     "start": "2021-06-13",
+     "end": "2021-07-09",
+     "knessets": [
+      24
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לעניינים אזרחיים וביטחוניים ביו\"ש",
+     "knesset": 23,
+     "start": "2020-10-21",
+     "end": "2020-12-11",
+     "knessets": [
+      23
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה למדיניות חוץ והסברה (זמנית)",
+     "knesset": 22,
+     "start": "2019-10-30",
+     "end": "2020-03-16",
+     "knessets": [
+      22
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה למדיניות חוץ (זמנית)",
+     "knesset": 21,
+     "start": "2019-07-11",
+     "end": "2019-10-03",
+     "knessets": [
+      21
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד הפנים",
+     "knesset": 19,
+     "start": "2013-03-18",
+     "end": "2014-11-04",
+     "knessets": [
+      19
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד החינוך",
+     "knesset": 19,
+     "start": "2009-03-31",
+     "end": "2013-03-18",
+     "knessets": [
+      18,
+      19
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה לקידום מעמד האישה",
+     "knesset": 17,
+     "start": "2006-05-23",
+     "end": "2008-03-11",
+     "knessets": [
+      17
+     ]
+    },
+    {
+     "title": "סגן יושב ראש הכנסת",
+     "of": null,
+     "knesset": 17,
+     "start": "2006-05-08",
+     "end": "2007-03-19",
+     "knessets": [
+      17
+     ]
+    },
+    {
+     "title": "יו\"ר סיעה",
+     "of": "הליכוד עם בנימין נתניהו לראשות הממשלה",
+     "knesset": 17,
+     "start": "2006-04-17",
+     "end": "2009-02-24",
+     "knessets": [
+      17
+     ]
+    },
+    {
+     "title": "יו\"ר סיעה",
+     "of": "הליכוד",
+     "knesset": 16,
+     "start": "2003-02-17",
+     "end": "2006-04-17",
+     "knessets": [
+      16
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לתיקונים בחוקי הבחירות",
+     "knesset": 16,
+     "start": "2003-02-17",
+     "end": "2006-04-17",
+     "knessets": [
+      16
+     ]
+    },
+    {
+     "title": "יושב ראש הקואליציה",
+     "of": "יושב ראש הקואליציה",
+     "knesset": 16,
+     "start": "2003-02-17",
+     "end": "2006-04-17",
+     "knessets": [
+      16
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "המחנה הממלכתי"
+    },
+    {
+     "knesset": 25,
+     "name": "הימין הממלכתי "
+    },
+    {
+     "knesset": 24,
+     "name": "תקווה חדשה"
+    },
+    {
+     "knesset": 23,
+     "name": "הליכוד"
+    },
+    {
+     "knesset": 22,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 21,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 19,
+     "name": "הליכוד - תנועה לאומית ליברלית"
+    },
+    {
+     "knesset": 19,
+     "name": "הליכוד - ישראל ביתנו "
+    },
+    {
+     "knesset": 18,
+     "name": "הליכוד - אח\"י בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 17,
+     "name": "הליכוד עם בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 16,
+     "name": "הליכוד"
+    }
+   ],
+   "billsInitiated": 196,
+   "billsPassed": 32,
+   "parliamentaryQuestions": 0,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%201027",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%201027%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%201027"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
+  },
   "סרטני אמירה": {
    "knessetPersonId": 2515,
    "nameKnesset": "אמירה סרטני",
@@ -8908,6 +11862,97 @@
     "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030893%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030893"
    }
+  },
+  "עזוז עדי עליזה": {
+   "knessetPersonId": 30895,
+   "nameKnesset": "עדי עזוז",
+   "knessetTerms": [
+    25
+   ],
+   "firstMkDate": "2025-08-13",
+   "yearsAsMk": 1.1,
+   "roles": [],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "יש עתיד"
+    }
+   ],
+   "billsInitiated": 17,
+   "billsPassed": 0,
+   "parliamentaryQuestions": 4,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030895",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030895%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030895"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
+  },
+  "עטייה חוה-אתי": {
+   "knessetPersonId": 30702,
+   "nameKnesset": "חוה אתי עטייה",
+   "knessetTerms": [
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2019-04-30",
+   "yearsAsMk": 7.3,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המיוחדת לעובדים זרים",
+     "knesset": 25,
+     "start": "2025-02-18",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לעידוד תעסוקה והכשרות מקצועיות",
+     "knesset": 23,
+     "start": "2020-10-28",
+     "end": "2021-04-06",
+     "knessets": [
+      23
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "הליכוד "
+    },
+    {
+     "knesset": 24,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 23,
+     "name": "הליכוד"
+    },
+    {
+     "knesset": 22,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 21,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    }
+   ],
+   "billsInitiated": 551,
+   "billsPassed": 25,
+   "parliamentaryQuestions": 2,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030702",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030702%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030702"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
   },
   "עמאר חמד": {
    "knessetPersonId": 12938,
@@ -9058,6 +12103,78 @@
     "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2012938%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2012938"
    }
+  },
+  "פולקמן רועי שמואל": {
+   "knessetPersonId": 30084,
+   "nameKnesset": "רועי פולקמן",
+   "knessetTerms": [
+    20,
+    21
+   ],
+   "firstMkDate": "2015-03-31",
+   "yearsAsMk": 4.5,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לעניין ציר עוקף חוסן",
+     "knesset": 20,
+     "start": "2016-04-18",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המיוחדת לדיון בהלס\"י בנושא קשיים ברפורמה בשירות המדינה",
+     "knesset": 20,
+     "start": "2016-01-25",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לקידום עסקים קטנים ובינוניים",
+     "knesset": 20,
+     "start": "2015-12-22",
+     "end": "2019-04-30",
+     "knessets": [
+      20
+     ]
+    },
+    {
+     "title": "יו\"ר סיעה",
+     "of": "כולנו בראשות משה כחלון",
+     "knesset": 21,
+     "start": "2015-04-15",
+     "end": "2019-10-03",
+     "knessets": [
+      20,
+      21
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 21,
+     "name": "כולנו בראשות משה כחלון"
+    },
+    {
+     "knesset": 20,
+     "name": "כולנו בראשות משה כחלון"
+    }
+   ],
+   "billsInitiated": 566,
+   "billsPassed": 71,
+   "parliamentaryQuestions": 3,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030084",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030084%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030084"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
   },
   "פורר עודד": {
    "knessetPersonId": 30121,
@@ -9525,6 +12642,112 @@
     "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030783%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030783"
    }
+  },
+  "פרקש-הכהן אורית": {
+   "knessetPersonId": 30685,
+   "nameKnesset": "אורית פרקש הכהן",
+   "knessetTerms": [
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2019-04-30",
+   "yearsAsMk": 5.5,
+   "roles": [
+    {
+     "title": "סגנית יושב ראש הכנסת",
+     "of": "סגנית יושב-ראש הכנסת",
+     "knesset": 25,
+     "start": "2023-10-23",
+     "end": "2025-10-22",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לנושא בינה מלאכותית וטכנולוגיות מתקדמות",
+     "knesset": 25,
+     "start": "2023-07-11",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שרה",
+     "of": "משרד החדשנות, המדע והטכנולוגיה",
+     "knesset": 25,
+     "start": "2021-06-13",
+     "end": "2022-12-29",
+     "knessets": [
+      24,
+      25
+     ]
+    },
+    {
+     "title": "שרה",
+     "of": "משרד התיירות",
+     "knesset": 24,
+     "start": "2020-10-14",
+     "end": "2021-06-13",
+     "knessets": [
+      23,
+      24
+     ]
+    },
+    {
+     "title": "שרה",
+     "of": "המשרד לנושאים אסטרטגיים והסברה",
+     "knesset": 23,
+     "start": "2020-05-17",
+     "end": "2020-11-30",
+     "knessets": [
+      23
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "כחול לבן - המחנה הממלכתי"
+    },
+    {
+     "knesset": 25,
+     "name": "המחנה הממלכתי"
+    },
+    {
+     "knesset": 24,
+     "name": "כחול לבן"
+    },
+    {
+     "knesset": 23,
+     "name": "כחול לבן בראשות בנימין גנץ"
+    },
+    {
+     "knesset": 23,
+     "name": "כחול לבן"
+    },
+    {
+     "knesset": 22,
+     "name": "כחול לבן"
+    },
+    {
+     "knesset": 21,
+     "name": "כחול לבן"
+    }
+   ],
+   "billsInitiated": 88,
+   "billsPassed": 4,
+   "parliamentaryQuestions": 5,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030685",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030685%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030685"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
   },
   "צוקר דוד": {
    "knessetPersonId": 2566,
@@ -10128,6 +13351,145 @@
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030704"
    }
   },
+  "רגב מרים": {
+   "knessetPersonId": 12959,
+   "nameKnesset": "מירי מרים רגב",
+   "knessetTerms": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2009-02-24",
+   "yearsAsMk": 14.0,
+   "roles": [
+    {
+     "title": "שרה",
+     "of": "משרד התחבורה והבטיחות בדרכים",
+     "knesset": 25,
+     "start": "2022-12-29",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שרה",
+     "of": "משרד התחבורה והבטיחות בדרכים",
+     "knesset": 24,
+     "start": "2020-05-17",
+     "end": "2021-06-13",
+     "knessets": [
+      23,
+      24
+     ]
+    },
+    {
+     "title": "שרה",
+     "of": "משרד התרבות והספורט",
+     "knesset": 23,
+     "start": "2015-05-14",
+     "end": "2020-05-17",
+     "knessets": [
+      20,
+      21,
+      22,
+      23
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת הפנים ולוועדת הכלכלה לפי חוק הליכי תכנון ובנייה ",
+     "knesset": 19,
+     "start": "2013-04-22",
+     "end": "2015-03-31",
+     "knessets": [
+      19
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת הפנים והגנת הסביבה",
+     "knesset": 19,
+     "start": "2013-04-17",
+     "end": "2015-03-31",
+     "knessets": [
+      19
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לביטחון פנים",
+     "knesset": 19,
+     "start": "2013-02-05",
+     "end": "2015-03-31",
+     "knessets": [
+      19
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לפריפריה",
+     "knesset": 18,
+     "start": "2009-07-20",
+     "end": "2013-02-05",
+     "knessets": [
+      18
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "הליכוד "
+    },
+    {
+     "knesset": 24,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 23,
+     "name": "הליכוד"
+    },
+    {
+     "knesset": 22,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 21,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 20,
+     "name": "הליכוד"
+    },
+    {
+     "knesset": 19,
+     "name": "הליכוד - תנועה לאומית ליברלית"
+    },
+    {
+     "knesset": 19,
+     "name": "הליכוד - ישראל ביתנו "
+    },
+    {
+     "knesset": 18,
+     "name": "הליכוד - אח\"י בהנהגת בנימין נתניהו לראשות הממשלה"
+    }
+   ],
+   "billsInitiated": 591,
+   "billsPassed": 27,
+   "parliamentaryQuestions": 4,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2012959",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2012959%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2012959"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה (במאגר: מירי מרים)"
+  },
   "רוזין מיכל": {
    "knessetPersonId": 23653,
    "nameKnesset": "מיכל רוזין",
@@ -10243,6 +13605,176 @@
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030870"
    }
   },
+  "רוטמן שמחה דן": {
+   "knessetPersonId": 30812,
+   "nameKnesset": "שמחה רוטמן",
+   "knessetTerms": [
+    24,
+    25
+   ],
+   "firstMkDate": "2021-04-06",
+   "yearsAsMk": 5.5,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת של ועדת החוקה, חוק ומשפט ושל ועדת הכלכלה לדיון בהצעת חוק תובענות ייצוגיות (תיקון מס' 16) התשפ\"ד-2024 (מ/1785) ",
+     "knesset": 25,
+     "start": "2024-08-05",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת לוועדת החוקה, חוק ומשפט ולוועדת החוץ והביטחון לפי חוק המידע הפלילי ותקנת שבים, התשע\"ט-2019",
+     "knesset": 25,
+     "start": "2024-01-08",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לבחינת פעולות הממשלה לשם יצירת מסגרת משפטית מתאימה להחזקתם ולהעמדתם לדין של מחבלי החמאס שהשתתפו בהתקפה על ישראל בשבעה באוקטובר 2023",
+     "knesset": 25,
+     "start": "2023-12-04",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת של ועדת החוקה, חוק ומשפט ושל הוועדה לקידום מעמד האישה ולשוויון מגדרי לדיון בהצעת חוק לקידום הנשים בישראל, התשפ\"ג-2023 (פ/3670/25)",
+     "knesset": 25,
+     "start": "2023-07-18",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לעניין הפעלת רוגלות על-ידי משטרת ישראל לביצוע האזנת סתר",
+     "knesset": 25,
+     "start": "2023-04-23",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת של ועדת החוקה, חוק ומשפט והוועדה לביטחון לאומי לדיון בהצעת חוק העונשין (תיקון - הגדרת איום), התשפ\"ג-2023 (פ/2156/25)",
+     "knesset": 25,
+     "start": "2023-04-02",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת של ועדת החוקה, חוק ומשפט והוועדה לביטחון לאומי לדיון בהצעת חוק לתיקון פקודת המשטרה (המחלקה לחקירת שוטרים), ",
+     "knesset": 25,
+     "start": "2023-03-15",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת של ועדת החוקה, חוק ומשפט והוועדה לקידום מעמד האישה לדיון בהצעת חוק לביטול ההתיישנות בעבירות מין (תיקוני חקיקה), התשפ\"ג 2023 (פ/2559/25)",
+     "knesset": 25,
+     "start": "2023-03-13",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המשותפת של ועדת החוקה, חוק ומשפט וועדת החוץ והביטחון, לפי חוק האזנות סתר, התשל\"ט-1979",
+     "knesset": 25,
+     "start": "2023-02-15",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת החוקה, חוק ומשפט",
+     "knesset": 25,
+     "start": "2023-01-04",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר סיעה",
+     "of": "הציונות הדתית בראשות בצלאל סמוטריץ'",
+     "knesset": 25,
+     "start": "2022-12-15",
+     "end": "2024-11-11",
+     "knessets": [
+      25
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "הציונות הדתית בראשות בצלאל סמוטריץ'"
+    },
+    {
+     "knesset": 25,
+     "name": "הציונות הדתית"
+    },
+    {
+     "knesset": 24,
+     "name": "הציונות הדתית"
+    }
+   ],
+   "billsInitiated": 242,
+   "billsPassed": 24,
+   "parliamentaryQuestions": 6,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030812",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030812%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030812"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
+  },
+  "רופא אופיר שרון אסתר": {
+   "knessetPersonId": 30823,
+   "nameKnesset": "שרון רופא אופיר",
+   "knessetTerms": [
+    24
+   ],
+   "firstMkDate": "2021-08-05",
+   "yearsAsMk": 0.8,
+   "roles": [],
+   "factions": [
+    {
+     "knesset": 24,
+     "name": "ישראל ביתנו"
+    }
+   ],
+   "billsInitiated": 3,
+   "billsPassed": 0,
+   "parliamentaryQuestions": 0,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030823",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030823%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030823"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
+  },
   "רז מוסי": {
    "knessetPersonId": 511,
    "nameKnesset": "מוסי רז",
@@ -10337,6 +13869,208 @@
     "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030808%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030808"
    }
+  },
+  "שוסטר אלון נתן": {
+   "knessetPersonId": 30694,
+   "nameKnesset": "אלון שוסטר",
+   "knessetTerms": [
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2019-04-30",
+   "yearsAsMk": 6.6,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לביטחון, יחסי חוץ וקשרי מסחר בינלאומיים",
+     "knesset": 25,
+     "start": "2025-11-10",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה השניים",
+     "knesset": 25,
+     "start": "2025-11-05",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה לענייני ביקורת המדינה",
+     "knesset": 25,
+     "start": "2025-11-05",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לשיקום כלכלי של חבל תקומה ושל קו העימות הצפוני",
+     "knesset": 25,
+     "start": "2024-03-26",
+     "end": "2025-10-27",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לקידום מנופי צמיחה של ענף החקלאות",
+     "knesset": 25,
+     "start": "2023-05-01",
+     "end": "2025-10-27",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "סגן שר",
+     "of": "משרד הביטחון",
+     "knesset": 25,
+     "start": "2021-06-28",
+     "end": "2022-12-29",
+     "knessets": [
+      24,
+      25
+     ]
+    },
+    {
+     "title": "שר",
+     "of": "משרד החקלאות ופיתוח הכפר",
+     "knesset": 24,
+     "start": "2020-05-17",
+     "end": "2021-06-13",
+     "knessets": [
+      23,
+      24
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "כחול לבן - המחנה הממלכתי"
+    },
+    {
+     "knesset": 25,
+     "name": "המחנה הממלכתי"
+    },
+    {
+     "knesset": 24,
+     "name": "כחול לבן"
+    },
+    {
+     "knesset": 23,
+     "name": "כחול לבן בראשות בנימין גנץ"
+    },
+    {
+     "knesset": 23,
+     "name": "כחול לבן"
+    },
+    {
+     "knesset": 22,
+     "name": "כחול לבן"
+    },
+    {
+     "knesset": 21,
+     "name": "כחול לבן"
+    }
+   ],
+   "billsInitiated": 219,
+   "billsPassed": 12,
+   "parliamentaryQuestions": 21,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030694",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030694%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030694"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
+  },
+  "שטרית קטרין": {
+   "knessetPersonId": 30706,
+   "nameKnesset": "קטי קטרין שטרית",
+   "knessetTerms": [
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2019-04-30",
+   "yearsAsMk": 7.2,
+   "roles": [
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה המיוחדת לזכויות הילד",
+     "knesset": 25,
+     "start": "2025-08-04",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדה משותפת לוועדת החינוך, התרבות והספורט, ועדת הכנסת וועדת הפנים והגנת הסביבה, לפי חוק מוזאון הכנסת, התש\"ע-2010",
+     "knesset": 25,
+     "start": "2025-05-13",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "ועדת המשנה לנערות וצעירות בסיכון",
+     "knesset": 23,
+     "start": "2020-08-17",
+     "end": "2021-04-06",
+     "knessets": [
+      23
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "הליכוד "
+    },
+    {
+     "knesset": 24,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 23,
+     "name": "הליכוד"
+    },
+    {
+     "knesset": 22,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    },
+    {
+     "knesset": 21,
+     "name": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה"
+    }
+   ],
+   "billsInitiated": 452,
+   "billsPassed": 24,
+   "parliamentaryQuestions": 31,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030706",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030706%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030706"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה (במאגר: קטי קטרין)"
   },
   "שטרן אברהם": {
    "knessetPersonId": 2635,
@@ -10792,6 +14526,130 @@
     "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2030067%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
     "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2030067"
    }
+  },
+  "תמנו פנינה (פנחש)": {
+   "knessetPersonId": 23635,
+   "nameKnesset": "פנינה תמנו",
+   "knessetTerms": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "firstMkDate": "2013-02-05",
+   "yearsAsMk": 9.3,
+   "roles": [
+    {
+     "title": "יו\"ר סיעה",
+     "of": "כחול לבן - המחנה הממלכתי",
+     "knesset": 25,
+     "start": "2025-07-08",
+     "end": null,
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר סיעה",
+     "of": "המחנה הממלכתי",
+     "knesset": 25,
+     "start": "2024-03-13",
+     "end": "2025-07-08",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "יו\"ר ועדה",
+     "of": "הוועדה לקידום מעמד האישה ולשוויון מגדרי",
+     "knesset": 25,
+     "start": "2023-01-04",
+     "end": "2025-11-05",
+     "knessets": [
+      25
+     ]
+    },
+    {
+     "title": "שרה",
+     "of": "משרד העלייה והקליטה",
+     "knesset": 25,
+     "start": "2020-05-17",
+     "end": "2022-12-29",
+     "knessets": [
+      23,
+      24,
+      25
+     ]
+    },
+    {
+     "title": "סגנית יושב ראש הכנסת",
+     "of": null,
+     "knesset": 19,
+     "start": "2013-05-02",
+     "end": "2015-03-31",
+     "knessets": [
+      19
+     ]
+    }
+   ],
+   "factions": [
+    {
+     "knesset": 25,
+     "name": "כחול לבן - המחנה הממלכתי"
+    },
+    {
+     "knesset": 25,
+     "name": "המחנה הממלכתי"
+    },
+    {
+     "knesset": 24,
+     "name": "כחול לבן"
+    },
+    {
+     "knesset": 23,
+     "name": "כחול לבן בראשות בנימין גנץ"
+    },
+    {
+     "knesset": 23,
+     "name": "כחול לבן"
+    },
+    {
+     "knesset": 23,
+     "name": "יש עתיד"
+    },
+    {
+     "knesset": 23,
+     "name": "חה\"כ פנינה תמנו"
+    },
+    {
+     "knesset": 22,
+     "name": "כחול לבן"
+    },
+    {
+     "knesset": 21,
+     "name": "כחול לבן"
+    },
+    {
+     "knesset": 20,
+     "name": "יש עתיד"
+    },
+    {
+     "knesset": 19,
+     "name": "יש עתיד בראשות יאיר לפיד"
+    }
+   ],
+   "billsInitiated": 435,
+   "billsPassed": 40,
+   "parliamentaryQuestions": 6,
+   "sources": {
+    "positions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2023635",
+    "bills": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=PersonID%20eq%2023635%20and%20IsInitiator%20eq%20true&$expand=KNS_Bill",
+    "questions": "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Query?$filter=PersonID%20eq%2023635"
+   },
+   "linkReason": "אותו שם משפחה ושם פרטי מתוך השם המלא שהוגש; אדם יחיד במאגר הכנסת בצירוף הזה"
   }
  },
  "ambiguous": {
