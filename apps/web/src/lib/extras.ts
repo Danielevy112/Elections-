@@ -22,6 +22,8 @@ export interface KnessetProfile {
   knessetTerms: number[];
   firstMkDate: string;
   yearsAsMk: number;
+  /** Set when the filed name was linked to this record by a reviewed manual link. */
+  linkReason?: string;
   roles: KnessetRole[];
   factions: { knesset: number; name: string }[];
   billsInitiated: number;
