@@ -2,6 +2,9 @@ import type { Config } from "tailwindcss";
 
 export default {
   content: ["./src/**/*.{ts,tsx}"],
+  // Hover styles only on devices with a real pointer; on touch screens they stick to
+  // whatever row the finger touched when a scroll started.
+  future: { hoverOnlyWhenSupported: true },
   theme: {
     extend: {
       colors: {
