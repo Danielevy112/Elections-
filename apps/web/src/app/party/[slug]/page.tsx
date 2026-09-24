@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sourcesForField } from "@elections26/data";
-import { BackLink, BandChip, Sources, StatusBadge, Stat } from "@/components/ui";
+import { Avatar, BackLink, BandDot, Card, Pills, Sources, StatusBadge } from "@/components/ui";
 import { LIST_STATUS_HINT, formatDate, formatSeats, site } from "@/lib/site";
+import { displayName, knessetProfile, partyPhoto, roleLabel, topRole } from "@/lib/extras";
 
 export function generateStaticParams() {
   return site().parties.map(({ party }) => ({ slug: party.slug }));
 }
+
+const COLS = "grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_3.25rem_2.5rem]";
 
 export default async function PartyPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -15,136 +18,117 @@ export default async function PartyPage({ params }: { params: Promise<{ slug: st
   if (!view) notFound();
 
   const { party, list, leader, projection, candidates } = view;
-  const { partialCoverage, coveredSeats } = data.projection;
-  const statusSources = list
-    ? sourcesForField(data, "candidateList", list.id, "status")
-    : [];
-
-  const safe = candidates.filter((c) => c.band === "safe").length;
-  const borderline = candidates.filter((c) => c.band === "borderline").length;
+  const statusSources = list ? sourcesForField(data, "candidateList", list.id, "status") : [];
+  const listSources = sourcesForField(data, "party", party.id, "nameHe");
+  const leaderName = leader ? displayName(leader.nameHe, party.id, 1) : undefined;
+  const withRecord = candidates.filter((c) => knessetProfile(c.person.nameHe)).length;
 
   return (
-    <div className="space-y-6">
-      <BackLink href="/">חזרה לכל הרשימות</BackLink>
+    <div className="space-y-4">
+      <BackLink href="/">כל הרשימות</BackLink>
 
-      <header>
-        <div className="flex flex-wrap items-center gap-3">
-          <h1 className="text-2xl font-bold text-slate-900">{party.nameHe}</h1>
+      <Card className="p-4">
+        <div className="flex items-center gap-3">
+          <Avatar name={leaderName ?? party.nameHe} photo={partyPhoto(party.id, 1)} size={56} />
+          <div className="min-w-0 flex-1">
+            <h1 className="text-lg font-bold leading-tight">{party.nameHe}</h1>
+            {leaderName ? <p className="text-sm text-ink-muted">בראשות {leaderName}</p> : null}
+          </div>
+          {projection ? (
+            <div className="text-center">
+              <div className="text-3xl font-bold tabular">{projection.qualifies ? projection.projectedSeats : 0}</div>
+              <div className="text-[11px] text-ink-muted">מנדטים</div>
+            </div>
+          ) : null}
+        </div>
+        <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] text-ink-muted">
           {list ? <StatusBadge status={list.status} /> : null}
+          {projection ? (
+            <span>
+              ממוצע <span className="ltr-nums tabular">{formatSeats(projection.mean)}</span> · טווח{" "}
+              <span className="ltr-nums tabular">
+                {projection.min}–{projection.max}
+              </span>{" "}
+              · {projection.pollCount} סקרים
+            </span>
+          ) : (
+            <span>לא נכללה בסקרים האחרונים</span>
+          )}
         </div>
-        {leader ? (
-          <p className="mt-1 text-slate-600">
-            בראשות{" "}
-            <Link href={`/candidate/${leader.slug}`} className="hover:underline">
-              {leader.nameHe}
-            </Link>
+        {list?.statusNote ? (
+          <p className="mt-2 text-[11px] text-ink-muted">
+            {LIST_STATUS_HINT[list.status]} · {list.statusNote} <Sources sources={statusSources} />
           </p>
         ) : null}
-        {list ? (
-          <p className="mt-2 text-sm text-slate-500">
-            {LIST_STATUS_HINT[list.status]}
-            {list.submittedAt ? ` · הוגשה ב־${formatDate(list.submittedAt)}` : ""}
-            {list.statusNote ? ` · ${list.statusNote}` : ""}{" "}
-            <Sources sources={statusSources} />
-          </p>
-        ) : null}
-      </header>
+      </Card>
 
-      {projection ? (
-        <section className="grid gap-3 sm:grid-cols-4">
-          <Stat
-            label="תחזית מנדטים"
-            value={projection.projectedSeats}
-            hint={partialCoverage ? "מתוך המפלגות שנסקרו" : "לאחר נרמול ל-120"}
-          />
-          <Stat label="ממוצע הסקרים" value={formatSeats(projection.mean)} />
-          <Stat label="טווח בסקרים" value={`${projection.min}–${projection.max}`} />
-          <Stat
-            label="מבוסס על"
-            value={projection.pollCount}
-            hint={projection.pollCount === 1 ? "סקר אחד" : "סקרים"}
-          />
-        </section>
-      ) : (
-        <p className="rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">
-          אין סקרים עדכניים המכסים רשימה זו, ולכן לא מוצגת תחזית.
-        </p>
-      )}
+      <Pills items={[{ label: "הרכב הרשימה", href: `/party/${party.slug}`, active: true }]} />
 
-      {partialCoverage ? (
-        <p className="rounded-lg border border-slate-300 bg-white p-3 text-sm text-slate-700">
-          הסקרים שבמאגר מכסים כרגע{" "}
-          <span className="ltr-nums">{Math.round(coveredSeats)}</span> מנדטים בלבד מתוך{" "}
-          <span className="ltr-nums">120</span>. התחזית מוצגת ביחס למה שנמדד בפועל ולא
-          מנורמלת לכנסת מלאה, כדי לא לנפח את המספרים.
-        </p>
-      ) : null}
-
-      {projection && !projection.qualifies ? (
-        <p className="rounded-lg border border-rose-200 bg-rose-50 p-3 text-sm text-rose-900">
-          לפי ממוצע הסקרים הנוכחי הרשימה נמצאת מתחת לאחוז החסימה. מקומות המסומנים כ״על
-          הגבול״ נכנסו לכנסת רק בחלק מהסקרים.
-        </p>
-      ) : null}
-
-      <section>
-        <div className="flex flex-wrap items-baseline justify-between gap-2">
-          <h2 className="text-xl font-bold text-slate-900">הרשימה המלאה</h2>
-          <p className="text-sm text-slate-500">
-            <span className="ltr-nums">{safe}</span> צפויים להיכנס ·{" "}
-            <span className="ltr-nums">{borderline}</span> על הגבול ·{" "}
-            <span className="ltr-nums">{candidates.length - safe - borderline}</span> כרגע מחוץ לכנסת
-          </p>
+      <Card className="overflow-hidden">
+        <div className={`grid ${COLS} items-end gap-x-1.5 border-b border-ink-line px-3 py-2 text-[10px] leading-tight text-ink-dim`}>
+          <span>#</span>
+          <span>מועמד · תפקיד בכיר</span>
+          <span className="text-center">שנים בכנסת</span>
+          <span className="text-center">חוקים שעברו/ הוגשו</span>
+          <span className="text-center">שאילתות</span>
         </div>
-
-        <p className="mt-1 text-sm text-slate-500">
-          הסימון נגזר מהטווח שהסקרים עצמם נותנים לרשימה: עד מקום{" "}
-          <span className="ltr-nums">{projection?.safeThrough ?? 0}</span> כל הסקרים מכניסים,
-          ועד מקום <span className="ltr-nums">{projection?.borderlineThrough ?? 0}</span> חלקם
-          מכניסים.
-        </p>
-
-        <ol className="mt-4 space-y-1">
-          {candidates.map(({ candidacy, person, band, isCutLine }) => (
-            <li key={candidacy.id}>
-              {isCutLine ? (
-                <div className="my-2 flex items-center gap-2" aria-hidden>
-                  <div className="h-px flex-1 bg-slate-300" />
-                  <span className="text-xs font-medium text-slate-500">
-                    קו הכניסה לפי הסקרים
-                  </span>
-                  <div className="h-px flex-1 bg-slate-300" />
-                </div>
-              ) : null}
-
-              <Link
-                href={`/candidate/${person.slug}`}
-                className={`flex items-center gap-3 rounded-lg border px-3 py-2 transition hover:border-slate-400 ${
-                  band === "safe"
-                    ? "border-safe-border/40 bg-safe-bg"
-                    : band === "borderline"
-                      ? "border-borderline-border/40 bg-borderline-bg"
-                      : "border-out-border bg-out-bg"
-                }`}
-              >
-                <span
-                  className={`w-8 shrink-0 text-center text-sm font-bold ltr-nums ${
-                    band === "safe"
-                      ? "text-safe-text"
-                      : band === "borderline"
-                        ? "text-borderline-text"
-                        : "text-out-text"
-                  }`}
+        <ol>
+          {candidates.map(({ candidacy, person, band, isCutLine }) => {
+            const profile = knessetProfile(person.nameHe);
+            const name = displayName(person.nameHe, party.id, candidacy.position);
+            const role = topRole(profile);
+            return (
+              <li key={candidacy.id}>
+                {isCutLine ? (
+                  <div className="flex items-center gap-2 bg-ink-row px-3 py-1" aria-hidden>
+                    <span className="h-px flex-1 bg-band-edge/50" />
+                    <span className="text-[10px] font-medium text-band-edge">קו הכניסה לפי הסקרים</span>
+                    <span className="h-px flex-1 bg-band-edge/50" />
+                  </div>
+                ) : null}
+                <Link
+                  href={`/candidate/${person.slug}`}
+                  className={`grid ${COLS} items-center gap-x-1.5 border-b border-ink-line/50 px-3 py-2 hover:bg-ink-row ${band === "out" ? "opacity-70" : ""}`}
                 >
-                  {candidacy.position}
-                </span>
-                <span className="flex-1 font-medium text-slate-900">{person.nameHe}</span>
-                <BandChip band={band} />
-              </Link>
-            </li>
-          ))}
+                  <span className="flex items-center gap-1 text-xs text-ink-muted tabular">
+                    <BandDot band={band} />
+                    {candidacy.position}
+                  </span>
+                  <span className="flex min-w-0 items-center gap-2">
+                    <Avatar name={name} photo={partyPhoto(party.id, candidacy.position)} size={34} />
+                    <span className="min-w-0">
+                      <span className="block truncate text-[13px] font-semibold">{name}</span>
+                      <span className="block truncate text-[11px] text-ink-muted">
+                        {role ? roleLabel(role) : profile ? `חבר/ת כנסת` : "\u00a0"}
+                      </span>
+                    </span>
+                  </span>
+                  <span className="text-center text-sm font-bold tabular">{profile ? formatSeats(profile.yearsAsMk) : "–"}</span>
+                  <span className="text-center text-xs tabular ltr-nums">
+                    {profile ? (
+                      <>
+                        <span className="font-bold text-fg">{profile.billsPassed}</span>
+                        <span className="text-ink-dim">/{profile.billsInitiated}</span>
+                      </>
+                    ) : (
+                      <span className="text-ink-dim">–</span>
+                    )}
+                  </span>
+                  <span className="text-center text-xs tabular text-ink-muted">{profile?.parliamentaryQuestions ?? "–"}</span>
+                </Link>
+              </li>
+            );
+          })}
         </ol>
-      </section>
+        <div className="px-3 py-3 text-[11px] leading-relaxed text-ink-dim">
+          {withRecord} מתוך {candidates.length} המועמדים כיהנו בכנסת (שם זהה במאגר הכנסת). נתוני פעילות: המאגר
+          הפרלמנטרי של הכנסת, כל כנסות העבר; מקור מפורט בכרטיס של כל מועמד. סדר הרשימה:{" "}
+          <Sources sources={listSources} label="ערוץ כנסת, 9.9" />
+          {list?.submittedAt ? ` · הוגשה ${formatDate(list.submittedAt)}` : ""}.{" "}
+          <span className="inline-flex items-center gap-1"><BandDot band="safe" /> נכנס בכל הסקרים</span>{" "}
+          <span className="inline-flex items-center gap-1"><BandDot band="borderline" /> בחלק מהסקרים</span>
+        </div>
+      </Card>
     </div>
   );
 }
