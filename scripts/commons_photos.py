@@ -10,6 +10,8 @@ import io, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 from PIL import Image
 
 UA = {"User-Agent": "Elections26/1.0 (github.com/Danielevy112/Elections-)"}
+# Lead images reviewed and rejected: group photos or crops where the subject is ambiguous.
+SKIP = {("k26-06", 2), ("k26-17", 10)}
 FREE = re.compile(r"^(CC0|CC[ -]BY(-SA)?( \d\.\d)?|Public domain|PD.*)", re.I)
 
 def get(url, raw=False):
@@ -35,7 +37,7 @@ def main(root, limit=10_000):
     ppath = f"{root}/data/manual_overrides/photos.json"
     photos = json.load(open(ppath))
     have = {(p["partyKey"], p["position"]) for p in photos["photos"]}
-    todo = [b for b in bios if (b["partyKey"], b["position"]) not in have][:limit]
+    todo = [b for b in bios if (b["partyKey"], b["position"]) not in have | SKIP][:limit]
     added = 0
     for b in todo:
         title = urllib.parse.unquote(b["sourcePage"].rsplit("/wiki/", 1)[1]).replace("_", " ")
