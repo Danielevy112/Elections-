@@ -68,6 +68,35 @@ export function partyPhoto(partyId: string | undefined, position: number | undef
   return photos.get(`${partyId.replace(/^party:/, "")}:${position}`);
 }
 
+export interface PartyBio {
+  partyKey: string;
+  position: number;
+  nameHe: string;
+  nameAsPrinted: string;
+  text: string;
+  sourcePage: string;
+  credit: string;
+}
+
+let bios: Map<string, PartyBio> | undefined;
+
+/** The party's own bio paragraph for this candidate, verbatim (see scripts/party_bios.py). */
+export function partyBio(partyId: string | undefined, position: number | undefined): PartyBio | undefined {
+  if (!partyId || position === undefined) return undefined;
+  if (!bios) {
+    bios = new Map();
+    for (const b of readJson<{ bios: PartyBio[] }>("bios.json", { bios: [] }).bios) bios.set(`${b.partyKey}:${b.position}`, b);
+  }
+  return bios.get(`${partyId.replace(/^party:/, "")}:${position}`);
+}
+
+/** First sentence of the party's bio, verbatim, for the table's role line. */
+export function bioLine(b: PartyBio | undefined): string | undefined {
+  if (!b) return undefined;
+  const m = b.text.match(/^.+?[.!?](?=\s|$)/);
+  return (m ? m[0] : b.text).trim();
+}
+
 /**
  * The name to show. The filed lists write "last first"; where the Knesset or the party's
  * own page prints the same person's name, that ("first last") form is shown instead.
