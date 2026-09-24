@@ -65,22 +65,15 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
             <Stat label="כנסות" value={profile.knessetTerms.length} hint={`הכנסות ${profile.knessetTerms.join(", ")}`} href={profile.sources.positions} />
             <Stat label="הצעות חוק שעברו" value={profile.billsPassed} hint={`מתוך ${profile.billsInitiated} שיזם/ה`} href={profile.sources.bills} />
             <Stat label="שאילתות" value={profile.parliamentaryQuestions ?? "–"} href={profile.sources.questions} />
-            {profile.linkReason ? (
-              <p className="col-span-2 px-1 pt-1 text-[11px] leading-5 text-ink-dim">
-                שם ברשומת הכנסת: {profile.nameKnesset}. קישור ידני לרשומה: {profile.linkReason}.
-              </p>
-            ) : null}
           </div>
-        ) : (
-          <p className="p-4 text-sm text-ink-muted">
-            לא כיהן/ה בכנסת לפי המאגר הפרלמנטרי (אין רשומה בשם זהה). קישור בין שמות נעשה רק בהתאמה מלאה, אף פעם לא בניחוש.
-          </p>
+        ) : bio ? null : (
+          <p className="p-4 text-sm text-ink-muted">לא כיהן/ה בכנסת</p>
         )}
       </Card>
 
       {bio ? (
         <Card className="p-4">
-          <h2 className="pb-2 text-sm font-bold">בקצרה, בלשון המפלגה</h2>
+          <h2 className="pb-2 text-sm font-bold">בקצרה</h2>
           <blockquote className="border-s-2 border-ink-line ps-3 text-[13px] leading-6 text-ink-muted">{bio.text}</blockquote>
           <div className="pt-2">
             <SourceLink href={bio.sourcePage}>{bio.credit}</SourceLink>

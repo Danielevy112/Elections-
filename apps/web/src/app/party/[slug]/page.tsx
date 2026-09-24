@@ -121,8 +121,8 @@ export default async function PartyPage({ params }: { params: Promise<{ slug: st
           })}
         </ol>
         <div className="px-3 py-3 text-[11px] leading-relaxed text-ink-dim">
-          {withRecord} מתוך {candidates.length} המועמדים כיהנו בכנסת (שם זהה במאגר הכנסת). נתוני פעילות: המאגר
-          הפרלמנטרי של הכנסת, כל כנסות העבר; מקור מפורט בכרטיס של כל מועמד. סדר הרשימה:{" "}
+          {withRecord} מתוך {candidates.length} המועמדים כיהנו בכנסת. נתוני פעילות: המאגר הפרלמנטרי של הכנסת. סדר
+          הרשימה:{" "}
           <Sources sources={listSources} label="ערוץ כנסת, 9.9" />
           {list?.submittedAt ? ` · הוגשה ${formatDate(list.submittedAt)}` : ""}.{" "}
           <span className="inline-flex items-center gap-1"><BandDot band="safe" /> נכנס בכל הסקרים</span>{" "}
