@@ -13,10 +13,29 @@ Every figure on the site resolves to the document it came from.
 
 ## Status
 
-Milestone 1: data layer plus a working site. The repo currently ships an **example
-dataset** — fictional parties, candidates and polls — so the whole pipeline is runnable
-before real data is loaded. The site shows a standing banner while `meta.dataset` is
-`example`, and `validate.ts` refuses to let example rows into a snapshot marked `real`.
+The site runs on a **preliminary dataset**: the 38 lists as filed with the Central
+Elections Committee, taken from a press publication (Knesset TV, 9.9.2026) before the
+committee approves them on 27.9, plus published polls. `meta.dataset` is `preliminary`, so
+the site shows a standing "subject to change" banner and stays `noindex`. `validate.ts`
+refuses to mark press-sourced rows as `real`; the official lists replace them automatically
+once data.gov.il publishes the 26th Knesset.
+
+Where the press copy has a spelling error, the fix is recorded next to the name in
+`data/manual_overrides/lists.json` (`nameAsPublished` + `correctionNote`), never silently.
+
+### Knesset records and photos
+
+- `scripts/knesset_profiles.py` builds `data/manual_overrides/knesset_profiles.json` from the
+  Knesset OData service (positions, bills initiated/passed, parliamentary questions) for
+  candidates whose filed name matches exactly one `KNS_Person` ("last first" or "first
+  last"). Ambiguous names are left unmatched. The Knesset host blocks some cloud IPs; the
+  script's offline mode (`ROOT persons.json people.json`) takes the same rows fetched from
+  a browser.
+- `scripts/party_photos.py` collects photos the parties published themselves, used only
+  when the name printed with the photo matches the filed name exactly (and the printed
+  list position, where the page shows one). Pages that render with JavaScript are
+  extracted to `data/photo_sources/<partyKey>.json`. Each photo carries a credit and its
+  source page; anyone else gets an initials placeholder. Photos are removed on request.
 
 ## Quick start
 
