@@ -50,3 +50,8 @@ body {
 .no-scrollbar {
   scrollbar-width: none;
 }
+
+/* No grey/blue flash on rows and links when a scroll gesture starts on them (mobile). */
+html {
+  -webkit-tap-highlight-color: transparent;
+}
