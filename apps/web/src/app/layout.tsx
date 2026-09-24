@@ -36,6 +36,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             נתוני דוגמה בלבד — השמות, הרשימות והסקרים באתר זה בדיוניים ואינם נתוני אמת.
           </div>
         ) : null}
+        {snapshot.meta.dataset === "preliminary" ? (
+          <div className="bg-amber-500 px-4 py-2 text-center text-sm font-medium text-black">
+            נתונים מקדימים — הרשימות לקוחות מפרסום עיתונאי של הרשימות שהוגשו, לפני האישור
+            הסופי של ועדת הבחירות המרכזית (27.9). הרשימות עשויות להשתנות.
+          </div>
+        ) : null}
 
         <header className="border-b border-slate-200 bg-white">
           <div className="mx-auto flex max-w-5xl flex-wrap items-baseline justify-between gap-2 px-4 py-4">
