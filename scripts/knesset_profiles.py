@@ -84,7 +84,22 @@ def main(root):
                 what = r.get("GovMinistryName") or r.get("CommitteeName") or r.get("DutyDesc") or r.get("FactionName")
                 roles.append({"title": ROLE[r["PositionID"]], "of": what, "knesset": r["KnessetNum"],
                               "start": (r["StartDate"] or "")[:10] or None, "end": (r["FinishDate"] or "")[:10] or None})
-        roles.sort(key=lambda x: x["start"] or "", reverse=True)
+        # The Knesset records one row per government/Knesset term; merge back-to-back rows
+        # of the same role (same title and ministry/committee) into one period.
+        roles.sort(key=lambda x: x["start"] or "")
+        merged_roles = []
+        for r in roles:
+            prev = next((m for m in reversed(merged_roles) if m["title"] == r["title"] and m["of"] == r["of"]), None)
+            if prev and r["start"] and prev["end"] is not None and (day(r["start"]) - day(prev["end"])).days <= 45:
+                prev["end"] = r["end"] if r["end"] is None or r["end"] > prev["end"] else prev["end"]
+                if r["knesset"] not in prev["knessets"]: prev["knessets"].append(r["knesset"])
+                prev["knesset"] = max(prev["knessets"])
+            elif prev and r["start"] and prev["end"] is None:
+                if r["knesset"] not in prev["knessets"]: prev["knessets"].append(r["knesset"])
+                prev["knesset"] = max(prev["knessets"])
+            else:
+                merged_roles.append({**r, "knessets": [r["knesset"]]})
+        roles = sorted(merged_roles, key=lambda x: x["start"] or "", reverse=True)
         if RAW:
             bills = {b["id"]: {"StatusID": b["s"]} for b in raw["bills"]}
         else:
