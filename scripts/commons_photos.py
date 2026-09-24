@@ -11,7 +11,7 @@ from PIL import Image
 
 UA = {"User-Agent": "Elections26/1.0 (github.com/Danielevy112/Elections-)"}
 # Lead images reviewed and rejected: group photos or crops where the subject is ambiguous.
-SKIP = {("k26-06", 2), ("k26-17", 10)}
+SKIP = {("k26-06", 2), ("k26-17", 10), ("k26-17", 114), ("k26-17", 16)}  # + non-portraits
 FREE = re.compile(r"^(CC0|CC[ -]BY(-SA)?( \d\.\d)?|Public domain|PD.*)", re.I)
 
 def get(url, raw=False):
