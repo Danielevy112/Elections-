@@ -1,13 +1,13 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL, isRealData, site } from "@/lib/site";
 
-export const dynamic = "force-static";
+export const revalidate = 3600;
 
 /** Empty while the dataset is example — nothing here is worth pointing a crawler at yet. */
-export default function sitemap(): MetadataRoute.Sitemap {
-  if (!isRealData()) return [];
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  if (!(await isRealData())) return [];
 
-  const data = site();
+  const data = await site();
   const lastModified = new Date(data.snapshot.meta.generatedAt);
 
   return [

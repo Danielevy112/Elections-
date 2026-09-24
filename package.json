@@ -2,13 +2,13 @@
   "name": "elections26",
   "private": true,
   "version": "0.1.0",
-  "description": "Knesset 26 elections dashboard \u2014 verifiable candidate lists, parliamentary records and poll projections",
+  "description": "Knesset 26 elections dashboard — verifiable candidate lists, parliamentary records and poll projections",
   "workspaces": [
     "packages/*",
     "apps/*"
   ],
   "scripts": {
-    "typecheck": "tsc -b packages/schema packages/data packages/ingest && npm run typecheck -w apps/web",
+    "typecheck": "tsc -b packages/schema packages/data packages/db packages/ingest && npm run typecheck -w apps/web",
     "test": "vitest run",
     "ingest": "tsx packages/ingest/src/cli.ts",
     "validate": "tsx scripts/validate.ts",
@@ -16,7 +16,8 @@
     "build": "npm run validate && npm run build -w apps/web",
     "add-poll": "tsx scripts/add-poll.ts",
     "probe": "tsx packages/ingest/src/cli.ts --probe --live",
-    "vercel-build": "npx tsx scripts/validate.ts && npm run build -w apps/web"
+    "vercel-build": "npx tsx scripts/validate.ts && npx tsx scripts/publish-db.ts --from-build && npm run build -w apps/web",
+    "publish-db": "tsx scripts/publish-db.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

@@ -1,4 +1,7 @@
-import { buildSite, loadSnapshot, type SiteData } from "@elections26/data";
+import { unstable_cache } from "next/cache";
+import { buildSite, type SiteData } from "@elections26/data";
+import { loadPublished } from "./data-source";
+import { setExtras } from "./extras";
 
 /**
  * Public origin of the site, used for canonical URLs and the sitemap. Vercel supplies
@@ -17,19 +20,27 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL
  * sitemap and the noindex tag. Flipping `dataset` to "real" in the election override is
  * the single switch, so there is no second place to forget.
  */
-export function isRealData(): boolean {
-  return site().snapshot.meta.dataset === "real";
+export async function isRealData(): Promise<boolean> {
+  return (await site()).snapshot.meta.dataset === "real";
 }
 
-let cached: SiteData | undefined;
-
 /**
- * The site's single read of the data layer. Everything is static, so this runs at build
- * time and the result is shared across all pages in the render.
+ * The published data version, cached under the "data" tag. The sync job calls
+ * /api/revalidate after it publishes, which drops this entry and every page built from it;
+ * the hourly revalidate is only a safety net. Visitors are served from the CDN, so the
+ * database is read once per data change, not once per visit.
  */
-export function site(): SiteData {
-  if (!cached) cached = buildSite(loadSnapshot());
-  return cached;
+export const published = unstable_cache(loadPublished, ["published-data"], { tags: ["data"], revalidate: 3600 });
+
+let built: { key: string; data: SiteData } | undefined;
+
+/** The site's single read of the data layer. */
+export async function site(): Promise<SiteData> {
+  const { snapshot, extras } = await published();
+  setExtras(extras);
+  const key = `${snapshot.meta.generatedAt}:${snapshot.candidacies.length}`;
+  if (built?.key !== key) built = { key, data: buildSite(snapshot) };
+  return built.data;
 }
 
 export function formatSeats(value: number): string {

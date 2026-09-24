@@ -7,11 +7,13 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "build": "next build",
-    "vercel-build": "tsx ../../scripts/validate.ts && next build"
+    "vercel-build": "tsx ../../scripts/validate.ts && tsx ../../scripts/publish-db.ts --from-build && next build"
   },
   "dependencies": {
     "@elections26/data": "*",
+    "@elections26/db": "*",
     "@elections26/schema": "*",
+    "@neondatabase/serverless": "^1.1.0",
     "next": "^15.1.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
