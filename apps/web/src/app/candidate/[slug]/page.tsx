@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { sourcesForField } from "@elections26/data";
 import { Avatar, BackLink, BandChip, Card, SourceLink, Sources, Stat } from "@/components/ui";
 import { formatSeats, site } from "@/lib/site";
-import { displayName, knessetProfile, partyPhoto, roleLabel } from "@/lib/extras";
+import { displayName, knessetProfile, partyBio, partyPhoto, roleLabel } from "@/lib/extras";
 
 export function generateStaticParams() {
   return site().candidates.map(({ person }) => ({ slug: person.slug }));
@@ -21,6 +21,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
 
   const { person, party, position, band } = view;
   const profile = knessetProfile(person.nameHe);
+  const bio = partyBio(party?.id, position);
   const photo = partyPhoto(party?.id, position);
   const name = displayName(person.nameHe, party?.id, position);
   const nameSources = sourcesForField(data, "person", person.id, "nameHe");
@@ -71,6 +72,16 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
           </p>
         )}
       </Card>
+
+      {bio ? (
+        <Card className="p-4">
+          <h2 className="pb-2 text-sm font-bold">בקצרה, בלשון המפלגה</h2>
+          <blockquote className="border-s-2 border-ink-line ps-3 text-[13px] leading-6 text-ink-muted">{bio.text}</blockquote>
+          <div className="pt-2">
+            <SourceLink href={bio.sourcePage}>{bio.credit}</SourceLink>
+          </div>
+        </Card>
+      ) : null}
 
       {roles.length > 0 ? (
         <Card className="overflow-hidden">
