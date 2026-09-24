@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { sourcesForField } from "@elections26/data";
 import { Avatar, BackLink, BandDot, Card, Pills, Sources, StatusBadge } from "@/components/ui";
 import { LIST_STATUS_HINT, formatDate, formatSeats, site } from "@/lib/site";
-import { displayName, knessetProfile, partyPhoto, roleLabel, topRole } from "@/lib/extras";
+import { bioLine, displayName, knessetProfile, partyBio, partyPhoto, roleLabel, topRole } from "@/lib/extras";
 
 export function generateStaticParams() {
   return site().parties.map(({ party }) => ({ slug: party.slug }));
@@ -99,7 +99,7 @@ export default async function PartyPage({ params }: { params: Promise<{ slug: st
                     <span className="min-w-0">
                       <span className="block truncate text-[13px] font-semibold">{name}</span>
                       <span className="block truncate text-[11px] text-ink-muted">
-                        {role ? roleLabel(role) : profile ? `חבר/ת כנסת` : "\u00a0"}
+                        {role ? roleLabel(role) : profile ? `חבר/ת כנסת` : bioLine(partyBio(party.id, candidacy.position)) ?? "\u00a0"}
                       </span>
                     </span>
                   </span>
