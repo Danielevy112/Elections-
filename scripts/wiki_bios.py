@@ -18,6 +18,16 @@ PARTY_WORDS = {
     "k26-37": ["יהדות התורה", "אגודת ישראל", "דגל התורה"], "k26-30": ["כחול לבן"],
 }
 
+# Reviewed article titles for candidates known by a short or differently spelled name
+# (found via Wikipedia search). A title here is still used only if the article names the party.
+EXTRA_TITLES = {
+    ("k26-01", 3): ["קרן טרנר"], ("k26-01", 6): ["נעם תיבון"], ("k26-02", 6): ["חילי טרופר"], ("k26-02", 19): ["טל אוחנה"],
+    ("k26-06", 1): ["עופר וינטר"], ("k26-11", 2): ["רפי בן שטרית"], ("k26-11", 3): ["טליה לנקרי"],
+    ("k26-17", 5): ["יאיא פינק"], ("k26-17", 6): ["גבי לסקי"], ("k26-17", 7): ["עמרי רונן"], ("k26-17", 9): ["משה רדמן אבוטבול"],
+    ("k26-17", 10): ["סומיה בשיר"], ("k26-18", 4): ["ואליד אלהואשלה"], ("k26-29", 16): ["דוד פטר", "דוד פטר (עורך דין)"],
+    ("k26-31", 5): ["צביקה מור"], ("k26-37", 5): ["משה רוזנטל"],
+}
+
 def api(**params):
     params.update(format="json", redirects=1)
     req = urllib.request.Request(API + "?" + urllib.parse.urlencode(params), headers={"User-Agent": "Elections26/1.0 (github.com/Danielevy112/Elections-)"})
@@ -63,10 +73,11 @@ def main(root, gap_file):
     out["bios"] = [b for b in out["bios"] if b.get("source") != "wikipedia"]
     have = {(b["partyKey"], b["position"]) for b in out["bios"]}
     todo = [(k, p, f) for k, p, f in gap if (k, p) not in have]
-    got = pages([t for _, _, f in todo for t in forms(f)])
+    names = lambda k, p, f: forms(f) + EXTRA_TITLES.get((k, p), [])
+    got = pages([t for k, p, f in todo for t in names(k, p, f)])
     found, missed = 0, []
     for key, pos, filed in todo:
-        hit = next((got[t] for t in forms(filed) if t in got and any(w in got[t]["extract"] for w in PARTY_WORDS.get(key, []))), None)
+        hit = next((got[t] for t in names(key, pos, filed) if t in got and any(w in got[t]["extract"] for w in PARTY_WORDS.get(key, []))), None)
         if not hit: missed.append(f"{key} {pos} {filed}"); continue
         out["bios"].append({"partyKey": key, "position": pos, "nameHe": filed, "nameAsPrinted": hit["title"],
                             "text": first_sentence(hit["extract"]), "sourcePage": hit["fullurl"], "credit": "מתוך ויקיפדיה", "source": "wikipedia"})
