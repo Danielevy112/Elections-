@@ -5,8 +5,10 @@ import { Avatar, BackLink, BandChip, Card, SourceLink, Sources, Stat } from "@/c
 import { formatSeats, site } from "@/lib/site";
 import { displayName, knessetProfile, partyBio, partyPhoto, roleLabel } from "@/lib/extras";
 
-export function generateStaticParams() {
-  return site().candidates.map(({ person }) => ({ slug: person.slug }));
+export const revalidate = 3600;
+
+export async function generateStaticParams() {
+  return (await site()).candidates.map(({ person }) => ({ slug: person.slug }));
 }
 
 function yearOf(d: string | null) {
@@ -15,7 +17,7 @@ function yearOf(d: string | null) {
 
 export default async function CandidatePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const data = site();
+  const data = await site();
   const view = data.candidates.find((c) => c.person.slug === slug);
   if (!view) notFound();
 
