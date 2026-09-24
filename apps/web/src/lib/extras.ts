@@ -1,6 +1,3 @@
-import { existsSync, readFileSync } from "node:fs";
-import { join } from "node:path";
-import { repoRoot } from "@elections26/data";
 
 /**
  * Side data that is not (yet) part of the snapshot schema: Knesset records fetched
@@ -43,30 +40,38 @@ export interface PartyPhoto {
   credit: string;
 }
 
-function readJson<T>(file: string, fallback: T): T {
-  const path = join(repoRoot(), "data", "manual_overrides", file);
-  return existsSync(path) ? (JSON.parse(readFileSync(path, "utf8")) as T) : fallback;
+export interface ExtrasData {
+  knessetProfiles: Record<string, KnessetProfile>;
+  photos: PartyPhoto[];
+  bios: PartyBio[];
 }
 
-let profiles: Record<string, KnessetProfile> | undefined;
-let photos: Map<string, PartyPhoto> | undefined;
+/**
+ * Set by site() from the published data version (database or committed JSON) before any
+ * page reads it. Indexes are rebuilt only when a new version arrives.
+ */
+let current: ExtrasData | undefined;
+let profiles: Record<string, KnessetProfile> = {};
+let photos = new Map<string, PartyPhoto>();
+let bios = new Map<string, PartyBio>();
+
+export function setExtras(data: ExtrasData): void {
+  if (current === data) return;
+  current = data;
+  profiles = data.knessetProfiles;
+  photos = new Map(data.photos.map((p) => [`${p.partyKey}:${p.position}`, p]));
+  bios = new Map(data.bios.map((b) => [`${b.partyKey}:${b.position}`, b]));
+}
 
 const norm = (s: string) =>
   s.replace(/״/g, '"').replace(/׳/g, "'").replace(/–/g, "-").replace(/\s+/g, " ").trim();
 
 export function knessetProfile(filedName: string): KnessetProfile | undefined {
-  profiles ??= readJson<{ profiles: Record<string, KnessetProfile> }>("knesset_profiles.json", { profiles: {} }).profiles;
   return profiles[norm(filedName)];
 }
 
 export function partyPhoto(partyId: string | undefined, position: number | undefined): PartyPhoto | undefined {
   if (!partyId || position === undefined) return undefined;
-  if (!photos) {
-    photos = new Map();
-    for (const p of readJson<{ photos: PartyPhoto[] }>("photos.json", { photos: [] }).photos) {
-      photos.set(`${p.partyKey}:${p.position}`, p);
-    }
-  }
   return photos.get(`${partyId.replace(/^party:/, "")}:${position}`);
 }
 
@@ -80,15 +85,9 @@ export interface PartyBio {
   credit: string;
 }
 
-let bios: Map<string, PartyBio> | undefined;
-
-/** The party's own bio paragraph for this candidate, verbatim (see scripts/party_bios.py). */
+/** The candidate's sourced bio (party page, own site, or Wikipedia), verbatim. */
 export function partyBio(partyId: string | undefined, position: number | undefined): PartyBio | undefined {
   if (!partyId || position === undefined) return undefined;
-  if (!bios) {
-    bios = new Map();
-    for (const b of readJson<{ bios: PartyBio[] }>("bios.json", { bios: [] }).bios) bios.set(`${b.partyKey}:${b.position}`, b);
-  }
   return bios.get(`${partyId.replace(/^party:/, "")}:${position}`);
 }
 
