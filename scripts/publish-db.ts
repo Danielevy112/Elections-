@@ -29,8 +29,16 @@ const url = process.env.DATABASE_URL_UNPOOLED || process.env.DATABASE_URL;
 if (!url) throw new Error("DATABASE_URL is not set");
 
 const ov = (f: string) => JSON.parse(readFileSync(join(repoRoot(), "data", "manual_overrides", f), "utf8"));
+const activity: Record<string, unknown> = ov("knesset_activity.json").activity;
+const legislative = ov('legislative_items.json') as {statuses:Record<string,string>,items:Record<string,{bills:Record<string,unknown>[],questions:Record<string,unknown>[]}>};
+const itemStatus = (item:Record<string,unknown>) => ({...item,status:legislative.statuses[String(item.statusId)] ?? 'לא ידוע'});
+const legislativeItems = Object.fromEntries(Object.entries(legislative.items).map(([name,rec]) => [name,{bills:rec.bills.map(itemStatus),questions:rec.questions.map(itemStatus)}]));
+const keyVotes = ov('dramatic_votes.json').votes as {candidate:string}[];
+const votesByName = new Map<string,object[]>();
+for (const v of keyVotes) votesByName.set(v.candidate,[...(votesByName.get(v.candidate) ?? []),v]);
 const extras = {
-  knessetProfiles: ov("knesset_profiles.json").profiles,
+  knessetProfiles: Object.fromEntries(Object.entries(ov("knesset_profiles.json").profiles as Record<string, object>).map(([name,p]) => [name, {...p, ...(activity[name] ? {record:activity[name]}:{}),  ...(votesByName.has(name) ? {keyVotes:votesByName.get(name)}:{})}])),
+  legislativeItems,
   photos: ov("photos.json").photos,
   bios: ov("bios.json").bios,
 };

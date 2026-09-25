@@ -27,6 +27,65 @@ export interface KnessetProfile {
   billsPassed: number;
   parliamentaryQuestions: number | null;
   sources: { positions: string; bills: string; questions: string };
+  record?: KnessetRecord;
+  keyVotes?: KeyVote[];
+}
+
+export interface TermActivity {
+  votesHeld: number;
+  votesPresent: number;
+  agendaMotions: number;
+  billsInitiated: number;
+  billsPassed: number;
+  questions: number;
+  committees: string[];
+  committeeChairs: string[];
+  sources: { votes: string; votesHeld: string; agenda: string; bills: string; questions: string; committees: string };
+}
+
+export interface KnessetRecord {
+  knessetPersonId: number;
+  terms: Record<string, TermActivity>;
+  total: Pick<TermActivity, "votesHeld" | "votesPresent" | "agendaMotions" | "billsInitiated" | "billsPassed" | "questions">;
+  asOf: string;
+}
+
+export interface KeyVote {
+  party: string;
+  category: string;
+  position: string;
+  platform: string;
+  vote: number;
+  candidate: string;
+  voteTitle: string;
+  date: string;
+  reading: string;
+  faction: string;
+  factionUrl: string;
+  positionAtVote: string;
+  for: number;
+  against: number;
+  mismatch: boolean;
+  voteUrl: string;
+  resultUrl: string;
+}
+
+export interface LegislativeItem {
+  id: number;
+  title: string;
+  knesset: number;
+  statusId: number;
+  status: string;
+  submitted?: string;
+  url: string;
+}
+export interface LegislativeRecord {
+  bills: LegislativeItem[];
+  questions: LegislativeItem[];
+}
+
+export function attendance(a: {votesHeld: number; votesPresent: number} | undefined): number | undefined {
+  return a && a.votesHeld ? Math.round(100 * a.votesPresent / a.votesHeld) : undefined;
 }
 
 export interface PartyPhoto {
