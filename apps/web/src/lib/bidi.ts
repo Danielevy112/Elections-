@@ -26,6 +26,8 @@ export function visualRtl(text: string): string {
 export function truncate(text: string, max: number): string {
   if (text.length <= max) return text;
   const cut = text.slice(0, max - 1);
+  // A cut that ends exactly at a word's end keeps that word.
+  if (text[max - 1] === " ") return `${cut.trim()}…`;
   const space = cut.lastIndexOf(" ");
   return `${(space > max / 2 ? cut.slice(0, space) : cut).trim()}…`;
 }
