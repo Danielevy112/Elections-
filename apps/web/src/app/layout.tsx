@@ -1,3 +1,4 @@
+import { SearchBox } from "@/components/search-box";
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
@@ -71,6 +72,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               ) : null}
               <ThemeToggle />
             </div>
+          </div>
+          <div className="mx-auto max-w-3xl px-4 pb-3">
+            <SearchBox />
           </div>
         </header>
 
