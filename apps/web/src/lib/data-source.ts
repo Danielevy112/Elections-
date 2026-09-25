@@ -10,6 +10,10 @@ export interface Published {
   from: "db" | "json";
 }
 
+// Exact-name matches to old MKs without independent evidence tying them to the 2026 list slot.
+// The Knesset record documents the historical MK, not this candidate's identity.
+const quarantinedKnessetNames = new Set(["אזולאי דוד", "לוי דוד", "אפרתי יוסף", "בירן מיכל", "חיים יהודה", "פלד משה", "שטרן אברהם"]);
+
 function extrasFromFiles(): ExtrasData {
   const read = <T,>(file: string, fallback: T): T => {
     try {
@@ -24,7 +28,7 @@ function extrasFromFiles(): ExtrasData {
   const votesByName = new Map<string,KeyVote[]>();
   for (const v of keyVotes) votesByName.set(v.candidate,[...(votesByName.get(v.candidate) ?? []),v]);
   return {
-    knessetProfiles: Object.fromEntries(Object.entries(profiles).map(([name,p]) => [name, {...p, ...(activity[name] ? {record:activity[name]}:{}),  ...(votesByName.has(name) ? {keyVotes:votesByName.get(name)}:{})}])),
+    knessetProfiles: Object.fromEntries(Object.entries(profiles).filter(([name]) => !quarantinedKnessetNames.has(name)).map(([name,p]) => [name, {...p, ...(activity[name] ? {record:activity[name]}:{}),  ...(votesByName.has(name) ? {keyVotes:votesByName.get(name)}:{})}])),
     photos: read<{ photos: ExtrasData["photos"] }>("photos.json", { photos: [] }).photos,
     bios: read<{ bios: ExtrasData["bios"] }>("bios.json", { bios: [] }).bios,
   };
@@ -62,7 +66,9 @@ export async function loadExtrasPart(): Promise<{extras:ExtrasData;from:"db"|"js
     const { loadExtrasFromDb } = await import("@elections26/db");
     const sql = neon(process.env.DATABASE_URL as string);
     const db = { query: async (text:string,params?:unknown[]) => ({rows:(await sql.query(text,params ?? [])) as never[]}) };
-    return {extras:await loadExtrasFromDb(db) as unknown as ExtrasData,from:"db"};
+    const extras = await loadExtrasFromDb(db) as unknown as ExtrasData;
+    extras.knessetProfiles = Object.fromEntries(Object.entries(extras.knessetProfiles).filter(([name]) => !quarantinedKnessetNames.has(name)));
+    return {extras,from:"db"};
   } catch (err) { console.error("[data] extras database read failed",err); return {extras:extrasFromFiles(),from:"json"}; }
 }
 
