@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { unstable_cache } from "next/cache";
 import { buildSite, type SiteData } from "@elections26/data";
 import { loadPublished, loadRecord } from "./data-source";
@@ -97,3 +98,16 @@ export const BAND_LABEL: Record<string, string> = {
   borderline: "על הגבול",
   out: "כרגע מחוץ לכנסת",
 };
+
+/**
+ * Page metadata for a shareable page. Next replaces the layout's openGraph/twitter objects
+ * wholesale when a page sets them, so every field is spelled out here once.
+ */
+export function shareMetadata(title: string, description: string): Metadata {
+  return {
+    title,
+    description,
+    openGraph: { type: "website", locale: "he_IL", siteName: "בחירות 2026", title, description },
+    twitter: { card: "summary_large_image", title, description },
+  };
+}
