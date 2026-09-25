@@ -78,8 +78,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
         <footer className="mx-auto max-w-3xl px-4 pb-10 pt-4 text-[11px] leading-relaxed text-ink-dim">
           <p>
-            נתוני פעילות מהמאגר הפרלמנטרי של הכנסת. תמונות מועמדים רק מפרסומי המפלגות עצמן, עם
-            קרדיט וקישור למקור; תוסר כל תמונה לבקשת המפלגה או המועמד. לכל נתון באתר יש קישור
+            נתוני פעילות מהמאגר הפרלמנטרי של הכנסת. תמונות מועמדים ממקורות בעלי רישיון שימוש חופשי, עם
+            קרדיט וקישור למקור. לכל נתון באתר יש קישור
             למקור שלו. עודכן: {formatDateTime(snapshot.meta.generatedAt)}
           </p>
         </footer>
