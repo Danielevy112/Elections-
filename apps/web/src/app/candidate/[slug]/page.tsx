@@ -2,8 +2,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sourcesForField } from "@elections26/data";
 import { Avatar, BackLink, BandChip, Card, SourceLink, Sources, Stat } from "@/components/ui";
-import { formatSeats, site } from "@/lib/site";
-import { displayName, knessetProfile, partyBio, partyPhoto, roleLabel } from "@/lib/extras";
+import { formatDate, formatSeats, site } from "@/lib/site";
+import { loadLegislativeItems } from "@/lib/data-source";
+import { attendance, displayName, knessetProfile, partyBio, partyPhoto, roleLabel } from "@/lib/extras";
 
 export const revalidate = 3600;
 
@@ -23,9 +24,25 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
 
   const { person, party, position, band } = view;
   const profile = knessetProfile(person.nameHe);
+  const items = profile ? await loadLegislativeItems(person.nameHe) : undefined;
   const bio = partyBio(party?.id, position);
   const photo = partyPhoto(party?.id, position);
+  const rec = profile?.record;
+  const total = rec?.total;
+  // Most recent term first; committees are shown for the latest term served.
+  const termKeys = Object.keys(rec?.terms ?? {}).sort((x, y) => Number(y) - Number(x));
+  const latest = termKeys[0] ? rec!.terms[termKeys[0]] : undefined;
+  const mainCommittees = (latest?.committees ?? []).filter((c) => (/^ועדת /.test(c) && !/^ועדת המשנה/.test(c) && !/משותפת/.test(c)) || !!latest?.committeeChairs.includes(c));
+  const hidden = (latest?.committees.length ?? 0) - mainCommittees.length;
+  const att = attendance(total);
   const name = displayName(person.nameHe, party?.id, position);
+  const pid = profile?.knessetPersonId;
+  const od = "https://knesset.gov.il/OdataV4/ParliamentInfo/";
+  const source = (table: string, filter: string) => `${od}${table}?$filter=${encodeURIComponent(filter)}`;
+  const voteSource = pid ? source("KNS_PlenumVoteResult", `MkId eq ${pid} and VoteDate ge 2015-03-31T00:00:00+02:00 and VoteDate lt 2026-10-27T00:00:00+02:00`) : undefined;
+  const billSource = pid ? source("KNS_BillInitiator", `PersonID eq ${pid} and IsInitiator eq true`) : undefined;
+  const questionSource = pid ? source("KNS_Query", `PersonID eq ${pid} and KnessetNum ge 20 and KnessetNum le 25`) : undefined;
+  const agendaSource = pid ? source("KNS_Agenda", `InitiatorPersonID eq ${pid} and KnessetNum ge 20 and KnessetNum le 25`) : undefined;
   const nameSources = sourcesForField(data, "person", person.id, "nameHe");
   // The Knesset lists the prime minister also as minister of the PM's office; show one row.
   const pmStarts = new Set(profile?.roles.filter((r) => r.title === "ראש הממשלה").map((r) => r.start) ?? []);
@@ -68,10 +85,123 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
             <Stat label="הצעות חוק שעברו" value={profile.billsPassed} hint={`מתוך ${profile.billsInitiated} שיזם/ה`} href={profile.sources.bills} />
             <Stat label="שאילתות" value={profile.parliamentaryQuestions ?? "–"} href={profile.sources.questions} />
           </div>
-        ) : bio ? null : (
-          <p className="p-4 text-sm text-ink-muted">לא כיהן/ה בכנסת</p>
+        ) : (
+          <p className="p-4 text-sm text-ink-muted">לא כיהן/ה בכנסת - אין נתוני פעילות פרלמנטרית</p>
         )}
       </Card>
+
+      {rec && total ? (
+        <Card className="overflow-hidden">
+          <h2 className="px-4 pt-4 text-sm font-bold">פעילות בכנסת, 2015-2026</h2>
+          <p className="px-4 text-[11px] text-ink-dim">הכנסות {termKeys.join(", ")} · נתונים עד {formatDate(rec.asOf)}</p>
+          <div className="grid grid-cols-2 gap-2 p-3">
+            <Stat
+              label="השתתפות בהצבעות"
+              value={att !== undefined ? `${att}%` : "–"}
+              hint={`${total.votesPresent} מתוך ${total.votesHeld}`}
+              href={voteSource}
+            />
+            <Stat label="הצעות חוק שעברו" value={total.billsPassed} hint={`מתוך ${total.billsInitiated} שיזם/ה`} href={billSource} />
+            <Stat label="שאילתות" value={total.questions} href={questionSource} />
+            <Stat label="הצעות לסדר היום" value={total.agendaMotions} href={agendaSource} />
+          </div>
+          <div className="px-3 pb-2">
+            <div className="grid grid-cols-[3.5rem_1fr_1fr_1fr] gap-x-2 px-1 pb-1 text-[10px] text-ink-dim">
+              <span>כנסת</span>
+              <span className="text-center">השתתפות</span>
+              <span className="text-center">חוקים שעברו</span>
+              <span className="text-center">שאילתות</span>
+            </div>
+            {termKeys.map((k) => {
+              const t = rec.terms[k]!;
+              const ta = attendance(t);
+              return (
+                <div key={k} className="grid grid-cols-[3.5rem_1fr_1fr_1fr] items-center gap-x-2 border-t border-ink-line/60 px-1 py-1.5 text-[12px] tabular">
+                  <span className="text-ink-muted">ה-{k}</span>
+                  <a href={t.sources.votes} target="_blank" rel="noreferrer noopener" className="text-center hover:underline">
+                    {ta !== undefined ? `${ta}%` : "–"}
+                  </a>
+                  <a href={t.sources.bills} target="_blank" rel="noreferrer noopener" className="text-center hover:underline">
+                    <span className="ltr-nums">{t.billsPassed}/{t.billsInitiated}</span>
+                  </a>
+                  <a href={t.sources.questions} target="_blank" rel="noreferrer noopener" className="text-center hover:underline">
+                    {t.questions}
+                  </a>
+                </div>
+              );
+            })}
+          </div>
+          {latest!.committees.length > 0 ? (
+            <div className="border-t border-ink-line/60 px-4 py-3">
+              <div className="flex items-baseline justify-between">
+                <span className="text-[11px] text-ink-muted">
+                  ועדות בכנסת ה-{termKeys[0]} ({latest!.committees.length}{hidden > 0 ? `, מתוכן ${hidden} משותפות/משנה` : ""})
+                </span>
+                <SourceLink href={latest!.sources.committees} />
+              </div>
+              <ul className="mt-1.5 flex flex-wrap gap-1.5">
+                {mainCommittees.map((c) => (
+                  <li key={c} className={`rounded-full px-2.5 py-0.5 text-[11px] ${latest!.committeeChairs.includes(c) ? "bg-accent/20 text-fg" : "bg-ink-pill text-ink-muted"}`}>
+                    {latest!.committeeChairs.includes(c) ? `יו"ר · ${c}` : c}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+        </Card>
+      ) : null}
+
+      {profile?.keyVotes?.filter((v) => v.party === party?.id.replace(/^party:/, "")).length ? (
+        <Card className="overflow-hidden">
+          <h2 className="px-4 pt-4 text-sm font-bold">הצבעות מפתח מול המצע</h2>
+          <p className="px-4 pt-1 text-[10px] leading-4 text-ink-dim">השוואה למצע הנוכחי של הרשימה, לא לעמדה של הסיעה שבה כיהן/ה ביום ההצבעה. מוצגות הצבעות מתועדות בלבד, בנושאים שמופיעים במצע, עם פער עד 10 קולות או קריאה שלישית או חוק יסוד.</p>
+          <ol className="space-y-2 p-3">
+            {profile.keyVotes.filter((v) => v.party === party?.id.replace(/^party:/, "")).map((v) => (
+              <li key={`${v.party}-${v.vote}`} className="rounded-xl bg-ink-row px-3 py-2.5">
+                <a href={v.voteUrl} target="_blank" rel="noopener noreferrer" className="block text-[12px] font-semibold leading-5 hover:underline">{v.voteTitle} ↗</a>
+                <div className="mt-1 text-[10px] text-ink-muted">
+                  <a href={v.resultUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">הצבעה אישית: {v.positionAtVote} ↗</a>
+                  {' · '}{v.reading} · {formatDate(v.date)} · סיעה: <a href={v.factionUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">{v.faction} ↗</a>
+                </div>
+                <p className="mt-1 text-[10px] text-ink-dim">
+                  <a href={v.voteUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">בעד {v.for}, נגד {v.against} ↗</a>
+                </p>
+                <p className="mt-1 text-[10px] text-ink-muted">
+                  <a href={v.platform} target="_blank" rel="noopener noreferrer" className="hover:underline">מצע: {v.category} ↗</a>
+                  {v.mismatch ? <> · <a href={v.resultUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-fg hover:underline">המצע כיום: {v.position} · הצבעה אז: נגד ↗</a></> : null}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </Card>
+      ) : party?.id === "party:k26-29" ? <Card className="p-4 text-xs text-ink-muted">המצע טרם פורסם</Card> : null}
+
+      {items ? (
+        <Card className="overflow-hidden">
+          <h2 className="px-4 pt-4 text-sm font-bold">הצעות חוק ושאילתות, 2015-2026</h2>
+          <div className="grid grid-cols-2 gap-2 p-3">
+            <Stat label="הצעות חוק שיזם/ה" value={items.bills.length} href={billSource} />
+            <Stat label="הצעות שהתקבלו בקריאה שלישית" value={items.bills.filter((b) => b.statusId === 118).length} href={billSource} />
+            <Stat label="שאילתות" value={items.questions.length} href={questionSource} />
+          </div>
+          <div className="px-4 pb-4">
+            <h3 className="pb-2 text-xs font-bold">הצעות חוק</h3>
+            {items.bills.length ? <ol className="max-h-80 space-y-1 overflow-y-auto">
+              {items.bills.map((b) => <li key={b.id} className="rounded-lg bg-ink-row px-3 py-2">
+                <a className="block text-[12px] font-medium leading-5 hover:underline" href={b.url} target="_blank" rel="noopener noreferrer">{b.title} ↗</a>
+                <span className="text-[10px] text-ink-muted">הכנסת ה-{b.knesset} · {b.status}</span>
+              </li>)}
+            </ol> : <p className="text-xs text-ink-muted">לא נרשמו הצעות חוק שיזם/ה בתקופה זו</p>}
+            <h3 className="pb-2 pt-4 text-xs font-bold">שאילתות</h3>
+            {items.questions.length ? <ol className="max-h-80 space-y-1 overflow-y-auto">
+              {items.questions.map((q) => <li key={q.id} className="rounded-lg bg-ink-row px-3 py-2">
+                <a className="block text-[12px] font-medium leading-5 hover:underline" href={q.url} target="_blank" rel="noopener noreferrer">{q.title} ↗</a>
+                <span className="text-[10px] text-ink-muted">הכנסת ה-{q.knesset} · {q.status}</span>
+              </li>)}
+            </ol> : <p className="text-xs text-ink-muted">לא נרשמו שאילתות בתקופה זו</p>}
+          </div>
+        </Card>
+      ) : null}
 
       {bio ? (
         <Card className="p-4">
