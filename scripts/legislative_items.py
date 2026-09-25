@@ -1,4 +1,3 @@
-
 """Fetch individual Knesset bill and query records for exact-linked candidate IDs.
 
 The output is supplementary to knesset_activity.json: individual URLs and current

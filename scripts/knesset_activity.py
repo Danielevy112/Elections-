@@ -1,4 +1,3 @@
-
 """Parliamentary activity per Knesset term, 20th-25th Knesset (2015-2026), from Knesset OData.
 
 Writes data/manual_overrides/knesset_activity.json, keyed by the filed name (same keys as

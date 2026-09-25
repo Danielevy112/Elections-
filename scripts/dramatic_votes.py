@@ -1,4 +1,3 @@
-
 """Curated, reproducible key-vote selection from Knesset OData and party platform headings.
 
 Only exact-topic platform statements with an unambiguous bill title can carry a
