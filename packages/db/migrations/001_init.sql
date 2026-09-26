@@ -69,6 +69,9 @@ CREATE INDEX IF NOT EXISTS claims_subject ON claims (subject_type, subject_id);
 CREATE TABLE IF NOT EXISTS knesset_profiles (
   filed_name text PRIMARY KEY, knesset_person_id int NOT NULL, profile jsonb NOT NULL
 );
+CREATE TABLE IF NOT EXISTS legislative_items (
+  filed_name text PRIMARY KEY, items jsonb NOT NULL
+);
 CREATE TABLE IF NOT EXISTS photos (
   party_key text NOT NULL, position int NOT NULL, name_he text NOT NULL, name_as_printed text NOT NULL,
   path text NOT NULL, image_url text NOT NULL, source_page text NOT NULL, credit text NOT NULL,
@@ -95,7 +98,7 @@ CREATE TABLE IF NOT EXISTS sync_runs (
 DO $$ DECLARE t text; BEGIN
   FOREACH t IN ARRAY ARRAY['elections','persons','parties','candidate_lists','candidacies','knesset_memberships',
     'committees','committee_memberships','bills','bill_initiators','polls','poll_results','sources','claims',
-    'knesset_profiles','photos','bios'] LOOP
+    'knesset_profiles','legislative_items','photos','bios'] LOOP
     EXECUTE format('ALTER TABLE %I ADD COLUMN IF NOT EXISTS ord int NOT NULL DEFAULT 0', t);
   END LOOP;
 END $$;

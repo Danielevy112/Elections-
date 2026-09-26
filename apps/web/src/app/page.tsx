@@ -14,7 +14,7 @@ export default async function HomePage() {
 
   return (
     <div className="space-y-4">
-      <Pills items={[{ label: "טבלת מנדטים", href: "/", active: true }, { label: "כל הרשימות", href: "#lists" }]} />
+      <Pills items={[{ label: "טבלת מנדטים", href: "/", active: true }, { label: "השוואת רשימות", href: "/compare" }, { label: "כל הרשימות", href: "#lists" }]} />
 
       <Card className="overflow-hidden">
         <div className="flex items-baseline justify-between px-4 pb-2 pt-4">

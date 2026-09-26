@@ -9,7 +9,7 @@ channel: this file sets who owns what, and open questions go in the coordination
 | Lane | Owner | Files |
 |---|---|---|
 | Content: photos, bios, list corrections, poll entry | Instinct | `data/manual_overrides/{photos,bios,lists,polls}.json`, `apps/web/public/photos/`, `scripts/*_photos.py`, `scripts/party_bios.py`, `scripts/wiki_bios.py`, `scripts/knesset_profiles.py` |
-| Parliamentary record: link verification, the ingest/sync pipeline, the record on the candidate page | Claude | `packages/ingest`, `packages/data`, `packages/schema/src/linkVerification.ts`, `scripts/validate.ts`, `data/review/`, `apps/web/src/components/bill-record.tsx` |
+| Parliamentary record: link verification, the ingest/sync pipeline, the record on the candidate page | Claude | `packages/ingest`, `packages/data`, `packages/schema/src/linkVerification.ts`, `scripts/validate.ts`, `data/review/` |
 | Search, share cards | Claude | new routes and components under `apps/web` |
 | Shared | both, section by section | `apps/web/src/app/layout.tsx`, `apps/web/src/app/candidate/[slug]/page.tsx`, `packages/db`, `apps/web/src/lib/*` |
 
