@@ -10,9 +10,9 @@ export const alt = "המועמד/ת, המקום ברשימה והסיכוי לה
 export const revalidate = 3600;
 
 /**
- * Candidate card: name, list and position, seat band. Knesset figures appear only from a
- * verified link (knessetProfile applies verifyKnessetLink). No photo: the party photos are
- * WebP, which the renderer can't read, and several carry licences that require a credit.
+ * Candidate card: name, list, position and seat band. No parliamentary figures are
+ * printed because the identity and bill-count semantics must be reviewed separately.
+ * No photo: source portraits carry licences that require visible credit.
  */
 export default async function Image({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -26,7 +26,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
     (
       <Frame
         preliminary={data.snapshot.meta.dataset !== "real"}
-        footer={`סקר אחרון ${data.projection.latestPollDate ? formatDate(data.projection.latestPollDate) : "—"} · נתוני כהונה מהמאגר הפרלמנטרי של הכנסת`}
+        footer={`סקר אחרון ${data.projection.latestPollDate ? formatDate(data.projection.latestPollDate) : "—"} · רשימה כפי שהוגשה · נתונים מקדימים`}
       >
         <div style={{ display: "flex", flexDirection: "row-reverse", alignItems: "center", gap: 40, marginTop: 20 }}>
           <div
@@ -46,7 +46,6 @@ export default async function Image({ params }: { params: Promise<{ slug: string
             ) : null}
           </div>
         </div>
-
       </Frame>
     ),
     { ...size, fonts: await ogFonts() },
