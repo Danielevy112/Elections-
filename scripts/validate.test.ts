@@ -139,8 +139,7 @@ describe("validateKnessetLinks", () => {
     const poisoned = { ...evidence, knessetTermsById: new Map([...evidence.knessetTermsById, [424242, [1, 2, 3, 4, 5]]]) };
     expect(rules(validateKnessetLinks(snapshot, poisoned))).toEqual(["stale-knesset-link"]);
 
-    // A name-only note, even when manually recorded, cannot prove identity.
-    poisoned.manualReasonBySlot = new Map([...evidence.manualReasonBySlot, ["k26-17:69", "נבדק: אותו אדם"]]);
+    // A name-only note in the manual file does not enter validation evidence.
     expect(rules(validateKnessetLinks(snapshot, poisoned))).toEqual(["stale-knesset-link"]);
   });
 });

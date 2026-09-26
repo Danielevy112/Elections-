@@ -176,10 +176,8 @@ export function validateSnapshot(snapshot: Snapshot): Problem[] {
   return problems;
 }
 
-/** What the reviewed overrides say about Knesset links, keyed by list slot ("k26-17:69"). */
+/** Knesset terms used to validate linked candidates. A biography URL or name-match note is not identity evidence. */
 export interface LinkEvidenceFiles {
-  manualReasonBySlot: Map<string, string>;
-  bioPageBySlot: Map<string, string>;
   knessetTermsById: Map<number, number[]>;
 }
 
@@ -188,10 +186,7 @@ export function readLinkEvidence(root = repoRoot()): LinkEvidenceFiles {
     const path = join(root, "data", "manual_overrides", file);
     return existsSync(path) ? JSON.parse(readFileSync(path, "utf8")) : undefined;
   };
-  const slot = (r: { partyKey: string; position: number }) => `${r.partyKey}:${r.position}`;
   return {
-    manualReasonBySlot: new Map((read("knesset_links.json")?.links ?? []).map((l: any) => [slot(l), l.reason])),
-    bioPageBySlot: new Map((read("bios.json")?.bios ?? []).map((b: any) => [slot(b), b.sourcePage])),
     knessetTermsById: new Map(
       Object.values(read("knesset_profiles.json")?.profiles ?? {}).map((p: any) => [p.knessetPersonId, p.knessetTerms]),
     ),
@@ -201,7 +196,7 @@ export function readLinkEvidence(root = repoRoot()): LinkEvidenceFiles {
 /**
  * stale-knesset-link: every candidate the snapshot links to a Knesset person must pass the
  * same verifyKnessetLink rule the site applies. A name match to an MK whose last term was
- * the 20th Knesset or earlier, with no reviewed link or sourced bio behind it, fails the
+ * the 20th Knesset or earlier, with no independently reviewed identity source, fails the
  * build — it would show a 2026 candidate with someone else's record.
  */
 export function validateKnessetLinks(snapshot: Snapshot, evidence: LinkEvidenceFiles): Problem[] {

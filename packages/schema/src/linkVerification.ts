@@ -7,9 +7,8 @@
  * earlier, some as far back as the 4th (1959–61). Showing a 2026 newcomer with someone
  * else's 1960s bills is the exact failure this project exists to prevent.
  *
- * So a name match is trusted only for recent MKs. An older link needs a second,
- * independent source tying the Knesset record to this candidate; without one the link is
- * quarantined — not shown, and written to a review file for a person to check.
+ * Recent MKs may be name-matched; older records require independent identity proof.
+ * Without it, quarantine the link and omit the record.
  *
  * One function, used by the site, the ingest pipeline and the build gate, so the three
  * can never disagree about who is linked.
