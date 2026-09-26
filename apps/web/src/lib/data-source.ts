@@ -64,14 +64,14 @@ async function readDb() {
 }
 export function loadPublished(): Published { return fromFiles(); }
 export async function loadSnapshotPart(): Promise<{snapshot:Snapshot;from:"db"|"json"}> {
-  if (!useDb()) return {snapshot:loadSnapshot(),from:"json"};
+  if (!useDb()) return {snapshot:loadSnapshot(undefined, { omit: RECORD_COLLECTIONS }),from:"json"};
   try {
     const { neon } = await import("@neondatabase/serverless");
     const { loadSnapshotFromDb } = await import("@elections26/db");
     const sql = neon((process.env.DATABASE_URL_READONLY || process.env.DATABASE_URL) as string);
     const db = { query: async (text:string,params?:unknown[]) => ({rows:(await sql.query(text,params ?? [])) as never[]}) };
-    return {snapshot:await loadSnapshotFromDb(db),from:"db"};
-  } catch (err) { console.error("[data] snapshot database read failed",err); return {snapshot:loadSnapshot(),from:"json"}; }
+    return {snapshot:await loadSnapshotFromDb(db, { omit: RECORD_COLLECTIONS }),from:"db"};
+  } catch (err) { console.error("[data] snapshot database read failed",err); return {snapshot:loadSnapshot(undefined, { omit: RECORD_COLLECTIONS }),from:"json"}; }
 }
 export async function loadExtrasPart(): Promise<{extras:ExtrasData;from:"db"|"json"}> {
   if (!useDb()) return {extras:extrasFromFiles(),from:"json"};
