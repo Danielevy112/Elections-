@@ -217,9 +217,7 @@ export function validateKnessetLinks(snapshot: Snapshot, evidence: LinkEvidenceF
     const slot = `${candidacy.listId.split(":").at(-1)}:${candidacy.position}`;
     const terms = evidence.knessetTermsById.get(person.knessetPersonId) ?? [];
     const last = Math.max(lastKnesset.get(person.id) ?? 0, ...terms) || undefined;
-    const verdict = verifyKnessetLink(last, {
-
-    });
+    const verdict = verifyKnessetLink(last);
     if (!verdict.accepted) {
       problems.push({
         rule: "stale-knesset-link",

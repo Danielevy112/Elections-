@@ -1,6 +1,6 @@
 import { unstable_cache } from "next/cache";
 import { buildSite, type SiteData } from "@elections26/data";
-import { loadPublished, loadSnapshotPart, loadExtrasPart, loadRecord } from "./data-source";
+import { loadPublished, loadSnapshotPart, loadExtrasPart } from "./data-source";
 import { setExtras } from "./extras";
 
 /**
@@ -42,13 +42,6 @@ export async function published() {
   if (snapshotPart.from === "db" && extrasPart.from === "db") return { snapshot: snapshotPart.snapshot, extras: extrasPart.extras, from: "db" as const };
   return loadPublished();
 }
-
-/**
- * One candidate's legislative record, cached per person under the same "data" tag, so a
- * publish refreshes it along with everything else. Each entry is one person's bills, not
- * the whole record.
- */
-export const billRecord = unstable_cache(loadRecord, ["bill-record", DEPLOY_KEY], { tags: ["data"], revalidate: 3600 });
 
 let built: { key: string; data: SiteData } | undefined;
 

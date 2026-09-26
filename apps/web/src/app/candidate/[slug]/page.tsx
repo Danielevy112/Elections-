@@ -2,8 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sourcesForField } from "@elections26/data";
 import { Avatar, BackLink, BandChip, Card, SourceLink, Sources, Stat } from "@/components/ui";
-import { BillRecordSection } from "@/components/bill-record";
-import { billRecord, formatDate, formatSeats, site } from "@/lib/site";
+import { formatDate, formatSeats, site } from "@/lib/site";
 import { loadLegislativeItems } from "@/lib/data-source";
 import { attendance, displayName, knessetProfile, partyBio, partyPhoto, roleLabel } from "@/lib/extras";
 
@@ -37,7 +36,6 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
   const hidden = (latest?.committees.length ?? 0) - mainCommittees.length;
   const att = attendance(total);
   const name = displayName(person.nameHe, party?.id, position);
-  const record = profile && person.knessetPersonId === profile.knessetPersonId ? await billRecord(person.id) : undefined;
   const pid = profile?.knessetPersonId;
   const od = "https://knesset.gov.il/OdataV4/ParliamentInfo/";
   const source = (table: string, filter: string) => `${od}${table}?$filter=${encodeURIComponent(filter)}`;
@@ -205,8 +203,6 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
         </Card>
       ) : null}
 
-      {record && profile ? <BillRecordSection record={record} sourceHref={profile.sources.bills} /> : null}
-
       {bio ? (
         <Card className="p-4">
           <h2 className="pb-2 text-sm font-bold">בקצרה</h2>
@@ -216,8 +212,6 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
           </div>
         </Card>
       ) : null}
-
-      {record && profile ? <BillRecordSection record={record} sourceHref={profile.sources.bills} /> : null}
 
       {roles.length > 0 ? (
         <Card className="overflow-hidden">

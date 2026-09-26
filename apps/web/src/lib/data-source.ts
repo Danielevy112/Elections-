@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { billRecordFromItems, indexBillItems, loadSnapshot, RECORD_COLLECTIONS, RECORD_LIMITS, repoRoot, type BillRecord, type BillRecordItem } from "@elections26/data";
-import { COLLECTION_NAMES, type Snapshot } from "@elections26/schema";
+import { loadSnapshot, RECORD_COLLECTIONS, repoRoot } from "@elections26/data";
+import type { Snapshot } from "@elections26/schema";
 import type { ExtrasData, KnessetRecord, LegislativeRecord, KeyVote } from "./extras";
 
 export interface Published {
@@ -34,10 +34,8 @@ function extrasFromFiles(): ExtrasData {
   };
 }
 
-// The site-wide snapshot leaves the legislative record out: tens of thousands of bills do
-// not belong in one cached blob. They are read per candidate by loadRecord below.
 function fromFiles(): Published {
-  return { snapshot: loadSnapshot(undefined, { omit: RECORD_COLLECTIONS }), extras: extrasFromFiles(), from: "json" };
+  return { snapshot: siteSnapshot(), extras: extrasFromFiles(), from: "json" };
 }
 
 /**
@@ -46,11 +44,21 @@ function fromFiles(): Published {
  * JSON is served instead, so a database outage can never take the site down.
  */
 export function useDb(): boolean {
-  if (!process.env.DATABASE_URL_READONLY && !process.env.DATABASE_URL) return false;
+  if (!readUrl()) return false;
   return process.env.DATA_SOURCE === "db";
 }
 
-/** A database read that hangs must not hold a page. */
+/**
+ * The site only ever reads. DATABASE_URL_READONLY is a login in the web_reader role
+ * (SELECT only, short statement timeout); DATABASE_URL, which can write, stays with the
+ * build's publish step and is used here only until the read-only one is configured.
+ */
+function readUrl(): string | undefined {
+  return process.env.DATABASE_URL_READONLY || process.env.DATABASE_URL || undefined;
+}
+
+/** A database read that hangs must not hold a page: give up and fall back. */
+
 const READ_TIMEOUT_MS = 5_000;
 function withTimeout<T>(promise: Promise<T>): Promise<T> {
   let timer: ReturnType<typeof setTimeout> | undefined;
@@ -59,28 +67,28 @@ function withTimeout<T>(promise: Promise<T>): Promise<T> {
 }
 async function readDb() {
   const { neon } = await import("@neondatabase/serverless");
-  const sql = neon((process.env.DATABASE_URL_READONLY || process.env.DATABASE_URL) as string);
+  const sql = neon(readUrl() as string);
   return { query: async (text: string, params?: unknown[]) => ({ rows: (await sql.query(text, params ?? [])) as never[] }) };
 }
+
+// The site-wide snapshot leaves the synced bills out (RECORD_COLLECTIONS): tens of
+// thousands of rows would break the 2 MB cache-entry cap. Per-candidate bills and
+// questions are read one person at a time by loadLegislativeItems.
+const siteSnapshot = () => loadSnapshot(undefined, { omit: RECORD_COLLECTIONS });
+
 export function loadPublished(): Published { return fromFiles(); }
 export async function loadSnapshotPart(): Promise<{snapshot:Snapshot;from:"db"|"json"}> {
-  if (!useDb()) return {snapshot:loadSnapshot(undefined, { omit: RECORD_COLLECTIONS }),from:"json"};
+  if (!useDb()) return {snapshot:siteSnapshot(),from:"json"};
   try {
-    const { neon } = await import("@neondatabase/serverless");
     const { loadSnapshotFromDb } = await import("@elections26/db");
-    const sql = neon((process.env.DATABASE_URL_READONLY || process.env.DATABASE_URL) as string);
-    const db = { query: async (text:string,params?:unknown[]) => ({rows:(await sql.query(text,params ?? [])) as never[]}) };
-    return {snapshot:await loadSnapshotFromDb(db, { omit: RECORD_COLLECTIONS }),from:"db"};
-  } catch (err) { console.error("[data] snapshot database read failed",err); return {snapshot:loadSnapshot(undefined, { omit: RECORD_COLLECTIONS }),from:"json"}; }
+    return {snapshot:await withTimeout(loadSnapshotFromDb(await readDb(), { omit: RECORD_COLLECTIONS })),from:"db"};
+  } catch (err) { console.error("[data] snapshot database read failed",err); return {snapshot:siteSnapshot(),from:"json"}; }
 }
 export async function loadExtrasPart(): Promise<{extras:ExtrasData;from:"db"|"json"}> {
   if (!useDb()) return {extras:extrasFromFiles(),from:"json"};
   try {
-    const { neon } = await import("@neondatabase/serverless");
     const { loadExtrasFromDb } = await import("@elections26/db");
-    const sql = neon((process.env.DATABASE_URL_READONLY || process.env.DATABASE_URL) as string);
-    const db = { query: async (text:string,params?:unknown[]) => ({rows:(await sql.query(text,params ?? [])) as never[]}) };
-    const extras = await loadExtrasFromDb(db) as unknown as ExtrasData;
+    const extras = await withTimeout(loadExtrasFromDb(await readDb())) as unknown as ExtrasData;
     extras.knessetProfiles = Object.fromEntries(Object.entries(extras.knessetProfiles).filter(([name]) => !quarantinedKnessetNames.has(name)));
     return {extras,from:"db"};
   } catch (err) { console.error("[data] extras database read failed",err); return {extras:extrasFromFiles(),from:"json"}; }
@@ -91,11 +99,8 @@ let legislativeFile: {statuses:Record<string,string>;items:Record<string,Legisla
 export async function loadLegislativeItems(name: string): Promise<LegislativeRecord | undefined> {
   if (useDb()) {
     try {
-      const { neon } = await import("@neondatabase/serverless");
       const { loadLegislativeItemsFromDb } = await import("@elections26/db");
-      const sql = neon((process.env.DATABASE_URL_READONLY || process.env.DATABASE_URL) as string);
-      const db = { query: async (text: string, params?: unknown[]) => ({ rows: (await sql.query(text, params ?? [])) as never[] }) };
-      const items = await loadLegislativeItemsFromDb(db, name);
+      const items = await withTimeout(loadLegislativeItemsFromDb(await readDb(), name));
       if (items) return items as unknown as LegislativeRecord;
       // Older published versions predate this optional table. Do not mix current files
       // with a different database snapshot, especially after candidate-list edits.
@@ -109,22 +114,4 @@ export async function loadLegislativeItems(name: string): Promise<LegislativeRec
     const status = <T extends {statusId:number}>(item: T) => ({...item,status:legislativeFile!.statuses[String(item.statusId)] ?? "לא ידוע"});
     return {bills:record.bills.map(status),questions:record.questions.map(status)};
   } catch { return undefined; }
-
-}
-
-let billIndex: Map<string, BillRecordItem[]> | undefined;
-
-/** One person's record, with JSON fallback when the database is unavailable. */
-export async function loadRecord(personId: string): Promise<BillRecord> {
-  if (useDb()) {
-    try {
-      const { loadBillRecord } = await import("@elections26/db");
-      return (await withTimeout(loadBillRecord(await readDb(), personId, RECORD_LIMITS))) as BillRecord;
-    } catch (err) { console.error("[data] record read failed, serving committed JSON:", err); }
-  }
-  if (!billIndex) {
-    const { bills, bill_initiators } = loadSnapshot(undefined, { omit: COLLECTION_NAMES.filter((n) => !(RECORD_COLLECTIONS as readonly string[]).includes(n)) });
-    billIndex = indexBillItems({ bills, bill_initiators });
-  }
-  return billRecordFromItems(billIndex.get(personId) ?? []);
 }
