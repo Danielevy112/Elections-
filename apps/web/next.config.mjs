@@ -60,6 +60,9 @@ const nextConfig = {
   // matched up with an Output Directory setting. Six deployments failed on that mismatch.
   images: { unoptimized: true },
   poweredByHeader: false,
+  // The share-card routes read the Heebo font files at runtime (on ISR regeneration), so
+  // they must ship with those functions.
+  outputFileTracingIncludes: { "/**/*": ["./assets/fonts/*"] },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },

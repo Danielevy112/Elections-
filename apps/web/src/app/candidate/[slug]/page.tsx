@@ -1,12 +1,25 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sourcesForField } from "@elections26/data";
 import { Avatar, BackLink, BandChip, Card, SourceLink, Sources, Stat } from "@/components/ui";
-import { formatDate, formatSeats, site } from "@/lib/site";
+import { BAND_LABEL, formatDate, formatSeats, shareMetadata, site } from "@/lib/site";
 import { loadLegislativeItems } from "@/lib/data-source";
 import { attendance, displayName, knessetProfile, partyBio, partyPhoto, roleLabel } from "@/lib/extras";
 
 export const revalidate = 3600;
+
+/** Title and description for the page and its share card: who, which list, which place. */
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const view = (await site()).candidates.find((c) => c.person.slug === slug);
+  if (!view) return {};
+  const name = displayName(view.person.nameHe, view.party?.id, view.position);
+  const where = view.party && view.position ? `מקום ${view.position} ב${view.party.shortNameHe ?? view.party.nameHe}` : "";
+  const title = [name, where].filter(Boolean).join(" — ");
+  const description = view.band ? `${where}: ${BAND_LABEL[view.band]} לפי ממוצע הסקרים.` : where;
+  return shareMetadata(title, description);
+}
 
 export async function generateStaticParams() {
   return (await site()).candidates.map(({ person }) => ({ slug: person.slug }));
