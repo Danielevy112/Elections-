@@ -1,1 +1,1230 @@
-[]
+[
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:971",
+    "factionNameHe": "ש\"ס",
+    "id": "membership:1056:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-1056",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2023-02-02",
+    "factionId": "faction:1095",
+    "factionNameHe": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "id": "membership:1056:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-1056",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2021-06-15",
+    "factionId": "faction:968",
+    "factionNameHe": "ישראל ביתנו",
+    "id": "membership:12938:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-12938",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1104",
+    "factionNameHe": "ישראל ביתנו",
+    "id": "membership:12938:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-12938",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2021-04-08",
+    "factionId": "faction:971",
+    "factionNameHe": "ש\"ס",
+    "id": "membership:2291:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-2291",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1095",
+    "factionNameHe": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "id": "membership:2291:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-2291",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-08-15",
+    "factionId": "faction:966",
+    "factionNameHe": "ימינה בראשות נפתלי בנט",
+    "id": "membership:23511:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-23511",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:961",
+    "factionNameHe": "הציונות הדתית",
+    "id": "membership:23551:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-23551",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2022-11-20",
+    "factionId": "faction:1097",
+    "factionNameHe": "הציונות הדתית",
+    "id": "membership:23551:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-23551",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:962",
+    "factionNameHe": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה",
+    "id": "membership:23558:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-23558",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1096",
+    "factionNameHe": "הליכוד",
+    "id": "membership:23558:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-23558",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:962",
+    "factionNameHe": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה",
+    "id": "membership:23564:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-23564",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2023-03-31",
+    "factionId": "faction:1096",
+    "factionNameHe": "הליכוד",
+    "id": "membership:23564:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-23564",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:967",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:23591:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-23591",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2026-09-09",
+    "factionId": "faction:1102",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:23591:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-23591",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:967",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:23594:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-23594",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1102",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:23594:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-23594",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-08-15",
+    "factionId": "faction:965",
+    "factionNameHe": "יהדות התורה והשבת - אגודת ישראל דגל התורה",
+    "id": "membership:23641:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-23641",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1101",
+    "factionNameHe": "יהדות התורה",
+    "id": "membership:23641:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-23641",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2021-06-16",
+    "factionId": "faction:970",
+    "factionNameHe": "מרצ",
+    "id": "membership:23651:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-23651",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2022-12-29",
+    "id": "membership:23651:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-23651",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "id": "membership:23653:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-23653",
+    "startDate": "2021-06-16"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:971",
+    "factionNameHe": "ש\"ס",
+    "id": "membership:28513:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-28513",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2023-01-03",
+    "factionId": "faction:1095",
+    "factionNameHe": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "id": "membership:28513:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-28513",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:962",
+    "factionNameHe": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה",
+    "id": "membership:30057:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30057",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2023-03-26",
+    "factionId": "faction:1096",
+    "factionNameHe": "הליכוד",
+    "id": "membership:30057:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30057",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-09-06",
+    "factionId": "faction:964",
+    "factionNameHe": "הרשימה המשותפת (חד\"ש, תע\"ל, בל\"ד)",
+    "id": "membership:30067:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30067",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1103",
+    "factionNameHe": "חד\"ש-תע\"ל",
+    "id": "membership:30067:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30067",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:967",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:30102:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30102",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1102",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:30102:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30102",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "id": "membership:30106:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30106",
+    "startDate": "2021-06-22"
+  },
+  {
+    "factionId": "faction:1100",
+    "factionNameHe": "העבודה",
+    "id": "membership:30106:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30106",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-08-15",
+    "factionId": "faction:972",
+    "factionNameHe": "תקווה חדשה",
+    "id": "membership:30118:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30118",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2024-03-13",
+    "factionId": "faction:1098",
+    "factionNameHe": "המחנה הממלכתי",
+    "id": "membership:30118:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30118",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2021-06-15",
+    "factionId": "faction:968",
+    "factionNameHe": "ישראל ביתנו",
+    "id": "membership:30121:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30121",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1104",
+    "factionNameHe": "ישראל ביתנו",
+    "id": "membership:30121:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30121",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:962",
+    "factionNameHe": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה",
+    "id": "membership:30300:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30300",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1096",
+    "factionNameHe": "הליכוד",
+    "id": "membership:30300:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30300",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:971",
+    "factionNameHe": "ש\"ס",
+    "id": "membership:30601:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30601",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1095",
+    "factionNameHe": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "id": "membership:30601:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30601",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:969",
+    "factionNameHe": "כחול לבן",
+    "id": "membership:30657:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30657",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2025-07-08",
+    "factionId": "faction:1098",
+    "factionNameHe": "המחנה הממלכתי",
+    "id": "membership:30657:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30657",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2021-06-15",
+    "factionId": "faction:966",
+    "factionNameHe": "ימינה בראשות נפתלי בנט",
+    "id": "membership:30662:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30662",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2025-07-08",
+    "factionId": "faction:1098",
+    "factionNameHe": "המחנה הממלכתי",
+    "id": "membership:30662:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30662",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2021-06-15",
+    "factionId": "faction:972",
+    "factionNameHe": "תקווה חדשה",
+    "id": "membership:30680:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30680",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2022-12-29",
+    "id": "membership:30680:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30680",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2021-06-15",
+    "factionId": "faction:969",
+    "factionNameHe": "כחול לבן",
+    "id": "membership:30685:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30685",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2025-07-08",
+    "factionId": "faction:1098",
+    "factionNameHe": "המחנה הממלכתי",
+    "id": "membership:30685:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30685",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2021-07-09",
+    "factionId": "faction:967",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:30686:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30686",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1102",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:30686:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30686",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:967",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:30691:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30691",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1102",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:30691:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30691",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:969",
+    "factionNameHe": "כחול לבן",
+    "id": "membership:30693:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30693",
+    "startDate": "2021-04-06"
+  },
+  {
+    "id": "membership:30693:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30693",
+    "startDate": "2025-07-04"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:967",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:30695:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30695",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2026-08-11",
+    "factionId": "faction:1102",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:30695:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30695",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:963",
+    "factionNameHe": "העבודה",
+    "id": "membership:30696:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30696",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:962",
+    "factionNameHe": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה",
+    "id": "membership:30700:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30700",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1096",
+    "factionNameHe": "הליכוד",
+    "id": "membership:30700:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30700",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:962",
+    "factionNameHe": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה",
+    "id": "membership:30701:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30701",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1096",
+    "factionNameHe": "הליכוד",
+    "id": "membership:30701:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30701",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:962",
+    "factionNameHe": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה",
+    "id": "membership:30702:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30702",
+    "startDate": "2021-04-06"
+  },
+  {
+    "id": "membership:30702:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30702",
+    "startDate": "2023-01-07"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:962",
+    "factionNameHe": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה",
+    "id": "membership:30704:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30704",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1096",
+    "factionNameHe": "הליכוד",
+    "id": "membership:30704:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30704",
+    "startDate": "2022-11-15"
+  },
+  {
+    "id": "membership:30710:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30710",
+    "startDate": "2023-01-06"
+  },
+  {
+    "id": "membership:30711:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30711",
+    "startDate": "2023-01-17"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:973",
+    "factionNameHe": "הרשימה הערבית המאוחדת",
+    "id": "membership:30713:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30713",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1099",
+    "factionNameHe": "רע\"ם",
+    "id": "membership:30713:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30713",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-09-13",
+    "id": "membership:30718:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30718",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2023-01-07",
+    "factionId": "faction:1096",
+    "factionNameHe": "הליכוד",
+    "id": "membership:30718:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30718",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-09-06",
+    "factionId": "faction:964",
+    "factionNameHe": "הרשימה המשותפת (חד\"ש, תע\"ל, בל\"ד)",
+    "id": "membership:30719:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30719",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1103",
+    "factionNameHe": "חד\"ש-תע\"ל",
+    "id": "membership:30719:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30719",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:967",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:30720:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30720",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1102",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:30720:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30720",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:968",
+    "factionNameHe": "ישראל ביתנו",
+    "id": "membership:30722:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30722",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1104",
+    "factionNameHe": "ישראל ביתנו",
+    "id": "membership:30722:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30722",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:970",
+    "factionNameHe": "מרצ",
+    "id": "membership:30743:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30743",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2022-11-15",
+    "id": "membership:30745:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30745",
+    "startDate": "2021-06-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:971",
+    "factionNameHe": "ש\"ס",
+    "id": "membership:30749:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30749",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1095",
+    "factionNameHe": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "id": "membership:30749:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30749",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:973",
+    "factionNameHe": "הרשימה הערבית המאוחדת",
+    "id": "membership:30752:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30752",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1099",
+    "factionNameHe": "רע\"ם",
+    "id": "membership:30752:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30752",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "id": "membership:30758:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30758",
+    "startDate": "2021-08-25"
+  },
+  {
+    "factionId": "faction:1099",
+    "factionNameHe": "רע\"ם",
+    "id": "membership:30758:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30758",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2021-06-13",
+    "id": "membership:30768:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30768",
+    "startDate": "2021-04-08"
+  },
+  {
+    "endDate": "2025-06-15",
+    "id": "membership:30768:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30768",
+    "startDate": "2023-01-25"
+  },
+  {
+    "endDate": "2021-06-13",
+    "id": "membership:30770:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30770",
+    "startDate": "2021-04-08"
+  },
+  {
+    "factionId": "faction:1095",
+    "factionNameHe": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "id": "membership:30770:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30770",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:967",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:30776:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30776",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1102",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:30776:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30776",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "id": "membership:30783:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30783",
+    "startDate": "2021-06-15"
+  },
+  {
+    "factionId": "faction:1102",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:30783:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30783",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-04-25",
+    "factionId": "faction:966",
+    "factionNameHe": "ימינה בראשות נפתלי בנט",
+    "id": "membership:30786:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30786",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2023-01-17",
+    "factionId": "faction:1096",
+    "factionNameHe": "הליכוד",
+    "id": "membership:30786:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30786",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:973",
+    "factionNameHe": "הרשימה הערבית המאוחדת",
+    "id": "membership:30803:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30803",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:971",
+    "factionNameHe": "ש\"ס",
+    "id": "membership:30804:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30804",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2023-02-02",
+    "factionId": "faction:1095",
+    "factionNameHe": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל",
+    "id": "membership:30804:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30804",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:963",
+    "factionNameHe": "העבודה",
+    "id": "membership:30806:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30806",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:963",
+    "factionNameHe": "העבודה",
+    "id": "membership:30807:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30807",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1100",
+    "factionNameHe": "העבודה",
+    "id": "membership:30807:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30807",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:963",
+    "factionNameHe": "העבודה",
+    "id": "membership:30808:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30808",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1100",
+    "factionNameHe": "העבודה",
+    "id": "membership:30808:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30808",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:961",
+    "factionNameHe": "הציונות הדתית",
+    "id": "membership:30810:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30810",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2022-11-20",
+    "factionId": "faction:1097",
+    "factionNameHe": "הציונות הדתית",
+    "id": "membership:30810:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30810",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-07-03",
+    "factionId": "faction:961",
+    "factionNameHe": "הציונות הדתית",
+    "id": "membership:30811:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30811",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2022-11-20",
+    "factionId": "faction:1097",
+    "factionNameHe": "הציונות הדתית",
+    "id": "membership:30811:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30811",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "id": "membership:30816:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30816",
+    "startDate": "2021-06-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "id": "membership:30820:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30820",
+    "startDate": "2021-07-09"
+  },
+  {
+    "factionId": "faction:1102",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:30820:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30820",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "id": "membership:30821:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-30821",
+    "startDate": "2021-07-18"
+  },
+  {
+    "endDate": "2022-11-20",
+    "factionId": "faction:1097",
+    "factionNameHe": "הציונות הדתית",
+    "id": "membership:30830:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30830",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-20",
+    "factionId": "faction:1097",
+    "factionNameHe": "הציונות הדתית",
+    "id": "membership:30833:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30833",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2025-07-04",
+    "factionId": "faction:1098",
+    "factionNameHe": "המחנה הממלכתי",
+    "id": "membership:30836:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30836",
+    "startDate": "2022-11-15"
+  },
+  {
+    "factionId": "faction:1096",
+    "factionNameHe": "הליכוד",
+    "id": "membership:30842:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30842",
+    "startDate": "2022-11-15"
+  },
+  {
+    "factionId": "faction:1099",
+    "factionNameHe": "רע\"ם",
+    "id": "membership:30843:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30843",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-20",
+    "factionId": "faction:1097",
+    "factionNameHe": "הציונות הדתית",
+    "id": "membership:30847:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30847",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-20",
+    "factionId": "faction:1097",
+    "factionNameHe": "הציונות הדתית",
+    "id": "membership:30849:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30849",
+    "startDate": "2022-11-15"
+  },
+  {
+    "factionId": "faction:1102",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:30851:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30851",
+    "startDate": "2022-11-15"
+  },
+  {
+    "factionId": "faction:1096",
+    "factionNameHe": "הליכוד",
+    "id": "membership:30853:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30853",
+    "startDate": "2022-11-15"
+  },
+  {
+    "factionId": "faction:1102",
+    "factionNameHe": "יש עתיד",
+    "id": "membership:30854:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30854",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-20",
+    "factionId": "faction:1097",
+    "factionNameHe": "הציונות הדתית",
+    "id": "membership:30857:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30857",
+    "startDate": "2022-11-15"
+  },
+  {
+    "factionId": "faction:1096",
+    "factionNameHe": "הליכוד",
+    "id": "membership:30861:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30861",
+    "startDate": "2022-11-15"
+  },
+  {
+    "id": "membership:30867:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30867",
+    "startDate": "2023-01-01"
+  },
+  {
+    "id": "membership:30868:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30868",
+    "startDate": "2023-01-03"
+  },
+  {
+    "endDate": "2025-07-17",
+    "id": "membership:30870:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30870",
+    "startDate": "2023-01-25"
+  },
+  {
+    "endDate": "2025-07-20",
+    "id": "membership:30873:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30873",
+    "startDate": "2023-02-02"
+  },
+  {
+    "endDate": "2025-01-21",
+    "id": "membership:30874:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30874",
+    "startDate": "2023-02-07"
+  },
+  {
+    "id": "membership:30876:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30876",
+    "startDate": "2023-02-15"
+  },
+  {
+    "id": "membership:30879:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30879",
+    "startDate": "2023-03-26"
+  },
+  {
+    "endDate": "2023-10-14",
+    "id": "membership:30880:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30880",
+    "startDate": "2023-03-31"
+  },
+  {
+    "id": "membership:30893:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30893",
+    "startDate": "2025-01-05"
+  },
+  {
+    "id": "membership:30916:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30916",
+    "startDate": "2026-06-07"
+  },
+  {
+    "id": "membership:30917:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30917",
+    "startDate": "2026-07-28"
+  },
+  {
+    "id": "membership:30921:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30921",
+    "startDate": "2026-08-11"
+  },
+  {
+    "id": "membership:30922:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-30922",
+    "startDate": "2026-08-13"
+  },
+  {
+    "endDate": "2021-06-15",
+    "factionId": "faction:968",
+    "factionNameHe": "ישראל ביתנו",
+    "id": "membership:427:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-427",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1104",
+    "factionNameHe": "ישראל ביתנו",
+    "id": "membership:427:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-427",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2021-06-15",
+    "factionId": "faction:972",
+    "factionNameHe": "תקווה חדשה",
+    "id": "membership:4397:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-4397",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2024-03-13",
+    "factionId": "faction:1098",
+    "factionNameHe": "המחנה הממלכתי",
+    "id": "membership:4397:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-4397",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:970",
+    "factionNameHe": "מרצ",
+    "id": "membership:511:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-511",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:962",
+    "factionNameHe": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה",
+    "id": "membership:556:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-556",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2023-01-06",
+    "factionId": "faction:1096",
+    "factionNameHe": "הליכוד",
+    "id": "membership:556:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-556",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-09-06",
+    "factionId": "faction:964",
+    "factionNameHe": "הרשימה המשותפת (חד\"ש, תע\"ל, בל\"ד)",
+    "id": "membership:560:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-560",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1103",
+    "factionNameHe": "חד\"ש-תע\"ל",
+    "id": "membership:560:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-560",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-08-15",
+    "factionId": "faction:965",
+    "factionNameHe": "יהדות התורה והשבת - אגודת ישראל דגל התורה",
+    "id": "membership:563:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-563",
+    "startDate": "2021-04-06"
+  },
+  {
+    "endDate": "2023-01-25",
+    "factionId": "faction:1101",
+    "factionNameHe": "יהדות התורה",
+    "id": "membership:563:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-563",
+    "startDate": "2022-11-15"
+  },
+  {
+    "endDate": "2022-11-15",
+    "factionId": "faction:962",
+    "factionNameHe": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה",
+    "id": "membership:965:24",
+    "knessetNumber": 24,
+    "personId": "person:knesset-965",
+    "startDate": "2021-04-06"
+  },
+  {
+    "factionId": "faction:1096",
+    "factionNameHe": "הליכוד",
+    "id": "membership:965:25",
+    "knessetNumber": 25,
+    "personId": "person:knesset-965",
+    "startDate": "2022-11-15"
+  }
+]

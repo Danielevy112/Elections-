@@ -1,0 +1,1006 @@
+{
+  "odata.metadata": "https://knesset.gov.il/Odata/ParliamentInfo.svc/$metadata#KNS_Person",
+  "value": [
+    {
+      "PersonID": 23534,
+      "LastName": "יוגב",
+      "FirstName": "מרדכי",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2020-05-17T15:28:37.583"
+    },
+    {
+      "PersonID": 23551,
+      "LastName": "סטרוק",
+      "FirstName": "אורית מלכה",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": "ostruk@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.34"
+    },
+    {
+      "PersonID": 23552,
+      "LastName": "שטבון",
+      "FirstName": "יוני",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2015-05-27T13:20:53.99"
+    },
+    {
+      "PersonID": 23553,
+      "LastName": "מועלם-רפאלי",
+      "FirstName": "שולי",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T10:55:42.033"
+    },
+    {
+      "PersonID": 23555,
+      "LastName": "שמיר",
+      "FirstName": "יאיר",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2015-05-27T13:20:33.853"
+    },
+    {
+      "PersonID": 23556,
+      "LastName": "פייגלין",
+      "FirstName": "משה זלמן",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-04-15T19:57:06.093"
+    },
+    {
+      "PersonID": 23557,
+      "LastName": "אוחיון",
+      "FirstName": "שמעון",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2015-05-27T13:26:12.173"
+    },
+    {
+      "PersonID": 23558,
+      "LastName": "ביטן",
+      "FirstName": "דוד",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": "dbitan@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.387"
+    },
+    {
+      "PersonID": 23560,
+      "LastName": "מלינובסקי",
+      "FirstName": "יוליה",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": "ymalinovsky@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.463"
+    },
+    {
+      "PersonID": 23564,
+      "LastName": "אמסלם",
+      "FirstName": "דוד",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": "davidam@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.387"
+    },
+    {
+      "PersonID": 23565,
+      "LastName": "מיכאלי",
+      "FirstName": "מרב",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": "michaelim@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.62"
+    },
+    {
+      "PersonID": 23566,
+      "LastName": "שפיר",
+      "FirstName": "סתיו",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2020-05-17T15:28:58.48"
+    },
+    {
+      "PersonID": 23567,
+      "LastName": "מרגלית",
+      "FirstName": "אראל",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2017-12-26T17:56:04.24"
+    },
+    {
+      "PersonID": 23568,
+      "LastName": "שמולי",
+      "FirstName": "איציק",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2020-03-12T12:45:08.543"
+    },
+    {
+      "PersonID": 23569,
+      "LastName": "רוזנטל",
+      "FirstName": "מיקי",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T11:02:07.547"
+    },
+    {
+      "PersonID": 23570,
+      "LastName": "בירן",
+      "FirstName": "מיכל",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T11:02:00.903"
+    },
+    {
+      "PersonID": 23571,
+      "LastName": "מזרחי",
+      "FirstName": "משה",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T11:00:22.2"
+    },
+    {
+      "PersonID": 23572,
+      "LastName": "עטר",
+      "FirstName": "דניאל",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2015-11-29T09:15:27.983"
+    },
+    {
+      "PersonID": 23573,
+      "LastName": "יונה",
+      "FirstName": "יוסי",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T11:03:00.383"
+    },
+    {
+      "PersonID": 23591,
+      "LastName": "שטרן",
+      "FirstName": "אלעזר",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2026-09-09T13:30:57.51"
+    },
+    {
+      "PersonID": 23592,
+      "LastName": "צור",
+      "FirstName": "דוד",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2015-05-27T13:19:36.073"
+    },
+    {
+      "PersonID": 23594,
+      "LastName": "לפיד",
+      "FirstName": "יאיר",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": "ylapid@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.433"
+    },
+    {
+      "PersonID": 23595,
+      "LastName": "פירון",
+      "FirstName": "שי",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2015-09-17T12:29:48.833"
+    },
+    {
+      "PersonID": 23596,
+      "LastName": "גרמן",
+      "FirstName": "יעל",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2020-05-17T15:28:11.127"
+    },
+    {
+      "PersonID": 23597,
+      "LastName": "כהן",
+      "FirstName": "מאיר",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": "cohenmeir@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.543"
+    },
+    {
+      "PersonID": 23598,
+      "LastName": "פרי",
+      "FirstName": "יעקב",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2018-02-09T11:40:41.273"
+    },
+    {
+      "PersonID": 23599,
+      "LastName": "לביא",
+      "FirstName": "עליזה",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T10:59:12.03"
+    },
+    {
+      "PersonID": 23600,
+      "LastName": "שלח",
+      "FirstName": "עפר",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2020-12-29T13:56:32.963"
+    },
+    {
+      "PersonID": 23601,
+      "LastName": "רזבוזוב",
+      "FirstName": "יואל",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2023-09-26T10:34:40.237"
+    },
+    {
+      "PersonID": 23602,
+      "LastName": "קול",
+      "FirstName": "עדי",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2015-05-27T13:24:01.397"
+    },
+    {
+      "PersonID": 23631,
+      "LastName": "אלהרר",
+      "FirstName": "קארין",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": "kelharrar@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.777"
+    },
+    {
+      "PersonID": 23632,
+      "LastName": "לוי",
+      "FirstName": "מיקי",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": "mickeylevy@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.59"
+    },
+    {
+      "PersonID": 23633,
+      "LastName": "סולומון",
+      "FirstName": "שמעון",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2015-05-27T13:26:29.983"
+    },
+    {
+      "PersonID": 23634,
+      "LastName": "קלדרון",
+      "FirstName": "רות",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2015-05-27T13:25:29.463"
+    },
+    {
+      "PersonID": 23635,
+      "LastName": "תמנו",
+      "FirstName": "פנינה",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": "ptamano@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.76"
+    },
+    {
+      "PersonID": 23636,
+      "LastName": "פרנקל",
+      "FirstName": "רינה",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2015-05-27T13:25:40.527"
+    },
+    {
+      "PersonID": 23637,
+      "LastName": "קריב",
+      "FirstName": "יפעת",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2015-05-27T13:21:35.35"
+    },
+    {
+      "PersonID": 23638,
+      "LastName": "ליפמן",
+      "FirstName": "דב",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2015-05-27T13:19:26.697"
+    },
+    {
+      "PersonID": 23639,
+      "LastName": "טופורובסקי",
+      "FirstName": "בועז",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2026-06-08T08:29:19.52"
+    },
+    {
+      "PersonID": 23640,
+      "LastName": "הופמן",
+      "FirstName": "רונן",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2015-05-27T13:25:13.433"
+    },
+    {
+      "PersonID": 23641,
+      "LastName": "אשר",
+      "FirstName": "יעקב",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": "yakova@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.497"
+    },
+    {
+      "PersonID": 23642,
+      "LastName": "אבו עראר",
+      "FirstName": "טלב",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T11:04:48.58"
+    },
+    {
+      "PersonID": 23643,
+      "LastName": "גטאס",
+      "FirstName": "באסל",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2017-09-07T14:22:32.65"
+    },
+    {
+      "PersonID": 23651,
+      "LastName": "זנדברג",
+      "FirstName": "תמר",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2021-04-04T00:24:59.537"
+    },
+    {
+      "PersonID": 23652,
+      "LastName": "פריג'",
+      "FirstName": "עיסאווי",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2023-07-12T17:36:21.843"
+    },
+    {
+      "PersonID": 23653,
+      "LastName": "רוזין",
+      "FirstName": "מיכל",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2022-11-06T18:38:07.56"
+    },
+    {
+      "PersonID": 23673,
+      "LastName": "בר לב",
+      "FirstName": "עמר",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2021-04-04T00:24:59.457"
+    },
+    {
+      "PersonID": 24332,
+      "LastName": "פלוט",
+      "FirstName": "רונן",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2016-06-20T15:49:06.89"
+    },
+    {
+      "PersonID": 28513,
+      "LastName": "בן צור",
+      "FirstName": "יואב",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": "ybentzur@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.433"
+    },
+    {
+      "PersonID": 29855,
+      "LastName": "אדרי",
+      "FirstName": "ליאור",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2015-05-27T13:22:18.413"
+    },
+    {
+      "PersonID": 30014,
+      "LastName": "הורוביץ",
+      "FirstName": "הלל אילן",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2015-05-27T13:19:54.907"
+    },
+    {
+      "PersonID": 30054,
+      "LastName": "מגל",
+      "FirstName": "ינון",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2016-01-18T18:53:11.643"
+    },
+    {
+      "PersonID": 30055,
+      "LastName": "סמוטריץ'",
+      "FirstName": "בצלאל",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": "bezalels@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-12-15T17:36:50.43"
+    },
+    {
+      "PersonID": 30056,
+      "LastName": "לוי",
+      "FirstName": "ז'קי",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2018-11-18T13:23:37.193"
+    },
+    {
+      "PersonID": 30057,
+      "LastName": "קיש",
+      "FirstName": "יואב",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": "yoavk@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.447"
+    },
+    {
+      "PersonID": 30058,
+      "LastName": "זוהר",
+      "FirstName": "מכלוף מיקי",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": "mzohar@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.603"
+    },
+    {
+      "PersonID": 30059,
+      "LastName": "ברקו",
+      "FirstName": "ענת",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T10:59:25.077"
+    },
+    {
+      "PersonID": 30060,
+      "LastName": "טרכטנברג",
+      "FirstName": "מנואל",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2018-07-12T11:04:00.907"
+    },
+    {
+      "PersonID": 30061,
+      "LastName": "סויד",
+      "FirstName": "רויטל",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2020-05-17T15:29:16.397"
+    },
+    {
+      "PersonID": 30062,
+      "LastName": "בהלול",
+      "FirstName": "זוהיר",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2018-10-18T11:06:53.51"
+    },
+    {
+      "PersonID": 30063,
+      "LastName": "ברושי",
+      "FirstName": "איתן",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T11:06:01.353"
+    },
+    {
+      "PersonID": 30064,
+      "LastName": "סבטלובה",
+      "FirstName": "קסניה",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T10:57:42.02"
+    },
+    {
+      "PersonID": 30065,
+      "LastName": "נחמיאס ורבין",
+      "FirstName": "איילת",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T10:56:50.623"
+    },
+    {
+      "PersonID": 30066,
+      "LastName": "עודה",
+      "FirstName": "איימן",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": "aymanod@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.34"
+    },
+    {
+      "PersonID": 30067,
+      "LastName": "תומא סלימאן",
+      "FirstName": "עאידה",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": "aidat@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.713"
+    },
+    {
+      "PersonID": 30068,
+      "LastName": "חאג' יחיא",
+      "FirstName": "עבד אל חכים",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-11-06T09:38:39.033"
+    },
+    {
+      "PersonID": 30069,
+      "LastName": "ג'בארין",
+      "FirstName": "יוסף",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2021-04-12T13:14:57.157"
+    },
+    {
+      "PersonID": 30070,
+      "LastName": "סעדי",
+      "FirstName": "אוסאמה",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2021-04-04T00:24:59.113"
+    },
+    {
+      "PersonID": 30071,
+      "LastName": "אבו מערוף",
+      "FirstName": "עבדאללה",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2017-08-13T09:34:29.94"
+    },
+    {
+      "PersonID": 30074,
+      "LastName": "ילין",
+      "FirstName": "חיים",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T11:04:29.447"
+    },
+    {
+      "PersonID": 30076,
+      "LastName": "גל",
+      "FirstName": "שרון",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2015-09-06T16:04:37.79"
+    },
+    {
+      "PersonID": 30077,
+      "LastName": "גלנט",
+      "FirstName": "יואב",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2025-01-05T09:52:28.147"
+    },
+    {
+      "PersonID": 30078,
+      "LastName": "אלאלוף",
+      "FirstName": "אלי",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T11:05:36.583"
+    },
+    {
+      "PersonID": 30079,
+      "LastName": "אורן",
+      "FirstName": "מיכאל",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-11-06T09:30:52.313"
+    },
+    {
+      "PersonID": 30080,
+      "LastName": "עזריה",
+      "FirstName": "רחל",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T10:58:10.48"
+    },
+    {
+      "PersonID": 30081,
+      "LastName": "פלוסקוב",
+      "FirstName": "טלי",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2022-08-07T09:48:36.127"
+    },
+    {
+      "PersonID": 30082,
+      "LastName": "שאשא ביטון",
+      "FirstName": "יפעת",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2024-07-07T09:10:08.723"
+    },
+    {
+      "PersonID": 30083,
+      "LastName": "כהן",
+      "FirstName": "אלי",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": "elic@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.34"
+    },
+    {
+      "PersonID": 30084,
+      "LastName": "פולקמן",
+      "FirstName": "רועי",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-11-06T09:45:24.147"
+    },
+    {
+      "PersonID": 30094,
+      "LastName": "בוקר",
+      "FirstName": "נאוה",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T11:00:28.93"
+    },
+    {
+      "PersonID": 30095,
+      "LastName": "נגוסה",
+      "FirstName": "אברהם",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T10:56:15.837"
+    },
+    {
+      "PersonID": 30096,
+      "LastName": "קורן",
+      "FirstName": "נורית",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T11:00:34.597"
+    },
+    {
+      "PersonID": 30097,
+      "LastName": "מזוז",
+      "FirstName": "ירון",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-11-06T09:50:29.78"
+    },
+    {
+      "PersonID": 30098,
+      "LastName": "חזן",
+      "FirstName": "אורן אסף",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T10:56:36.207"
+    },
+    {
+      "PersonID": 30099,
+      "LastName": "בן ראובן",
+      "FirstName": "איל",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2021-07-06T14:37:30.137"
+    },
+    {
+      "PersonID": 30102,
+      "LastName": "בן ארי",
+      "FirstName": "מירב",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": "bmerav@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.59"
+    },
+    {
+      "PersonID": 30106,
+      "LastName": "לזימי",
+      "FirstName": "נעמה",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": "naamalazimi@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.697"
+    },
+    {
+      "PersonID": 30117,
+      "LastName": "גבאי",
+      "FirstName": "אבי",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-11-06T09:37:49.02"
+    },
+    {
+      "PersonID": 30118,
+      "LastName": "השכל",
+      "FirstName": "שרן מרים",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": "shaskel@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.84"
+    },
+    {
+      "PersonID": 30121,
+      "LastName": "פורר",
+      "FirstName": "עודד",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": "odedfo@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.713"
+    },
+    {
+      "PersonID": 30289,
+      "LastName": "כהן-פארן",
+      "FirstName": "יעל",
+      "GenderID": 250,
+      "GenderDesc": "נקבה",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T11:03:17.573"
+    },
+    {
+      "PersonID": 30299,
+      "LastName": "נתונים",
+      "FirstName": "אין",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2020-11-26T14:41:44.713"
+    },
+    {
+      "PersonID": 30300,
+      "LastName": "אוחנה",
+      "FirstName": "אמיר",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": "amiro@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.353"
+    },
+    {
+      "PersonID": 30328,
+      "LastName": "גואטה",
+      "FirstName": "יגאל",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2017-10-29T16:00:51.913"
+    },
+    {
+      "PersonID": 30407,
+      "LastName": "גליק",
+      "FirstName": "יהודה",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T11:02:47.437"
+    },
+    {
+      "PersonID": 30470,
+      "LastName": "מלכיאלי",
+      "FirstName": "מיכאל",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": "malkielim@knesset.gov.il",
+      "IsCurrent": true,
+      "LastUpdatedDate": "2022-11-10T11:19:09.557"
+    },
+    {
+      "PersonID": 30480,
+      "LastName": "בצלאל",
+      "FirstName": "אברהם",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2025-07-20T10:50:24.067"
+    },
+    {
+      "PersonID": 30520,
+      "LastName": "אזברגה",
+      "FirstName": "ג'מעה",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2021-02-25T10:42:14.583"
+    },
+    {
+      "PersonID": 30548,
+      "LastName": "אלחרומי",
+      "FirstName": "סעיד",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2021-08-29T15:04:33.957"
+    },
+    {
+      "PersonID": 30549,
+      "LastName": "סיידה",
+      "FirstName": "דן",
+      "GenderID": 251,
+      "GenderDesc": "זכר",
+      "Email": null,
+      "IsCurrent": false,
+      "LastUpdatedDate": "2019-05-14T11:04:09.613"
+    }
+  ],
+  "odata.nextLink": "KNS_Person?$top=19000&$skiptoken=30549"
+}
