@@ -20,20 +20,13 @@ describe("verifyKnessetLink", () => {
     expect(verifyKnessetLink(20).accepted).toBe(false);
   });
 
-  it("accepts an older MK with a reviewed manual link", () => {
-    // חנין דב בוריס → דב חנין (Knessets 17–20), linked by hand with a reason.
-    expect(verifyKnessetLink(20, { manualReason: "אותו אדם; נבדק מול דף המפלגה" })).toMatchObject({
-      accepted: true,
-      basis: "manual",
-    });
-    expect(verifyKnessetLink(20, { manualReason: "   " }).accepted).toBe(false);
+  it("rejects a biography URL or name-only manual reason as identity evidence", () => {
+    expect(verifyKnessetLink(19).accepted).toBe(false);
+    expect(verifyKnessetLink(19, { identitySourceUrl: "https://example.org/person" }).accepted).toBe(false);
+    expect(verifyKnessetLink(19, { identityReview: "same person" }).accepted).toBe(false);
   });
 
-  it("accepts an older MK when a sourced bio ties the record to this list slot", () => {
-    // פייגלין משה זלמן (Knesset 19), whose bio on this slot describes the same person.
-    expect(verifyKnessetLink(19, { bioSourcePage: "https://he.wikipedia.org/wiki/משה_פייגלין" })).toMatchObject({
-      accepted: true,
-      basis: "bio",
-    });
+  it("requires a reviewed identity source to link an older MK", () => {
+    expect(verifyKnessetLink(19, { identitySourceUrl: "https://example.org/person", identityReview: "Independent page identifies the candidate and former MK" })).toMatchObject({ accepted: true, basis: "reviewed" });
   });
 });

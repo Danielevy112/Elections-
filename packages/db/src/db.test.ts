@@ -4,7 +4,7 @@ import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { COLLECTION_NAMES } from "@elections26/schema";
 import { billRecordFromItems, indexBillItems, loadSnapshot, RECORD_COLLECTIONS, RECORD_LIMITS, repoRoot } from "@elections26/data";
-import { loadBillRecord, loadExtrasFromDb, loadSnapshotFromDb, migrate, publish, type Db, type Extras } from "./index";
+import { loadBillRecord, loadExtrasFromDb, loadLegislativeItemsFromDb, loadSnapshotFromDb, migrate, publish, type Db, type Extras } from "./index";
 
 function extrasFromRepo(): Extras {
   const ov = (f: string) => JSON.parse(readFileSync(join(repoRoot(), "data", "manual_overrides", f), "utf8"));
@@ -44,6 +44,20 @@ describe("postgres data layer", () => {
     expect(back.knessetProfiles).toEqual(extras.knessetProfiles);
     expect(back.photos.length).toBe(extras.photos.length);
     expect(back.bios.map((b) => b.text)).toEqual(extras.bios.map((b) => b.text));
+  }, 60_000);
+
+  it("keeps individual legislation outside the global extras cache", async () => {
+    const db = await freshDb();
+    const extras = extrasFromRepo();
+    extras.legislativeItems = {
+      "בנט נפתלי": { bills: [{ id: 2139769, title: "הצעת חוק", status: "הונחה" }], questions: [] },
+    };
+    await publish(db, loadSnapshot(), extras);
+    const back = await loadExtrasFromDb(db);
+    expect(back.knessetProfiles["בנט נפתלי"]).not.toHaveProperty("items");
+    expect(back).not.toHaveProperty("legislativeItems");
+    expect(await loadLegislativeItemsFromDb(db, "בנט נפתלי")).toEqual(extras.legislativeItems["בנט נפתלי"]);
+    expect(await loadLegislativeItemsFromDb(db, "אין כזה")).toBeUndefined();
   }, 60_000);
 
   it("keeps the published version when a publish fails", async () => {

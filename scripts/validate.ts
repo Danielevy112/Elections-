@@ -218,8 +218,7 @@ export function validateKnessetLinks(snapshot: Snapshot, evidence: LinkEvidenceF
     const terms = evidence.knessetTermsById.get(person.knessetPersonId) ?? [];
     const last = Math.max(lastKnesset.get(person.id) ?? 0, ...terms) || undefined;
     const verdict = verifyKnessetLink(last, {
-      manualReason: evidence.manualReasonBySlot.get(slot),
-      bioSourcePage: evidence.bioPageBySlot.get(slot),
+
     });
     if (!verdict.accepted) {
       problems.push({

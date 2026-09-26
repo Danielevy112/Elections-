@@ -307,12 +307,22 @@ export function buildSnapshot(input: BuildInput): BuildResult {
   }): number | undefined {
     const slot = `${args.partyKey}:${args.position}`;
     const manualLink = manualLinkBySlot.get(slot);
-    if (manualLink) return manualLink.knessetPersonId;
-    if (args.manualId !== undefined) return args.manualId;
+    // A manually named historical match still needs a separately reviewed identity source.
+    // Do not fall through to a different person when a manual candidate is quarantined.
+    const explicitId = manualLink?.knessetPersonId ?? args.manualId;
+    if (explicitId !== undefined) {
+      const explicitVerdict = verifyKnessetLink(lastKnessetById.get(explicitId));
+      if (explicitVerdict.accepted) return explicitId;
+      quarantined.push({
+        name: args.name, partyKey: args.partyKey, position: args.position,
+        knessetPersonId: explicitId,
+        knessetName: knessetByPersonId.get(explicitId)?.nameHe,
+        lastKnesset: explicitVerdict.lastKnesset, reason: explicitVerdict.reason,
+      });
+      return undefined;
+    }
     if (args.matchedId === undefined) return undefined;
-    const verdict = verifyKnessetLink(lastKnessetById.get(args.matchedId), {
-      bioSourcePage: manual.bioPages.get(slot),
-    });
+    const verdict = verifyKnessetLink(lastKnessetById.get(args.matchedId));
     if (verdict.accepted) return args.matchedId;
     quarantined.push({
       name: args.name,

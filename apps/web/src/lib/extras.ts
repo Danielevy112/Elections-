@@ -29,6 +29,65 @@ export interface KnessetProfile {
   billsPassed: number;
   parliamentaryQuestions: number | null;
   sources: { positions: string; bills: string; questions: string };
+  record?: KnessetRecord;
+  keyVotes?: KeyVote[];
+}
+
+export interface TermActivity {
+  votesHeld: number;
+  votesPresent: number;
+  agendaMotions: number;
+  billsInitiated: number;
+  billsPassed: number;
+  questions: number;
+  committees: string[];
+  committeeChairs: string[];
+  sources: { votes: string; votesHeld: string; agenda: string; bills: string; questions: string; committees: string };
+}
+
+export interface KnessetRecord {
+  knessetPersonId: number;
+  terms: Record<string, TermActivity>;
+  total: Pick<TermActivity, "votesHeld" | "votesPresent" | "agendaMotions" | "billsInitiated" | "billsPassed" | "questions">;
+  asOf: string;
+}
+
+export interface KeyVote {
+  party: string;
+  category: string;
+  position: string;
+  platform: string;
+  vote: number;
+  candidate: string;
+  voteTitle: string;
+  date: string;
+  reading: string;
+  faction: string;
+  factionUrl: string;
+  positionAtVote: string;
+  for: number;
+  against: number;
+  mismatch: boolean;
+  voteUrl: string;
+  resultUrl: string;
+}
+
+export interface LegislativeItem {
+  id: number;
+  title: string;
+  knesset: number;
+  statusId: number;
+  status: string;
+  submitted?: string;
+  url: string;
+}
+export interface LegislativeRecord {
+  bills: LegislativeItem[];
+  questions: LegislativeItem[];
+}
+
+export function attendance(a: {votesHeld: number; votesPresent: number} | undefined): number | undefined {
+  return a && a.votesHeld ? Math.round(100 * a.votesPresent / a.votesHeld) : undefined;
 }
 
 export interface PartyPhoto {
@@ -57,7 +116,7 @@ let profiles: Record<string, KnessetProfile> = {};
 let photos = new Map<string, PartyPhoto>();
 let bios = new Map<string, PartyBio>();
 /** Sourced bio page per filed name: independent evidence for an older Knesset link. */
-let bioPageByName = new Map<string, string>();
+
 
 export function setExtras(data: ExtrasData): void {
   if (current === data) return;
@@ -65,7 +124,6 @@ export function setExtras(data: ExtrasData): void {
   profiles = data.knessetProfiles;
   photos = new Map(data.photos.map((p) => [`${p.partyKey}:${p.position}`, p]));
   bios = new Map(data.bios.map((b) => [`${b.partyKey}:${b.position}`, b]));
-  bioPageByName = new Map(data.bios.map((b) => [norm(b.nameHe), b.sourcePage]));
 }
 
 const norm = (s: string) =>
@@ -73,7 +131,7 @@ const norm = (s: string) =>
 
 /**
  * The candidate's Knesset record, only when the link passes verifyKnessetLink: recent MKs
- * on an exact name match, older ones only with a reviewed manual link or a sourced bio.
+ * on an exact name match; older names are quarantined until independently verified.
  * A quarantined link returns undefined, so the page shows no record rather than someone
  * else's.
  */
@@ -81,10 +139,7 @@ export function knessetProfile(filedName: string): KnessetProfile | undefined {
   const key = norm(filedName);
   const profile = profiles[key];
   if (!profile) return undefined;
-  const verdict = verifyKnessetLink(Math.max(0, ...profile.knessetTerms) || undefined, {
-    manualReason: profile.linkReason,
-    bioSourcePage: bioPageByName.get(key),
-  });
+  const verdict = verifyKnessetLink(Math.max(0, ...profile.knessetTerms) || undefined);
   return verdict.accepted ? profile : undefined;
 }
 

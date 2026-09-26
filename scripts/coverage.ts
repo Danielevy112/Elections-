@@ -17,8 +17,7 @@ function hasVerifiedRecord(name: string, key: string): boolean {
   const p = profiles[norm(name)];
   if (!p) return false;
   return verifyKnessetLink(Math.max(0, ...p.knessetTerms) || undefined, {
-    manualReason: p.linkReason,
-    bioSourcePage: bioPages.get(key),
+
   }).accepted;
 }
 

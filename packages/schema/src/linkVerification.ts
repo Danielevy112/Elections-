@@ -19,17 +19,13 @@
 export const AUTO_LINK_MIN_KNESSET = 21;
 
 export interface LinkEvidence {
-  /** Reason recorded on a reviewed manual link (knesset_links.json / person_links.json). */
-  manualReason?: string | undefined;
-  /**
-   * Where a sourced bio for this exact list slot came from: a party's own page, or a
-   * Wikipedia article admitted only when it ties the person to this list's 2026 run.
-   */
-  bioSourcePage?: string | undefined;
+  /** Human-reviewed evidence: an explicit source connecting this exact candidate to this historical MK, not a name-match explanation. */
+  identitySourceUrl?: string | undefined;
+  identityReview?: string | undefined;
 }
 
 export type LinkVerdict =
-  | { accepted: true; basis: "recent" | "manual" | "bio"; lastKnesset: number | undefined }
+  | { accepted: true; basis: "recent" | "reviewed"; lastKnesset: number | undefined }
   | { accepted: false; lastKnesset: number | undefined; reason: string };
 
 /**
@@ -40,11 +36,8 @@ export function verifyKnessetLink(lastKnesset: number | undefined, evidence: Lin
   if (lastKnesset !== undefined && lastKnesset >= AUTO_LINK_MIN_KNESSET) {
     return { accepted: true, basis: "recent", lastKnesset };
   }
-  if (evidence.manualReason && evidence.manualReason.trim().length > 0) {
-    return { accepted: true, basis: "manual", lastKnesset };
-  }
-  if (evidence.bioSourcePage && evidence.bioSourcePage.trim().length > 0) {
-    return { accepted: true, basis: "bio", lastKnesset };
+  if (evidence.identitySourceUrl && /^https:\/\//.test(evidence.identitySourceUrl) && evidence.identityReview?.trim()) {
+    return { accepted: true, basis: "reviewed", lastKnesset };
   }
   return {
     accepted: false,
