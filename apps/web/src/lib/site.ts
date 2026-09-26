@@ -1,6 +1,6 @@
 import { unstable_cache } from "next/cache";
 import { buildSite, type SiteData } from "@elections26/data";
-import { loadPublished, loadRecord } from "./data-source";
+import { loadPublished, loadSnapshotPart, loadExtrasPart } from "./data-source";
 import { setExtras } from "./extras";
 
 /**
@@ -33,14 +33,15 @@ export async function isRealData(): Promise<boolean> {
 // The cache key includes the deployment, so every deploy (each of which publishes a new
 // data version first) starts from fresh data instead of the previous deploy's cache.
 const DEPLOY_KEY = process.env.VERCEL_DEPLOYMENT_ID ?? process.env.VERCEL_GIT_COMMIT_SHA ?? "local";
-export const published = unstable_cache(loadPublished, ["published-data", DEPLOY_KEY], { tags: ["data"], revalidate: 3600 });
-
-/**
- * One candidate's legislative record, cached per person under the same "data" tag, so a
- * publish refreshes it along with everything else. Each entry is one person's bills, not
- * the whole record.
- */
-export const billRecord = unstable_cache(loadRecord, ["bill-record", DEPLOY_KEY], { tags: ["data"], revalidate: 3600 });
+const cachedSnapshot = unstable_cache(loadSnapshotPart, ["published-snapshot", DEPLOY_KEY], { tags: ["data"], revalidate: 3600 });
+const cachedExtras = unstable_cache(loadExtrasPart, ["published-extras", DEPLOY_KEY], { tags: ["data"], revalidate: 3600 });
+/** Each half stays below Next's 2 MB cache-entry cap. If either database read fails,
+ * use one coherent committed version rather than mixing stores. */
+export async function published() {
+  const [snapshotPart, extrasPart] = await Promise.all([cachedSnapshot(), cachedExtras()]);
+  if (snapshotPart.from === "db" && extrasPart.from === "db") return { snapshot: snapshotPart.snapshot, extras: extrasPart.extras, from: "db" as const };
+  return loadPublished();
+}
 
 let built: { key: string; data: SiteData } | undefined;
 
@@ -48,7 +49,7 @@ let built: { key: string; data: SiteData } | undefined;
 export async function site(): Promise<SiteData> {
   const { snapshot, extras } = await published();
   setExtras(extras);
-  const key = `${snapshot.meta.generatedAt}:${snapshot.candidacies.length}`;
+  const key = `${snapshot.meta.generatedAt}:${snapshot.candidacies.length}:${snapshot.sources.length}`;
   if (built?.key !== key) built = { key, data: buildSite(snapshot) };
   return built.data;
 }

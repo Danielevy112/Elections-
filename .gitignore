@@ -6,3 +6,6 @@ out/
 .env
 .env.local
 .DS_Store
+
+.cache/
+scripts/__pycache__/

@@ -19,6 +19,7 @@ export interface Db {
 
 export interface Extras {
   knessetProfiles: Record<string, { knessetPersonId: number } & Record<string, unknown>>;
+  legislativeItems?: Record<string, {bills: Record<string, unknown>[], questions: Record<string, unknown>[]}>;
   photos: Record<string, unknown>[];
   bios: Record<string, unknown>[];
 }
@@ -73,6 +74,13 @@ export async function loadSnapshotFromDb(db: Db, options: { omit?: readonly Coll
   if (meta.rows.length !== 1) throw new Error("meta: no published data version");
   out.meta = SnapshotMeta.parse(meta.rows[0]!.row);
   return out as Snapshot;
+}
+
+export async function loadLegislativeItemsFromDb(db: Db, filedName: string): Promise<{bills:Record<string,unknown>[],questions:Record<string,unknown>[]} | undefined> {
+  const { rows } = await db.query<{ items: {bills:Record<string,unknown>[],questions:Record<string,unknown>[]} }>(
+    `SELECT items FROM legislative_items WHERE filed_name = $1`, [filedName],
+  );
+  return rows[0]?.items;
 }
 
 export async function loadExtrasFromDb(db: Db): Promise<Extras> {
@@ -147,7 +155,7 @@ export async function loadBillRecord(
   };
 }
 
-const DATA_TABLES = [...COLLECTION_NAMES.map((n) => TABLES[n].table), "knesset_profiles", "photos", "bios", "meta"];
+const DATA_TABLES = [...COLLECTION_NAMES.map((n) => TABLES[n].table), "knesset_profiles", "legislative_items", "photos", "bios", "meta"];
 
 /**
  * Publish one complete, already-validated data version in a single transaction: readers
@@ -173,6 +181,11 @@ export async function publish(db: Db, snapshot: Snapshot, extras: Extras): Promi
       `INSERT INTO knesset_profiles (filed_name, knesset_person_id, profile, ord)
        SELECT e.v->>0, (e.v->1->>'knessetPersonId')::int, e.v->1, (e.o - 1)::int FROM jsonb_array_elements($1::jsonb) WITH ORDINALITY AS e(v, o)`,
       [JSON.stringify(Object.entries(extras.knessetProfiles))],
+    );
+    await db.query(
+      `INSERT INTO legislative_items (filed_name, items)
+       SELECT e.v->>0, e.v->1 FROM jsonb_array_elements($1::jsonb) AS e(v)`,
+      [JSON.stringify(Object.entries(extras.legislativeItems ?? {}))],
     );
     await db.query(
       `INSERT INTO photos (party_key, position, name_he, name_as_printed, path, image_url, source_page, credit, ord)
