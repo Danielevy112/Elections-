@@ -35,6 +35,24 @@ describe("mapBillStatus", () => {
     expect(mapBillStatus("בוועדה")).toBe("committee");
   });
 
+  it("counts only a third reading as a law, never a merged bill", () => {
+    // Every status text the synced bills actually carry (KNS_Status, recorded 24.9.2026).
+    const real: [string, string][] = [
+      ["התקבלה בקריאה שלישית", "passed"],
+      ["מוזגה עם הצעת חוק אחרת", "merged"],
+      ["הונחה על שולחן הכנסת לדיון מוקדם", "proposed"],
+      ["במליאה לדיון מוקדם", "preliminary"],
+      ["לדיון במליאה לקראת הקריאה הראשונה", "first_reading"],
+      ["הכנה לקריאה ראשונה", "first_reading"],
+      ["אושרה בוועדה לקריאה ראשונה", "committee"],
+      ["הכנה לקריאה שנייה ושלישית", "second_third_reading"],
+      ["לדיון במליאה לקראת קריאה שנייה-שלישית", "second_third_reading"],
+      ["נעצרה", "unknown"],
+      ["הוסבה להצעה לסדר היום", "unknown"],
+    ];
+    for (const [text, status] of real) expect([text, mapBillStatus(text)]).toEqual([text, status]);
+  });
+
   it("leaves anything unrecognised as unknown", () => {
     expect(mapBillStatus("סטטוס שלא ראינו מעולם")).toBe("unknown");
   });

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { Snapshot } from "@elections26/schema";
 import { loadSnapshot } from "@elections26/data";
-import { validateSnapshot, type Problem } from "./validate";
+import { readLinkEvidence, validateKnessetLinks, validateSnapshot, type Problem } from "./validate";
 
 /** The committed example snapshot, used as a known-good baseline to corrupt. */
 const baseline = loadSnapshot();
@@ -121,5 +121,25 @@ describe("validateSnapshot", () => {
     const snapshot = clone();
     snapshot.polls[0]!.fieldworkEnd = "2099-01-01";
     expect(rules(validateSnapshot(snapshot))).toContain("impossible-poll-dates");
+  });
+});
+
+describe("validateKnessetLinks", () => {
+  const evidence = readLinkEvidence();
+
+  it("passes the committed snapshot against the committed overrides", () => {
+    expect(validateKnessetLinks(baseline, evidence)).toEqual([]);
+  });
+
+  it("fails a candidate linked by name alone to an MK of the 1950s", () => {
+    const snapshot = clone();
+    const candidacy = snapshot.candidacies.find((c) => c.listId.endsWith(":k26-17") && c.position === 69)!;
+    const person = snapshot.persons.find((p) => p.id === candidacy.personId)!;
+    person.knessetPersonId = 424242;
+    const poisoned = { ...evidence, knessetTermsById: new Map([...evidence.knessetTermsById, [424242, [1, 2, 3, 4, 5]]]) };
+    expect(rules(validateKnessetLinks(snapshot, poisoned))).toEqual(["stale-knesset-link"]);
+
+    // A name-only note in the manual file does not enter validation evidence.
+    expect(rules(validateKnessetLinks(snapshot, poisoned))).toEqual(["stale-knesset-link"]);
   });
 });

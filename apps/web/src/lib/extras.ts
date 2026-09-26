@@ -1,4 +1,6 @@
 
+import { verifyKnessetLink } from "@elections26/schema";
+
 /**
  * Side data that is not (yet) part of the snapshot schema: Knesset records fetched
  * straight from the Knesset OData service, and party-published photos. Both are keyed
@@ -113,6 +115,8 @@ let current: ExtrasData | undefined;
 let profiles: Record<string, KnessetProfile> = {};
 let photos = new Map<string, PartyPhoto>();
 let bios = new Map<string, PartyBio>();
+/** Sourced bio page per filed name: independent evidence for an older Knesset link. */
+
 
 export function setExtras(data: ExtrasData): void {
   if (current === data) return;
@@ -125,8 +129,18 @@ export function setExtras(data: ExtrasData): void {
 const norm = (s: string) =>
   s.replace(/״/g, '"').replace(/׳/g, "'").replace(/–/g, "-").replace(/\s+/g, " ").trim();
 
+/**
+ * The candidate's Knesset record, only when the link passes verifyKnessetLink: recent MKs
+ * on an exact name match; older names are quarantined until independently verified.
+ * A quarantined link returns undefined, so the page shows no record rather than someone
+ * else's.
+ */
 export function knessetProfile(filedName: string): KnessetProfile | undefined {
-  return profiles[norm(filedName)];
+  const key = norm(filedName);
+  const profile = profiles[key];
+  if (!profile) return undefined;
+  const verdict = verifyKnessetLink(Math.max(0, ...profile.knessetTerms) || undefined);
+  return verdict.accepted ? profile : undefined;
 }
 
 export function partyPhoto(partyId: string | undefined, position: number | undefined): PartyPhoto | undefined {

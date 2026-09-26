@@ -86,7 +86,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
             <Stat label="שאילתות" value={profile.parliamentaryQuestions ?? "–"} href={profile.sources.questions} />
           </div>
         ) : (
-          <p className="p-4 text-sm text-ink-muted">לא כיהן/ה בכנסת - אין נתוני פעילות פרלמנטרית</p>
+          <p className="p-4 text-sm text-ink-muted">אין רקורד כנסת מאומת מקושר - אין נתוני פעילות פרלמנטרית</p>
         )}
       </Card>
 
