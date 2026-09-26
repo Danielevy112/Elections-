@@ -1,3 +1,4 @@
+import { SearchBox } from "@/components/search-box";
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
@@ -13,8 +14,9 @@ export async function generateMetadata(): Promise<Metadata> {
   metadataBase: new URL(SITE_URL),
   title: "בחירות 2026 — הכנסת ה-26",
   description: DESCRIPTION,
-  // Keeps example data out of search results and out of link previews. Paired with
-  // robots.ts so a crawler that ignores one still meets the other.
+  // Keeps unfinished data out of search results. Paired with robots.ts so a crawler that
+  // ignores one still meets the other. Link previews are allowed: every share card carries
+  // its own "preliminary" badge.
   robots: real
     ? { index: true, follow: true }
     : { index: false, follow: false, nocache: true },
@@ -25,6 +27,8 @@ export async function generateMetadata(): Promise<Metadata> {
     title: "בחירות 2026 — הכנסת ה-26",
     description: DESCRIPTION,
   },
+  // X/Twitter falls back to og:image; this asks for the large card.
+  twitter: { card: "summary_large_image" },
   };
 }
 
@@ -71,6 +75,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               ) : null}
               <ThemeToggle />
             </div>
+          </div>
+          <div className="mx-auto max-w-3xl px-4 pb-3">
+            <SearchBox />
           </div>
         </header>
 
