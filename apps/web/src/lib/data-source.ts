@@ -59,7 +59,7 @@ function withTimeout<T>(promise: Promise<T>): Promise<T> {
 }
 async function readDb() {
   const { neon } = await import("@neondatabase/serverless");
-  const sql = neon(process.env.DATABASE_URL_READONLY || (process.env.DATABASE_URL_READONLY || process.env.DATABASE_URL) as string);
+  const sql = neon((process.env.DATABASE_URL_READONLY || process.env.DATABASE_URL) as string);
   return { query: async (text: string, params?: unknown[]) => ({ rows: (await sql.query(text, params ?? [])) as never[] }) };
 }
 export function loadPublished(): Published { return fromFiles(); }
