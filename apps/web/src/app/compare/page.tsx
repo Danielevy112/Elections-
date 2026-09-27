@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { Avatar, BackLink, Card, Pills, SourceLink } from "@/components/ui";
 import { PartyPicker } from "@/components/party-picker";
+import { ShareButton } from "@/components/share-button";
 import { formatSeats, site } from "@/lib/site";
 import { attendance, displayName, knessetProfile, partyPhoto, roleLabel, topRole } from "@/lib/extras";
 import type { PartyView } from "@elections26/data";
@@ -148,6 +149,7 @@ export default async function ComparePage({ searchParams }: { searchParams: Prom
   const ranked = [...parties].sort(
     (x, y) => (y.projection?.projectedSeats ?? -1) - (x.projection?.projectedSeats ?? -1) || x.party.nameHe.localeCompare(y.party.nameHe, "he"),
   );
+  const selected = !!q.a && !!q.b && q.a !== q.b && ranked.some((p) => p.party.slug === q.a) && ranked.some((p) => p.party.slug === q.b);
   const A = (ranked.find((p) => p.party.slug === q.a) ?? ranked[0])!;
   const B = (ranked.find((p) => p.party.slug === q.b && p !== A) ?? ranked.find((p) => p !== A))!;
   const sa = summary(A);
@@ -169,15 +171,17 @@ export default async function ComparePage({ searchParams }: { searchParams: Prom
 
       <Card className="p-3">
         <form action="/compare" className="grid grid-cols-[1fr_auto_1fr] items-center gap-2">
-          <PartyPicker name="a" value={A.party.slug} parties={ranked.map(({ party }) => ({ slug: party.slug, nameHe: party.nameHe }))} color="border-accent" />
+          <PartyPicker name="a" value={selected ? A.party.slug : ""} parties={ranked.map(({ party }) => ({ slug: party.slug, nameHe: party.nameHe }))} color="border-accent" />
           <span className="text-xs text-ink-dim">מול</span>
-          <PartyPicker name="b" value={B.party.slug} parties={ranked.map(({ party }) => ({ slug: party.slug, nameHe: party.nameHe }))} color="border-band-edge" />
+          <PartyPicker name="b" value={selected ? B.party.slug : ""} parties={ranked.map(({ party }) => ({ slug: party.slug, nameHe: party.nameHe }))} color="border-band-edge" />
           <button type="submit" className="col-span-3 rounded-full bg-ink-pill py-2 text-sm font-medium text-fg">
             השווה
           </button>
         </form>
       </Card>
 
+      {selected ? <>
+      <div className="flex justify-end"><ShareButton title={`${A.party.nameHe} מול ${B.party.nameHe}`} /></div>
       <Card className="overflow-hidden">
         <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-2 bg-gradient-to-b from-ink-hero to-ink-card px-4 pb-3 pt-4">
           {logo(A)}
@@ -235,7 +239,7 @@ export default async function ComparePage({ searchParams }: { searchParams: Prom
         </div>
         <div className="px-3 py-2 text-[10px] text-ink-dim">הרכב הרשימות: <SourceLink href="https://www.knesset.tv/main-articles/61384/94592/">הרשימות שהוגשו ↗</SourceLink></div>
         <ol>
-          {Array.from({ length: rows }, (_, i) => (
+          {Array.from({ length: Math.min(rows, cut + 4) }, (_, i) => (
             <li key={i}>
               {i === cut && cut > 0 ? (
                 <div className="flex items-center gap-2 bg-ink-row px-3 py-1" aria-hidden>
@@ -260,7 +264,9 @@ export default async function ComparePage({ searchParams }: { searchParams: Prom
             </li>
           ))}
         </ol>
+        {rows > cut + 4 ? <details className="border-t border-ink-line p-3 text-xs"><summary className="cursor-pointer text-ink-muted">הציגו עוד {rows - cut - 4} מקומות מחוץ לטווח הכניסה</summary><ol className="mt-2">{Array.from({ length: rows - cut - 4 }, (_, j) => { const i = cut + 4 + j; return <li key={i} className="flex gap-2 border-t border-ink-line/50 py-2"><span className="w-6 text-ink-dim">{i + 1}</span><Slot view={A} i={i} side="a" /><Slot view={B} i={i} side="b" /></li>; })}</ol></details> : null}
       </Card>
+      </> : <Card className="p-5 text-center text-sm text-ink-muted">בחרו שתי רשימות כדי לראות השוואה. העמדות והרקורד יוצגו רק לאחר הבחירה.</Card>}
     </div>
   );
 }

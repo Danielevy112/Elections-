@@ -84,6 +84,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <main className="mx-auto max-w-3xl px-4 py-4">{children}</main>
 
         <footer className="mx-auto max-w-3xl px-4 pb-10 pt-4 text-[11px] leading-relaxed text-ink-dim">
+          <Link href="/about" className="mb-2 inline-block underline">אודות ומתודולוגיה</Link>
           <p>
             נתוני פעילות מהמאגר הפרלמנטרי של הכנסת. תמונות מועמדים ממקורות בעלי רישיון שימוש חופשי, עם
             קרדיט וקישור למקור. לכל נתון באתר יש קישור

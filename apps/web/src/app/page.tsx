@@ -11,10 +11,13 @@ export default async function HomePage() {
     .filter((p) => p.projection)
     .sort((a, b) => (b.projection!.projectedSeats - a.projection!.projectedSeats) || (b.projection!.mean - a.projection!.mean));
   const others = parties.filter((p) => !p.projection);
+  const barred = polled.filter((p) => p.list?.status === "disqualified");
 
   return (
     <div className="space-y-4">
       <Pills items={[{ label: "טבלת מנדטים", href: "/", active: true }, { label: "השוואת רשימות", href: "/compare" }, { label: "כל הרשימות", href: "#lists" }]} />
+
+      {barred.length ? <Card className="border border-rose-500/30 p-3 text-xs leading-5 text-rose-200"><strong>החלטת פסילה, בכפוף לערעור:</strong> {barred.map((p, i) => <span key={p.party.id}>{i ? " · " : " "}<Link className="underline" href={`/party/${p.party.slug}`}>{p.party.nameHe}</Link></span>)}. ועדת הבחירות קבעה שהרשימות מנועות מהשתתפות; מעמד הרשימות עדיין כפוף להליך הערעור. המנדטים להלן מוצגים רק כדי להבין את תוצאות הסקרים, ואינם תחזית מושבים מאושרת. <a href="https://www.gov.il/he/pages/candidates-lists-26" target="_blank" rel="noopener noreferrer" className="underline">מקור: ועדת הבחירות ↗</a></Card> : null}
 
       <Card className="overflow-hidden">
         <div className="flex items-baseline justify-between px-4 pb-2 pt-4">
@@ -32,21 +35,22 @@ export default async function HomePage() {
         <ol>
           {polled.map(({ party, projection: p, list, leader }, i) => {
             const leaderName = leader ? displayName(leader.nameHe, party.id, 1) : undefined;
+            const disqualified = list?.status === "disqualified";
             return (
-              <li key={party.id} className={`border-b border-ink-line/60 last:border-0 ${p!.qualifies ? "" : "opacity-60"}`}>
+              <li key={party.id} className={`border-b border-ink-line/60 last:border-0 ${p!.qualifies ? "" : "opacity-60"} ${disqualified ? "bg-rose-500/5" : ""}`}>
                 <Link href={`/party/${party.slug}`} className="grid grid-cols-[1.5rem_1fr_2.75rem_3.5rem] items-center gap-x-2 px-4 py-2.5 hover:bg-ink-row">
                   <span className="text-xs text-ink-muted tabular">{i + 1}</span>
                   <span className="flex min-w-0 items-center gap-2.5">
                     <Avatar name={leaderName ?? party.nameHe} photo={partyPhoto(party.id, 1)} size={32} />
                     <span className="min-w-0">
-                      <span className="block truncate text-sm font-semibold">{party.nameHe}</span>
+                      <span className={`block truncate text-sm font-semibold ${disqualified ? "line-through decoration-rose-400" : ""}`}>{party.nameHe}</span>
                       <span className="flex items-center gap-1.5 truncate text-[11px] text-ink-muted">
                         {leaderName}
                         {list && list.status !== "submitted" ? <StatusBadge status={list.status} /> : null}
                       </span>
                     </span>
                   </span>
-                  <span className="text-center text-lg font-bold tabular">{p!.qualifies ? p!.projectedSeats : 0}</span>
+                  <span className={`text-center text-lg font-bold tabular ${disqualified ? "text-rose-300 line-through" : ""}`} title={disqualified ? "החלטת פסילה בכפוף לערעור; מספר זה הוא נתון סקר בלבד" : undefined}>{p!.qualifies ? p!.projectedSeats : 0}</span>
                   <span className="text-center text-xs text-ink-muted tabular ltr-nums">
                     {p!.min}–{p!.max}
                   </span>
