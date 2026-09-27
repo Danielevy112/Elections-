@@ -16,7 +16,7 @@ export default async function HomePage() {
 
   return (
     <div className="space-y-4">
-      <Pills items={[{ label: "טבלת מנדטים", href: "/", active: true }, { label: "השוואת רשימות", href: "/compare" }, { label: "כל הרשימות", href: "#lists" }]} />
+      <Pills items={[{ label: "טבלת מנדטים", href: "/", active: true }, { label: "השוואת רשימות", href: "/compare" }, { label: "השוואת עמדות", href: "/issues" }, { label: "כל הרשימות", href: "#lists" }]} />
 
       {barred.length ? <Card className="border border-rose-500/30 p-3 text-xs leading-5 text-rose-200"><strong>החלטת פסילה, בכפוף לערעור:</strong> {barred.map((p, i) => <span key={p.party.id}>{i ? " · " : " "}<Link className="underline" href={`/party/${p.party.slug}`}>{p.party.nameHe}</Link></span>)}. ועדת הבחירות קבעה שהרשימות מנועות מהשתתפות; מעמד הרשימות עדיין כפוף להליך הערעור. המנדטים להלן מוצגים רק כדי להבין את תוצאות הסקרים, ואינם תחזית מושבים מאושרת. <a href="https://www.gov.il/he/pages/candidates-lists-26" target="_blank" rel="noopener noreferrer" className="underline">מקור: ועדת הבחירות ↗</a></Card> : null}
 
