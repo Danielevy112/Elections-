@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Avatar, Card, Pills, StatusBadge } from "@/components/ui";
 import { formatDate, site } from "@/lib/site";
 import { displayName, partyPhoto } from "@/lib/extras";
+import { pollBlocs } from "@/lib/poll-blocs";
 
 export const revalidate = 3600;
 
@@ -18,6 +19,19 @@ export default async function HomePage() {
       <Pills items={[{ label: "טבלת מנדטים", href: "/", active: true }, { label: "השוואת רשימות", href: "/compare" }, { label: "כל הרשימות", href: "#lists" }]} />
 
       {barred.length ? <Card className="border border-rose-500/30 p-3 text-xs leading-5 text-rose-200"><strong>החלטת פסילה, בכפוף לערעור:</strong> {barred.map((p, i) => <span key={p.party.id}>{i ? " · " : " "}<Link className="underline" href={`/party/${p.party.slug}`}>{p.party.nameHe}</Link></span>)}. ועדת הבחירות קבעה שהרשימות מנועות מהשתתפות; מעמד הרשימות עדיין כפוף להליך הערעור. המנדטים להלן מוצגים רק כדי להבין את תוצאות הסקרים, ואינם תחזית מושבים מאושרת. <a href="https://www.gov.il/he/pages/candidates-lists-26" target="_blank" rel="noopener noreferrer" className="underline">מקור: ועדת הבחירות ↗</a></Card> : null}
+
+      {projection.polls.some((poll) => pollBlocs.some((bloc) => bloc.pollId === poll.id)) ? <Card className="space-y-4 p-4" aria-labelledby="poll-blocs-heading">
+        <div><h2 id="poll-blocs-heading" className="text-base font-bold">תמונת גושים לפי סקר</h2><p className="mt-1 text-xs leading-5 text-ink-muted">החלוקה והכינויים הם של כל מפרסם בנפרד, לא ממוצע או תחזית לקואליציה. אין חיבור בין סקרים או חלוקה מחדש של מושבים.</p></div>
+        {projection.polls.map((poll) => {
+          const bloc = pollBlocs.find((item) => item.pollId === poll.id);
+          if (!bloc) return null;
+          return <section key={poll.id} className="space-y-2 border-t border-ink-line pt-3" aria-label={`חלוקת הגושים בסקר ${poll.publisher}`}>
+            <h3 className="text-sm font-semibold"><a href={poll.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline decoration-dotted underline-offset-2">{poll.publisher}, {formatDate(poll.publishedAt)} ↗</a></h3>
+            {bloc.groups.map((group) => <div key={group.label} className="grid grid-cols-[minmax(0,1fr)_2rem] gap-x-2 text-xs"><div className="flex items-center justify-between gap-2"><span>{group.label}</span></div><strong className="text-left tabular">{group.seats}</strong><div className="col-span-2 h-1.5 overflow-hidden rounded-full bg-ink-row"><div className={`h-full rounded-full ${group.color}`} style={{ width: `${group.seats / 120 * 100}%` }} /></div></div>)}
+            <p className="text-xs leading-5 text-rose-200">המפלגות הערביות: <span className="line-through">{bloc.barredSeats} מנדטים בסקר</span> - אינן נכללות בפסי הגושים למעלה. שתי הרשימות <a href="https://www.gov.il/he/pages/candidates-lists-26" target="_blank" rel="noopener noreferrer" className="underline">נפסלו בהחלטת ועדת הבחירות, בכפוף לערעור ↗</a>; אין כאן תחזית לחלוקת המנדטים לאחר הכרעה בערעור.</p>
+          </section>;
+        })}
+      </Card> : null}
 
       <Card className="overflow-hidden">
         <div className="flex items-baseline justify-between px-4 pb-2 pt-4">
