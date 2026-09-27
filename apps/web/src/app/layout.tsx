@@ -56,8 +56,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         ) : null}
         {snapshot.meta.dataset === "preliminary" ? (
           <div className="bg-[#3a2a06] px-4 py-2 text-center text-[11px] leading-snug text-amber-200">
-            נתונים מקדימים: הרשימות כפי שהוגשו, מתוך פרסום של ערוץ כנסת, לפני האישור הסופי של
-            ועדת הבחירות המרכזית (27.9). עשויים להשתנות.
+            רשימות המועמדים באתר עדיין מבוססות על הגרסאות שהוגשו לוועדת הבחירות, ולא עודכנו
+            במלואן לפי החלטות הוועדה מ-27.9. הפסילות והערעורים עשויים לשנות את ההרכב.
           </div>
         ) : null}
 
