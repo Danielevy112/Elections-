@@ -1,0 +1,27 @@
+name: Temporary Elections compare transfer
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify bundle and push exact commit to isolated branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD^)" = 75b3dc783362f0ffcb02b78c007648bd2792f2e7
+          bundle="$(mktemp /tmp/elections-XXXXXX.bundle)"
+          trap 'rm -f "$bundle"' EXIT
+          curl --fail --location --silent --show-error --retry 2 --output "$bundle" 'https://drive.google.com/uc?export=download&id=1EFd-st7tpD-sHKqGf9F2pZHcBxRC2pNR'
+          printf '%s  %s\n' '983dbb93bdec2e798d6d007c90e58e132430ed38a26f247dc95c2bc903d6b829' "$bundle" | sha256sum --check
+          git bundle verify "$bundle"
+          git fetch "$bundle" c7f2791cc16ed28ec7f441e7a4cf43da79872776
+          test "$(git rev-parse FETCH_HEAD)" = c7f2791cc16ed28ec7f441e7a4cf43da79872776
+          test "$(git rev-parse FETCH_HEAD^^)" = 75b3dc783362f0ffcb02b78c007648bd2792f2e7
+          test -z "$(git ls-remote origin refs/heads/instinct/compare-picker-banner-20260927)"
+          git push origin c7f2791cc16ed28ec7f441e7a4cf43da79872776:refs/heads/instinct/compare-picker-banner-20260927
