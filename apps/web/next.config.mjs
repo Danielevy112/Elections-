@@ -63,6 +63,8 @@ const nextConfig = {
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },
+  // Include font files for generated share cards.
+  outputFileTracingIncludes: { "/**/*": ["./assets/fonts/*"] },
 };
 
 export default nextConfig;

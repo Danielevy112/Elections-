@@ -3,3 +3,4 @@ export * from "./provenance";
 export * from "./entities";
 export * from "./snapshot";
 export * from "./linkVerification";
+export * from "./names";
