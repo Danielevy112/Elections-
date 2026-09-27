@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Avatar, BackLink, Card, Pills, SourceLink } from "@/components/ui";
+import { PartyPicker } from "@/components/party-picker";
 import { formatSeats, site } from "@/lib/site";
 import { attendance, displayName, knessetProfile, partyPhoto, roleLabel, topRole } from "@/lib/extras";
 import type { PartyView } from "@elections26/data";
@@ -64,18 +65,6 @@ function H2H({ label, unit, a, b, format = (n: number) => String(n) }: { label: 
         )}
       </div>
     </div>
-  );
-}
-
-function PartyPicker({ name, value, parties, color }: { name: string; value: string; parties: PartyView[]; color: string }) {
-  return (
-    <select name={name} defaultValue={value} className={`w-full min-w-0 rounded-xl border-b-2 bg-ink-row px-2 py-2 text-[13px] font-semibold text-fg ${color}`}>
-      {parties.map(({ party }) => (
-        <option key={party.slug} value={party.slug}>
-          {party.nameHe}
-        </option>
-      ))}
-    </select>
   );
 }
 
@@ -180,9 +169,9 @@ export default async function ComparePage({ searchParams }: { searchParams: Prom
 
       <Card className="p-3">
         <form action="/compare" className="grid grid-cols-[1fr_auto_1fr] items-center gap-2">
-          <PartyPicker name="a" value={A.party.slug} parties={ranked} color="border-accent" />
+          <PartyPicker name="a" value={A.party.slug} parties={ranked.map(({ party }) => ({ slug: party.slug, nameHe: party.nameHe }))} color="border-accent" />
           <span className="text-xs text-ink-dim">מול</span>
-          <PartyPicker name="b" value={B.party.slug} parties={ranked} color="border-band-edge" />
+          <PartyPicker name="b" value={B.party.slug} parties={ranked.map(({ party }) => ({ slug: party.slug, nameHe: party.nameHe }))} color="border-band-edge" />
           <button type="submit" className="col-span-3 rounded-full bg-ink-pill py-2 text-sm font-medium text-fg">
             השווה
           </button>
