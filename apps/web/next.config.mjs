@@ -23,6 +23,8 @@ const nextConfig = {
   // builds and serves this the way it expects, instead of a static export having to be
   // matched up with an Output Directory setting. Six deployments failed on that mismatch.
   images: { unoptimized: true },
+  // Include font files for generated share cards.
+  outputFileTracingIncludes: { "/**/*": ["./assets/fonts/*"] },
 };
 
 export default nextConfig;

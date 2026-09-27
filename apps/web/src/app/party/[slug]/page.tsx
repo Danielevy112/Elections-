@@ -1,11 +1,25 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sourcesForField } from "@elections26/data";
 import { Avatar, BackLink, BandDot, Card, Pills, Sources, StatusBadge } from "@/components/ui";
-import { LIST_STATUS_HINT, formatDate, formatSeats, site } from "@/lib/site";
+import { LIST_STATUS_HINT, formatDate, formatSeats, shareMetadata, site } from "@/lib/site";
 import { bioLine, displayName, knessetProfile, partyBio, partyPhoto, roleLabel, topRole } from "@/lib/extras";
 
 export const revalidate = 3600;
+
+/** Title and description for the page and its share card: the list and its projection. */
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const view = (await site()).parties.find((v) => v.party.slug === slug);
+  if (!view) return {};
+  const p = view.projection;
+  const title = view.party.nameHe;
+  const description = p?.qualifies
+    ? `${formatSeats(p.projectedSeats)} מנדטים בממוצע הסקרים (טווח ${p.min}–${p.max}). מי ברשימה צפוי להיכנס לכנסת.`
+    : "הרשימה המלאה, ומי ממנה צפוי להיכנס לכנסת.";
+  return shareMetadata(title, description);
+}
 
 export async function generateStaticParams() {
   return (await site()).parties.map(({ party }) => ({ slug: party.slug }));
