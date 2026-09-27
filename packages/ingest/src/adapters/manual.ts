@@ -147,8 +147,40 @@ export interface ManualBundle {
   lists: ManualList[];
   polls: ManualPoll[];
   personLinks: Record<string, string>;
+  /** Reviewed links from a list slot to a Knesset person, each with the reviewer's reason. */
+  knessetLinks: ManualKnessetLink[];
+  /** Sourced bio page per list slot ("partyKey:position"), from bios.json. */
+  bioPages: Map<string, string>;
+  /**
+   * Every Knesset each linked person served in, from knesset_profiles.json (itself read
+   * from the Knesset's OData service). Lets the link rule see terms older than the ones
+   * this pipeline pulls.
+   */
+  knessetTermsById: Map<number, number[]>;
   parliamentary: ManualParliamentary | undefined;
 }
+
+export const ManualKnessetLink = z.object({
+  partyKey: z.string().min(1),
+  position: z.number().int().positive(),
+  nameHe: z.string().min(1),
+  knessetPersonId: z.number().int().positive(),
+  reason: z.string().min(1),
+});
+export type ManualKnessetLink = z.infer<typeof ManualKnessetLink>;
+
+const ProfilesFile = z.object({
+  profiles: z.record(
+    z.string(),
+    z.object({ knessetPersonId: z.number().int().positive(), knessetTerms: z.array(z.number().int()) }).passthrough(),
+  ),
+});
+
+const BiosFile = z.object({
+  bios: z.array(
+    z.object({ partyKey: z.string(), position: z.number().int(), sourcePage: z.string().min(1) }).passthrough(),
+  ),
+});
 
 function readJsonFile(path: string): unknown {
   return JSON.parse(readFileSync(path, "utf8"));
@@ -169,6 +201,9 @@ function parseFile<S extends z.ZodTypeAny>(schema: S, path: string, label: strin
 export function loadManualBundle(dir: string): ManualBundle {
   const parliamentaryPath = join(dir, "example_parliamentary.json");
   const linksPath = join(dir, "person_links.json");
+  const knessetLinksPath = join(dir, "knesset_links.json");
+  const biosPath = join(dir, "bios.json");
+  const profilesPath = join(dir, "knesset_profiles.json");
 
   return {
     election: parseFile(ManualElection, join(dir, "election.json"), "election.json"),
@@ -178,6 +213,22 @@ export function loadManualBundle(dir: string): ManualBundle {
     personLinks: existsSync(linksPath)
       ? parseFile(z.record(z.string(), z.string()), linksPath, "person_links.json")
       : {},
+    knessetLinks: existsSync(knessetLinksPath)
+      ? parseFile(z.object({ links: z.array(ManualKnessetLink) }), knessetLinksPath, "knesset_links.json").links
+      : [],
+    bioPages: existsSync(biosPath)
+      ? new Map(
+          parseFile(BiosFile, biosPath, "bios.json").bios.map((b) => [`${b.partyKey}:${b.position}`, b.sourcePage]),
+        )
+      : new Map(),
+    knessetTermsById: existsSync(profilesPath)
+      ? new Map(
+          Object.values(parseFile(ProfilesFile, profilesPath, "knesset_profiles.json").profiles).map((p) => [
+            p.knessetPersonId,
+            p.knessetTerms,
+          ]),
+        )
+      : new Map(),
     parliamentary: existsSync(parliamentaryPath)
       ? parseFile(ManualParliamentary, parliamentaryPath, "example_parliamentary.json")
       : undefined,

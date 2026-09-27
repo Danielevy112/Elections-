@@ -1,5 +1,7 @@
-import { loadSnapshot, snapshotDir } from "@elections26/data";
-import type { Snapshot } from "@elections26/schema";
+import { existsSync, readFileSync } from "node:fs";
+import { join } from "node:path";
+import { loadSnapshot, repoRoot, snapshotDir } from "@elections26/data";
+import { verifyKnessetLink, type Snapshot } from "@elections26/schema";
 
 /**
  * The QA gate. Schema validity is necessary but nowhere near sufficient for a product
@@ -174,6 +176,53 @@ export function validateSnapshot(snapshot: Snapshot): Problem[] {
   return problems;
 }
 
+/** Knesset terms used to validate linked candidates. A biography URL or name-match note is not identity evidence. */
+export interface LinkEvidenceFiles {
+  knessetTermsById: Map<number, number[]>;
+}
+
+export function readLinkEvidence(root = repoRoot()): LinkEvidenceFiles {
+  const read = (file: string): any => {
+    const path = join(root, "data", "manual_overrides", file);
+    return existsSync(path) ? JSON.parse(readFileSync(path, "utf8")) : undefined;
+  };
+  return {
+    knessetTermsById: new Map(
+      Object.values(read("knesset_profiles.json")?.profiles ?? {}).map((p: any) => [p.knessetPersonId, p.knessetTerms]),
+    ),
+  };
+}
+
+/**
+ * stale-knesset-link: every candidate the snapshot links to a Knesset person must pass the
+ * same verifyKnessetLink rule the site applies. A name match to an MK whose last term was
+ * the 20th Knesset or earlier, with no independently reviewed identity source, fails the
+ * build — it would show a 2026 candidate with someone else's record.
+ */
+export function validateKnessetLinks(snapshot: Snapshot, evidence: LinkEvidenceFiles): Problem[] {
+  const problems: Problem[] = [];
+  const lastKnesset = new Map<string, number>();
+  for (const m of snapshot.knesset_memberships) {
+    lastKnesset.set(m.personId, Math.max(lastKnesset.get(m.personId) ?? 0, m.knessetNumber));
+  }
+  const persons = new Map(snapshot.persons.map((p) => [p.id, p]));
+  for (const candidacy of snapshot.candidacies) {
+    const person = persons.get(candidacy.personId);
+    if (person?.knessetPersonId === undefined) continue;
+    const slot = `${candidacy.listId.split(":").at(-1)}:${candidacy.position}`;
+    const terms = evidence.knessetTermsById.get(person.knessetPersonId) ?? [];
+    const last = Math.max(lastKnesset.get(person.id) ?? 0, ...terms) || undefined;
+    const verdict = verifyKnessetLink(last);
+    if (!verdict.accepted) {
+      problems.push({
+        rule: "stale-knesset-link",
+        detail: `${person.nameHe} (${slot}) is linked to Knesset person ${person.knessetPersonId}: ${verdict.reason}`,
+      });
+    }
+  }
+  return problems;
+}
+
 function main(): void {
   const dir = process.argv[2] ?? snapshotDir();
   let snapshot: Snapshot;
@@ -186,7 +235,7 @@ function main(): void {
     return;
   }
 
-  const problems = validateSnapshot(snapshot);
+  const problems = [...validateSnapshot(snapshot), ...validateKnessetLinks(snapshot, readLinkEvidence())];
   const label = `${snapshot.meta.dataset} dataset, generated ${snapshot.meta.generatedAt}`;
 
   if (problems.length === 0) {

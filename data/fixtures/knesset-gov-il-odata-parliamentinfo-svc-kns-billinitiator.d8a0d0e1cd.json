@@ -1,0 +1,806 @@
+{
+  "odata.metadata": "https://knesset.gov.il/Odata/ParliamentInfo.svc/$metadata#KNS_BillInitiator",
+  "value": [
+    {
+      "BillInitiatorID": 214397,
+      "BillID": 2207041,
+      "PersonID": 30849,
+      "IsInitiator": true,
+      "Ordinal": 3,
+      "LastUpdatedDate": "2023-06-12T19:53:20.99"
+    },
+    {
+      "BillInitiatorID": 214398,
+      "BillID": 2207041,
+      "PersonID": 30711,
+      "IsInitiator": true,
+      "Ordinal": 2,
+      "LastUpdatedDate": "2023-06-12T19:53:20.99"
+    },
+    {
+      "BillInitiatorID": 214399,
+      "BillID": 2207041,
+      "PersonID": 30830,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-12T19:53:20.99"
+    },
+    {
+      "BillInitiatorID": 214401,
+      "BillID": 2206795,
+      "PersonID": 30702,
+      "IsInitiator": true,
+      "Ordinal": 13,
+      "LastUpdatedDate": "2023-06-12T20:54:14.813"
+    },
+    {
+      "BillInitiatorID": 214405,
+      "BillID": 2206795,
+      "PersonID": 30807,
+      "IsInitiator": true,
+      "Ordinal": 10,
+      "LastUpdatedDate": "2023-06-12T20:54:14.813"
+    },
+    {
+      "BillInitiatorID": 214406,
+      "BillID": 2206795,
+      "PersonID": 30808,
+      "IsInitiator": true,
+      "Ordinal": 9,
+      "LastUpdatedDate": "2023-06-12T20:54:14.813"
+    },
+    {
+      "BillInitiatorID": 214409,
+      "BillID": 2206795,
+      "PersonID": 30719,
+      "IsInitiator": true,
+      "Ordinal": 7,
+      "LastUpdatedDate": "2023-06-12T20:54:14.813"
+    },
+    {
+      "BillInitiatorID": 214411,
+      "BillID": 2206795,
+      "PersonID": 30851,
+      "IsInitiator": true,
+      "Ordinal": 6,
+      "LastUpdatedDate": "2023-06-12T20:54:14.83"
+    },
+    {
+      "BillInitiatorID": 214441,
+      "BillID": 2205769,
+      "PersonID": 30849,
+      "IsInitiator": true,
+      "Ordinal": 5,
+      "LastUpdatedDate": "2023-10-15T11:27:18.487"
+    },
+    {
+      "BillInitiatorID": 214454,
+      "BillID": 2207085,
+      "PersonID": 30842,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-13T14:14:54.227"
+    },
+    {
+      "BillInitiatorID": 214456,
+      "BillID": 2196539,
+      "PersonID": 30752,
+      "IsInitiator": true,
+      "Ordinal": 14,
+      "LastUpdatedDate": "2023-06-13T15:00:39.873"
+    },
+    {
+      "BillInitiatorID": 214457,
+      "BillID": 2196539,
+      "PersonID": 30719,
+      "IsInitiator": true,
+      "Ordinal": 12,
+      "LastUpdatedDate": "2023-06-13T15:00:39.873"
+    },
+    {
+      "BillInitiatorID": 214458,
+      "BillID": 2196539,
+      "PersonID": 30713,
+      "IsInitiator": true,
+      "Ordinal": 13,
+      "LastUpdatedDate": "2023-06-13T15:00:39.873"
+    },
+    {
+      "BillInitiatorID": 214460,
+      "BillID": 2196539,
+      "PersonID": 30843,
+      "IsInitiator": true,
+      "Ordinal": 10,
+      "LastUpdatedDate": "2023-06-13T15:00:39.857"
+    },
+    {
+      "BillInitiatorID": 214461,
+      "BillID": 2196539,
+      "PersonID": 30702,
+      "IsInitiator": true,
+      "Ordinal": 9,
+      "LastUpdatedDate": "2023-06-13T15:00:39.857"
+    },
+    {
+      "BillInitiatorID": 214464,
+      "BillID": 2196539,
+      "PersonID": 30758,
+      "IsInitiator": true,
+      "Ordinal": 6,
+      "LastUpdatedDate": "2023-06-13T15:00:39.873"
+    },
+    {
+      "BillInitiatorID": 214614,
+      "BillID": 2207225,
+      "PersonID": 30776,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-14T15:39:15.983"
+    },
+    {
+      "BillInitiatorID": 214616,
+      "BillID": 2207231,
+      "PersonID": 30807,
+      "IsInitiator": null,
+      "Ordinal": 11,
+      "LastUpdatedDate": "2023-06-14T15:57:18.697"
+    },
+    {
+      "BillInitiatorID": 214618,
+      "BillID": 2207231,
+      "PersonID": 30710,
+      "IsInitiator": null,
+      "Ordinal": 10,
+      "LastUpdatedDate": "2023-06-14T15:57:18.71"
+    },
+    {
+      "BillInitiatorID": 214620,
+      "BillID": 2207231,
+      "PersonID": 30830,
+      "IsInitiator": null,
+      "Ordinal": 9,
+      "LastUpdatedDate": "2023-06-14T15:57:18.71"
+    },
+    {
+      "BillInitiatorID": 214622,
+      "BillID": 2207231,
+      "PersonID": 30842,
+      "IsInitiator": null,
+      "Ordinal": 8,
+      "LastUpdatedDate": "2023-06-14T15:57:18.71"
+    },
+    {
+      "BillInitiatorID": 214623,
+      "BillID": 2207231,
+      "PersonID": 30720,
+      "IsInitiator": true,
+      "Ordinal": 7,
+      "LastUpdatedDate": "2023-06-25T15:53:34.263"
+    },
+    {
+      "BillInitiatorID": 214634,
+      "BillID": 2207231,
+      "PersonID": 30854,
+      "IsInitiator": null,
+      "Ordinal": 3,
+      "LastUpdatedDate": "2023-06-14T15:57:18.71"
+    },
+    {
+      "BillInitiatorID": 214635,
+      "BillID": 2207231,
+      "PersonID": 30851,
+      "IsInitiator": true,
+      "Ordinal": 4,
+      "LastUpdatedDate": "2023-06-14T15:57:18.727"
+    },
+    {
+      "BillInitiatorID": 214647,
+      "BillID": 2207236,
+      "PersonID": 30843,
+      "IsInitiator": true,
+      "Ordinal": 5,
+      "LastUpdatedDate": "2023-06-14T16:33:13.04"
+    },
+    {
+      "BillInitiatorID": 214649,
+      "BillID": 2207236,
+      "PersonID": 30752,
+      "IsInitiator": true,
+      "Ordinal": 3,
+      "LastUpdatedDate": "2023-06-14T16:33:13.04"
+    },
+    {
+      "BillInitiatorID": 214650,
+      "BillID": 2207236,
+      "PersonID": 30713,
+      "IsInitiator": true,
+      "Ordinal": 2,
+      "LastUpdatedDate": "2023-06-14T16:33:13.04"
+    },
+    {
+      "BillInitiatorID": 214651,
+      "BillID": 2207236,
+      "PersonID": 30758,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-14T16:33:13.04"
+    },
+    {
+      "BillInitiatorID": 214673,
+      "BillID": 2207287,
+      "PersonID": 30849,
+      "IsInitiator": true,
+      "Ordinal": 4,
+      "LastUpdatedDate": "2023-06-21T16:03:28.37"
+    },
+    {
+      "BillInitiatorID": 214678,
+      "BillID": 2207287,
+      "PersonID": 30842,
+      "IsInitiator": true,
+      "Ordinal": 8,
+      "LastUpdatedDate": "2023-06-21T17:38:46.537"
+    },
+    {
+      "BillInitiatorID": 214679,
+      "BillID": 2207287,
+      "PersonID": 30770,
+      "IsInitiator": true,
+      "Ordinal": 7,
+      "LastUpdatedDate": "2023-06-21T17:38:46.537"
+    },
+    {
+      "BillInitiatorID": 214682,
+      "BillID": 2207345,
+      "PersonID": 30830,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-18T12:21:12.63"
+    },
+    {
+      "BillInitiatorID": 214702,
+      "BillID": 2198312,
+      "PersonID": 30849,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-19T09:28:43.647"
+    },
+    {
+      "BillInitiatorID": 214723,
+      "BillID": 2205674,
+      "PersonID": 30719,
+      "IsInitiator": true,
+      "Ordinal": 4,
+      "LastUpdatedDate": "2023-06-19T10:42:37.197"
+    },
+    {
+      "BillInitiatorID": 214724,
+      "BillID": 2205674,
+      "PersonID": 30843,
+      "IsInitiator": true,
+      "Ordinal": 7,
+      "LastUpdatedDate": "2023-06-19T10:42:37.197"
+    },
+    {
+      "BillInitiatorID": 214725,
+      "BillID": 2205674,
+      "PersonID": 30808,
+      "IsInitiator": true,
+      "Ordinal": 6,
+      "LastUpdatedDate": "2023-06-19T10:42:37.197"
+    },
+    {
+      "BillInitiatorID": 214726,
+      "BillID": 2205674,
+      "PersonID": 30807,
+      "IsInitiator": true,
+      "Ordinal": 5,
+      "LastUpdatedDate": "2023-06-19T10:42:37.197"
+    },
+    {
+      "BillInitiatorID": 214733,
+      "BillID": 2207434,
+      "PersonID": 30783,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-19T13:33:18.543"
+    },
+    {
+      "BillInitiatorID": 214736,
+      "BillID": 2205674,
+      "PersonID": 30851,
+      "IsInitiator": true,
+      "Ordinal": 8,
+      "LastUpdatedDate": "2023-06-19T16:04:23.937"
+    },
+    {
+      "BillInitiatorID": 214739,
+      "BillID": 2207477,
+      "PersonID": 30853,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-19T16:44:49.823"
+    },
+    {
+      "BillInitiatorID": 214741,
+      "BillID": 2207029,
+      "PersonID": 30776,
+      "IsInitiator": true,
+      "Ordinal": 2,
+      "LastUpdatedDate": "2023-06-19T17:31:12.067"
+    },
+    {
+      "BillInitiatorID": 214980,
+      "BillID": 2207497,
+      "PersonID": 30702,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-19T20:31:00.257"
+    },
+    {
+      "BillInitiatorID": 214988,
+      "BillID": 2207287,
+      "PersonID": 30710,
+      "IsInitiator": true,
+      "Ordinal": 10,
+      "LastUpdatedDate": "2023-06-21T17:38:46.537"
+    },
+    {
+      "BillInitiatorID": 214990,
+      "BillID": 2207532,
+      "PersonID": 30783,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-20T13:01:46.683"
+    },
+    {
+      "BillInitiatorID": 215003,
+      "BillID": 2207559,
+      "PersonID": 30770,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-20T20:05:01.31"
+    },
+    {
+      "BillInitiatorID": 215012,
+      "BillID": 2207565,
+      "PersonID": 30722,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-21T09:27:56.037"
+    },
+    {
+      "BillInitiatorID": 215014,
+      "BillID": 2207569,
+      "PersonID": 30776,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-21T09:37:31.077"
+    },
+    {
+      "BillInitiatorID": 215032,
+      "BillID": 2207656,
+      "PersonID": 30833,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-21T15:12:19.46"
+    },
+    {
+      "BillInitiatorID": 215037,
+      "BillID": 2207660,
+      "PersonID": 30783,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-21T15:53:28.683"
+    },
+    {
+      "BillInitiatorID": 215038,
+      "BillID": 2207662,
+      "PersonID": 30783,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-21T15:56:44.37"
+    },
+    {
+      "BillInitiatorID": 215127,
+      "BillID": 2204791,
+      "PersonID": 30820,
+      "IsInitiator": true,
+      "Ordinal": 2,
+      "LastUpdatedDate": "2023-06-21T17:58:02.907"
+    },
+    {
+      "BillInitiatorID": 215137,
+      "BillID": 2207444,
+      "PersonID": 30807,
+      "IsInitiator": true,
+      "Ordinal": 7,
+      "LastUpdatedDate": "2023-06-21T17:59:37.733"
+    },
+    {
+      "BillInitiatorID": 215139,
+      "BillID": 2207444,
+      "PersonID": 30842,
+      "IsInitiator": true,
+      "Ordinal": 5,
+      "LastUpdatedDate": "2023-06-21T17:59:37.733"
+    },
+    {
+      "BillInitiatorID": 215144,
+      "BillID": 2207668,
+      "PersonID": 30702,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-21T18:11:04.3"
+    },
+    {
+      "BillInitiatorID": 215154,
+      "BillID": 2207777,
+      "PersonID": 30710,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-26T08:27:42.547"
+    },
+    {
+      "BillInitiatorID": 215182,
+      "BillID": 2207865,
+      "PersonID": 30770,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-26T16:48:42.37"
+    },
+    {
+      "BillInitiatorID": 215187,
+      "BillID": 2207867,
+      "PersonID": 30830,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-26T18:52:27.947"
+    },
+    {
+      "BillInitiatorID": 215208,
+      "BillID": 2207908,
+      "PersonID": 30702,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-06-27T11:46:48.83"
+    },
+    {
+      "BillInitiatorID": 215292,
+      "BillID": 2207606,
+      "PersonID": 30830,
+      "IsInitiator": true,
+      "Ordinal": 5,
+      "LastUpdatedDate": "2023-06-27T14:39:35.683"
+    },
+    {
+      "BillInitiatorID": 215299,
+      "BillID": 2207964,
+      "PersonID": 30853,
+      "IsInitiator": true,
+      "Ordinal": 4,
+      "LastUpdatedDate": "2023-06-27T17:44:10.413"
+    },
+    {
+      "BillInitiatorID": 215301,
+      "BillID": 2207964,
+      "PersonID": 30842,
+      "IsInitiator": true,
+      "Ordinal": 3,
+      "LastUpdatedDate": "2023-06-27T17:44:10.413"
+    },
+    {
+      "BillInitiatorID": 215305,
+      "BillID": 2206779,
+      "PersonID": 30854,
+      "IsInitiator": true,
+      "Ordinal": 17,
+      "LastUpdatedDate": "2023-06-27T17:50:58.603"
+    },
+    {
+      "BillInitiatorID": 215308,
+      "BillID": 2206779,
+      "PersonID": 30783,
+      "IsInitiator": true,
+      "Ordinal": 14,
+      "LastUpdatedDate": "2023-06-27T17:50:58.603"
+    },
+    {
+      "BillInitiatorID": 215310,
+      "BillID": 2206779,
+      "PersonID": 30851,
+      "IsInitiator": true,
+      "Ordinal": 12,
+      "LastUpdatedDate": "2023-06-27T17:50:58.603"
+    },
+    {
+      "BillInitiatorID": 215312,
+      "BillID": 2206779,
+      "PersonID": 30776,
+      "IsInitiator": true,
+      "Ordinal": 11,
+      "LastUpdatedDate": "2023-06-27T17:50:58.603"
+    },
+    {
+      "BillInitiatorID": 215313,
+      "BillID": 2206779,
+      "PersonID": 30720,
+      "IsInitiator": true,
+      "Ordinal": 10,
+      "LastUpdatedDate": "2023-06-27T17:50:58.603"
+    },
+    {
+      "BillInitiatorID": 215341,
+      "BillID": 2207865,
+      "PersonID": 30820,
+      "IsInitiator": true,
+      "Ordinal": 2,
+      "LastUpdatedDate": "2023-06-28T10:11:36.39"
+    },
+    {
+      "BillInitiatorID": 215344,
+      "BillID": 2207606,
+      "PersonID": 30776,
+      "IsInitiator": true,
+      "Ordinal": 6,
+      "LastUpdatedDate": "2023-06-28T10:51:36.8"
+    },
+    {
+      "BillInitiatorID": 215372,
+      "BillID": 2208148,
+      "PersonID": 30783,
+      "IsInitiator": true,
+      "Ordinal": 13,
+      "LastUpdatedDate": "2023-07-02T08:16:21.303"
+    },
+    {
+      "BillInitiatorID": 215377,
+      "BillID": 2208148,
+      "PersonID": 30820,
+      "IsInitiator": true,
+      "Ordinal": 9,
+      "LastUpdatedDate": "2023-07-02T08:16:21.303"
+    },
+    {
+      "BillInitiatorID": 215384,
+      "BillID": 2208148,
+      "PersonID": 30719,
+      "IsInitiator": true,
+      "Ordinal": 3,
+      "LastUpdatedDate": "2023-07-02T08:16:21.32"
+    },
+    {
+      "BillInitiatorID": 215385,
+      "BillID": 2208148,
+      "PersonID": 30808,
+      "IsInitiator": true,
+      "Ordinal": 2,
+      "LastUpdatedDate": "2023-07-02T08:16:21.32"
+    },
+    {
+      "BillInitiatorID": 215400,
+      "BillID": 2208241,
+      "PersonID": 30722,
+      "IsInitiator": true,
+      "Ordinal": 3,
+      "LastUpdatedDate": "2023-07-03T09:50:49.233"
+    },
+    {
+      "BillInitiatorID": 215404,
+      "BillID": 2208258,
+      "PersonID": 30770,
+      "IsInitiator": true,
+      "Ordinal": 3,
+      "LastUpdatedDate": "2023-07-03T11:21:19.193"
+    },
+    {
+      "BillInitiatorID": 215408,
+      "BillID": 2208284,
+      "PersonID": 30758,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-07-03T12:49:21.943"
+    },
+    {
+      "BillInitiatorID": 215414,
+      "BillID": 2208304,
+      "PersonID": 30722,
+      "IsInitiator": true,
+      "Ordinal": 4,
+      "LastUpdatedDate": "2023-07-03T14:13:39.03"
+    },
+    {
+      "BillInitiatorID": 215419,
+      "BillID": 2197714,
+      "PersonID": 30849,
+      "IsInitiator": true,
+      "Ordinal": 2,
+      "LastUpdatedDate": "2023-07-03T14:13:52.647"
+    },
+    {
+      "BillInitiatorID": 215421,
+      "BillID": 2208312,
+      "PersonID": 30851,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-07-03T15:19:46.203"
+    },
+    {
+      "BillInitiatorID": 215430,
+      "BillID": 2208313,
+      "PersonID": 30808,
+      "IsInitiator": true,
+      "Ordinal": 4,
+      "LastUpdatedDate": "2023-07-03T16:00:24.76"
+    },
+    {
+      "BillInitiatorID": 215431,
+      "BillID": 2208313,
+      "PersonID": 30807,
+      "IsInitiator": true,
+      "Ordinal": 3,
+      "LastUpdatedDate": "2023-07-03T16:00:24.76"
+    },
+    {
+      "BillInitiatorID": 215444,
+      "BillID": 2206870,
+      "PersonID": 30851,
+      "IsInitiator": true,
+      "Ordinal": 3,
+      "LastUpdatedDate": "2024-06-24T17:57:42.313"
+    },
+    {
+      "BillInitiatorID": 215448,
+      "BillID": 2208336,
+      "PersonID": 30711,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-07-03T19:13:34.447"
+    },
+    {
+      "BillInitiatorID": 215463,
+      "BillID": 2200735,
+      "PersonID": 30711,
+      "IsInitiator": true,
+      "Ordinal": 2,
+      "LastUpdatedDate": "2023-07-05T11:08:07.7"
+    },
+    {
+      "BillInitiatorID": 215481,
+      "BillID": 2208397,
+      "PersonID": 30833,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-07-05T14:13:56.373"
+    },
+    {
+      "BillInitiatorID": 215488,
+      "BillID": 2208285,
+      "PersonID": 30849,
+      "IsInitiator": true,
+      "Ordinal": 6,
+      "LastUpdatedDate": "2023-07-05T15:14:01.123"
+    },
+    {
+      "BillInitiatorID": 215494,
+      "BillID": 2208286,
+      "PersonID": 30849,
+      "IsInitiator": true,
+      "Ordinal": 6,
+      "LastUpdatedDate": "2023-07-05T15:15:33.35"
+    },
+    {
+      "BillInitiatorID": 215499,
+      "BillID": 2208287,
+      "PersonID": 30849,
+      "IsInitiator": true,
+      "Ordinal": 6,
+      "LastUpdatedDate": "2023-07-05T15:17:18.567"
+    },
+    {
+      "BillInitiatorID": 215513,
+      "BillID": 2208312,
+      "PersonID": 30776,
+      "IsInitiator": true,
+      "Ordinal": 22,
+      "LastUpdatedDate": "2024-07-02T13:42:24.243"
+    },
+    {
+      "BillInitiatorID": 215514,
+      "BillID": 2208312,
+      "PersonID": 30820,
+      "IsInitiator": true,
+      "Ordinal": 21,
+      "LastUpdatedDate": "2024-07-02T13:42:24.243"
+    },
+    {
+      "BillInitiatorID": 215518,
+      "BillID": 2208312,
+      "PersonID": 30719,
+      "IsInitiator": true,
+      "Ordinal": 17,
+      "LastUpdatedDate": "2024-07-02T13:42:24.243"
+    },
+    {
+      "BillInitiatorID": 215519,
+      "BillID": 2208312,
+      "PersonID": 30843,
+      "IsInitiator": true,
+      "Ordinal": 16,
+      "LastUpdatedDate": "2024-07-02T13:42:24.243"
+    },
+    {
+      "BillInitiatorID": 215520,
+      "BillID": 2208312,
+      "PersonID": 30758,
+      "IsInitiator": true,
+      "Ordinal": 15,
+      "LastUpdatedDate": "2024-07-02T13:42:24.243"
+    },
+    {
+      "BillInitiatorID": 215529,
+      "BillID": 2208312,
+      "PersonID": 30808,
+      "IsInitiator": true,
+      "Ordinal": 8,
+      "LastUpdatedDate": "2023-07-05T15:50:25.803"
+    },
+    {
+      "BillInitiatorID": 215530,
+      "BillID": 2208312,
+      "PersonID": 30807,
+      "IsInitiator": true,
+      "Ordinal": 7,
+      "LastUpdatedDate": "2023-07-05T15:50:25.803"
+    },
+    {
+      "BillInitiatorID": 215531,
+      "BillID": 2208312,
+      "PersonID": 30720,
+      "IsInitiator": true,
+      "Ordinal": 6,
+      "LastUpdatedDate": "2023-07-05T15:50:25.803"
+    },
+    {
+      "BillInitiatorID": 215532,
+      "BillID": 2208312,
+      "PersonID": 30783,
+      "IsInitiator": true,
+      "Ordinal": 5,
+      "LastUpdatedDate": "2023-07-05T15:50:25.803"
+    },
+    {
+      "BillInitiatorID": 215549,
+      "BillID": 2208571,
+      "PersonID": 30770,
+      "IsInitiator": true,
+      "Ordinal": 4,
+      "LastUpdatedDate": "2023-07-06T15:19:20.193"
+    },
+    {
+      "BillInitiatorID": 215570,
+      "BillID": 2208586,
+      "PersonID": 30710,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-07-07T00:13:44.053"
+    },
+    {
+      "BillInitiatorID": 215583,
+      "BillID": 2208645,
+      "PersonID": 30830,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-07-09T14:53:31.3"
+    },
+    {
+      "BillInitiatorID": 215586,
+      "BillID": 2208708,
+      "PersonID": 30842,
+      "IsInitiator": true,
+      "Ordinal": 1,
+      "LastUpdatedDate": "2023-07-10T11:51:16.46"
+    }
+  ],
+  "odata.nextLink": "KNS_BillInitiator?$filter=PersonID%20eq%2030702%20or%20PersonID%20eq%2030704%20or%20PersonID%20eq%2030709%20or%20PersonID%20eq%2030710%20or%20PersonID%20eq%2030711%20or%20PersonID%20eq%2030713%20or%20PersonID%20eq%2030718%20or%20PersonID%20eq%2030719%20or%20PersonID%20eq%2030720%20or%20PersonID%20eq%2030722%20or%20PersonID%20eq%2030743%20or%20PersonID%20eq%2030745%20or%20PersonID%20eq%2030749%20or%20PersonID%20eq%2030752%20or%20PersonID%20eq%2030758%20or%20PersonID%20eq%2030768%20or%20PersonID%20eq%2030770%20or%20PersonID%20eq%2030776%20or%20PersonID%20eq%2030783%20or%20PersonID%20eq%2030786%20or%20PersonID%20eq%2030803%20or%20PersonID%20eq%2030804%20or%20PersonID%20eq%2030806%20or%20PersonID%20eq%2030807%20or%20PersonID%20eq%2030808%20or%20PersonID%20eq%2030810%20or%20PersonID%20eq%2030811%20or%20PersonID%20eq%2030816%20or%20PersonID%20eq%2030820%20or%20PersonID%20eq%2030821%20or%20PersonID%20eq%2030830%20or%20PersonID%20eq%2030833%20or%20PersonID%20eq%2030836%20or%20PersonID%20eq%2030842%20or%20PersonID%20eq%2030843%20or%20PersonID%20eq%2030847%20or%20PersonID%20eq%2030849%20or%20PersonID%20eq%2030851%20or%20PersonID%20eq%2030853%20or%20PersonID%20eq%2030854&$top=43500&$skiptoken=215586"
+}

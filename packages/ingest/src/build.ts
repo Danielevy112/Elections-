@@ -17,7 +17,7 @@ import type {
   Source,
   SourceKind,
 } from "@elections26/schema";
-import { BillStatus, BillType } from "@elections26/schema";
+import { BillStatus, BillType, verifyKnessetLink } from "@elections26/schema";
 import type { ManualBundle, ManualList, ManualParty } from "./adapters/manual";
 import type { CandidateListRow } from "./adapters/datagov";
 import { mapBillStatus, mapBillType, type KnessetPull } from "./adapters/knesset";
@@ -82,9 +82,21 @@ export interface UnmatchedCandidate {
   candidates: string[];
 }
 
+/** A name-matched Knesset link held back by verifyKnessetLink, for a person to review. */
+export interface QuarantinedLink {
+  name: string;
+  partyKey: string;
+  position: number;
+  knessetPersonId: number;
+  knessetName: string | undefined;
+  lastKnesset: number | undefined;
+  reason: string;
+}
+
 export interface BuildResult {
   snapshot: Snapshot;
   unmatched: UnmatchedCandidate[];
+  quarantined: QuarantinedLink[];
 }
 
 export interface BuildInput {
@@ -245,7 +257,10 @@ export function buildSnapshot(input: BuildInput): BuildResult {
     if (existing) return existing;
 
     const upstream = knessetId !== undefined ? knessetByPersonId.get(knessetId) : undefined;
-    const nameHe = upstream?.nameHe ?? args.nameHe;
+    // The name as filed stays the person's name. The Knesset's spelling ("first last") is
+    // a different claim from a different source; letting it overwrite the filed name
+    // changed 131 candidate URLs and broke every lookup keyed by the filed name.
+    const nameHe = args.nameHe;
     const person: Person = {
       id,
       slug: uniqueSlug(slugifyHebrew(nameHe, `person-${hash(nameHe).slice(0, 6)}`), slugs),
@@ -266,10 +281,68 @@ export function buildSnapshot(input: BuildInput): BuildResult {
     return person;
   }
 
+  // ---- Knesset links -------------------------------------------------------------
+  // The last Knesset each person sat in: the positions this pull covers (24–25), widened
+  // by the full term lists in knesset_profiles.json.
+  const lastKnessetById = new Map<number, number>();
+  for (const pos of knesset?.positions ?? []) {
+    lastKnessetById.set(pos.knessetPersonId, Math.max(lastKnessetById.get(pos.knessetPersonId) ?? 0, pos.knessetNumber));
+  }
+  for (const [id, terms] of manual.knessetTermsById) {
+    lastKnessetById.set(id, Math.max(lastKnessetById.get(id) ?? 0, ...terms));
+  }
+  const manualLinkBySlot = new Map(manual.knessetLinks.map((l) => [`${l.partyKey}:${l.position}`, l]));
+  const quarantined: QuarantinedLink[] = [];
+
+  /**
+   * The Knesset person a list slot may be shown as, or undefined. A reviewed manual link
+   * wins; a name match must pass verifyKnessetLink, and one that doesn't is quarantined.
+   */
+  function verifiedLink(args: {
+    name: string;
+    partyKey: string;
+    position: number;
+    manualId: number | undefined;
+    matchedId: number | undefined;
+  }): number | undefined {
+    const slot = `${args.partyKey}:${args.position}`;
+    const manualLink = manualLinkBySlot.get(slot);
+    // A manually named historical match still needs a separately reviewed identity source.
+    // Do not fall through to a different person when a manual candidate is quarantined.
+    const explicitId = manualLink?.knessetPersonId ?? args.manualId;
+    if (explicitId !== undefined) {
+      const explicitVerdict = verifyKnessetLink(lastKnessetById.get(explicitId));
+      if (explicitVerdict.accepted) return explicitId;
+      quarantined.push({
+        name: args.name, partyKey: args.partyKey, position: args.position,
+        knessetPersonId: explicitId,
+        knessetName: knessetByPersonId.get(explicitId)?.nameHe,
+        lastKnesset: explicitVerdict.lastKnesset, reason: explicitVerdict.reason,
+      });
+      return undefined;
+    }
+    if (args.matchedId === undefined) return undefined;
+    const verdict = verifyKnessetLink(lastKnessetById.get(args.matchedId));
+    if (verdict.accepted) return args.matchedId;
+    quarantined.push({
+      name: args.name,
+      partyKey: args.partyKey,
+      position: args.position,
+      knessetPersonId: args.matchedId,
+      knessetName: knessetByPersonId.get(args.matchedId)?.nameHe,
+      lastKnesset: verdict.lastKnesset,
+      reason: verdict.reason,
+    });
+    return undefined;
+  }
+
   // ---- parties -----------------------------------------------------------------
   const partyIdByKey = new Map<string, string>();
   const parties: Party[] = [];
   const partySlugs = new Set<string>();
+  // Leaders are resolved after the lists, so a leader who is also a candidate is the same
+  // person under the name as filed rather than whatever parties.json spells.
+  const leaders: { partyIndex: number; name: string; sourceId: string }[] = [];
 
   for (const manualParty of manual.parties) {
     const id = `party:${manualParty.key}`;
@@ -280,18 +353,7 @@ export function buildSnapshot(input: BuildInput): BuildResult {
     );
     partyIdByKey.set(manualParty.key, id);
 
-    let leaderPersonId: string | undefined;
-    if (manualParty.leaderName) {
-      const outcome = matchPerson(manualParty.leaderName, matchTargets, manual.personLinks);
-      const leader = ensurePerson({
-        nameHe: manualParty.leaderName,
-        ...(outcome.kind === "matched"
-          ? { knessetPersonId: knessetIdFromPersonId(outcome.personId) }
-          : {}),
-        sourceId,
-      });
-      leaderPersonId = leader.id;
-    }
+    if (manualParty.leaderName) leaders.push({ partyIndex: parties.length, name: manualParty.leaderName, sourceId });
 
     const party: Party = {
       id,
@@ -299,7 +361,6 @@ export function buildSnapshot(input: BuildInput): BuildResult {
       nameHe: manualParty.nameHe,
       ...(manualParty.nameEn ? { nameEn: manualParty.nameEn } : {}),
       ...(manualParty.shortNameHe ? { shortNameHe: manualParty.shortNameHe } : {}),
-      ...(leaderPersonId ? { leaderPersonId } : {}),
       ...(manualParty.logoUrl ? { logoUrl: manualParty.logoUrl } : {}),
       ...(manualParty.ballotLetters ? { ballotLetters: manualParty.ballotLetters } : {}),
       ...(manualParty.websiteUrl ? { websiteUrl: manualParty.websiteUrl } : {}),
@@ -357,9 +418,13 @@ export function buildSnapshot(input: BuildInput): BuildResult {
         });
       }
 
-      const knessetPersonId =
-        candidate.knessetPersonId ??
-        (outcome.kind === "matched" ? knessetIdFromPersonId(outcome.personId) : undefined);
+      const knessetPersonId = verifiedLink({
+        name: candidate.nameHe,
+        partyKey: manualList.partyKey,
+        position: candidate.position,
+        manualId: candidate.knessetPersonId,
+        matchedId: outcome.kind === "matched" ? knessetIdFromPersonId(outcome.personId) : undefined,
+      });
 
       const person = ensurePerson({
         nameHe: candidate.nameHe,
@@ -372,6 +437,20 @@ export function buildSnapshot(input: BuildInput): BuildResult {
       candidacies.push({ id: candidacyId, listId, personId: person.id, position: candidate.position });
       registry.assert("candidacy", candidacyId, "position", candidate.position, sourceId);
     }
+  }
+
+  for (const leader of leaders) {
+    const outcome = matchPerson(leader.name, matchTargets, manual.personLinks);
+    const matchedId = outcome.kind === "matched" ? knessetIdFromPersonId(outcome.personId) : undefined;
+    // Only a link some candidate already earned; a leader is never linked on their own.
+    const filedId = personIdByName.get(normalizeHebrewName(leader.name));
+    const person =
+      filedId !== undefined
+        ? persons.get(filedId)!
+        : matchedId !== undefined && personIdByKnessetId.has(matchedId)
+          ? persons.get(personIdByKnessetId.get(matchedId)!)!
+          : ensurePerson({ nameHe: leader.name, sourceId: leader.sourceId });
+    parties[leader.partyIndex] = { ...parties[leader.partyIndex]!, leaderPersonId: person.id };
   }
 
   // ---- polls -------------------------------------------------------------------
@@ -456,6 +535,7 @@ export function buildSnapshot(input: BuildInput): BuildResult {
       },
     },
     unmatched,
+    quarantined,
   };
 }
 

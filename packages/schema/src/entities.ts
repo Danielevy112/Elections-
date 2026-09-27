@@ -119,6 +119,8 @@ export const BillStatus = z.enum([
   "committee",
   "second_third_reading",
   "passed",
+  /** Folded into another bill; the merged bill's fate is its own, never this one's. */
+  "merged",
   "rejected",
   "frozen",
   "withdrawn",
