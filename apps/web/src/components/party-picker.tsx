@@ -17,9 +17,13 @@ export function PartyPicker({
       name={name}
       aria-label={name === "a" ? "רשימה ראשונה להשוואה" : "רשימה שנייה להשוואה"}
       defaultValue={value}
-      onChange={(event) => event.currentTarget.form?.requestSubmit()}
+      onChange={(event) => {
+        const form = event.currentTarget.form;
+        if (form && new FormData(form).get("a") && new FormData(form).get("b")) form.requestSubmit();
+      }}
       className={`w-full min-w-0 rounded-xl border-b-2 bg-ink-row px-2 py-2 text-[13px] font-semibold text-fg ${color}`}
     >
+      <option value="">בחרו רשימה</option>
       {parties.map((party) => (
         <option key={party.slug} value={party.slug}>
           {party.nameHe}

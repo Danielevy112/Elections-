@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sourcesForField } from "@elections26/data";
 import { Avatar, BackLink, BandChip, Card, SourceLink, Sources, Stat } from "@/components/ui";
+import { ShareButton } from "@/components/share-button";
 import { formatDate, formatSeats, BAND_LABEL, shareMetadata, site } from "@/lib/site";
 import { loadLegislativeItems } from "@/lib/data-source";
 import { attendance, displayName, knessetProfile, partyBio, partyPhoto, roleLabel } from "@/lib/extras";
@@ -66,7 +67,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
 
   return (
     <div className="space-y-4">
-      <BackLink href={party ? `/party/${party.slug}` : "/"}>{party ? party.nameHe : "כל הרשימות"}</BackLink>
+      <div className="flex items-center justify-between"><BackLink href={party ? `/party/${party.slug}` : "/"}>{party ? party.nameHe : "כל הרשימות"}</BackLink><ShareButton title={name} /></div>
 
       <Card className="overflow-hidden">
         <div className="flex flex-col items-center bg-gradient-to-b from-ink-hero to-ink-card px-4 pb-4 pt-6 text-center">

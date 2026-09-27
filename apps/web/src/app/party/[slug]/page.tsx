@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sourcesForField } from "@elections26/data";
-import { Avatar, BackLink, BandDot, Card, Pills, Sources, StatusBadge } from "@/components/ui";
+import { Avatar, BackLink, BandDot, Card, Sources, StatusBadge } from "@/components/ui";
+import { ShareButton } from "@/components/share-button";
+import { positionsByParty } from "@/lib/positions";
 import { LIST_STATUS_HINT, formatDate, formatSeats, shareMetadata, site } from "@/lib/site";
 import { bioLine, displayName, knessetProfile, partyBio, partyPhoto, roleLabel, topRole } from "@/lib/extras";
 
@@ -71,6 +73,7 @@ export default async function PartyPage({ params }: { params: Promise<{ slug: st
             <span>לא נכללה בסקרים האחרונים</span>
           )}
         </div>
+        {list?.status === "disqualified" ? <p className="mt-2 rounded-lg bg-rose-500/10 p-2 text-xs leading-5 text-rose-200">החלטת פסילה, בכפוף לערעור. מספר המנדטים המוצג הוא נתון סקר בלבד, לא תחזית מושבים לרשימה שאושרה.</p> : null}
         {list?.statusNote ? (
           <p className="mt-2 text-[11px] text-ink-muted">
             {LIST_STATUS_HINT[list.status]} · {list.statusNote} <Sources sources={statusSources} />
@@ -78,7 +81,13 @@ export default async function PartyPage({ params }: { params: Promise<{ slug: st
         ) : null}
       </Card>
 
-      <Pills items={[{ label: "הרכב הרשימה", href: `/party/${party.slug}`, active: true }]} />
+      <div className="flex items-center justify-between"><h2 className="text-base font-bold">הרכב הרשימה</h2><ShareButton title={party.nameHe} /></div>
+
+      <Card className="p-4" id="positions">
+        <h2 className="text-base font-bold">עמדות הרשימה</h2>
+        <p className="mt-1 text-xs text-ink-muted">מתוך מסמכי הרשימה בלבד, לא הבטחה לביצוע. לא אותר כאן מצע מאומת? לא ננחש עמדה.</p>
+        {positionsByParty[party.id]?.length ? <ul className="mt-3 space-y-3">{positionsByParty[party.id]!.map((item) => <li key={item.issue} className="border-t border-ink-line pt-2"><strong className="text-sm">{item.issue}</strong><p className="text-xs leading-5 text-ink-muted">{item.summary} <a href={item.source} target="_blank" rel="noopener noreferrer" className="underline">למסמך המקור ↗</a></p></li>)}</ul> : <p className="mt-3 text-sm text-ink-muted">טרם פורסם כאן מצע מאומת של הרשימה.</p>}
+      </Card>
 
       <Card className="overflow-hidden">
         <div className={`grid ${COLS} items-end gap-x-1.5 border-b border-ink-line px-3 py-2 text-[10px] leading-tight text-ink-dim`}>
@@ -139,7 +148,7 @@ export default async function PartyPage({ params }: { params: Promise<{ slug: st
         <div className="px-3 py-3 text-[11px] leading-relaxed text-ink-dim">
           {withRecord} מתוך {candidates.length} המועמדים כיהנו בכנסת. נתוני פעילות: המאגר הפרלמנטרי של הכנסת. סדר
           הרשימה:{" "}
-          <Sources sources={listSources} label="ערוץ כנסת, 9.9" />
+          <Sources sources={listSources} label="מקור הרשימה" />
           {list?.submittedAt ? ` · הוגשה ${formatDate(list.submittedAt)}` : ""}.{" "}
           <span className="inline-flex items-center gap-1"><BandDot band="safe" /> נכנס בכל הסקרים</span>{" "}
           <span className="inline-flex items-center gap-1"><BandDot band="borderline" /> בחלק מהסקרים</span>

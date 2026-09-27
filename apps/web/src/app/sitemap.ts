@@ -12,6 +12,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     { url: SITE_URL, lastModified, changeFrequency: "hourly", priority: 1 },
+    { url: `${SITE_URL}/about`, lastModified, changeFrequency: "weekly", priority: 0.4 },
     ...data.parties.map(({ party }) => ({
       url: `${SITE_URL}/party/${party.slug}`,
       lastModified,
