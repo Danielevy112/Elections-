@@ -1,0 +1,33 @@
+[
+  {
+    "check": "Article text gives every party's seats and the threshold misses; all match the Wikipedia row.",
+    "checkedAt": "2026-10-03",
+    "fieldworkEnd": "2026-09-24",
+    "publisher": "i24 News",
+    "sourceUrl": "https://www.i24news.tv/he/news/israel-elections-2026/polls/artc-5d1d4577",
+    "publishedAt": "2026-09-24"
+  },
+  {
+    "check": "Wikipedia cites a Haredim 10 report; the i24NEWS article itself lists every party's seats and the threshold misses, all matching the row.",
+    "checkedAt": "2026-10-03",
+    "fieldworkEnd": "2026-10-01",
+    "publisher": "i24 News",
+    "sourceUrl": "https://www.i24news.tv/he/news/israel-elections-2026/polls/artc-761931ef",
+    "publishedAt": "2026-10-01"
+  },
+  {
+    "check": "Article text confirms Yashar 23, Likud 21, Amcha Yisrael passing the threshold and the coalition at 52 (which the row's figures sum to); the full breakdown is in the article's graphic.",
+    "checkedAt": "2026-10-03",
+    "fieldworkEnd": "2026-09-27",
+    "publisher": "Kan 11",
+    "sourceUrl": "https://www.kan.org.il/content/kan-news/politic/1103667/",
+    "publishedAt": "2026-09-27"
+  },
+  {
+    "check": "c14.co.il refuses automated fetches (403). A Behadrei Haredim report of the same poll gives Likud 31, Yashar 21, Shas 10, Democrats 9, Together 9 and blocs 63/45/12; the row matches all of them.",
+    "checkedAt": "2026-10-03",
+    "fieldworkEnd": "2026-09-28",
+    "publisher": "Channel 14",
+    "sourceUrl": "https://www.c14.co.il/article/1716250"
+  }
+]

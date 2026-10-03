@@ -1,6 +1,28 @@
 [
   {
     "electionId": "election:26",
+    "fieldworkEnd": "2026-09-24",
+    "fieldworkStart": "2026-09-24",
+    "id": "poll:direct-polls-i24-news-2026-09-24",
+    "pollster": "דיירקט פולס",
+    "publishedAt": "2026-09-24",
+    "publisher": "i24NEWS",
+    "sampleSize": 537,
+    "sourceUrl": "https://www.i24news.tv/he/news/israel-elections-2026/polls/artc-5d1d4577"
+  },
+  {
+    "electionId": "election:26",
+    "fieldworkEnd": "2026-10-01",
+    "fieldworkStart": "2026-10-01",
+    "id": "poll:direct-polls-i24-news-2026-10-01",
+    "pollster": "דיירקט פולס",
+    "publishedAt": "2026-10-01",
+    "publisher": "i24NEWS",
+    "sampleSize": 504,
+    "sourceUrl": "https://www.i24news.tv/he/news/israel-elections-2026/polls/artc-761931ef"
+  },
+  {
+    "electionId": "election:26",
     "id": "poll:hamadad-c13-2026-09-23",
     "marginOfError": 2.5,
     "pollster": "המדד (עם סטט-נט, פרויקט המדגם ואסקריא)",
@@ -8,6 +30,17 @@
     "publisher": "חדשות 13",
     "sampleSize": 1503,
     "sourceUrl": "https://13tv.co.il/item/news/politics/politics/hcp4l-905367553/"
+  },
+  {
+    "electionId": "election:26",
+    "fieldworkEnd": "2026-09-27",
+    "fieldworkStart": "2026-09-27",
+    "id": "poll:kantar-kan-11-2026-09-27",
+    "pollster": "מכון קנטאר",
+    "publishedAt": "2026-09-27",
+    "publisher": "כאן חדשות",
+    "sampleSize": 552,
+    "sourceUrl": "https://www.kan.org.il/content/kan-news/politic/1103667/"
   },
   {
     "electionId": "election:26",
@@ -31,5 +64,16 @@
     "publisher": "חדשות 14",
     "sampleSize": 647,
     "sourceUrl": "https://www.c14.co.il/article/1711606"
+  },
+  {
+    "electionId": "election:26",
+    "fieldworkEnd": "2026-09-28",
+    "fieldworkStart": "2026-09-28",
+    "id": "poll:sf-nd-channel-14-2026-09-28",
+    "pollster": "NEXT DATA",
+    "publishedAt": "2026-09-28",
+    "publisher": "חדשות 14",
+    "sampleSize": 573,
+    "sourceUrl": "https://www.c14.co.il/article/1716250"
   }
 ]
