@@ -49,8 +49,12 @@ jobs:
       # A pull request rather than a direct push: on an elections site every data change
       # deserves a human look before it reaches the public build, and the snapshot diff is
       # exactly the review surface for that.
+      # The branch push above is what matters. Opening the PR itself needs the repository
+      # setting "Allow GitHub Actions to create and approve pull requests"; until it is on,
+      # the maintainer opens the PR from data/sync, and the run should not go red over it.
       - name: Open a data pull request
         uses: peter-evans/create-pull-request@v8
+        continue-on-error: true
         with:
           branch: data/sync
           base: main
