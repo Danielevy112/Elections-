@@ -3,6 +3,9 @@ import { join } from "node:path";
 import { loadSnapshot, RECORD_COLLECTIONS, repoRoot } from "@elections26/data";
 import type { Snapshot } from "@elections26/schema";
 import type { ExtrasData, KnessetRecord, LegislativeRecord, KeyVote } from "./extras";
+// Imported, not read from disk, so the list is bundled into the server build: the deployed
+// functions do not carry the repository's data files.
+import heldBack from "../../../../data/review/knesset_links_quarantine.json";
 
 export interface Published {
   snapshot: Snapshot;
@@ -12,7 +15,7 @@ export interface Published {
 
 // Exact-name matches to old MKs without independent evidence tying them to the 2026 list slot.
 // The Knesset record documents the historical MK, not this candidate's identity.
-const quarantinedKnessetNames = new Set(["אזולאי דוד", "לוי דוד", "אפרתי יוסף", "בירן מיכל", "חיים יהודה", "פלד משה", "שטרן אברהם"]);
+const quarantined = new Set((heldBack as { name: string }[]).map((r) => r.name));
 
 function extrasFromFiles(): ExtrasData {
   const read = <T,>(file: string, fallback: T): T => {
@@ -28,7 +31,7 @@ function extrasFromFiles(): ExtrasData {
   const votesByName = new Map<string,KeyVote[]>();
   for (const v of keyVotes) votesByName.set(v.candidate,[...(votesByName.get(v.candidate) ?? []),v]);
   return {
-    knessetProfiles: Object.fromEntries(Object.entries(profiles).filter(([name]) => !quarantinedKnessetNames.has(name)).map(([name,p]) => [name, {...p, ...(activity[name] ? {record:activity[name]}:{}),  ...(votesByName.has(name) ? {keyVotes:votesByName.get(name)}:{})}])),
+    knessetProfiles: Object.fromEntries(Object.entries(profiles).filter(([name]) => !quarantined.has(name)).map(([name,p]) => [name, {...p, ...(activity[name] ? {record:activity[name]}:{}),  ...(votesByName.has(name) ? {keyVotes:votesByName.get(name)}:{})}])),
     photos: read<{ photos: ExtrasData["photos"] }>("photos.json", { photos: [] }).photos,
     bios: read<{ bios: ExtrasData["bios"] }>("bios.json", { bios: [] }).bios,
   };
@@ -89,7 +92,7 @@ export async function loadExtrasPart(): Promise<{extras:ExtrasData;from:"db"|"js
   try {
     const { loadExtrasFromDb } = await import("@elections26/db");
     const extras = await withTimeout(loadExtrasFromDb(await readDb())) as unknown as ExtrasData;
-    extras.knessetProfiles = Object.fromEntries(Object.entries(extras.knessetProfiles).filter(([name]) => !quarantinedKnessetNames.has(name)));
+    extras.knessetProfiles = Object.fromEntries(Object.entries(extras.knessetProfiles).filter(([name]) => !quarantined.has(name)));
     return {extras,from:"db"};
   } catch (err) { console.error("[data] extras database read failed",err); return {extras:extrasFromFiles(),from:"json"}; }
 }
