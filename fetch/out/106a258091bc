@@ -1,0 +1,3485 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlTag" lang="he" dir="rtl">
+
+<head>
+    <title>ועדת הבחירות המרכזית לכנסת ה-26 | תוצאות ארציות</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="/ruxitagentjs_ICA15789NPRTUVXfqrux_10347260902154543.js" data-dtconfig="rid=RID_2418|rpid=1121574548|domain=bechirot.gov.il|reportUrl=/govd/rb_bf18120kmu|app=2fd38179c948edbf|owasp=1|featureHash=ICA15789NPRTUVXfqrux|rdnt=1|uxrgce=1|cuc=zda01j2q|mel=100000|expw=1|dpvc=1|lastModification=1790855355395|postfix=zda01j2q|tp=500,50,0|srbbv=2|agentUri=/ruxitagentjs_ICA15789NPRTUVXfqrux_10347260902154543.js" data-config='{"revision":1790855355395,"beaconUri":"/govd/rb_bf18120kmu","agentUri":"/ruxitagentjs_ICA15789NPRTUVXfqrux_10347260902154543.js","environmentId":"zda01j2q","modules":"ICA15789NPRTUVXfqrux"}' data-envconfig='{"tracestateKeyPrefix":"e32ab180-50939e8f"}' data-appconfig='{"app":"2fd38179c948edbf","userInteractionCapture":["all"],"disableUserTracking":true}'></script><link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link id="dynamic-stylesheet-bootstrap" rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link id="dynamic-stylesheet-css" rel="stylesheet" href="css/elections-ui.min.css?v1.2" />
+    <link id="fontsize-css" rel="stylesheet" type="text/css" href="includes/small.min.css" />
+
+
+    <script language="JavaScript1.2" src="functions/main.min.js" type="text/javascript"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BD261P405Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-SGRDFFY9WD');
+    </script>
+
+    
+</head>
+<body class="d-flex flex-column h-100">
+    
+
+    
+
+    <div class=" side-bar position-fixed top-0 right-0 bottom-0 d-flex flex-column overflow-y-scroll justify-content-between" role="navigation">
+        <div>
+            <div class="text-center pt-4 mb-3">
+                <img src="images/bulding.svg" alt="logo" aria-hidden="true" />
+            </div>
+            <div class="text-center">
+                <div id="electionTittel" class="text-white text-center fs-7">ועדת הבחירות המרכזית לכנסת</div>
+                <div id="electionTittel2" class="text-white text-center fs-7">הבחירות לכנסת ה-26</div>
+            </div>
+            <div class="border-bottom m-3 mx-5 border-white border-opacity-25"></div>
+            <div class="text-white text-center fs-7">
+                ט"ז בחשון התשפ"ז
+                <span id="spanDot" class="mx-2 text-orange">&#8226;</span>
+                27 באוקטובר 2026
+            </div>
+
+            <div class="mt-3 pt-3 p-3">
+                <div id="GlobalNavSkip" class="text-center">
+                    <a href="nationalresults?lang=he" id="NavBarNational" class="btn btn-warning d-block rounded-pill fw-bold fs-5 mb-3">תוצאות ארציות</a>
+                    <a href="cityresults?lang=he" id="NavBarTowns" class="d-block fs-5 text-decoration-none text-white mb-3">תוצאות לפי יישובים</a>
+                    <a href="ballotresults?lang=he" id="NavBarPollingStation" class="d-block fs-5 text-decoration-none text-white mb-3">תוצאות לפי קלפיות</a>
+                    <a href="https://elections.govmap.gov.il/" id="NavBarMap" title="תוצאות על מפת ישראל" class="d-block fs-5 text-decoration-none text-white mb-3" target="_blank" rel="noopener">תוצאות על מפת ישראל</a>
+                </div>
+            </div>
+        </div>
+        <div class=" rounded-3  start-0 bottom-0 end-0">
+            <div class="btn-download-menu-wrap pb-3">
+                <a id="DownloadCSVCities" title="תוצאות לפי יישובים (קובץ להורדה)" class="btn  rounded-pill btn-download-menu" OnClick="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expc.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,location=center,directories=no,status=no, menubar=no,scrollbars=yes,location=no,resizable=no,top=&#39;+(window.screen.height/2 - 100 / 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;" href="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expc.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,directories=no,status=no, menubar=no,location=no,scrollbars=yes,resizable=no,top=&#39;+(window.screen.height/2 - 100/ 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;">
+                    <img class="mt-min-2" src="images/icn_107.svg" alt="" />
+                    <span id="DownloadCSVCitiesText">תוצאות לפי יישובים (קובץ להורדה)</span></a>
+                <a id="DownloadCSVBallots" title="תוצאות לפי קלפיות (קובץ להורדה)" class="btn  rounded-pill btn-download-menu" OnClick="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expb.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,location=center,directories=no,status=no, menubar=no,scrollbars=yes,location=no,resizable=no,top=&#39;+(window.screen.height/2 - 100 / 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;" href="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expb.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,directories=no,status=no, menubar=no,location=no,scrollbars=yes,resizable=no,top=&#39;+(window.screen.height/2 - 100/ 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;">
+                    <img class="mt-min-2" src="images/icn_107.svg" alt="" />
+                    <span id="DownloadCSVBallotsText">תוצאות לפי קלפיות (קובץ להורדה)</span></a>
+            </div>
+            <div id="ruleMsg" class="low-box p-3 m-3 fs-7">בהתאם להוראות סעיף 11 לחוק-יסוד: הכנסת וסעיף 84 לחוק הבחירות לכנסת [נוסח משולב], התשכ&quot;ט-1969, התוצאות הסופיות של הבחירות לכנסת ה-26 יפורסמו ברשומות עד ליום ד&#39; כ&quot;ד בחשון התשפ&quot;ז, 4 בנובמבר 2026. עד ליום זה עשויות התוצאות להשתנות.</div>
+        </div>
+    </div>
+
+    <div class="mobile-fixed-top fixed-top d-flex align-items-center text-white px-3" role="banner">
+        <button onclick="showMenuMobile()" class="btn-unset" aria-label="תפריט">
+            <!-- צריך תרגום שפות-->
+            <img src="images/icn_111.svg" alt="" />
+        </button>
+        <div class="flex-fill text-center">
+            <img src="images/bulding-xs.png" alt="Logo" aria-hidden="true" /><br />
+            <div id="electionTittelMobile" class="text-white text-center fs-7">ועדת הבחירות המרכזית לכנסת</div>
+            <div id="electionTittelMobile2" class="text-white text-center fs-7">הבחירות לכנסת ה-26</div>
+        </div>
+        <div aria-hidden="true">
+            <img src="images/lamp-white.png" alt="" />
+        </div>
+    </div>
+    <div class="mobile-menu" id="menuMobile">
+        <button class="text-end p-3 h-65 btnUnset btn-w" onclick="closeMenuMobile()" aria-label="סגירה">
+            <!-- צריך תרגום שפות-->
+            <img src="images/icn_112.svg" alt="" />
+        </button>
+        <div class="all-items">
+            <div><a href="nationalresults?lang=he" id="NavBarNationalMobileMenu" class="item active">תוצאות ארציות</a></div>
+            <div><a href="cityresults?lang=he" id="NavBarTownsMobileMenu" class="item">תוצאות לפי יישובים</a></div>
+            <div><a href="ballotresults?lang=he" id="NavBarPollingStationMobileMenu" class="item">תוצאות לפי קלפיות</a></div>
+            <div><a href="https://elections.govmap.gov.il/" id="NavBarMapMobileMenu" title="תוצאות על מפת ישראל" class="item" target="_blank" rel="noopener">תוצאות על מפת ישראל</a></div>
+            <div>
+                <a id="DownloadCSVCitiesMobile" title="תוצאות לפי יישובים (קובץ להורדה)" class="item" OnClick="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expc.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,location=center,directories=no,status=no, menubar=no,scrollbars=yes,location=no,resizable=no,top=&#39;+(window.screen.height/2 - 100 / 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;" href="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expc.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,directories=no,status=no, menubar=no,location=no,scrollbars=yes,resizable=no,top=&#39;+(window.screen.height/2 - 100/ 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;">
+                    <img class="mt-min-2" src="images/icn_107.svg" alt="" />
+                    <span id="DownloadCSVCitiesTextMobile">תוצאות לפי יישובים (קובץ להורדה)</span></a>
+            </div>
+            <div>
+                <a id="DownloadCSVBallotsMobile" title="תוצאות לפי קלפיות (קובץ להורדה)" class="item" OnClick="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expb.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,location=center,directories=no,status=no, menubar=no,scrollbars=yes,location=no,resizable=no,top=&#39;+(window.screen.height/2 - 100 / 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;" href="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expb.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,directories=no,status=no, menubar=no,location=no,scrollbars=yes,resizable=no,top=&#39;+(window.screen.height/2 - 100/ 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;">
+                    <img class="mt-min-2" src="images/icn_107.svg" alt="" />
+                    <span id="DownloadCSVBallotsTextMobile">תוצאות לפי קלפיות (קובץ להורדה)</span></a>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex-grow-1 position-relative mh-100vh ms-340 main-bg">
+        <h1 class="sr-only hide-mobile">תוצאות הבחירות לכנסת ה-26</h1>
+        <div class="p-4 ps-lg-5">
+
+            <!-- סמל ישראל - גודל פונטים-->
+            <div class="accessible-box text-end d-flex flex-row-reverse align-items-center">
+                <img src="images/lamp.png" width="50" class="ms-4" alt="" aria-hidden="true" />
+                <div id="FontSize" class="d-flex align-items-end">
+                    <button tabindex="-1" class="ms-4-2 text-hebrew btn-b-c ">
+                        <span tabindex="1" onkeydown="handleKeyPressLang(event,'he')" onclick="changeLanguage('he')">עב</span>
+                    </button>
+                    <div class="vector-21"></div>
+                    <button tabindex="-1" class="ms-4-2 text-en btn-b-c ">
+                        <span tabindex="1" onkeydown="handleKeyPressLang(event,'en')" onclick="changeLanguage('en')">En</span>
+                    </button>
+                    <div class="vector-20"></div>
+                    <button tabindex="-1" class="ms-4-2 text-arabic btn-b-c ">
+                        <span tabindex="1" onkeydown="handleKeyPressLang(event,'ar')" onclick="changeLanguage('ar')">العر</span>
+                    </button>
+
+                    <div role="button" onclick="fontsizedown();" class="fs-5 lh-t fw-bold ms-4 pointer" tabindex="1" onkeydown="handleKeyPressFontL(event)">א A</div>
+                    <div role="button" onclick="fontsizeup()" class="fs-3 lh-t fw-bold ms-4 pointer" tabindex="1" onkeydown="handleKeyPressFontS(event)">א A</div>
+                </div>
+
+            </div>
+
+            <div class="m-top-space h-65 "></div>
+            <div class="d-flex align-items-center mb-3">
+                <h1 id="results26thKnessetElections" class="flex-fill fw-bold fs-h1-title font-ele-title">תוצאות הבחירות לכנסת ה-26</h1>
+                <div id="Div2" class="flex-fill fw-bold fs-h1-title font-ele-title" style="color:red">סביבת בדיקות</div>
+                <div>
+                    <div class="d-f">
+                        <div role="button" onclick="fontsizeup();" class="mobile-accessible-box fs-3 fw-bold ms-3 pointer no-wrp js-l" tabindex="0" onkeydown="handleKeyPressFontS(event)">א A</div>
+                        <div role="button" onclick="fontsizedown();" class="mobile-accessible-box fs-6 fw-bold ms-3 pointer no-wrp js-l" tabindex="0" onkeydown="handleKeyPressFontL(event)">א A</div>
+                    </div>
+                    <div class="hide language-switcher">
+                        <div role="button" class="ms-4-2 text-hebrew">
+                            <span tabindex="0" onclick="changeLanguage('he')" onkeydown="handleKeyPressLang(event,'he')">עב</span>
+                        </div>
+                        <div class="vector-21"></div>
+                        <div role="button" class="ms-4-2 text-en">
+                            <span tabindex="0" onclick="changeLanguage('en')" onkeydown="handleKeyPressLang(event,'en')">En</span>
+                        </div>
+                        <div class="vector-20"></div>
+                        <div role="button" class="ms-4-2 text-arabic">
+                            <span tabindex="0" onclick="changeLanguage('ar')" onkeydown="handleKeyPressLang(event,'ar')">العر</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--mobile main menu - scroll / on page -->
+            <div class="m-main-menu d-inline-flex overflow-auto  hide-scrollbar w-100 mb-4c fs-5b">
+                <div><a href="nationalresults?lang=he" id="NavBarNationalMobile" class="no-wrp btn btn-lg fs-6 btn-warning rounded-pill fw-bold">תוצאות ארציות</a></div>
+                <div><a href="cityresults?lang=he" id="NavBarTownsMobile" class="no-wrp btn btn-lg fs-6">תוצאות לפי יישובים</a></div>
+                <div><a href="ballotresults?lang=he" id="NavBarPollingStationMobile" class="no-wrp btn btn-lg fs-6">תוצאות לפי קלפיות</a></div>
+                <div><a href="https://elections.govmap.gov.il/" id="NavBarMapMobile" title="תוצאות על מפת ישראל" class="no-wrp btn btn-lg fs-6" target="_blank" rel="noopener">תוצאות על מפת ישראל</a></div>
+            </div>
+
+            <div id="downloadFiles" class="m-low-box mb-4">
+                <button tabindex="0" class="collapse-btn btn-unset-border" onclick="HideElement()">
+                    <img src="images/icn_113.svg" alt="" /><!--<img src="images/icn_114.svg" />-->
+                </button>
+                <span id="ruleMsgMobile" class="text">בהתאם להוראות סעיף 11 לחוק-יסוד: הכנסת וסעיף 84 לחוק הבחירות לכנסת [נוסח משולב], התשכ&quot;ט-1969, התוצאות הסופיות של הבחירות לכנסת ה-26 יפורסמו ברשומות עד ליום ד&#39; כ&quot;ד בחשון התשפ&quot;ז, 4 בנובמבר 2026. עד ליום זה עשויות התוצאות להשתנות.</span>
+            </div>
+        </div>
+        
+    <div class="p-4 ps-lg-5">
+        
+        <div id="ContentPlaceHolder1_ContentSkip" class="Content">
+            
+<div class="mt-title">
+
+    <div class="d-flex align-items-center mb-4">
+
+        <h2 class="d-lg-block fs-h2-title text-info font-ele-title m-color-text">
+            תוצאות ארציות
+        </h2>
+        <div class="d-xl-block title-border"></div>
+        <div class="fs-h3-title">
+            
+        </div>
+        
+        <div class="fs-h3-title">
+            תוצאות נכון ל- 01/10/2026 13:12
+        </div>
+        <div class="fs-h3-title">
+            
+        </div>
+    </div>
+</div>
+
+
+
+<div id="ContentPlaceHolder1_ShowTotal1_TotalTags" class="mb-2 mb-lg-3">
+
+    <!--add class "hide-scrollbar" to hide the scrollbar-->
+    <div class="row icn-boxes-data pb-5">
+        <div class="col container-box">
+            <div class="info-box">
+                <div class="icn mb-2">
+                    <img src="images/icn_101.png" alt="" />
+                </div>
+                <div class="icn-m">
+                    <img src="images/icn_200.png" alt="" />
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_ShowTotal1_eligibleVotersCount">מספר בעלי זכות בחירה</div>
+                    <div class="fw-bold fs-2">
+                        
+                        7,331,981
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col container-box">
+            <div class="info-box">
+                <div class="icn mb-2">
+                    <img src="images/icn_102.svg" alt="" />
+                </div>
+                <div class="icn-m">
+                    <img src="images/icn_201.svg" alt="" />
+                </div>
+                <div>
+                    <div>
+                        קולות עד עתה
+                    </div>
+                    <div class="fw-bold fs-2">
+                        7,176
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col container-box">
+            <div class="info-box">
+                <div class="icn mb-2">
+                    <img src="images/icn_103.svg" id="ContentPlaceHolder1_ShowTotal1_imgIcon1" alt="" />
+                </div>
+                <div class="icn-m">
+                    <img src="images/icn_202.svg" alt="" />
+                </div>
+                <div>
+                    <div>
+                        קלפיות עד עתה
+                    </div>
+                    <div class="fw-bold fs-2">
+                        26
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col container-box">
+            <div class="info-box">
+                <div class="icn mb-2">
+                    <img src="images/icn_104.svg" alt="" />
+                </div>
+                <div class="icn-m">
+                    <img src="images/icn_203.svg" alt="" />
+                </div>
+                <div>
+                    <div>
+                        קולות כשרים עד עתה
+                    </div>
+                    <div class="fw-bold fs-2">
+                        7,071
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col container-box">
+            <div class="info-box">
+                <div class="icn mb-2">
+                    <img src="images/icn_105.svg" alt="" />
+                </div>
+                <div class="icn-m">
+                    <img src="images/icn_204.svg" alt="" />
+                </div>
+                <div>
+                    <div>
+                        קולות פסולים עד עתה
+                    </div>
+                    <div class="fw-bold fs-2">
+                        105
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+   
+
+</div>
+
+
+            
+<div id="tableDiv">
+    <div class="mb-4c table-xx-outer px-3">
+        <div class="w-100 overflow-x-auto dir-dir pt-0 px-3 pb-4" style="height: 600px;" >
+            <table class="xx dir-dir" width="100%">
+                <thead class="sticky-top">
+                    <tr>
+                        <th id="ContentPlaceHolder1_PartyResults1_partyName" class="pb-3" style="width: 500px">שם הרשימה</th>
+
+                        <th id="ContentPlaceHolder1_PartyResults1_partyLetters" class="pb-3">אותיות הרשימה</th>
+
+                        <th id="ContentPlaceHolder1_PartyResults1_percentOfValidVotes" class="pb-3">אחוז מסך הקולות הכשרים</th>
+
+                        <th id="ContentPlaceHolder1_PartyResults1_validVotesForParty" class="pb-3" style="width: 450px">קולות כשרים לרשימה</th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    
+                            <tr>
+                                <td class="text-blue" scope="row" title='אני ואתה מפלגת העם הישראלית'>
+                                    אני ואתה מפלגת העם הישראלית
+                                <td>
+                                    פה</td>
+                                <td>29.67%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="אני ואתה מפלגת העם הישראלית">
+                                        <span class="flex-fill text-start">
+                                            2,098
+                                        </span>
+                                        <span aria-hidden="true" style="width: 75%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='יהדות התורה והשבת אגודת ישראל - דגל התורה'>
+                                    יהדות התורה והשבת אגודת ישראל - דגל התורה
+                                <td>
+                                    ג</td>
+                                <td>25.91%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="יהדות התורה והשבת אגודת ישראל - דגל התורה">
+                                        <span class="flex-fill text-start">
+                                            1,832
+                                        </span>
+                                        <span aria-hidden="true" style="width: 65.4909437559581%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='אורות השחר בראשות ניסים לוק'>
+                                    אורות השחר בראשות ניסים לוק
+                                <td>
+                                    בקר</td>
+                                <td>25.10%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="אורות השחר בראשות ניסים לוק">
+                                        <span class="flex-fill text-start">
+                                            1,775
+                                        </span>
+                                        <span aria-hidden="true" style="width: 63.4532888465205%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='ישראל ביתנו בראשות אביגדור ליברמן'>
+                                    ישראל ביתנו בראשות אביגדור ליברמן
+                                <td>
+                                    ל</td>
+                                <td>5.93%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="ישראל ביתנו בראשות אביגדור ליברמן">
+                                        <span class="flex-fill text-start">
+                                            419
+                                        </span>
+                                        <span aria-hidden="true" style="width: 14.9785510009533%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='גן עדן בראשות ישוע ישראל בן דוד'>
+                                    גן עדן בראשות ישוע ישראל בן דוד
+                                <td>
+                                    ה</td>
+                                <td>3.65%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="גן עדן בראשות ישוע ישראל בן דוד">
+                                        <span class="flex-fill text-start">
+                                            258
+                                        </span>
+                                        <span aria-hidden="true" style="width: 9.2230695900858%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='גה&quot;ת - גוש התנ&quot;כי'>
+                                    גה&quot;ת - גוש התנ&quot;כי
+                                <td>
+                                    יק</td>
+                                <td>3.21%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="גה&quot;ת - גוש התנ&quot;כי">
+                                        <span class="flex-fill text-start">
+                                            227
+                                        </span>
+                                        <span aria-hidden="true" style="width: 8.11487130600572%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='כחול לבן בראשות בני גנץ'>
+                                    כחול לבן בראשות בני גנץ
+                                <td>
+                                    כן</td>
+                                <td>2.12%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="כחול לבן בראשות בני גנץ">
+                                        <span class="flex-fill text-start">
+                                            150
+                                        </span>
+                                        <span aria-hidden="true" style="width: 5.36224976167779%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='הליכוד בהנהגת בנימין נתניהו לראשות הממשלה'>
+                                    הליכוד בהנהגת בנימין נתניהו לראשות הממשלה
+                                <td>
+                                    מחל</td>
+                                <td>1.53%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="הליכוד בהנהגת בנימין נתניהו לראשות הממשלה">
+                                        <span class="flex-fill text-start">
+                                            108
+                                        </span>
+                                        <span aria-hidden="true" style="width: 3.86081982840801%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='תנועת אחי תנועתו של הרב יורם אברג&#39;ל זצ&quot;ל'>
+                                    תנועת אחי תנועתו של הרב יורם אברג&#39;ל זצ&quot;ל
+                                <td>
+                                    צבי</td>
+                                <td>1.39%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="תנועת אחי תנועתו של הרב יורם אברג&#39;ל זצ&quot;ל">
+                                        <span class="flex-fill text-start">
+                                            98
+                                        </span>
+                                        <span aria-hidden="true" style="width: 3.50333651096282%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='הדמוקרטים בראשות יאיר גולן'>
+                                    הדמוקרטים בראשות יאיר גולן
+                                <td>
+                                    אמת</td>
+                                <td>0.44%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="הדמוקרטים בראשות יאיר גולן">
+                                        <span class="flex-fill text-start">
+                                            31
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1.10819828408008%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='בטח - בטחון חברתי בראשות סמיון גרפמן'>
+                                    בטח - בטחון חברתי בראשות סמיון גרפמן
+                                <td>
+                                    ז</td>
+                                <td>0.21%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="בטח - בטחון חברתי בראשות סמיון גרפמן">
+                                        <span class="flex-fill text-start">
+                                            15
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='תקומה'>
+                                    תקומה
+                                <td>
+                                    ק</td>
+                                <td>0.14%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="תקומה">
+                                        <span class="flex-fill text-start">
+                                            10
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='ביחד בראשות נפתלי בנט'>
+                                    ביחד בראשות נפתלי בנט
+                                <td>
+                                    רק</td>
+                                <td>0.11%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="ביחד בראשות נפתלי בנט">
+                                        <span class="flex-fill text-start">
+                                            8
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='הפיראטים - צפים לטוב'>
+                                    הפיראטים - צפים לטוב
+                                <td>
+                                    צף</td>
+                                <td>0.06%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="הפיראטים - צפים לטוב">
+                                        <span class="flex-fill text-start">
+                                            4
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='הקהל - מפלגה כלל חרדית שנציגיה נבחרים על ידי הציבור בראשות הרב שלמה אלבוים'>
+                                    הקהל - מפלגה כלל חרדית שנציגיה נבחרים על ידי הציבו
+                                <td>
+                                    רץ</td>
+                                <td>0.06%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="הקהל - מפלגה כלל חרדית שנציגיה נבחרים על ידי הציבור בראשות הרב שלמה אלבוים">
+                                        <span class="flex-fill text-start">
+                                            4
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='הציבור החרדי בראשות מוטי ליטנר'>
+                                    הציבור החרדי בראשות מוטי ליטנר
+                                <td>
+                                    זך</td>
+                                <td>0.04%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="הציבור החרדי בראשות מוטי ליטנר">
+                                        <span class="flex-fill text-start">
+                                            3
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='הציונות הדתית בראשות בצלאל סמוטריץ&#39; וזהות בראשות משה פייגלין'>
+                                    הציונות הדתית בראשות בצלאל סמוטריץ&#39; וזהות בראשות מ
+                                <td>
+                                    ט</td>
+                                <td>0.04%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="הציונות הדתית בראשות בצלאל סמוטריץ&#39; וזהות בראשות משה פייגלין">
+                                        <span class="flex-fill text-start">
+                                            3
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='השותפות לכולם'>
+                                    השותפות לכולם
+                                <td>
+                                    ד</td>
+                                <td>0.04%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="השותפות לכולם">
+                                        <span class="flex-fill text-start">
+                                            3
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='מפלגת ביחד נצליח - רשימה משותפת ערבית יהודית בראשות אבי שקד'>
+                                    מפלגת ביחד נצליח - רשימה משותפת ערבית יהודית בראשו
+                                <td>
+                                    בד</td>
+                                <td>0.04%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="מפלגת ביחד נצליח - רשימה משותפת ערבית יהודית בראשות אבי שקד">
+                                        <span class="flex-fill text-start">
+                                            3
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='סדר-חדש לכינון חוקה, להפרדת רשויות ובחירות אישיות'>
+                                    סדר-חדש לכינון חוקה, להפרדת רשויות ובחירות אישיות
+                                <td>
+                                    קך</td>
+                                <td>0.04%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="סדר-חדש לכינון חוקה, להפרדת רשויות ובחירות אישיות">
+                                        <span class="flex-fill text-start">
+                                            3
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='עמך ישראל בראשות עופר וינטר'>
+                                    עמך ישראל בראשות עופר וינטר
+                                <td>
+                                    ך</td>
+                                <td>0.04%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="עמך ישראל בראשות עופר וינטר">
+                                        <span class="flex-fill text-start">
+                                            3
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='צבע שחור - מגן עולם התורה'>
+                                    צבע שחור - מגן עולם התורה
+                                <td>
+                                    נר</td>
+                                <td>0.04%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="צבע שחור - מגן עולם התורה">
+                                        <span class="flex-fill text-start">
+                                            3
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='צומת בית ישראל'>
+                                    צומת בית ישראל
+                                <td>
+                                    בי</td>
+                                <td>0.04%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="צומת בית ישראל">
+                                        <span class="flex-fill text-start">
+                                            3
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='התיקון לשיטת הבחירות והממשל'>
+                                    התיקון לשיטת הבחירות והממשל
+                                <td>
+                                    נקי</td>
+                                <td>0.03%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="התיקון לשיטת הבחירות והממשל">
+                                        <span class="flex-fill text-start">
+                                            2
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='ישר! עם איזנקוט לראשות הממשלה מאחדים את ישראל'>
+                                    ישר! עם איזנקוט לראשות הממשלה מאחדים את ישראל
+                                <td>
+                                    דרך</td>
+                                <td>0.03%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="ישר! עם איזנקוט לראשות הממשלה מאחדים את ישראל">
+                                        <span class="flex-fill text-start">
+                                            2
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='קול הנשים'>
+                                    קול הנשים
+                                <td>
+                                    קה</td>
+                                <td>0.03%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="קול הנשים">
+                                        <span class="flex-fill text-start">
+                                            2
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='ביטחון אישי'>
+                                    ביטחון אישי
+                                <td>
+                                    נץ</td>
+                                <td>0.01%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="ביטחון אישי">
+                                        <span class="flex-fill text-start">
+                                            1
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='ישראל תחילה בראשות שרן השכל'>
+                                    ישראל תחילה בראשות שרן השכל
+                                <td>
+                                    י</td>
+                                <td>0.01%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="ישראל תחילה בראשות שרן השכל">
+                                        <span class="flex-fill text-start">
+                                            1
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='משפט צדק'>
+                                    משפט צדק
+                                <td>
+                                    קץ</td>
+                                <td>0.01%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="משפט צדק">
+                                        <span class="flex-fill text-start">
+                                            1
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='עוצמה יהודית בראשות איתמר בן גביר'>
+                                    עוצמה יהודית בראשות איתמר בן גביר
+                                <td>
+                                    ב</td>
+                                <td>0.01%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="עוצמה יהודית בראשות איתמר בן גביר">
+                                        <span class="flex-fill text-start">
+                                            1
+                                        </span>
+                                        <span aria-hidden="true" style="width: 1%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='ברית עולם לגאולת ישראל'>
+                                    ברית עולם לגאולת ישראל
+                                <td>
+                                    זץ</td>
+                                <td>0.00%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="ברית עולם לגאולת ישראל">
+                                        <span class="flex-fill text-start">
+                                            0
+                                        </span>
+                                        <span aria-hidden="true" style="width: 0%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='המילואימניקים והכלכלית בראשות יועז הנדל וירון זליכה'>
+                                    המילואימניקים והכלכלית בראשות יועז הנדל וירון זליכ
+                                <td>
+                                    די</td>
+                                <td>0.00%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="המילואימניקים והכלכלית בראשות יועז הנדל וירון זליכה">
+                                        <span class="flex-fill text-start">
+                                            0
+                                        </span>
+                                        <span aria-hidden="true" style="width: 0%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='הרשימה המשותפת'>
+                                    הרשימה המשותפת
+                                <td>
+                                    ודם</td>
+                                <td>0.00%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="הרשימה המשותפת">
+                                        <span class="flex-fill text-start">
+                                            0
+                                        </span>
+                                        <span aria-hidden="true" style="width: 0%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ&quot;ל'>
+                                    התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדי
+                                <td>
+                                    שס</td>
+                                <td>0.00%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ&quot;ל">
+                                        <span class="flex-fill text-start">
+                                            0
+                                        </span>
+                                        <span aria-hidden="true" style="width: 0%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='נעם לישראל למען עתיד הילדים בראשות אבי מעוז'>
+                                    נעם לישראל למען עתיד הילדים בראשות אבי מעוז
+                                <td>
+                                    ני</td>
+                                <td>0.00%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="נעם לישראל למען עתיד הילדים בראשות אבי מעוז">
+                                        <span class="flex-fill text-start">
+                                            0
+                                        </span>
+                                        <span aria-hidden="true" style="width: 0%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='רע&quot;ם - הרשימה הערבית המאוחדת'>
+                                    רע&quot;ם - הרשימה הערבית המאוחדת
+                                <td>
+                                    עם</td>
+                                <td>0.00%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="רע&quot;ם - הרשימה הערבית המאוחדת">
+                                        <span class="flex-fill text-start">
+                                            0
+                                        </span>
+                                        <span aria-hidden="true" style="width: 0%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='שמע בראשות נפתלי גולדמן'>
+                                    שמע בראשות נפתלי גולדמן
+                                <td>
+                                    נף</td>
+                                <td>0.00%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="שמע בראשות נפתלי גולדמן">
+                                        <span class="flex-fill text-start">
+                                            0
+                                        </span>
+                                        <span aria-hidden="true" style="width: 0%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="text-blue" scope="row" title='שרשר לאהבה ואחדות העם'>
+                                    שרשר לאהבה ואחדות העם
+                                <td>
+                                    צדק</td>
+                                <td>0.00%</td>
+                                <td class="text-end pe-table">
+                                    <div class="d-flex align-items-center" title="שרשר לאהבה ואחדות העם">
+                                        <span class="flex-fill text-start">
+                                            0
+                                        </span>
+                                        <span aria-hidden="true" style="width: 0%;" class="bar" style="width: 100%;"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="mb-5 boxes-xx-outer">
+    <div class="d-flex d-lg-none mb-4 justify-content-center">
+        <a id="ContentPlaceHolder1_PartyResults1_tableDisplayMobile" role="button" class="btn btn-lg fs-7 mb-3 px-4 btn-warning rounded-pill fw-bold pointer" onclick="showTableMobile()">תצוגת טבלה</a>
+        <a id="ContentPlaceHolder1_PartyResults1_grafMobile" role="button" class="btn btn-lg fs-7  pointer mb-3 px-4" OnClick="showGraphMobile()">תצוגת תרשים</a>
+    </div>
+</div>
+<div id="boxDivMobile" class="mb-5 boxes-xx-outer">
+    
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_0" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="אני ואתה מפלגת העם הישראלית">
+                        אני ואתה מפלגת העם הישראלית
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_0" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            פה
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_0" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">29.67%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_0" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        2,098
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 300.00px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_1" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="יהדות התורה והשבת אגודת ישראל - דגל התורה">
+                        יהדות התורה והשבת אגודת ישראל - דגל התורה
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_1" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            ג
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_1" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">25.91%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_1" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        1,832
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 263.25px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_2" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="אורות השחר בראשות ניסים לוק">
+                        אורות השחר בראשות ניסים לוק
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_2" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            בקר
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_2" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">25.10%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_2" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        1,775
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 255.33px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_3" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="ישראל ביתנו בראשות אביגדור ליברמן">
+                        ישראל ביתנו בראשות אביגדור ליברמן
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_3" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            ל
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_3" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">5.93%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_3" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        419
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 67.96px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_4" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="גן עדן בראשות ישוע ישראל בן דוד">
+                        גן עדן בראשות ישוע ישראל בן דוד
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_4" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            ה
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_4" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">3.65%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_4" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        258
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 45.68px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_5" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="גה&quot;ת - גוש התנ&quot;כי">
+                        גה&quot;ת - גוש התנ&quot;כי
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_5" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            יק
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_5" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">3.21%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_5" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        227
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 41.38px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_6" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="כחול לבן בראשות בני גנץ">
+                        כחול לבן בראשות בני גנץ
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_6" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            כן
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_6" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">2.12%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_6" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        150
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 30.72px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_7" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="הליכוד בהנהגת בנימין נתניהו לראשות הממשלה">
+                        הליכוד בהנהגת בנימין נתניהו לראשות הממשלה
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_7" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            מחל
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_7" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">1.53%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_7" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        108
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 24.95px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_8" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="תנועת אחי תנועתו של הרב יורם אברג&#39;ל זצ&quot;ל">
+                        תנועת אחי תנועתו של הרב יורם אברג&#39;ל זצ&quot;ל
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_8" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            צבי
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_8" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">1.39%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_8" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        98
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 23.59px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_9" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="הדמוקרטים בראשות יאיר גולן">
+                        הדמוקרטים בראשות יאיר גולן
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_9" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            אמת
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_9" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.44%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_9" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        31
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 14.30px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_10" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="בטח - בטחון חברתי בראשות סמיון גרפמן">
+                        בטח - בטחון חברתי בראשות סמיון גרפמן
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_10" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            ז
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_10" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.21%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_10" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        15
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 12.05px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_11" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="תקומה">
+                        תקומה
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_11" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            ק
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_11" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.14%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_11" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        10
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 11.37px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_12" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="ביחד בראשות נפתלי בנט">
+                        ביחד בראשות נפתלי בנט
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_12" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            רק
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_12" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.11%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_12" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        8
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 11.08px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_13" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="הפיראטים - צפים לטוב">
+                        הפיראטים - צפים לטוב
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_13" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            צף
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_13" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.06%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_13" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        4
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.59px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_14" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="הקהל - מפלגה כלל חרדית שנציגיה נבחרים על ידי הציבור בראשות הרב שלמה אלבוים">
+                        הקהל - מפלגה כלל חרדית שנציגיה נבחרים על ידי הציבו
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_14" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            רץ
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_14" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.06%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_14" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        4
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.59px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_15" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="הציבור החרדי בראשות מוטי ליטנר">
+                        הציבור החרדי בראשות מוטי ליטנר
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_15" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            זך
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_15" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.04%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_15" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        3
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.39px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_16" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="הציונות הדתית בראשות בצלאל סמוטריץ&#39; וזהות בראשות משה פייגלין">
+                        הציונות הדתית בראשות בצלאל סמוטריץ&#39; וזהות בראשות מ
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_16" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            ט
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_16" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.04%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_16" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        3
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.39px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_17" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="השותפות לכולם">
+                        השותפות לכולם
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_17" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            ד
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_17" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.04%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_17" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        3
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.39px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_18" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="מפלגת ביחד נצליח - רשימה משותפת ערבית יהודית בראשות אבי שקד">
+                        מפלגת ביחד נצליח - רשימה משותפת ערבית יהודית בראשו
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_18" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            בד
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_18" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.04%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_18" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        3
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.39px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_19" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="סדר-חדש לכינון חוקה, להפרדת רשויות ובחירות אישיות">
+                        סדר-חדש לכינון חוקה, להפרדת רשויות ובחירות אישיות
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_19" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            קך
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_19" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.04%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_19" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        3
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.39px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_20" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="עמך ישראל בראשות עופר וינטר">
+                        עמך ישראל בראשות עופר וינטר
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_20" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            ך
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_20" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.04%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_20" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        3
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.39px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_21" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="צבע שחור - מגן עולם התורה">
+                        צבע שחור - מגן עולם התורה
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_21" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            נר
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_21" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.04%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_21" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        3
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.39px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_22" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="צומת בית ישראל">
+                        צומת בית ישראל
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_22" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            בי
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_22" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.04%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_22" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        3
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.39px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_23" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="התיקון לשיטת הבחירות והממשל">
+                        התיקון לשיטת הבחירות והממשל
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_23" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            נקי
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_23" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.03%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_23" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        2
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.29px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_24" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="ישר! עם איזנקוט לראשות הממשלה מאחדים את ישראל">
+                        ישר! עם איזנקוט לראשות הממשלה מאחדים את ישראל
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_24" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            דרך
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_24" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.03%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_24" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        2
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.29px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_25" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="קול הנשים">
+                        קול הנשים
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_25" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            קה
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_25" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.03%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_25" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        2
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.29px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_26" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="ביטחון אישי">
+                        ביטחון אישי
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_26" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            נץ
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_26" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.01%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_26" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        1
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.10px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_27" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="ישראל תחילה בראשות שרן השכל">
+                        ישראל תחילה בראשות שרן השכל
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_27" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            י
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_27" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.01%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_27" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        1
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.10px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_28" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="משפט צדק">
+                        משפט צדק
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_28" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            קץ
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_28" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.01%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_28" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        1
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.10px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_29" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="עוצמה יהודית בראשות איתמר בן גביר">
+                        עוצמה יהודית בראשות איתמר בן גביר
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_29" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            ב
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_29" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.01%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_29" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        1
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.10px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_30" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="ברית עולם לגאולת ישראל">
+                        ברית עולם לגאולת ישראל
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_30" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            זץ
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_30" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.00%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_30" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        0
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.00px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_31" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="המילואימניקים והכלכלית בראשות יועז הנדל וירון זליכה">
+                        המילואימניקים והכלכלית בראשות יועז הנדל וירון זליכ
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_31" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            די
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_31" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.00%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_31" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        0
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.00px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_32" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="הרשימה המשותפת">
+                        הרשימה המשותפת
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_32" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            ודם
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_32" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.00%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_32" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        0
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.00px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_33" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ&quot;ל">
+                        התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדי
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_33" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            שס
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_33" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.00%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_33" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        0
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.00px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_34" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="נעם לישראל למען עתיד הילדים בראשות אבי מעוז">
+                        נעם לישראל למען עתיד הילדים בראשות אבי מעוז
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_34" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            ני
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_34" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.00%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_34" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        0
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.00px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_35" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="רע&quot;ם - הרשימה הערבית המאוחדת">
+                        רע&quot;ם - הרשימה הערבית המאוחדת
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_35" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            עם
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_35" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.00%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_35" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        0
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.00px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_36" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="שמע בראשות נפתלי גולדמן">
+                        שמע בראשות נפתלי גולדמן
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_36" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            נף
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_36" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.00%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_36" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        0
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.00px;"></div>
+            </div>
+        
+            <div class="box-item">
+                <div class="mb-3">
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyNameMobile_37" class="fs-7">שם הרשימה</div>
+                    <div class="fw-bold" title="שרשר לאהבה ואחדות העם">
+                        שרשר לאהבה ואחדות העם
+                    </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                    <div class="pe-3 me-3 border-end border-gray border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_partyLettersMobile_37" class="fs-7">אותיות הרשימה</div>
+                        <div class="fw-bold">
+                            צדק
+                        </div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_Repeater3_percentOfValidVotesMobile_37" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fw-bold">0.00%</div>
+                    </div>
+                </div>
+                <div>
+                    <div id="ContentPlaceHolder1_PartyResults1_Repeater3_validVotesForPartyMobile_37" class="fs-7">קולות כשרים לרשימה</div>
+                    <div class="fw-bold">
+                        0
+                    </div>
+                </div>
+
+                <div class="bar" style="width: 10.00px;"></div>
+            </div>
+        
+</div>
+<div id="graphDiv" style="display: none;">
+    <div class="mb-4c graph-xx-outer mb-4 position-relative">
+        <!--circ btn - mobile-->
+        <div class="d-flex align-items-center d-lg-none">
+
+            <!--mobile - scroll circ - active-->
+            <button id="ContentPlaceHolder1_PartyResults1_rightButtonMobile" class="align-self-center pointer scroll-circ-btn btn-unset-border t-e" tabindex="0" role="button" aria-label="כפתור גלילה ימין" title="כפתור גלילה ימין">
+                <img src="images/icn_110.svg" alt="right button scroll active"/>
+            </button>
+          
+            <!--mobile - scroll circ - disable-->
+            <button id="ContentPlaceHolder1_PartyResults1_rightButtonMobileDis" class="align-self-center pointer scroll-circ-btn-dis btn-unset-border t-e" tabindex="-1" role="button" aria-label="כפתור גלילה ימין לא זמין" title="כפתור גלילה ימין לא זמין">
+                <img src="images/icn_110_dis.svg" alt="right button scroll disable"/>
+            </button>
+
+            <div id="ContentPlaceHolder1_PartyResults1_AddingMoreLists" class="flex-fill text-center">הצגת רשימות נוספות</div>
+
+
+            <!--mobile - scroll circ - active-->
+            <button id="ContentPlaceHolder1_PartyResults1_leftButtonMobile" class="align-self-center pointer scroll-circ-btn  btn-unset-border t-e" tabindex="0" role="button" aria-label="כפתור גלילה שמאל" title="כפתור גלילה שמאל">
+                <img src="images/icn_109.svg"alt="left button scroll active"/>
+            </button>
+
+            <!--mobile - scroll circ - disable-->
+            <button id="ContentPlaceHolder1_PartyResults1_leftButtonMobileDis" class="align-self-center pointer scroll-circ-btn-dis btn-unset-border t-e" tabindex="-1" role="button" aria-label="כפתור גלילה שמאל לא זמין" title="כפתור גלילה שמאל לא זמין">
+                <img src="images/icn_109_dis.svg"  alt="left button scroll disable"/>
+            </button>
+        </div>
+        <div class="d-flex" id="d-flex-id">
+
+            <button id="ContentPlaceHolder1_PartyResults1_rightButton" class="align-self-center pointer scroll-circ-btn hide-m btn-unset-border rotate-image" tabindex="0" role="button" aria-label="כפתור גלילה ימין" title="כפתור גלילה ימין">
+                <img src="images/icn_110.svg" alt="right button scroll"/>
+            </button>
+            <button id="ContentPlaceHolder1_PartyResults1_rightButtonDis" class="align-self-center pointer scroll-circ-btn-dis hide-m btn-unset-border t-e" tabindex="-1" role="button" aria-label="כפתור גלילה ימין לא זמין" title="כפתור גלילה ימין לא זמין">
+                <img src="images/icn_110_dis.svg" alt="right button scroll disable"/>
+            </button>
+
+            <!-- mobile fixed position - one for all graph bars-->
+            <div class="info-box m-fixed hide" id="infoBox">
+                <div class="text-end" data-bs-theme="dark">
+                    <button type="button" class="btn-close" aria-label="Close" onclick="closeInfoBox('infoBox')"></button>
+                </div>
+
+                <div class="border-bottom border-white border-opacity-25 mb-3 pb-2 fw-bold mt-min-3"></div>
+                <div class="d-flex">
+                    <div class="pe-3 me-3 border-end border-white border-opacity-25">
+                        <div id="ContentPlaceHolder1_PartyResults1_validVotesTextMobile" class="fs-7">קולות כשרים לרשימה</div>
+                        <div class="fs-5 fw-bold"></div>
+                    </div>
+                    <div>
+                        <div id="ContentPlaceHolder1_PartyResults1_percentOfValidVotesTextMobile" class="fs-7">אחוז מסך הקולות הכשרים</div>
+                        <div class="fs-5 fw-bold"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="scrollable-div" class="overflow-auto hide-scrollbar position-relative" tabindex="0">
+                <div class="d-inline-flex align-items-end scroll-content custom-height-direction">
+                    
+                            <div class="garph-bar" aria-describedby="grafInfoBox0" tabindex="0"  data-index="0" style="height: 350.00px;" role="button">
+                                <div class="letters-label">
+                                    פה
+                                </div>
+                                <div  id="grafInfoBox0" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        אני ואתה מפלגת העם הישראלית
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                2,098
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">29.67%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox1" tabindex="0"  data-index="1" style="height: 305.65px;" role="button">
+                                <div class="letters-label">
+                                    ג
+                                </div>
+                                <div  id="grafInfoBox1" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        יהדות התורה והשבת אגודת ישראל - דגל התורה
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                1,832
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">25.91%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox2" tabindex="0"  data-index="2" style="height: 296.09px;" role="button">
+                                <div class="letters-label">
+                                    בקר
+                                </div>
+                                <div  id="grafInfoBox2" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        אורות השחר בראשות ניסים לוק
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                1,775
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">25.10%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox3" tabindex="0"  data-index="3" style="height: 69.95px;" role="button">
+                                <div class="letters-label">
+                                    ל
+                                </div>
+                                <div  id="grafInfoBox3" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        ישראל ביתנו בראשות אביגדור ליברמן
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                419
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">5.93%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox4" tabindex="0"  data-index="4" style="height: 43.06px;" role="button">
+                                <div class="letters-label">
+                                    ה
+                                </div>
+                                <div  id="grafInfoBox4" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        גן עדן בראשות ישוע ישראל בן דוד
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                258
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">3.65%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox5" tabindex="0"  data-index="5" style="height: 37.87px;" role="button">
+                                <div class="letters-label">
+                                    יק
+                                </div>
+                                <div  id="grafInfoBox5" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        גה&quot;ת - גוש התנ&quot;כי
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                227
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">3.21%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox6" tabindex="0"  data-index="6" style="height: 25.01px;" role="button">
+                                <div class="letters-label">
+                                    כן
+                                </div>
+                                <div  id="grafInfoBox6" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        כחול לבן בראשות בני גנץ
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                150
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">2.12%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox7" tabindex="0"  data-index="7" style="height: 18.05px;" role="button">
+                                <div class="letters-label">
+                                    מחל
+                                </div>
+                                <div  id="grafInfoBox7" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        הליכוד בהנהגת בנימין נתניהו לראשות הממשלה
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                108
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">1.53%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox8" tabindex="0"  data-index="8" style="height: 16.40px;" role="button">
+                                <div class="letters-label">
+                                    צבי
+                                </div>
+                                <div  id="grafInfoBox8" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        תנועת אחי תנועתו של הרב יורם אברג&#39;ל זצ&quot;ל
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                98
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">1.39%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox9" tabindex="0"  data-index="9" style="height: 5.19px;" role="button">
+                                <div class="letters-label">
+                                    אמת
+                                </div>
+                                <div  id="grafInfoBox9" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        הדמוקרטים בראשות יאיר גולן
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                31
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.44%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox10" tabindex="0"  data-index="10" style="height: 2.48px;" role="button">
+                                <div class="letters-label">
+                                    ז
+                                </div>
+                                <div  id="grafInfoBox10" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        בטח - בטחון חברתי בראשות סמיון גרפמן
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                15
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.21%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox11" tabindex="0"  data-index="11" style="height: 1.65px;" role="button">
+                                <div class="letters-label">
+                                    ק
+                                </div>
+                                <div  id="grafInfoBox11" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        תקומה
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                10
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.14%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox12" tabindex="0"  data-index="12" style="height: 1.30px;" role="button">
+                                <div class="letters-label">
+                                    רק
+                                </div>
+                                <div  id="grafInfoBox12" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        ביחד בראשות נפתלי בנט
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                8
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.11%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox13" tabindex="0"  data-index="13" style="height: 0.71px;" role="button">
+                                <div class="letters-label">
+                                    צף
+                                </div>
+                                <div  id="grafInfoBox13" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        הפיראטים - צפים לטוב
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                4
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.06%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox14" tabindex="0"  data-index="14" style="height: 0.71px;" role="button">
+                                <div class="letters-label">
+                                    רץ
+                                </div>
+                                <div  id="grafInfoBox14" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        הקהל - מפלגה כלל חרדית שנציגיה נבחרים על ידי הציבו
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                4
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.06%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox15" tabindex="0"  data-index="15" style="height: 0.47px;" role="button">
+                                <div class="letters-label">
+                                    זך
+                                </div>
+                                <div  id="grafInfoBox15" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        הציבור החרדי בראשות מוטי ליטנר
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                3
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.04%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox16" tabindex="0"  data-index="16" style="height: 0.47px;" role="button">
+                                <div class="letters-label">
+                                    ט
+                                </div>
+                                <div  id="grafInfoBox16" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        הציונות הדתית בראשות בצלאל סמוטריץ&#39; וזהות בראשות מ
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                3
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.04%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox17" tabindex="0"  data-index="17" style="height: 0.47px;" role="button">
+                                <div class="letters-label">
+                                    ד
+                                </div>
+                                <div  id="grafInfoBox17" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        השותפות לכולם
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                3
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.04%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox18" tabindex="0"  data-index="18" style="height: 0.47px;" role="button">
+                                <div class="letters-label">
+                                    בד
+                                </div>
+                                <div  id="grafInfoBox18" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        מפלגת ביחד נצליח - רשימה משותפת ערבית יהודית בראשו
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                3
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.04%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox19" tabindex="0"  data-index="19" style="height: 0.47px;" role="button">
+                                <div class="letters-label">
+                                    קך
+                                </div>
+                                <div  id="grafInfoBox19" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        סדר-חדש לכינון חוקה, להפרדת רשויות ובחירות אישיות
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                3
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.04%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox20" tabindex="0"  data-index="20" style="height: 0.47px;" role="button">
+                                <div class="letters-label">
+                                    ך
+                                </div>
+                                <div  id="grafInfoBox20" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        עמך ישראל בראשות עופר וינטר
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                3
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.04%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox21" tabindex="0"  data-index="21" style="height: 0.47px;" role="button">
+                                <div class="letters-label">
+                                    נר
+                                </div>
+                                <div  id="grafInfoBox21" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        צבע שחור - מגן עולם התורה
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                3
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.04%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox22" tabindex="0"  data-index="22" style="height: 0.47px;" role="button">
+                                <div class="letters-label">
+                                    בי
+                                </div>
+                                <div  id="grafInfoBox22" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        צומת בית ישראל
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                3
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.04%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox23" tabindex="0"  data-index="23" style="height: 0.35px;" role="button">
+                                <div class="letters-label">
+                                    נקי
+                                </div>
+                                <div  id="grafInfoBox23" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        התיקון לשיטת הבחירות והממשל
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                2
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.03%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox24" tabindex="0"  data-index="24" style="height: 0.35px;" role="button">
+                                <div class="letters-label">
+                                    דרך
+                                </div>
+                                <div  id="grafInfoBox24" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        ישר! עם איזנקוט לראשות הממשלה מאחדים את ישראל
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                2
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.03%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox25" tabindex="0"  data-index="25" style="height: 0.35px;" role="button">
+                                <div class="letters-label">
+                                    קה
+                                </div>
+                                <div  id="grafInfoBox25" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        קול הנשים
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                2
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.03%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox26" tabindex="0"  data-index="26" style="height: 0.12px;" role="button">
+                                <div class="letters-label">
+                                    נץ
+                                </div>
+                                <div  id="grafInfoBox26" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        ביטחון אישי
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                1
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.01%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox27" tabindex="0"  data-index="27" style="height: 0.12px;" role="button">
+                                <div class="letters-label">
+                                    י
+                                </div>
+                                <div  id="grafInfoBox27" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        ישראל תחילה בראשות שרן השכל
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                1
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.01%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox28" tabindex="0"  data-index="28" style="height: 0.12px;" role="button">
+                                <div class="letters-label">
+                                    קץ
+                                </div>
+                                <div  id="grafInfoBox28" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        משפט צדק
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                1
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.01%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox29" tabindex="0"  data-index="29" style="height: 0.12px;" role="button">
+                                <div class="letters-label">
+                                    ב
+                                </div>
+                                <div  id="grafInfoBox29" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        עוצמה יהודית בראשות איתמר בן גביר
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                1
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.01%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox30" tabindex="0"  data-index="30" style="height: 0.00px;" role="button">
+                                <div class="letters-label">
+                                    זץ
+                                </div>
+                                <div  id="grafInfoBox30" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        ברית עולם לגאולת ישראל
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                0
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.00%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox31" tabindex="0"  data-index="31" style="height: 0.00px;" role="button">
+                                <div class="letters-label">
+                                    די
+                                </div>
+                                <div  id="grafInfoBox31" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        המילואימניקים והכלכלית בראשות יועז הנדל וירון זליכ
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                0
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.00%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox32" tabindex="0"  data-index="32" style="height: 0.00px;" role="button">
+                                <div class="letters-label">
+                                    ודם
+                                </div>
+                                <div  id="grafInfoBox32" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        הרשימה המשותפת
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                0
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.00%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox33" tabindex="0"  data-index="33" style="height: 0.00px;" role="button">
+                                <div class="letters-label">
+                                    שס
+                                </div>
+                                <div  id="grafInfoBox33" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדי
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                0
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.00%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox34" tabindex="0"  data-index="34" style="height: 0.00px;" role="button">
+                                <div class="letters-label">
+                                    ני
+                                </div>
+                                <div  id="grafInfoBox34" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        נעם לישראל למען עתיד הילדים בראשות אבי מעוז
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                0
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.00%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox35" tabindex="0"  data-index="35" style="height: 0.00px;" role="button">
+                                <div class="letters-label">
+                                    עם
+                                </div>
+                                <div  id="grafInfoBox35" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        רע&quot;ם - הרשימה הערבית המאוחדת
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                0
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.00%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox36" tabindex="0"  data-index="36" style="height: 0.00px;" role="button">
+                                <div class="letters-label">
+                                    נף
+                                </div>
+                                <div  id="grafInfoBox36" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        שמע בראשות נפתלי גולדמן
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                0
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.00%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="garph-bar" aria-describedby="grafInfoBox37" tabindex="0"  data-index="37" style="height: 0.00px;" role="button">
+                                <div class="letters-label">
+                                    צדק
+                                </div>
+                                <div  id="grafInfoBox37" class="info-box" aria-hidden="true">
+                                    <div class=" fs-5 border-bottom border-white border-opacity-25 mb-3 pb-2 fw-light" id="PartyTitle">
+                                        שרשר לאהבה ואחדות העם
+                                    </div>
+                                    <div class="d-flex" >
+                                        <div class="pe-5 me-5 border-end border-white border-opacity-25">
+                                            קולות כשרים לרשימה
+                                            <div class="fs-4 fw-bold" id="LegalVoted">
+                                                0
+                                            </div>
+                                        </div>
+                                        <div>
+                                            אחוז מסך הקולות הכשרים
+                                            <div class="fs-4 fw-bold" id="percent">0.00%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                </div>
+            </div>
+            <button id="ContentPlaceHolder1_PartyResults1_leftButton" class="align-self-center pointer scroll-circ-btn hide-m btn-unset-border rotate-image" tabindex="0" role="button" aria-label="כפתור גלילה שמאל" title="כפתור גלילה שמאל">
+                <img src="images/icn_109.svg"  alt="left button scroll" />
+            </button>
+             <button id="ContentPlaceHolder1_PartyResults1_leftButtonDis" class="align-self-center pointer scroll-circ-btn-dis hide-m btn-unset-border t-e" tabindex="-1" role="button" aria-label="כפתור גלילה שמאל לא זמין" title="כפתור גלילה שמאל לא זמין">
+                <img src="images/icn_109_dis.svg"  alt="left button scroll disable"/>
+            </button>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    const scrollableDiv = document.getElementById('scrollable-div');
+    const leftButton = document.getElementById('ContentPlaceHolder1_PartyResults1_leftButton');
+    const rightButton = document.getElementById('ContentPlaceHolder1_PartyResults1_rightButton');
+    const leftButtonDis = document.getElementById('ContentPlaceHolder1_PartyResults1_leftButtonDis');
+    const rightButtonDis = document.getElementById('ContentPlaceHolder1_PartyResults1_rightButtonDis');
+    const rightButtonMobile = document.getElementById('ContentPlaceHolder1_PartyResults1_rightButtonMobile');
+    const leftButtonMobile = document.getElementById('ContentPlaceHolder1_PartyResults1_leftButtonMobile');
+    const rightButtonMobileDis = document.getElementById('ContentPlaceHolder1_PartyResults1_rightButtonMobileDis');
+    const leftButtonMobileDis = document.getElementById('ContentPlaceHolder1_PartyResults1_leftButtonMobileDis');
+    const scrollAmount = 100; 
+    var lang = 'he';
+
+    rightButton.addEventListener('click', () => {
+        if (lang == 'en') {
+            scrollableDiv.scrollLeft -= scrollAmount;
+        }
+        else {
+            scrollableDiv.scrollLeft += scrollAmount;
+        }
+        updateButton();
+    });
+    leftButton.addEventListener('click', () => {
+        if (lang == 'en') {
+            scrollableDiv.scrollLeft += scrollAmount;
+        }
+        else {
+            scrollableDiv.scrollLeft -= scrollAmount;
+        }
+        updateButton();
+    });
+    leftButtonMobile.addEventListener('click', () => {
+        if (lang == 'en') {
+            scrollableDiv.scrollLeft += scrollAmount;
+        }
+        else {
+            scrollableDiv.scrollLeft -= scrollAmount;
+        }
+        updateButtonMobile();
+    });
+    rightButtonMobile.addEventListener('click', () => {
+        if (lang == 'en') {
+            scrollableDiv.scrollLeft -= scrollAmount;
+        }
+        else {
+            scrollableDiv.scrollLeft += scrollAmount;
+        }
+        updateButtonMobile();
+    });
+    function updateButton() {
+        if (scrollableDiv.scrollLeft == 0) {
+            rightButtonDis.style.display = 'block';
+            rightButton.style.display = 'none';
+            leftButtonDis.style.display = 'none';
+            leftButton.style.display = 'block';
+        }
+
+        else if ((Math.abs(scrollableDiv.scrollLeft)) + scrollableDiv.clientWidth + 2 >= scrollableDiv.scrollWidth) {
+            rightButtonDis.style.display = 'none';
+            rightButton.style.display = 'block';
+            leftButtonDis.style.display = 'block';
+            leftButton.style.display = 'none';
+        }
+        else {
+            rightButtonDis.style.display = 'none';
+            rightButton.style.display = 'block';
+            leftButtonDis.style.display = 'none';
+            leftButton.style.display = 'block';
+        }
+    }
+    function updateButtonMobile() {
+        if (scrollableDiv.scrollLeft == 0) {
+            rightButtonMobileDis.style.display = 'block';
+            rightButtonMobile.style.display = 'none';
+            leftButtonMobileDis.style.display = 'none';
+            leftButtonMobile.style.display = 'block';
+        }
+        else if ((Math.abs(scrollableDiv.scrollLeft)) + scrollableDiv.clientWidth + 2 >= scrollableDiv.scrollWidth) {
+            rightButtonMobileDis.style.display = 'none';
+            rightButtonMobile.style.display = 'block';
+            leftButtonMobileDis.style.display = 'block';
+            leftButtonMobile.style.display = 'none';
+        }
+        else {
+            rightButtonMobileDis.style.display = 'none';
+            rightButtonMobile.style.display = 'block';
+            leftButtonMobileDis.style.display = 'none';
+            leftButtonMobile.style.display = 'block';
+        }
+    }
+    scrollableDiv.addEventListener('scroll', updateButtonMobile);
+    window.addEventListener('load', updateButtonMobile);
+    scrollableDiv.addEventListener('scroll', updateButton);
+    window.addEventListener('load', updateButton);
+
+    document.querySelectorAll('.scroll-circ-btn').forEach(function (button) {
+        button.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                button.click();
+            }
+        });
+    });
+    function showGraphMobile() {
+        var boxTableDiv = document.getElementById('boxDivMobile');
+        var tableDiv = document.getElementById('tableDiv');
+        var graphDiv = document.getElementById('graphDiv');
+        graphDiv.style.setProperty('display', 'block', 'important');
+        boxTableDiv.style.setProperty('display', 'none', 'important');
+        tableDiv.style.setProperty('display', 'none', 'important');
+        var tableButton = document.getElementById('ContentPlaceHolder1_PartyResults1_tableDisplayMobile');
+        var graphButton = document.getElementById('ContentPlaceHolder1_PartyResults1_grafMobile');
+        tableButton.classList.remove('btn-warning', 'rounded-pill', 'fw-bold');
+        tableButton.classList.add('btn-lg', 'fs-7', 'mb-3', 'px-4', 'pointer');
+        graphButton.classList.remove('btn-lg', 'fs-7', 'mb-3', 'px-4', 'pointer');
+        graphButton.classList.add('btn-lg', 'fs-7', 'mb-3', 'px-4', 'btn-warning', 'rounded-pill', 'fw-bold', 'pointer');
+        var grafbtn = document.getElementById("ContentPlaceHolder1_DownloadCSV1_graf");
+        var tableDisplaybtn = document.getElementById("ContentPlaceHolder1_DownloadCSV1_tableDisplay");
+        grafbtn.style.display = "none";
+        tableDisplaybtn.style.display = "inline-block";
+    }
+    function showTableMobile() {
+        var boxTableDiv = document.getElementById('boxDivMobile');
+        var tableDiv = document.getElementById('tableDiv');
+        var graphDiv = document.getElementById('graphDiv');
+        graphDiv.style.setProperty('display', 'none', 'important');
+        boxTableDiv.style.removeProperty('display');
+        tableDiv.style.removeProperty('display');
+        var tableButton = document.getElementById('ContentPlaceHolder1_PartyResults1_tableDisplayMobile');
+        var graphButton = document.getElementById('ContentPlaceHolder1_PartyResults1_grafMobile');
+        tableButton.classList.remove('btn-lg', 'fs-7', 'mb-3', 'px-4', 'pointer');
+        tableButton.classList.add('btn-lg', 'fs-7', 'mb-3', 'px-4', 'btn-warning', 'rounded-pill', 'fw-bold', 'pointer');
+        graphButton.classList.remove('btn-warning', 'rounded-pill', 'fw-bold');
+        graphButton.classList.add('btn-lg', 'fs-7', 'mb-3', 'px-4', 'pointer');
+        var grafbtn = document.getElementById("ContentPlaceHolder1_DownloadCSV1_graf");
+        var tableDisplaybtn = document.getElementById("ContentPlaceHolder1_DownloadCSV1_tableDisplay");
+        if (grafbtn) grafbtn.style.display = "inline-block";
+        if (tableDisplaybtn) tableDisplaybtn.style.display = "none";
+    }
+  
+    function closeInfoBox(infoBoxId) {
+        var infoBox = document.getElementById(infoBoxId);
+        if (infoBox) {
+            infoBox.classList.remove('noHide');
+        }
+    }
+    document.querySelectorAll('.garph-bar').forEach(function (bar) {
+        const element = document.getElementsByClassName("boxes-xx-outer")[0];
+        var isMobile = window.getComputedStyle(element).display !== 'none';
+        if(isMobile){
+            bar.addEventListener('click', function () {
+                var index = bar.getAttribute('data-index');
+                showInfoBoxMobile(index); 
+            });
+        }
+    });
+    function showInfoBoxMobile(dataIndex) {
+        var graphElement = document.querySelector(`[data-index='${dataIndex}']`);
+        if (graphElement) {
+            var partyTitle = graphElement.querySelector('#PartyTitle') ? graphElement.querySelector('#PartyTitle').innerText.trim() : ''; 
+            var validVotes = graphElement.querySelector('#LegalVoted') ? graphElement.querySelector('#LegalVoted').innerText.trim() : ''; 
+            var percent = graphElement.querySelector('#percent') ? graphElement.querySelector('#percent').innerText.trim() : ''; 
+            var infoBox = document.getElementById('infoBox');
+            if (infoBox) {
+                infoBox.querySelector('.fw-bold.mt-min-3').innerText = partyTitle; // עדכון שם המפלגה
+                infoBox.querySelector('.fs-5.fw-bold').innerText = validVotes; // עדכון קולות כשרים
+                let percentElements = infoBox.querySelectorAll('.fs-5.fw-bold');
+                if (percentElements.length > 1) {
+                    percentElements[1].innerText = percent; // עדכון אחוז הקולות הכשרים
+                }
+                infoBox.classList.add('noHide');
+            }
+        } 
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        const graphBars = document.querySelectorAll('.garph-bar');
+        graphBars.forEach(function (graphBar) {
+            graphBar.addEventListener('mouseenter', function (event) {
+                showInfoBox(graphBar);
+            });
+            graphBar.addEventListener('focusin', function (event) {
+                showInfoBox(graphBar);
+            });
+
+            graphBar.addEventListener('mouseleave', function () {
+                hideInfoBox(graphBar)
+            });
+            graphBar.addEventListener('focusout', function () {
+                hideInfoBox(graphBar);
+            });
+        });
+
+        function showInfoBox(graphBar) {
+            const graphBarRect = graphBar.getBoundingClientRect();
+            const flexDiv = document.getElementById('d-flex-id');
+            const flexDivRect = flexDiv.getBoundingClientRect();
+            const spaceLeft = graphBarRect.left - flexDivRect.left;
+            const infoBox = graphBar.querySelector('.info-box');
+            if (500 > spaceLeft) {
+                infoBox.style.left = '20px';
+            } else {
+                infoBox.style.right = '20px';
+            }
+            infoBox.style.display = 'block';
+        }
+
+        function hideInfoBox(graphBar) {
+            const infoBox = graphBar.querySelector('.info-box');
+            infoBox.style.display = 'none';
+        }
+    });
+</script>
+
+            
+<div class="text-end d-none d-lg-block pe-4 me-2">
+    <button id="ContentPlaceHolder1_DownloadCSV1_graf" class="btn btn-lg btn-outline-primary-2 rounded-pill ms-4 mb-3 px-4" onclick="showGraph()" tabindex="0" role="button" aria-label="תצוגת תרשים" title="תצוגת תרשים">
+        <img class="mt-min-2" src="../images/icn_106.svg" alt="" />
+        <span id="ContentPlaceHolder1_DownloadCSV1_grafText">תצוגת תרשים</span>
+    </button>
+    <button id="ContentPlaceHolder1_DownloadCSV1_tableDisplay" class="btn btn-lg btn-outline-primary-2 rounded-pill ms-4 mb-3 px-4 hide" onclick="showTable()" tabindex="0" role="button" aria-label="תצוגת טבלה" title="תצוגת טבלה">
+        <img class="mt-min-2" src="images/icn_108.svg" alt="" />
+        <span id="ContentPlaceHolder1_DownloadCSV1_tableDisplayText">תצוגת טבלה</span>
+    </button>
+    
+
+    
+</div>
+<div class="mb-5 boxes-xx-outer" style="position: sticky; bottom: 4em;">
+    <button class="btn-totop btn-unset-border" onclick="scrollToTopAndHide()" aria-label="חזרה למעלה">
+        <img src="images/icn_302.svg" alt="חזרה למעלה" />
+    </button>
+
+
+    <button class="btn-download btn-unset-border" onclick="toggleDownloadFile()" id="btnToggle"
+        aria-expanded="false" aria-label="מסמכים להורדה">
+        <img id="toggleIcon" src="images/icn_301.svg" alt="מסמכים להורדה" />
+    </button>
+
+    <div id="downloadPopup" class="position-absolute bottom-100 end-0 popup-download mb-2 p-4"
+        style="display: none;">
+        <a id="ContentPlaceHolder1_DownloadCSV1_DownloadCSVCitiesMobile" class="btn btn-outline-light btn-bg-dwn d-block rounded-pill mb-3" OnClick="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expc.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,location=center,directories=no,status=no, menubar=no,scrollbars=yes,location=no,resizable=no,top=&#39;+(window.screen.height/2 - 100 / 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;" href="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expc.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,directories=no,status=no, menubar=no,location=no,scrollbars=yes,resizable=no,top=&#39;+(window.screen.height/2 - 100/ 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;">תוצאות לפי יישובים (קובץ להורדה)</a>
+        <a id="ContentPlaceHolder1_DownloadCSV1_DownloadCSVBallotsMobile" class="btn btn-outline-light btn-bg-dwn d-block rounded-pill mb-3" OnClick="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expb.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,location=center,directories=no,status=no, menubar=no,scrollbars=yes,location=no,resizable=no,top=&#39;+(window.screen.height/2 - 100 / 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;" href="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expb.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,directories=no,status=no, menubar=no,location=no,scrollbars=yes,resizable=no,top=&#39;+(window.screen.height/2 - 100/ 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;">תוצאות לפי קלפיות (קובץ להורדה)</a>
+        
+    </div>
+</div>
+<div class="ClearBoth"></div>
+
+<script>
+    function toggleDownloadFile() {
+        var btn = document.getElementById("btnToggle");
+        var icon = document.getElementById("toggleIcon");
+        var popup = document.getElementById("downloadPopup");
+        var isExpanded = btn.getAttribute("aria-expanded") === "true";
+
+        if (isExpanded) {
+            // סגירה - חזרה למצב הראשוני
+            icon.src = "images/icn_301.svg";
+            icon.alt = "מסמכים להורדה";
+                btn.setAttribute("aria-label", "מסמכים להורדה");
+                btn.setAttribute("aria-expanded", "false");
+                popup.style.display = "none";
+            } else {
+                // פתיחה - מצב מורחב
+                icon.src = "images/icn_303.svg";
+                icon.alt = "סגירה";
+                btn.setAttribute("aria-label", "סגירה");
+            btn.setAttribute("aria-expanded", "true");
+            popup.style.display = "block";
+        }
+        setTimeout(function () {
+            var firstLink = popup.querySelector('a, .btn');
+            if (firstLink) {
+                firstLink.focus();
+            }
+        }, 100)
+    }
+
+    function scrollToTopAndHide() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    function syncMobileButtons(mode) {
+        var tableButton = document.getElementById("ContentPlaceHolder1_PartyResults1_tableDisplayMobile");
+        var graphButton = document.getElementById("ContentPlaceHolder1_PartyResults1_grafMobile");
+        if (!tableButton || !graphButton) return;
+        if (mode === 'graph') {
+            tableButton.classList.remove('btn-warning', 'rounded-pill', 'fw-bold');
+            tableButton.classList.add('btn-lg', 'fs-7', 'mb-3', 'px-4', 'pointer');
+            graphButton.classList.add('btn-lg', 'fs-7', 'mb-3', 'px-4', 'btn-warning', 'rounded-pill', 'fw-bold', 'pointer');
+        } else {
+            graphButton.classList.remove('btn-warning', 'rounded-pill', 'fw-bold');
+            graphButton.classList.add('btn-lg', 'fs-7', 'mb-3', 'px-4', 'pointer');
+            tableButton.classList.add('btn-lg', 'fs-7', 'mb-3', 'px-4', 'btn-warning', 'rounded-pill', 'fw-bold', 'pointer');
+        }
+    }
+    function showGraph() {
+        var tableDiv = document.getElementById('tableDiv');
+        var graphDiv = document.getElementById('graphDiv');
+        var boxDivMobile = document.getElementById('boxDivMobile');
+        var grafbtn = document.getElementById("ContentPlaceHolder1_DownloadCSV1_graf");
+        var tableDisplaybtn = document.getElementById("ContentPlaceHolder1_DownloadCSV1_tableDisplay");
+        graphDiv.style.setProperty('display', 'block', 'important');
+        document.getElementById("scrollable-div").focus();
+        tableDiv.style.setProperty('display', 'none', 'important');
+        if (boxDivMobile) boxDivMobile.style.setProperty('display', 'none', 'important');
+        grafbtn.style.display = "none";
+        tableDisplaybtn.style.display = "inline-block";
+        syncMobileButtons('graph');
+    }
+    function showTable() {
+        var tableDiv = document.getElementById('tableDiv');
+        var graphDiv = document.getElementById('graphDiv');
+        var boxDivMobile = document.getElementById('boxDivMobile');
+        var grafbtn = document.getElementById("ContentPlaceHolder1_DownloadCSV1_graf");
+        var tableDisplaybtn = document.getElementById("ContentPlaceHolder1_DownloadCSV1_tableDisplay");
+        graphDiv.style.setProperty('display', 'none', 'important');
+        tableDiv.style.removeProperty('display');
+        if (boxDivMobile) boxDivMobile.style.removeProperty('display');
+        document.querySelector("#tableDiv .overflow-x-auto").focus();
+        grafbtn.style.display = "inline-block";
+        tableDisplaybtn.style.display = "none";
+        syncMobileButtons('table');
+    }
+    window.onscroll = function () { checkScrollPosition() };
+
+    function checkScrollPosition() {
+        var btnTotop = document.querySelector(".btn-totop");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btnTotop.style.backgroundColor = "#13346B";
+        } else {
+            btnTotop.style.backgroundColor = "rgba(19, 52, 107, 0.40)";
+        }
+    }
+
+</script>
+
+        </div>
+    </div>
+
+
+        <div class="bottom-footer-space"></div>
+        <footer class="footer-box position-absolute bottom-0 w-100 ps-5 pt-4 text-white d-block d-xl-flex flex-row align-items-start ">
+            <div class="footer-block-1 d-flex align-items-center" aria-hidden="true">
+                <img src="images/bulding-white.svg" id="buildingLogo" width="78" alt="logo" />
+                <div class="fs-5 ms-3 lh-1">
+                    <img src="images/logo-text-2.svg" id="buildingLogoText" class="mt-2" alt="ועדת הבחירות המרכזית לכנסת" />
+                </div>
+            </div>
+
+            <div class="footer-block-2 border-end border-white border-opacity-25 ps-6 py-4">&nbsp;</div>
+
+            <div class="d-flex d-lg-block flex-column">
+                <div class="footer-block-3 fs-5b ps-6 mb-2">
+                    <a href="https://www.gov.il/he/pages/statement-of-accessibility-result-site" id="accessibilityStatement" target="_blank" class="text-u text-white">הצהרת נגישות</a>
+                </div>
+                <div class="footer-block-4 fs-5b ps-6">
+                    <div id="toCentralElectionCommitteeWebsite" class="text-info">לאתר ועדת הבחירות המרכזית לכנסת</div>
+                    <a href="https://www.bechirot.gov.il" target="_blank" class="text-info">www.bechirot.gov.il</a>
+                </div>
+            </div>
+            <div class="footer-block-5 fs-5b ps-6">
+
+
+                <a title="Facebook" href="https://www.facebook.com/ElectionKnesset/" id="socialNetwork_0" target="_blank" rel="noreferrer" class="social">
+                    <img class="social-network" alt="Facebook" src="images/facebook.svg"></a>
+
+                <a title="Instagram" href="https://www.instagram.com/electionsknesset/" id="socialNetwork_1" target="_blank" rel="noreferrer" class="social">
+                    <img class="social-network" alt="Instagram" src="images/instagram.svg"></a>
+
+                <a title="youtube" href="https://www.youtube.com/user/CecIsrael" id="socialNetwork_2" target="_blank" rel="noreferrer" class="social">
+                    <img class="social-network" alt="youtube" src="images/youtube.svg"></a>
+
+                <a title="twitter" href="https://mobile.twitter.com/electionknesset" id="socialNetwork_3" target="_blank" rel="noreferrer" class="social">
+                    <img class="social-network twitter" alt="twitter" src="images/twitter.svg"></a>
+
+                <a title="tiktok" href="https://www.tiktok.com/@elections.committee?is_from_webapp=1&sender_device=pc" id="socialNetwork_4" target="_blank" rel="noreferrer" class="social">
+                    <img class="social-network tiktok" alt="tiktok" src="images/tiktok.svg"></a>
+            </div>
+
+            
+            <div id="backToTopButton" class="footer-block-6 ms-auto me-5 mb-3 d-flex flex-column align-items-center align-self-center" onclick="scrollToTopAndHide()" tabindex="0" role="button" aria-label="חזרה למעלה" onkeydown="handleKeyPress(event)">
+                <div class="to-top rounded-circle text-center pt-2 mb-2 pointer">
+                    <img src="images/arrow-up.svg" alt="" />
+                </div>
+                <div id="backToTop">חזרה למעלה</div>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
+<script>
+    function HideElement() {
+        var element = document.getElementById("downloadFiles");
+        element.style.setProperty("display", "none", "important");
+    }
+    function scrollToTopAndHide() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    function handleKeyPress(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            scrollToTopAndHide();
+        }
+    }
+    function handleKeyPressLang(event, lang) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            changeLanguage(lang);
+        }
+    }
+    function handleKeyPressFontL(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            fontsizedown();
+        }
+    }
+    function handleKeyPressFontS(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            fontsizeup();
+        }
+    }
+    function changeLanguage(languageCode) {
+        sessionStorage.setItem('lang', languageCode);
+        var currentUrl = window.location.href;
+        if (currentUrl.indexOf('lang=') === -1) {
+            if (currentUrl.indexOf('?') !== -1) {
+                currentUrl += '&lang=' + languageCode;
+            } else {
+                currentUrl += '?lang=' + languageCode;
+            }
+        } else {
+            currentUrl = currentUrl.replace(/([?&])lang=[^&]*/, '$1lang=' + languageCode);
+        }
+        window.location.href = currentUrl;
+    }
+
+    function loadLanguageStyles() {
+        const language = window.location.search.split('lang=')[1]?.split('&')[0];
+        if (!language) {
+            sessionStorage.setItem('lang', 'he');
+        }
+    }
+    window.onload = loadLanguageStyles;
+
+    function showMenuMobile() {
+        var element = document.getElementById("menuMobile");
+        element.style.setProperty("display", "block", "important");
+    }
+    function closeMenuMobile() {
+        var element = document.getElementById("menuMobile");
+        element.style.setProperty("display", "none", "important");
+    }
+</script>
+
