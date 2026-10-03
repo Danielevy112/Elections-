@@ -1,0 +1,445 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlTag" lang="he" dir="rtl">
+
+<head>
+    <title>ועדת הבחירות המרכזית לכנסת ה-26 | תוצאות ארציות</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="/ruxitagentjs_ICA15789NPRTUVXfqrux_10347260902154543.js" data-dtconfig="rid=RID_1761469930|rpid=1288037172|domain=bechirot.gov.il|reportUrl=/govd/rb_bf18120kmu|app=2fd38179c948edbf|owasp=1|featureHash=ICA15789NPRTUVXfqrux|rdnt=1|uxrgce=1|cuc=zda01j2q|mel=100000|expw=1|dpvc=1|lastModification=1790855355395|postfix=zda01j2q|tp=500,50,0|srbbv=2|agentUri=/ruxitagentjs_ICA15789NPRTUVXfqrux_10347260902154543.js" data-config='{"revision":1790855355395,"beaconUri":"/govd/rb_bf18120kmu","agentUri":"/ruxitagentjs_ICA15789NPRTUVXfqrux_10347260902154543.js","environmentId":"zda01j2q","modules":"ICA15789NPRTUVXfqrux"}' data-envconfig='{"tracestateKeyPrefix":"e32ab180-50939e8f"}' data-appconfig='{"app":"2fd38179c948edbf","userInteractionCapture":["all"],"disableUserTracking":true}'></script><link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link id="dynamic-stylesheet-bootstrap" rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link id="dynamic-stylesheet-css" rel="stylesheet" href="css/elections-ui.min.css?v1.2" />
+    <link id="fontsize-css" rel="stylesheet" type="text/css" href="includes/small.min.css" />
+
+
+    <script language="JavaScript1.2" src="functions/main.min.js" type="text/javascript"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BD261P405Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-SGRDFFY9WD');
+    </script>
+
+    
+
+</head>
+<body class="d-flex flex-column h-100">
+    
+
+    
+
+    <div class=" side-bar position-fixed top-0 right-0 bottom-0 d-flex flex-column overflow-y-scroll justify-content-between" role="navigation">
+        <div>
+            <div class="text-center pt-4 mb-3">
+                <img src="images/bulding.svg" alt="logo" aria-hidden="true" />
+            </div>
+            <div class="text-center">
+                <div id="electionTittel" class="text-white text-center fs-7">ועדת הבחירות המרכזית לכנסת</div>
+                <div id="electionTittel2" class="text-white text-center fs-7">הבחירות לכנסת ה-26</div>
+            </div>
+            <div class="border-bottom m-3 mx-5 border-white border-opacity-25"></div>
+            <div class="text-white text-center fs-7">
+                ט"ז בחשון התשפ"ז
+                <span id="spanDot" class="mx-2 text-orange">&#8226;</span>
+                27 באוקטובר 2026
+            </div>
+
+            <div class="mt-3 pt-3 p-3">
+                <div id="GlobalNavSkip" class="text-center">
+                    <a href="nationalresults?lang=he" id="NavBarNational" class="d-block fs-5 text-decoration-none text-white mb-3">תוצאות ארציות</a>
+                    <a href="cityresults?lang=he" id="NavBarTowns" class="d-block fs-5 text-decoration-none text-white mb-3">תוצאות לפי יישובים</a>
+                    <a href="ballotresults?lang=he" id="NavBarPollingStation" class="btn btn-warning d-block rounded-pill fw-bold fs-5 mb-3">תוצאות לפי קלפיות</a>
+                    <a href="https://elections.govmap.gov.il/" id="NavBarMap" title="תוצאות על מפת ישראל" class="d-block fs-5 text-decoration-none text-white mb-3" target="_blank" rel="noopener">תוצאות על מפת ישראל</a>
+                </div>
+            </div>
+        </div>
+        <div class=" rounded-3  start-0 bottom-0 end-0">
+            <div class="btn-download-menu-wrap pb-3">
+                <a id="DownloadCSVCities" title="תוצאות לפי יישובים (קובץ להורדה)" class="btn  rounded-pill btn-download-menu" OnClick="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expc.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,location=center,directories=no,status=no, menubar=no,scrollbars=yes,location=no,resizable=no,top=&#39;+(window.screen.height/2 - 100 / 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;" href="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expc.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,directories=no,status=no, menubar=no,location=no,scrollbars=yes,resizable=no,top=&#39;+(window.screen.height/2 - 100/ 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;">
+                    <img class="mt-min-2" src="images/icn_107.svg" alt="" />
+                    <span id="DownloadCSVCitiesText">תוצאות לפי יישובים (קובץ להורדה)</span></a>
+                <a id="DownloadCSVBallots" title="תוצאות לפי קלפיות (קובץ להורדה)" class="btn  rounded-pill btn-download-menu" OnClick="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expb.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,location=center,directories=no,status=no, menubar=no,scrollbars=yes,location=no,resizable=no,top=&#39;+(window.screen.height/2 - 100 / 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;" href="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expb.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,directories=no,status=no, menubar=no,location=no,scrollbars=yes,resizable=no,top=&#39;+(window.screen.height/2 - 100/ 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;">
+                    <img class="mt-min-2" src="images/icn_107.svg" alt="" />
+                    <span id="DownloadCSVBallotsText">תוצאות לפי קלפיות (קובץ להורדה)</span></a>
+            </div>
+            <div id="ruleMsg" class="low-box p-3 m-3 fs-7">בהתאם להוראות סעיף 11 לחוק-יסוד: הכנסת וסעיף 84 לחוק הבחירות לכנסת [נוסח משולב], התשכ&quot;ט-1969, התוצאות הסופיות של הבחירות לכנסת ה-26 יפורסמו ברשומות עד ליום ד&#39; כ&quot;ד בחשון התשפ&quot;ז, 4 בנובמבר 2026. עד ליום זה עשויות התוצאות להשתנות.</div>
+        </div>
+    </div>
+
+    <div class="mobile-fixed-top fixed-top d-flex align-items-center text-white px-3" role="banner">
+        <button onclick="showMenuMobile()" class="btn-unset" aria-label="תפריט">
+            <!-- צריך תרגום שפות-->
+            <img src="images/icn_111.svg" alt="" />
+        </button>
+        <div class="flex-fill text-center">
+            <img src="images/bulding-xs.png" alt="Logo" aria-hidden="true" /><br />
+            <div id="electionTittelMobile" class="text-white text-center fs-7">ועדת הבחירות המרכזית לכנסת</div>
+            <div id="electionTittelMobile2" class="text-white text-center fs-7">הבחירות לכנסת ה-26</div>
+        </div>
+        <div aria-hidden="true">
+            <img src="images/lamp-white.png" alt="" />
+        </div>
+    </div>
+    <div class="mobile-menu" id="menuMobile">
+        <button class="text-end p-3 h-65 btnUnset btn-w" onclick="closeMenuMobile()" aria-label="סגירה">
+            <!-- צריך תרגום שפות-->
+            <img src="images/icn_112.svg" alt="" />
+        </button>
+        <div class="all-items">
+            <div><a href="nationalresults?lang=he" id="NavBarNationalMobileMenu" class="item">תוצאות ארציות</a></div>
+            <div><a href="cityresults?lang=he" id="NavBarTownsMobileMenu" class="item">תוצאות לפי יישובים</a></div>
+            <div><a href="ballotresults?lang=he" id="NavBarPollingStationMobileMenu" class="item active">תוצאות לפי קלפיות</a></div>
+            <div><a href="https://elections.govmap.gov.il/" id="NavBarMapMobileMenu" title="תוצאות על מפת ישראל" class="item" target="_blank" rel="noopener">תוצאות על מפת ישראל</a></div>
+            <div>
+                <a id="DownloadCSVCitiesMobile" title="תוצאות לפי יישובים (קובץ להורדה)" class="item" OnClick="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expc.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,location=center,directories=no,status=no, menubar=no,scrollbars=yes,location=no,resizable=no,top=&#39;+(window.screen.height/2 - 100 / 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;" href="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expc.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,directories=no,status=no, menubar=no,location=no,scrollbars=yes,resizable=no,top=&#39;+(window.screen.height/2 - 100/ 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;">
+                    <img class="mt-min-2" src="images/icn_107.svg" alt="" />
+                    <span id="DownloadCSVCitiesTextMobile">תוצאות לפי יישובים (קובץ להורדה)</span></a>
+            </div>
+            <div>
+                <a id="DownloadCSVBallotsMobile" title="תוצאות לפי קלפיות (קובץ להורדה)" class="item" OnClick="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expb.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,location=center,directories=no,status=no, menubar=no,scrollbars=yes,location=no,resizable=no,top=&#39;+(window.screen.height/2 - 100 / 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;" href="javascript: window.open(&#39;https://media26.bechirot.gov.il/files/expb.csv?&#39;,&#39;name&#39;,&#39;height=100, width=100,toolbar=no,directories=no,status=no, menubar=no,location=no,scrollbars=yes,resizable=no,top=&#39;+(window.screen.height/2 - 100/ 2)+&#39;, left=&#39; + ((window.screen.width - 100) / 2));return false;Target=&#39;_blank&#39;">
+                    <img class="mt-min-2" src="images/icn_107.svg" alt="" />
+                    <span id="DownloadCSVBallotsTextMobile">תוצאות לפי קלפיות (קובץ להורדה)</span></a>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex-grow-1 position-relative mh-100vh ms-340 main-bg">
+        <h1 class="sr-only hide-mobile">תוצאות הבחירות לכנסת ה-26</h1>
+        <div class="p-4 ps-lg-5">
+
+            <!-- סמל ישראל - גודל פונטים-->
+            <div class="accessible-box text-end d-flex flex-row-reverse align-items-center">
+                <img src="images/lamp.png" width="50" class="ms-4" alt="" aria-hidden="true" />
+                <div id="FontSize" class="d-flex align-items-end">
+                    <button tabindex="-1" class="ms-4-2 text-hebrew btn-b-c ">
+                        <span tabindex="1" onkeydown="handleKeyPressLang(event,'he')" onclick="changeLanguage('he')">עב</span>
+                    </button>
+                    <div class="vector-21"></div>
+                    <button tabindex="-1" class="ms-4-2 text-en btn-b-c ">
+                        <span tabindex="1" onkeydown="handleKeyPressLang(event,'en')" onclick="changeLanguage('en')">En</span>
+                    </button>
+                    <div class="vector-20"></div>
+                    <button tabindex="-1" class="ms-4-2 text-arabic btn-b-c ">
+                        <span tabindex="1" onkeydown="handleKeyPressLang(event,'ar')" onclick="changeLanguage('ar')">العر</span>
+                    </button>
+
+                    <div role="button" onclick="fontsizedown();" class="fs-5 lh-t fw-bold ms-4 pointer" tabindex="1" onkeydown="handleKeyPressFontL(event)">א A</div>
+                    <div role="button" onclick="fontsizeup()" class="fs-3 lh-t fw-bold ms-4 pointer" tabindex="1" onkeydown="handleKeyPressFontS(event)">א A</div>
+                </div>
+
+            </div>
+
+            <div class="m-top-space h-65 "></div>
+            <div class="d-flex align-items-center mb-3">
+                <h1 id="results26thKnessetElections" class="flex-fill fw-bold fs-h1-title font-ele-title">תוצאות הבחירות לכנסת ה-26</h1>
+                <div id="Div2" class="flex-fill fw-bold fs-h1-title font-ele-title" style="color:red">סביבת בדיקות</div>
+                <div>
+                    <div class="d-f">
+                        <div role="button" onclick="fontsizeup();" class="mobile-accessible-box fs-3 fw-bold ms-3 pointer no-wrp js-l" tabindex="0" onkeydown="handleKeyPressFontS(event)">א A</div>
+                        <div role="button" onclick="fontsizedown();" class="mobile-accessible-box fs-6 fw-bold ms-3 pointer no-wrp js-l" tabindex="0" onkeydown="handleKeyPressFontL(event)">א A</div>
+                    </div>
+                    <div class="hide language-switcher">
+                        <div role="button" class="ms-4-2 text-hebrew">
+                            <span tabindex="0" onclick="changeLanguage('he')" onkeydown="handleKeyPressLang(event,'he')">עב</span>
+                        </div>
+                        <div class="vector-21"></div>
+                        <div role="button" class="ms-4-2 text-en">
+                            <span tabindex="0" onclick="changeLanguage('en')" onkeydown="handleKeyPressLang(event,'en')">En</span>
+                        </div>
+                        <div class="vector-20"></div>
+                        <div role="button" class="ms-4-2 text-arabic">
+                            <span tabindex="0" onclick="changeLanguage('ar')" onkeydown="handleKeyPressLang(event,'ar')">العر</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--mobile main menu - scroll / on page -->
+            <div class="m-main-menu d-inline-flex overflow-auto  hide-scrollbar w-100 mb-4c fs-5b">
+                <div><a href="nationalresults?lang=he" id="NavBarNationalMobile" class="no-wrp btn btn-lg fs-6">תוצאות ארציות</a></div>
+                <div><a href="cityresults?lang=he" id="NavBarTownsMobile" class="no-wrp btn btn-lg fs-6">תוצאות לפי יישובים</a></div>
+                <div><a href="ballotresults?lang=he" id="NavBarPollingStationMobile" class="no-wrp btn btn-lg fs-6 btn-warning rounded-pill fw-bold">תוצאות לפי קלפיות</a></div>
+                <div><a href="https://elections.govmap.gov.il/" id="NavBarMapMobile" title="תוצאות על מפת ישראל" class="no-wrp btn btn-lg fs-6" target="_blank" rel="noopener">תוצאות על מפת ישראל</a></div>
+            </div>
+
+            <div id="downloadFiles" class="m-low-box mb-4">
+                <button tabindex="0" class="collapse-btn btn-unset-border" onclick="HideElement()">
+                    <img src="images/icn_113.svg" alt="" /><!--<img src="images/icn_114.svg" />-->
+                </button>
+                <span id="ruleMsgMobile" class="text">בהתאם להוראות סעיף 11 לחוק-יסוד: הכנסת וסעיף 84 לחוק הבחירות לכנסת [נוסח משולב], התשכ&quot;ט-1969, התוצאות הסופיות של הבחירות לכנסת ה-26 יפורסמו ברשומות עד ליום ד&#39; כ&quot;ד בחשון התשפ&quot;ז, 4 בנובמבר 2026. עד ליום זה עשויות התוצאות להשתנות.</span>
+            </div>
+        </div>
+        
+    
+
+    <div id="ContentPlaceHolder1_showAll" class="p-4 ps-lg-5">
+        
+        <div class="row mt-5 mb-5">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-3">
+                <div class="position-relative ele-drop">
+                    <input type="hidden" id="TownId" />
+                    
+                <div class='combobox combobox-list'>
+                  <div class='group-combo'>
+                    <input id='Town'
+                           name='Town'
+                           class='form-control no-outline fw-bold fs-5'
+                           type='text'
+                           role='combobox'
+                           aria-autocomplete='both'
+                           aria-expanded='false'
+                           aria-controls='selectTown'
+                           aria-haspopup='listbox'
+                           placeholder='-נא לבחור יישוב -'
+                           value=""
+                           autocomplete='off' />
+                    <button type='button'
+                            id='cb1-button'
+                            aria-label='רשימת ישובים'
+                            aria-expanded='false'
+                            aria-controls='selectTown'
+                            class='btn-arrow'
+                            tabindex='-1'>
+                      <span class='icn' aria-hidden='true'>&#9650;</span>
+                    </button>
+                  </div>
+                <div class='ele-drop'>
+                  <ul id='selectTown' role='listbox' class='listbox-options dropdown-menu  fs-5 w-100 mt-2 dir-ltr overflow-auto' >
+                <li role='option' aria-selected='false' class='dropdown-item' data-value='967'>אבו ג'ווייעד (שבט)</li><li role='option' aria-selected='false' class='dropdown-item' data-value='472'>אבו גוש</li><li role='option' aria-selected='false' class='dropdown-item' data-value='473'>אבו סנאן</li></ul></div></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-12 col-xl-6 mb-3">
+                <div class="position-relative ele-drop">
+                    <input type="hidden" id="PollingStationId" />
+                    
+                <div class='combobox combobox-list'>
+                  <div class='group-combo'>
+                    <input id='PollingStation'
+                           name='PollingStation'
+                           class='form-control no-outline fw-bold fs-5'
+                           type='text'
+                           role='combobox'
+                           aria-autocomplete='both'
+                           aria-expanded='false'
+                           aria-controls='selectPollingStation'
+                           aria-haspopup='listbox'
+                           placeholder='-נא לבחור קלפי -'
+                           value=""
+                           autocomplete='off' />
+                    <button type='button'
+                            id='cb2-button'
+                            aria-label='רשימת קלפיות'
+                            aria-expanded='false'
+                            aria-controls='selectPollingStation'
+                            class='btn-arrow'
+                            tabindex='-1'>
+                      <span class='icn' aria-hidden='true'>&#9650;</span>
+                    </button>
+                  </div>
+                <div class='ele-drop'>
+                  <ul id='selectPollingStation' role='listbox' class='listbox-options dropdown-menu  fs-5 w-100 mt-2 dir-ltr overflow-auto' >
+                </ul></div></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="ContentPlaceHolder1_ShowAllResults" class="p-4 ps-lg-5">
+        <div class="Content" id="ContentSkip">
+            
+            
+            
+            
+            
+        </div>
+    </div>
+    <div class="ClearBoth"></div>
+    <script type="text/javascript">
+
+        var lang = 'he';
+        function initCombo(id, defVal, defId) {
+            const input = document.getElementById(id);
+            const hiddenInput = document.getElementById(id + 'Id');
+            const listbox = document.getElementById('select' + id);
+
+            if (!input || !hiddenInput || !listbox) return;
+
+            if (defVal) input.value = defVal;
+            if (defId) hiddenInput.value = defId;
+
+            // נשמור הפניה לכל האפשרויות
+            const items = Array.from(listbox.querySelectorAll('li'));
+
+            // לולאה על כל האפשרויות – נצרף את הפונקציה
+            items.forEach(item => {
+                item.setAttribute('tabindex', '0');
+
+                const handleSelection = () => {
+                    input.value = item.textContent;
+                    hiddenInput.value = item.getAttribute('data-value');
+                        if (id === "Town") {
+                        const townId = hiddenInput.value;
+                        window.location = 'ballotresults?cityID=' + encodeURIComponent(townId) + '&lang=' + lang;
+                }
+
+                 if (id === "PollingStation") {
+                     const ballotNumber = hiddenInput.value;
+                     const townId = document.getElementById("TownId").value;
+
+                     if (townId && ballotNumber) {
+                         window.location = 'ballotresults?cityID=' + encodeURIComponent(townId) +
+                             '&BallotNumber=' + encodeURIComponent(ballotNumber) +
+                             '&lang=' + lang;
+                     }
+                 }
+                   // showResults();
+                };
+
+                // נשמור את הפונקציה על האובייקט לצורך שימוש חוזר (באנטר)
+                item._handleSelection = handleSelection;
+
+                item.addEventListener('click', handleSelection);
+            });
+
+            // לחיצה על אנטר/רווח בקלט תבחר את הפריט המסומן
+            input.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    const activeItem = listbox.querySelector('li[aria-selected="true"]');
+                    if (activeItem && activeItem._handleSelection) {
+                        activeItem._handleSelection(); // נשתמש ישירות בפונקציה
+                    }
+                }
+            });
+
+        }
+
+    </script>
+    <script type="text/javascript">
+	function showResults(){
+		window.location = 'ballotresults?cityID=' + document.getElementById('TownId').value + '&BallotNumber=' + document.getElementById('PollingStationId').value+ '&lang=' + 'he';
+	}
+	initCombo("Town" ,"","0");
+	initCombo("PollingStation","","0");
+</script>
+
+
+        <div class="bottom-footer-space"></div>
+        <footer class="footer-box position-absolute bottom-0 w-100 ps-5 pt-4 text-white d-block d-xl-flex flex-row align-items-start ">
+            <div class="footer-block-1 d-flex align-items-center" aria-hidden="true">
+                <img src="images/bulding-white.svg" id="buildingLogo" width="78" alt="logo" />
+                <div class="fs-5 ms-3 lh-1">
+                    <img src="images/logo-text-2.svg" id="buildingLogoText" class="mt-2" alt="ועדת הבחירות המרכזית לכנסת" />
+                </div>
+            </div>
+
+            <div class="footer-block-2 border-end border-white border-opacity-25 ps-6 py-4">&nbsp;</div>
+
+            <div class="d-flex d-lg-block flex-column">
+                <div class="footer-block-3 fs-5b ps-6 mb-2">
+                    <a href="https://www.gov.il/he/pages/statement-of-accessibility-result-site" id="accessibilityStatement" target="_blank" class="text-u text-white">הצהרת נגישות</a>
+                </div>
+                <div class="footer-block-4 fs-5b ps-6">
+                    <div id="toCentralElectionCommitteeWebsite" class="text-info">לאתר ועדת הבחירות המרכזית לכנסת</div>
+                    <a href="https://www.bechirot.gov.il" target="_blank" class="text-info">www.bechirot.gov.il</a>
+                </div>
+            </div>
+            <div class="footer-block-5 fs-5b ps-6">
+
+
+                <a title="Facebook" href="https://www.facebook.com/ElectionKnesset/" id="socialNetwork_0" target="_blank" rel="noreferrer" class="social">
+                    <img class="social-network" alt="Facebook" src="images/facebook.svg"></a>
+
+                <a title="Instagram" href="https://www.instagram.com/electionsknesset/" id="socialNetwork_1" target="_blank" rel="noreferrer" class="social">
+                    <img class="social-network" alt="Instagram" src="images/instagram.svg"></a>
+
+                <a title="youtube" href="https://www.youtube.com/user/CecIsrael" id="socialNetwork_2" target="_blank" rel="noreferrer" class="social">
+                    <img class="social-network" alt="youtube" src="images/youtube.svg"></a>
+
+                <a title="twitter" href="https://mobile.twitter.com/electionknesset" id="socialNetwork_3" target="_blank" rel="noreferrer" class="social">
+                    <img class="social-network twitter" alt="twitter" src="images/twitter.svg"></a>
+
+                <a title="tiktok" href="https://www.tiktok.com/@elections.committee?is_from_webapp=1&sender_device=pc" id="socialNetwork_4" target="_blank" rel="noreferrer" class="social">
+                    <img class="social-network tiktok" alt="tiktok" src="images/tiktok.svg"></a>
+            </div>
+
+            
+            <div id="backToTopButton" class="footer-block-6 ms-auto me-5 mb-3 d-flex flex-column align-items-center align-self-center" onclick="scrollToTopAndHide()" tabindex="0" role="button" aria-label="חזרה למעלה" onkeydown="handleKeyPress(event)">
+                <div class="to-top rounded-circle text-center pt-2 mb-2 pointer">
+                    <img src="images/arrow-up.svg" alt="" />
+                </div>
+                <div id="backToTop">חזרה למעלה</div>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
+<script>
+    function HideElement() {
+        var element = document.getElementById("downloadFiles");
+        element.style.setProperty("display", "none", "important");
+    }
+    function scrollToTopAndHide() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    function handleKeyPress(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            scrollToTopAndHide();
+        }
+    }
+    function handleKeyPressLang(event, lang) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            changeLanguage(lang);
+        }
+    }
+    function handleKeyPressFontL(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            fontsizedown();
+        }
+    }
+    function handleKeyPressFontS(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            fontsizeup();
+        }
+    }
+    function changeLanguage(languageCode) {
+        sessionStorage.setItem('lang', languageCode);
+        var currentUrl = window.location.href;
+        if (currentUrl.indexOf('lang=') === -1) {
+            if (currentUrl.indexOf('?') !== -1) {
+                currentUrl += '&lang=' + languageCode;
+            } else {
+                currentUrl += '?lang=' + languageCode;
+            }
+        } else {
+            currentUrl = currentUrl.replace(/([?&])lang=[^&]*/, '$1lang=' + languageCode);
+        }
+        window.location.href = currentUrl;
+    }
+
+    function loadLanguageStyles() {
+        const language = window.location.search.split('lang=')[1]?.split('&')[0];
+        if (!language) {
+            sessionStorage.setItem('lang', 'he');
+        }
+    }
+    window.onload = loadLanguageStyles;
+
+    function showMenuMobile() {
+        var element = document.getElementById("menuMobile");
+        element.style.setProperty("display", "block", "important");
+    }
+    function closeMenuMobile() {
+        var element = document.getElementById("menuMobile");
+        element.style.setProperty("display", "none", "important");
+    }
+</script>
+
