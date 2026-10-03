@@ -133,6 +133,9 @@ export function validateSnapshot(snapshot: Snapshot): Problem[] {
     if (!claimed.has(`candidacy:${candidacy.id}:position`)) {
       fail("unsourced-fact", `candidacy ${candidacy.id} has no claim backing its list position`);
     }
+    if (candidacy.withdrawnAt !== undefined && !claimed.has(`candidacy:${candidacy.id}:withdrawnAt`)) {
+      fail("unsourced-fact", `candidacy ${candidacy.id} is marked withdrawn with no claim backing it`);
+    }
   }
   for (const list of snapshot.candidate_lists) {
     if (!claimed.has(`candidateList:${list.id}:status`)) {

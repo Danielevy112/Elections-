@@ -98,7 +98,7 @@ export default async function PartyPage({ params }: { params: Promise<{ slug: st
           <span className="text-center">שאילתות</span>
         </div>
         <ol>
-          {candidates.map(({ candidacy, person, band, isCutLine }) => {
+          {candidates.map(({ candidacy, person, band, isCutLine, withdrawn }) => {
             const profile = knessetProfile(person.nameHe);
             const name = displayName(person.nameHe, party.id, candidacy.position);
             const role = topRole(profile);
@@ -122,9 +122,9 @@ export default async function PartyPage({ params }: { params: Promise<{ slug: st
                   <span className="flex min-w-0 items-center gap-2">
                     <Avatar name={name} photo={partyPhoto(party.id, candidacy.position)} size={34} />
                     <span className="min-w-0">
-                      <span className="block truncate text-[13px] font-semibold">{name}</span>
+                      <span className={`block truncate text-[13px] font-semibold ${withdrawn ? "line-through decoration-rose-400" : ""}`}>{name}</span>
                       <span className="block truncate text-[11px] text-ink-muted">
-                        {role ? roleLabel(role) : profile ? `חבר/ת כנסת` : bioLine(partyBio(party.id, candidacy.position)) ?? "\u00a0"}
+                        {withdrawn ? "הסיר/ה את מועמדותו/ה" : role ? roleLabel(role) : profile ? `חבר/ת כנסת` : bioLine(partyBio(party.id, candidacy.position)) ?? "\u00a0"}
                       </span>
                     </span>
                   </span>

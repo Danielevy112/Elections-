@@ -434,8 +434,22 @@ export function buildSnapshot(input: BuildInput): BuildResult {
       });
 
       const candidacyId = `candidacy:${listId}:${candidate.position}`;
-      candidacies.push({ id: candidacyId, listId, personId: person.id, position: candidate.position });
+      candidacies.push({
+        id: candidacyId,
+        listId,
+        personId: person.id,
+        position: candidate.position,
+        ...(candidate.withdrawal ? { withdrawnAt: candidate.withdrawal.date } : {}),
+      });
       registry.assert("candidacy", candidacyId, "position", candidate.position, sourceId);
+      if (candidate.withdrawal) {
+        const withdrawalSourceId = registry.use(
+          candidate.withdrawal.sourceKind ?? "press",
+          candidate.withdrawal.sourceTitle,
+          candidate.withdrawal.sourceUrl,
+        );
+        registry.assert("candidacy", candidacyId, "withdrawnAt", candidate.withdrawal.date, withdrawalSourceId);
+      }
     }
   }
 

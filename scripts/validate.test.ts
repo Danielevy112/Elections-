@@ -83,6 +83,12 @@ describe("validateSnapshot", () => {
     expect(rules(validateSnapshot(snapshot))).toContain("unsourced-fact");
   });
 
+  it("catches a withdrawal with no source behind it", () => {
+    const snapshot = clone();
+    snapshot.candidacies[0]!.withdrawnAt = "2026-10-02";
+    expect(rules(validateSnapshot(snapshot))).toContain("unsourced-fact");
+  });
+
   it("catches a disqualification with no stated reason", () => {
     const snapshot = clone();
     snapshot.candidate_lists[0]!.status = "disqualified";

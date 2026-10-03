@@ -77,6 +77,11 @@ export const Candidacy = z.object({
   personId: Id,
   /** 1-based slot on the list. Contiguity is enforced by validate.ts. */
   position: z.number().int().positive(),
+  /**
+   * Set when the candidate removed their candidacy after the list was filed. The slot keeps
+   * its filed number; everyone below moves up one place when seats are counted.
+   */
+  withdrawnAt: IsoDate.optional(),
 });
 export type Candidacy = z.infer<typeof Candidacy>;
 

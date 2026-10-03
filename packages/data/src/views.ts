@@ -45,6 +45,8 @@ export interface CandidateOnList {
   band: SeatBand;
   /** True for the first position outside the safe band — the visual cut line. */
   isCutLine: boolean;
+  /** The candidate removed their candidacy; they hold no seat and are skipped in the count. */
+  withdrawn: boolean;
 }
 
 export interface PartyView {
@@ -60,6 +62,10 @@ export interface CandidateView {
   party: Party | undefined;
   position: number | undefined;
   band: SeatBand | undefined;
+  /** The 26th-Knesset candidacy, for looking up its sourced facts. */
+  candidacyId: string | undefined;
+  /** Date the candidacy was withdrawn, when it was. */
+  withdrawnAt: string | undefined;
   memberships: KnessetMembership[];
   committees: { committee: Committee; membership: CommitteeMembership }[];
   billStats: BillStats;
@@ -111,17 +117,22 @@ export function buildSite(snapshot: Snapshot, options: BuildOptions = {}): SiteD
       const rows = list ? (candidaciesByList.get(list.id) ?? []) : [];
       const ordered = [...rows].sort((a, b) => a.position - b.position);
 
+      // Seats go to candidates in list order, skipping anyone who withdrew, so a withdrawal
+      // moves everyone below it up one seat without renumbering the filed slots.
       const candidates: CandidateOnList[] = [];
+      let seatRank = 0;
       for (const candidacy of ordered) {
         const person = persons.get(candidacy.personId);
         if (!person) continue;
-        const band = bandForPosition(partyProjection, candidacy.position);
+        const withdrawn = candidacy.withdrawnAt !== undefined;
+        if (!withdrawn) seatRank += 1;
+        const band = withdrawn ? "out" : bandForPosition(partyProjection, seatRank);
         candidates.push({
           candidacy,
           person,
           band,
-          isCutLine:
-            band !== "safe" && candidacy.position === (partyProjection?.safeThrough ?? 0) + 1,
+          isCutLine: !withdrawn && band !== "safe" && seatRank === (partyProjection?.safeThrough ?? 0) + 1,
+          withdrawn,
         });
       }
 
@@ -157,13 +168,15 @@ function buildCandidateViews(
   const claimsBySubject = groupBy(snapshot.claims, (c) => `${c.subjectType}:${c.subjectId}`);
 
   // Where each person sits on a 26th-Knesset list, if anywhere.
-  const placement = new Map<string, { party: Party; position: number; band: SeatBand }>();
+  const placement = new Map<string, { party: Party; position: number; band: SeatBand; candidacyId: string; withdrawnAt: string | undefined }>();
   for (const view of parties) {
     for (const row of view.candidates) {
       placement.set(row.person.id, {
         party: view.party,
         position: row.candidacy.position,
         band: row.band,
+        candidacyId: row.candidacy.id,
+        withdrawnAt: row.candidacy.withdrawnAt,
       });
     }
   }
@@ -200,6 +213,8 @@ function buildCandidateViews(
       party: seat?.party ?? undefined,
       position: seat?.position,
       band: seat?.band,
+      candidacyId: seat?.candidacyId,
+      withdrawnAt: seat?.withdrawnAt,
       memberships: (membershipsByPerson.get(person.id) ?? []).sort(
         (a, b) => b.knessetNumber - a.knessetNumber,
       ),

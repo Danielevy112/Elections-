@@ -52,6 +52,15 @@ export const ManualCandidate = z.object({
   /** Set when the person is already known to the Knesset dataset. */
   knessetPersonId: z.number().int().positive().optional(),
   photoUrl: z.string().url().optional(),
+  /** A candidacy removed after filing. The source must say so for this exact person. */
+  withdrawal: z
+    .object({
+      date: IsoDate,
+      sourceUrl: z.string().url(),
+      sourceKind: SourceKind.optional(),
+      sourceTitle: z.string().min(1),
+    })
+    .optional(),
 });
 
 export const ManualList = z.object({
