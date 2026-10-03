@@ -1,233 +1,571 @@
 [
   {
-    "key": "midgam-n12-2026-09-22",
-    "pollster": "מדגם ייעוץ ומחקר",
-    "publisher": "חדשות 12",
-    "publishedAt": "2026-09-22",
-    "fieldworkStart": "2026-09-22",
     "fieldworkEnd": "2026-09-22",
-    "sampleSize": 501,
+    "fieldworkStart": "2026-09-22",
+    "key": "midgam-n12-2026-09-22",
     "marginOfError": 4.4,
-    "sourceUrl": "https://www.mako.co.il/news-israel-elections/2026/Article-fad59e819c9c0a1027.htm",
+    "pollster": "מדגם ייעוץ ומחקר",
+    "publishedAt": "2026-09-22",
+    "publisher": "חדשות 12",
     "results": [
       {
-        "partyKey": "k26-02",
+        "belowThreshold": false,
         "mandates": 23,
-        "belowThreshold": false
+        "partyKey": "k26-02"
       },
       {
-        "partyKey": "k26-29",
+        "belowThreshold": false,
         "mandates": 20,
-        "belowThreshold": false
+        "partyKey": "k26-29"
       },
       {
-        "partyKey": "k26-01",
+        "belowThreshold": false,
         "mandates": 13,
-        "belowThreshold": false
+        "partyKey": "k26-01"
       },
       {
-        "partyKey": "k26-17",
+        "belowThreshold": false,
         "mandates": 9,
-        "belowThreshold": false
+        "partyKey": "k26-17"
       },
       {
-        "partyKey": "k26-11",
+        "belowThreshold": false,
         "mandates": 9,
-        "belowThreshold": false
+        "partyKey": "k26-11"
       },
       {
-        "partyKey": "k26-37",
+        "belowThreshold": false,
         "mandates": 8,
-        "belowThreshold": false
+        "partyKey": "k26-37"
       },
       {
-        "partyKey": "k26-35",
+        "belowThreshold": false,
         "mandates": 7,
-        "belowThreshold": false
+        "partyKey": "k26-35"
       },
       {
-        "partyKey": "k26-19",
+        "belowThreshold": false,
         "mandates": 7,
-        "belowThreshold": false
+        "partyKey": "k26-19"
       },
       {
-        "partyKey": "k26-14",
+        "belowThreshold": false,
         "mandates": 6,
-        "belowThreshold": false
+        "partyKey": "k26-14"
       },
       {
-        "partyKey": "k26-31",
+        "belowThreshold": false,
         "mandates": 5,
-        "belowThreshold": false
+        "partyKey": "k26-31"
       },
       {
-        "partyKey": "k26-18",
+        "belowThreshold": false,
         "mandates": 5,
-        "belowThreshold": false
+        "partyKey": "k26-18"
       },
       {
-        "partyKey": "k26-06",
+        "belowThreshold": false,
         "mandates": 4,
-        "belowThreshold": false
+        "partyKey": "k26-06"
       },
       {
-        "partyKey": "k26-16",
+        "belowThreshold": false,
         "mandates": 4,
-        "belowThreshold": false
+        "partyKey": "k26-16"
       }
-    ]
+    ],
+    "sampleSize": 501,
+    "sourceUrl": "https://www.mako.co.il/news-israel-elections/2026/Article-fad59e819c9c0a1027.htm"
   },
   {
+    "fieldworkEnd": "2026-09-23",
+    "fieldworkStart": "2026-09-23",
     "key": "nextdata-c14-2026-09-23",
     "pollster": "NEXT DATA",
-    "publisher": "חדשות 14",
     "publishedAt": "2026-09-23",
-    "fieldworkStart": "2026-09-23",
-    "fieldworkEnd": "2026-09-23",
-    "sampleSize": 647,
-    "sourceUrl": "https://www.c14.co.il/article/1711606",
+    "publisher": "חדשות 14",
     "results": [
       {
-        "partyKey": "k26-29",
+        "belowThreshold": false,
         "mandates": 32,
-        "belowThreshold": false
+        "partyKey": "k26-29"
       },
       {
-        "partyKey": "k26-02",
+        "belowThreshold": false,
         "mandates": 22,
-        "belowThreshold": false
+        "partyKey": "k26-02"
       },
       {
-        "partyKey": "k26-19",
+        "belowThreshold": false,
         "mandates": 11,
-        "belowThreshold": false
+        "partyKey": "k26-19"
       },
       {
-        "partyKey": "k26-17",
+        "belowThreshold": false,
         "mandates": 9,
-        "belowThreshold": false
+        "partyKey": "k26-17"
       },
       {
-        "partyKey": "k26-01",
+        "belowThreshold": false,
         "mandates": 7,
-        "belowThreshold": false
+        "partyKey": "k26-01"
       },
       {
-        "partyKey": "k26-37",
+        "belowThreshold": false,
         "mandates": 7,
-        "belowThreshold": false
+        "partyKey": "k26-37"
       },
       {
-        "partyKey": "k26-31",
+        "belowThreshold": false,
         "mandates": 7,
-        "belowThreshold": false
+        "partyKey": "k26-31"
       },
       {
-        "partyKey": "k26-35",
+        "belowThreshold": false,
         "mandates": 7,
-        "belowThreshold": false
+        "partyKey": "k26-35"
       },
       {
-        "partyKey": "k26-11",
+        "belowThreshold": false,
         "mandates": 7,
-        "belowThreshold": false
+        "partyKey": "k26-11"
       },
       {
-        "partyKey": "k26-14",
+        "belowThreshold": false,
         "mandates": 6,
-        "belowThreshold": false
+        "partyKey": "k26-14"
       },
       {
-        "partyKey": "k26-18",
+        "belowThreshold": false,
         "mandates": 5,
-        "belowThreshold": false
+        "partyKey": "k26-18"
       }
-    ]
+    ],
+    "sampleSize": 647,
+    "sourceUrl": "https://www.c14.co.il/article/1711606"
   },
   {
     "key": "hamadad-c13-2026-09-23",
-    "pollster": "המדד (עם סטט-נט, פרויקט המדגם ואסקריא)",
-    "publisher": "חדשות 13",
-    "publishedAt": "2026-09-23",
-    "sampleSize": 1503,
     "marginOfError": 2.5,
-    "sourceUrl": "https://13tv.co.il/item/news/politics/politics/hcp4l-905367553/",
+    "pollster": "המדד (עם סטט-נט, פרויקט המדגם ואסקריא)",
+    "publishedAt": "2026-09-23",
+    "publisher": "חדשות 13",
     "results": [
       {
-        "partyKey": "k26-02",
+        "belowThreshold": false,
         "mandates": 22,
-        "belowThreshold": false
+        "partyKey": "k26-02"
       },
       {
-        "partyKey": "k26-29",
+        "belowThreshold": false,
         "mandates": 18,
-        "belowThreshold": false
+        "partyKey": "k26-29"
       },
       {
-        "partyKey": "k26-01",
+        "belowThreshold": false,
         "mandates": 11,
-        "belowThreshold": false
+        "partyKey": "k26-01"
       },
       {
-        "partyKey": "k26-17",
+        "belowThreshold": false,
         "mandates": 11,
-        "belowThreshold": false
+        "partyKey": "k26-17"
       },
       {
-        "partyKey": "k26-35",
+        "belowThreshold": false,
         "mandates": 8,
-        "belowThreshold": false
+        "partyKey": "k26-35"
       },
       {
-        "partyKey": "k26-11",
+        "belowThreshold": false,
         "mandates": 8,
-        "belowThreshold": false
+        "partyKey": "k26-11"
       },
       {
-        "partyKey": "k26-37",
+        "belowThreshold": false,
         "mandates": 8,
-        "belowThreshold": false
+        "partyKey": "k26-37"
       },
       {
-        "partyKey": "k26-14",
+        "belowThreshold": false,
         "mandates": 7,
-        "belowThreshold": false
+        "partyKey": "k26-14"
       },
       {
-        "partyKey": "k26-19",
+        "belowThreshold": false,
         "mandates": 7,
-        "belowThreshold": false
+        "partyKey": "k26-19"
       },
       {
-        "partyKey": "k26-31",
+        "belowThreshold": false,
         "mandates": 6,
-        "belowThreshold": false
+        "partyKey": "k26-31"
       },
       {
-        "partyKey": "k26-06",
+        "belowThreshold": false,
         "mandates": 5,
-        "belowThreshold": false
+        "partyKey": "k26-06"
       },
       {
-        "partyKey": "k26-18",
+        "belowThreshold": false,
         "mandates": 5,
-        "belowThreshold": false
+        "partyKey": "k26-18"
       },
       {
-        "partyKey": "k26-16",
+        "belowThreshold": false,
         "mandates": 4,
-        "belowThreshold": false
+        "partyKey": "k26-16"
       },
       {
-        "partyKey": "k26-20",
+        "belowThreshold": true,
         "mandates": 0,
-        "belowThreshold": true
+        "partyKey": "k26-20"
       },
       {
-        "partyKey": "k26-30",
+        "belowThreshold": true,
         "mandates": 0,
-        "belowThreshold": true
+        "partyKey": "k26-30"
       }
-    ]
+    ],
+    "sampleSize": 1503,
+    "sourceUrl": "https://13tv.co.il/item/news/politics/politics/hcp4l-905367553/"
+  },
+  {
+    "fieldworkEnd": "2026-10-01",
+    "fieldworkStart": "2026-10-01",
+    "key": "direct-polls-i24-news-2026-10-01",
+    "pollster": "דיירקט פולס",
+    "publishedAt": "2026-10-01",
+    "publisher": "i24NEWS",
+    "results": [
+      {
+        "belowThreshold": false,
+        "mandates": 28,
+        "partyKey": "k26-29"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 9,
+        "partyKey": "k26-01"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 5,
+        "partyKey": "k26-31"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 8,
+        "partyKey": "k26-14"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 7,
+        "partyKey": "k26-19"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 8,
+        "partyKey": "k26-37"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 7,
+        "partyKey": "k26-11"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 5,
+        "partyKey": "k26-18"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 8,
+        "partyKey": "k26-35"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 9,
+        "partyKey": "k26-17"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 22,
+        "partyKey": "k26-02"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-16"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 4,
+        "partyKey": "k26-06"
+      }
+    ],
+    "sampleSize": 504,
+    "sourceUrl": "https://www.i24news.tv/he/news/israel-elections-2026/polls/artc-761931ef"
+  },
+  {
+    "fieldworkEnd": "2026-09-28",
+    "fieldworkStart": "2026-09-28",
+    "key": "sf-nd-channel-14-2026-09-28",
+    "pollster": "NEXT DATA",
+    "publishedAt": "2026-09-28",
+    "publisher": "חדשות 14",
+    "results": [
+      {
+        "belowThreshold": false,
+        "mandates": 31,
+        "partyKey": "k26-29"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 9,
+        "partyKey": "k26-01"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 7,
+        "partyKey": "k26-31"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 7,
+        "partyKey": "k26-14"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-30"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 10,
+        "partyKey": "k26-19"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 8,
+        "partyKey": "k26-37"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 6,
+        "partyKey": "k26-11"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 5,
+        "partyKey": "k26-18"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 7,
+        "partyKey": "k26-35"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 9,
+        "partyKey": "k26-17"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 21,
+        "partyKey": "k26-02"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-16"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-06"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-20"
+      }
+    ],
+    "sampleSize": 573,
+    "sourceUrl": "https://www.c14.co.il/article/1716250"
+  },
+  {
+    "fieldworkEnd": "2026-09-27",
+    "fieldworkStart": "2026-09-27",
+    "key": "kantar-kan-11-2026-09-27",
+    "pollster": "מכון קנטאר",
+    "publishedAt": "2026-09-27",
+    "publisher": "כאן חדשות",
+    "results": [
+      {
+        "belowThreshold": false,
+        "mandates": 21,
+        "partyKey": "k26-29"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 11,
+        "partyKey": "k26-01"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 6,
+        "partyKey": "k26-31"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 7,
+        "partyKey": "k26-14"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-30"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 7,
+        "partyKey": "k26-19"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 7,
+        "partyKey": "k26-37"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 9,
+        "partyKey": "k26-11"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 5,
+        "partyKey": "k26-18"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 7,
+        "partyKey": "k26-35"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 9,
+        "partyKey": "k26-17"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 23,
+        "partyKey": "k26-02"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 4,
+        "partyKey": "k26-16"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 4,
+        "partyKey": "k26-06"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-20"
+      }
+    ],
+    "sampleSize": 552,
+    "sourceUrl": "https://www.kan.org.il/content/kan-news/politic/1103667/"
+  },
+  {
+    "fieldworkEnd": "2026-09-24",
+    "fieldworkStart": "2026-09-24",
+    "key": "direct-polls-i24-news-2026-09-24",
+    "pollster": "דיירקט פולס",
+    "publishedAt": "2026-09-24",
+    "publisher": "i24NEWS",
+    "results": [
+      {
+        "belowThreshold": false,
+        "mandates": 27,
+        "partyKey": "k26-29"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 9,
+        "partyKey": "k26-01"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 6,
+        "partyKey": "k26-31"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 8,
+        "partyKey": "k26-14"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-30"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 7,
+        "partyKey": "k26-19"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 8,
+        "partyKey": "k26-37"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 7,
+        "partyKey": "k26-11"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 6,
+        "partyKey": "k26-18"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 7,
+        "partyKey": "k26-35"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 9,
+        "partyKey": "k26-17"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 22,
+        "partyKey": "k26-02"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-16"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 4,
+        "partyKey": "k26-06"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-20"
+      }
+    ],
+    "sampleSize": 537,
+    "sourceUrl": "https://www.i24news.tv/he/news/israel-elections-2026/polls/artc-5d1d4577"
   }
 ]
