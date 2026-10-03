@@ -1,0 +1,39 @@
+name: Fetch sources
+# Research fetcher, approved by the repository owner on 3.10.2026: the maintainer's own
+# environment cannot reach most sites. Runs only on fetch/* branches when fetch/urls.txt
+# changes; saves each response under fetch/out/ and commits it back to the same branch.
+# fetch/* branches are never merged into main.
+on:
+  push:
+    branches: ["fetch/**"]
+    paths: ["fetch/urls.txt"]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch
+        run: |
+          set -u
+          mkdir -p fetch/out
+          : > fetch/out/index.tsv
+          while IFS= read -r url; do
+            [ -z "$url" ] && continue
+            case "$url" in \#*) continue;; esac
+            name=$(printf '%s' "$url" | sha1sum | cut -c1-12)
+            meta=$(curl -sS -L --max-time 60 --compressed \
+              -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36" \
+              -H "Accept-Language: he,en;q=0.8" \
+              -o "fetch/out/$name" -w '%{http_code}\t%{content_type}\t%{size_download}' "$url" 2>&1 || true)
+            printf '%s\t%s\t%s\n' "$name" "$meta" "$url" >> fetch/out/index.tsv
+          done < fetch/urls.txt
+          cat fetch/out/index.tsv
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add fetch/out
+          git commit -m "fetch: results" || exit 0
+          git push
