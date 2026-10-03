@@ -4,8 +4,8 @@
 export interface PollBloc {
   pollId: string;
   groups: { label: string; seats: number; color: string }[];
-  /** Seats assigned in this poll to the two lists barred by the CEC, pending appeal. */
-  barredSeats: number;
+  /** Seats this poll gave Ra'am and the Joint List, which the publisher left out of its blocs. */
+  arabListSeats: number;
 }
 export const pollBlocs: PollBloc[] = [
   {
@@ -15,7 +15,7 @@ export const pollBlocs: PollBloc[] = [
       { label: "הקואליציה", seats: 51, color: "bg-amber-400" },
       { label: "הנדל–זליכה", seats: 4, color: "bg-violet-400" },
     ],
-    barredSeats: 13,
+    arabListSeats: 13,
   },
   {
     pollId: "poll:midgam-n12-2026-09-22",
@@ -24,7 +24,7 @@ export const pollBlocs: PollBloc[] = [
       { label: "הקואליציה", seats: 50, color: "bg-amber-400" },
       { label: "הנדל–זליכה (הגוש השלישי)", seats: 4, color: "bg-violet-400" },
     ],
-    barredSeats: 12,
+    arabListSeats: 12,
   },
   {
     pollId: "poll:nextdata-c14-2026-09-23",
@@ -32,6 +32,6 @@ export const pollBlocs: PollBloc[] = [
       { label: "גוש הימין", seats: 63, color: "bg-amber-400" },
       { label: "גוש השמאל", seats: 45, color: "bg-sky-400" },
     ],
-    barredSeats: 12,
+    arabListSeats: 12,
   },
 ];

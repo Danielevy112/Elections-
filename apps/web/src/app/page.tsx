@@ -28,7 +28,7 @@ export default async function HomePage() {
           return <section key={poll.id} className="space-y-2 border-t border-ink-line pt-3" aria-label={`חלוקת הגושים בסקר ${poll.publisher}`}>
             <h3 className="text-sm font-semibold"><a href={poll.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline decoration-dotted underline-offset-2">{poll.publisher}, {formatDate(poll.publishedAt)} ↗</a></h3>
             {bloc.groups.map((group) => <div key={group.label} className="grid grid-cols-[minmax(0,1fr)_2rem] gap-x-2 text-xs"><div className="flex items-center justify-between gap-2"><span>{group.label}</span></div><strong className="text-left tabular">{group.seats}</strong><div className="col-span-2 h-1.5 overflow-hidden rounded-full bg-ink-row"><div className={`h-full rounded-full ${group.color}`} style={{ width: `${group.seats / 120 * 100}%` }} /></div></div>)}
-            <p className="text-xs leading-5 text-rose-200">המפלגות הערביות: <span className="line-through">{bloc.barredSeats} מנדטים בסקר</span> - אינן נכללות בפסי הגושים למעלה. שתי הרשימות <a href="https://www.gov.il/he/pages/candidates-lists-26" target="_blank" rel="noopener noreferrer" className="underline">נפסלו בהחלטת ועדת הבחירות, בכפוף לערעור ↗</a>; אין כאן תחזית לחלוקת המנדטים לאחר הכרעה בערעור.</p>
+            <p className="text-xs leading-5 text-ink-muted">רע"ם והרשימה המשותפת: {bloc.arabListSeats} מנדטים בסקר, שהמפרסם לא שייך לאף גוש.{barred.length ? " ועדת הבחירות פסלה רשימה מביניהן, בכפוף לערעור." : ""}</p>
           </section>;
         })}
       </Card> : null}
@@ -83,7 +83,7 @@ export default async function HomePage() {
               </a>
             </span>
           ))}
-          . רשימות שנפסלו מוצגות לפי הסקרים עד להכרעת בג״ץ.
+          .{barred.length ? " רשימות שנפסלו מוצגות לפי הסקרים עד להכרעת בג״ץ." : ""}
         </div>
       </Card>
 

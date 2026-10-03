@@ -35,7 +35,7 @@ export const TABLES: Record<CollectionName, { table: string; columns: readonly C
   ] },
   candidacies: { table: "candidacies", columns: [
     ["id", "id", "text", true], ["listId", "list_id", "text", true], ["personId", "person_id", "text", true],
-    ["position", "position", "int", true],
+    ["position", "position", "int", true], ["withdrawnAt", "withdrawn_at", "date"],
   ] },
   knesset_memberships: { table: "knesset_memberships", columns: [
     ["id", "id", "text", true], ["personId", "person_id", "text", true], ["knessetNumber", "knesset_number", "int", true],

@@ -18,7 +18,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const name = displayName(view.person.nameHe, view.party?.id, view.position);
   const where = view.party && view.position ? `מקום ${view.position} ב${view.party.shortNameHe ?? view.party.nameHe}` : "";
   const title = [name, where].filter(Boolean).join(" — ");
-  const description = view.band ? `${where}: ${BAND_LABEL[view.band]} לפי ממוצע הסקרים.` : where;
+  const description = view.withdrawnAt
+    ? `${where}: הסיר/ה את מועמדותו/ה.`
+    : view.band ? `${where}: ${BAND_LABEL[view.band]} לפי ממוצע הסקרים.` : where;
   return shareMetadata(title, description);
 }
 
@@ -36,7 +38,8 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
   const view = data.candidates.find((c) => c.person.slug === slug);
   if (!view) notFound();
 
-  const { person, party, position, band } = view;
+  const { person, party, position, band, withdrawnAt, candidacyId } = view;
+  const withdrawalSources = candidacyId ? sourcesForField(data, "candidacy", candidacyId, "withdrawnAt") : [];
   const profile = knessetProfile(person.nameHe);
   const items = profile ? await loadLegislativeItems(person.nameHe) : undefined;
   const bio = partyBio(party?.id, position);
@@ -81,7 +84,13 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
               </Link>
             </p>
           ) : null}
-          <div className="mt-2 flex items-center gap-2">{band ? <BandChip band={band} /> : null}</div>
+          {withdrawnAt ? (
+            <p className="mt-2 rounded-lg bg-rose-500/10 px-3 py-1.5 text-xs text-rose-200">
+              הסיר/ה את מועמדותו/ה ({withdrawnAt.split("-").reverse().join(".")}) · <Sources sources={withdrawalSources} />
+            </p>
+          ) : (
+            <div className="mt-2 flex items-center gap-2">{band ? <BandChip band={band} /> : null}</div>
+          )}
           <div className="mt-2 text-[11px] text-ink-dim">
             כפי שהוגש: {person.nameHe} · <Sources sources={nameSources} />
             {photo ? (
