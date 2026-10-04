@@ -28,7 +28,7 @@ jobs:
               -H "Accept-Language: he,en;q=0.8" \
               -o "fetch/out/$name" -w '%{http_code}\t%{content_type}\t%{size_download}' "$url" 2>&1 || true)
             printf '%s\t%s\t%s\n' "$name" "$meta" "$url" >> fetch/out/index.tsv
-            sleep 2  # stay under per-host rate limits (Wikipedia answers 429 to bursts)
+            sleep 5  # stay under per-host rate limits (Wikipedia answers 429 to bursts)
           done < fetch/urls.txt
           cat fetch/out/index.tsv
       - name: Commit results
