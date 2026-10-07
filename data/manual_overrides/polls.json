@@ -567,5 +567,179 @@
     ],
     "sampleSize": 537,
     "sourceUrl": "https://www.i24news.tv/he/news/israel-elections-2026/polls/artc-5d1d4577"
+  },
+  {
+    "fieldworkEnd": "2026-10-05",
+    "fieldworkStart": "2026-10-05",
+    "key": "midgam-r-c-hahadashot-12-2026-10-05",
+    "pollster": "מדגם ייעוץ ומחקר",
+    "publishedAt": "2026-10-05",
+    "publisher": "חדשות 12",
+    "results": [
+      {
+        "belowThreshold": false,
+        "mandates": 21,
+        "partyKey": "k26-29"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 13,
+        "partyKey": "k26-01"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 6,
+        "partyKey": "k26-31"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 7,
+        "partyKey": "k26-14"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-30"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 7,
+        "partyKey": "k26-19"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 8,
+        "partyKey": "k26-37"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 9,
+        "partyKey": "k26-11"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 5,
+        "partyKey": "k26-18"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 8,
+        "partyKey": "k26-35"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 9,
+        "partyKey": "k26-17"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 23,
+        "partyKey": "k26-02"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 4,
+        "partyKey": "k26-16"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-06"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-20"
+      }
+    ],
+    "sampleSize": 501,
+    "sourceUrl": "https://www.mako.co.il/news-israel-elections/2026/Article-d7459e0cc7c01a1026.htm"
+  },
+  {
+    "fieldworkEnd": "2026-10-04",
+    "fieldworkStart": "2026-10-04",
+    "key": "kantar-kan-11-2026-10-04",
+    "pollster": "מכון קנטאר",
+    "publishedAt": "2026-10-04",
+    "publisher": "כאן חדשות",
+    "results": [
+      {
+        "belowThreshold": false,
+        "mandates": 21,
+        "partyKey": "k26-29"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 12,
+        "partyKey": "k26-01"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 6,
+        "partyKey": "k26-31"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 8,
+        "partyKey": "k26-14"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-30"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 8,
+        "partyKey": "k26-19"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 8,
+        "partyKey": "k26-37"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 9,
+        "partyKey": "k26-11"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 5,
+        "partyKey": "k26-18"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 8,
+        "partyKey": "k26-35"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 8,
+        "partyKey": "k26-17"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 23,
+        "partyKey": "k26-02"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 4,
+        "partyKey": "k26-16"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-06"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-20"
+      }
+    ],
+    "sampleSize": 553,
+    "sourceUrl": "https://www.kan.org.il/content/kan-news/politic/1105927/"
   }
 ]
