@@ -1,9 +1,8 @@
 name: Sync data
 
 on:
-  schedule:
-    # Every 6 hours. GitHub Actions has open egress, which is where ingestion belongs.
-    - cron: "0 */6 * * *"
+  # Automatic sync is paused at the owner's request after repeated scheduled failures.
+  # Restore the schedule block to resume automatic ingestion.
   workflow_dispatch:
     inputs:
       knesset:
