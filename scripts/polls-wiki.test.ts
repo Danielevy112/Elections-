@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { isPrimarySource, parseFieldwork, parseSeatCell, parseWikiPolls, sameArticle, toPollInput } from "./polls-wiki";
+import { isPrimarySource, parseFieldwork, parseHeader, parseSeatCell, parseWikiPolls, sameArticle, toPollInput } from "./polls-wiki";
 
 // The top of the 2026 seat table as recorded on 3.10.2026 (en.wikipedia, via a fetch/* branch).
 const wikitext = readFileSync(join(__dirname, "fixtures", "enwiki-polls-2026-excerpt.wikitext"), "utf8");
@@ -40,6 +40,38 @@ describe("parseWikiPolls", () => {
     expect(direct.publisher).toBe("i24 News");
     expect(direct.sampleSize).toBe(504);
     expect(direct.seats["k26-29"]).toEqual({ mandates: 28, belowThreshold: false });
+  });
+});
+
+describe("columns follow each table's own header", () => {
+  // The top of the 2026 seat table as recorded on 24.10.2026: Blue & White left the race on
+  // 19.10 and its column was removed, so every later column moved one place to the left.
+  const after = readFileSync(join(__dirname, "fixtures", "enwiki-polls-2026-after-withdrawal.wikitext"), "utf8");
+
+  it("reads the party columns from the header", () => {
+    const keys = parseHeader(after).map((c) => c.key);
+    expect(keys).not.toContain("k26-30");
+    expect(keys.slice(0, 6)).toEqual(["k26-29", "k26-01", "k26-31", "k26-14", "k26-19", "k26-37"]);
+    expect(parseHeader(wikitext).map((c) => c.key)[4]).toBe("k26-30");
+  });
+
+  it("gives Shas and Yashar their own seats once Blue & White's column is gone", () => {
+    // Channel 14, 22.10: |30|11|7|8|9|8|5|6|8|8|20| in header order.
+    const c14 = parseWikiPolls(after).find((r) => r.publisher === "Channel 14" && r.fieldworkEnd === "2026-10-22")!;
+    const seats = Object.fromEntries(Object.entries(c14.seats).filter(([, s]) => !s.belowThreshold).map(([k, s]) => [k, s.mandates]));
+    expect(seats).toEqual({
+      "k26-29": 30, "k26-01": 11, "k26-31": 7, "k26-14": 8, "k26-19": 9, "k26-37": 8,
+      "k26-11": 5, "k26-18": 6, "k26-35": 8, "k26-17": 8, "k26-02": 20,
+    });
+    expect(c14.seats["k26-30"]).toBeUndefined();
+  });
+
+  it("never hands a column it cannot map to a neighbour", () => {
+    const renamed = after.replace("[[Shas]]", "[[Some New Party]]");
+    const c14 = parseWikiPolls(renamed).find((r) => r.publisher === "Channel 14")!;
+    expect(c14.unknownColumns).toEqual(["Some New Party"]);
+    expect(c14.seats["k26-19"]).toBeUndefined();
+    expect(c14.seats["k26-37"]).toEqual({ mandates: 8, belowThreshold: false });
   });
 });
 
