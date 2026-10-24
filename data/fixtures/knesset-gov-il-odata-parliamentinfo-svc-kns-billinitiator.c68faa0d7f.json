@@ -282,14 +282,6 @@
       "LastUpdatedDate": "2015-03-20T12:03:24"
     },
     {
-      "BillInitiatorID": 8969,
-      "BillID": 320676,
-      "PersonID": 526,
-      "IsInitiator": true,
-      "Ordinal": 2,
-      "LastUpdatedDate": "2015-03-20T12:03:24"
-    },
-    {
       "BillInitiatorID": 8970,
       "BillID": 28910,
       "PersonID": 526,
@@ -800,7 +792,15 @@
       "IsInitiator": true,
       "Ordinal": 1,
       "LastUpdatedDate": "2015-03-20T12:03:24"
+    },
+    {
+      "BillInitiatorID": 9825,
+      "BillID": 84297,
+      "PersonID": 1025,
+      "IsInitiator": true,
+      "Ordinal": 2,
+      "LastUpdatedDate": "2015-03-20T12:03:24"
     }
   ],
-  "odata.nextLink": "KNS_BillInitiator?$filter=PersonID%20eq%20526%20or%20PersonID%20eq%201025%20or%20PersonID%20eq%201027%20or%20PersonID%20eq%204416%20or%20PersonID%20eq%2011835%20or%20PersonID%20eq%2012951%20or%20PersonID%20eq%2012959%20or%20PersonID%20eq%2023560%20or%20PersonID%20eq%2023635%20or%20PersonID%20eq%2030055%20or%20PersonID%20eq%2030058%20or%20PersonID%20eq%2030083%20or%20PersonID%20eq%2030084%20or%20PersonID%20eq%2030470%20or%20PersonID%20eq%2030671%20or%20PersonID%20eq%2030672%20or%20PersonID%20eq%2030683%20or%20PersonID%20eq%2030694%20or%20PersonID%20eq%2030706%20or%20PersonID%20eq%2030724%20or%20PersonID%20eq%2030751%20or%20PersonID%20eq%2030765%20or%20PersonID%20eq%2030777%20or%20PersonID%20eq%2030812%20or%20PersonID%20eq%2030818%20or%20PersonID%20eq%2030823%20or%20PersonID%20eq%2030835%20or%20PersonID%20eq%2030839%20or%20PersonID%20eq%2030840%20or%20PersonID%20eq%2030846%20or%20PersonID%20eq%2030860%20or%20PersonID%20eq%2030871%20or%20PersonID%20eq%2030895&$top=49800&$skiptoken=9824"
+  "odata.nextLink": "KNS_BillInitiator?$filter=PersonID%20eq%20526%20or%20PersonID%20eq%201025%20or%20PersonID%20eq%201027%20or%20PersonID%20eq%204416%20or%20PersonID%20eq%2011835%20or%20PersonID%20eq%2012951%20or%20PersonID%20eq%2012959%20or%20PersonID%20eq%2023560%20or%20PersonID%20eq%2023635%20or%20PersonID%20eq%2030055%20or%20PersonID%20eq%2030058%20or%20PersonID%20eq%2030083%20or%20PersonID%20eq%2030084%20or%20PersonID%20eq%2030470%20or%20PersonID%20eq%2030671%20or%20PersonID%20eq%2030672%20or%20PersonID%20eq%2030683%20or%20PersonID%20eq%2030694%20or%20PersonID%20eq%2030706%20or%20PersonID%20eq%2030724%20or%20PersonID%20eq%2030751%20or%20PersonID%20eq%2030765%20or%20PersonID%20eq%2030777%20or%20PersonID%20eq%2030812%20or%20PersonID%20eq%2030818%20or%20PersonID%20eq%2030823%20or%20PersonID%20eq%2030835%20or%20PersonID%20eq%2030839%20or%20PersonID%20eq%2030840%20or%20PersonID%20eq%2030846%20or%20PersonID%20eq%2030860%20or%20PersonID%20eq%2030871%20or%20PersonID%20eq%2030895&$top=49800&$skiptoken=9825"
 }
