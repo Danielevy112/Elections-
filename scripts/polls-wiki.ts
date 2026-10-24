@@ -112,6 +112,8 @@ export interface PollCheck {
   checkedAt: string;
   /** The article's own publication date, when the check read it. */
   publishedAt?: string;
+  /** false when the article does not state the sample size: the table's figure is then dropped. */
+  sampleSizeInArticle?: boolean;
 }
 
 export interface WikiPollRow {
@@ -364,6 +366,7 @@ function main(): void {
       ? { ...parsed, sourceUrl: check.sourceUrl, ...(check.publishedAt ? { sourceDate: check.publishedAt } : {}) }
       : parsed;
     if (check && !check.publishedAt && check.sourceUrl !== parsed.sourceUrl) delete row.sourceDate;
+    if (check?.sampleSizeInArticle === false) delete row.sampleSize;
     if (row.sourceUrl && knownUrls.has(sameArticle(row.sourceUrl))) continue;
     if (knownDates.has(`${PUBLISHERS[row.publisher]?.nameHe ?? row.publisher}:${row.fieldworkEnd}`)) continue;
     if (row.unknownColumns) {

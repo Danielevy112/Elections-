@@ -8,10 +8,11 @@ export const revalidate = 3600;
 
 export default async function HomePage() {
   const { parties, projection } = await site();
+  // A list that has left the race is not in the seat table; it stays under "all lists" with its status.
   const polled = parties
-    .filter((p) => p.projection)
+    .filter((p) => p.projection && p.list?.status !== "withdrawn")
     .sort((a, b) => (b.projection!.projectedSeats - a.projection!.projectedSeats) || (b.projection!.mean - a.projection!.mean));
-  const others = parties.filter((p) => !p.projection);
+  const others = parties.filter((p) => !polled.includes(p));
   const barred = polled.filter((p) => p.list?.status === "disqualified");
 
   return (
