@@ -23,6 +23,17 @@
   },
   {
     "electionId": "election:26",
+    "fieldworkEnd": "2026-10-20",
+    "fieldworkStart": "2026-10-20",
+    "id": "poll:direct-polls-i24-news-2026-10-20",
+    "pollster": "דיירקט פולס",
+    "publishedAt": "2026-10-20",
+    "publisher": "i24NEWS",
+    "sampleSize": 521,
+    "sourceUrl": "https://www.i24news.tv/he/news/israel-elections-2026/polls/artc-91da6024"
+  },
+  {
+    "electionId": "election:26",
     "id": "poll:hamadad-c13-2026-09-23",
     "marginOfError": 2.5,
     "pollster": "המדד (עם סטט-נט, פרויקט המדגם ואסקריא)",
@@ -55,6 +66,59 @@
   },
   {
     "electionId": "election:26",
+    "fieldworkEnd": "2026-10-11",
+    "fieldworkStart": "2026-10-11",
+    "id": "poll:kantar-kan-11-2026-10-11",
+    "pollster": "מכון קנטאר",
+    "publishedAt": "2026-10-11",
+    "publisher": "כאן חדשות",
+    "sourceUrl": "https://www.kan.org.il/content/kan-news/politic/1108256/"
+  },
+  {
+    "electionId": "election:26",
+    "fieldworkEnd": "2026-10-18",
+    "fieldworkStart": "2026-10-18",
+    "id": "poll:kantar-kan-11-2026-10-18",
+    "pollster": "מכון קנטאר",
+    "publishedAt": "2026-10-18",
+    "publisher": "כאן חדשות",
+    "sourceUrl": "https://www.kan.org.il/content/kan-news/politic/1110393/"
+  },
+  {
+    "electionId": "election:26",
+    "fieldworkEnd": "2026-10-08",
+    "fieldworkStart": "2026-10-07",
+    "id": "poll:lri-p4a-maariv-2026-10-09",
+    "pollster": "לזר מחקרים ו-Panel4All",
+    "publishedAt": "2026-10-09",
+    "publisher": "מעריב",
+    "sampleSize": 700,
+    "sourceUrl": "https://www.maariv.co.il/news/politics/article-1375198"
+  },
+  {
+    "electionId": "election:26",
+    "fieldworkEnd": "2026-10-12",
+    "fieldworkStart": "2026-10-12",
+    "id": "poll:lri-p4a-walla-2026-10-13",
+    "pollster": "לזר מחקרים ו-Panel4All",
+    "publishedAt": "2026-10-13",
+    "publisher": "וואלה",
+    "sampleSize": 601,
+    "sourceUrl": "https://www.walla.co.il/news/politics/383957251"
+  },
+  {
+    "electionId": "election:26",
+    "fieldworkEnd": "2026-10-19",
+    "fieldworkStart": "2026-10-19",
+    "id": "poll:lri-p4a-walla-2026-10-20",
+    "pollster": "לזר מחקרים ו-Panel4All",
+    "publishedAt": "2026-10-20",
+    "publisher": "וואלה",
+    "sampleSize": 601,
+    "sourceUrl": "https://www.walla.co.il/news/politics/383958175"
+  },
+  {
+    "electionId": "election:26",
     "fieldworkEnd": "2026-09-22",
     "fieldworkStart": "2026-09-22",
     "id": "poll:midgam-n12-2026-09-22",
@@ -75,6 +139,39 @@
     "publisher": "חדשות 12",
     "sampleSize": 501,
     "sourceUrl": "https://www.mako.co.il/news-israel-elections/2026/Article-d7459e0cc7c01a1026.htm"
+  },
+  {
+    "electionId": "election:26",
+    "fieldworkEnd": "2026-10-12",
+    "fieldworkStart": "2026-10-12",
+    "id": "poll:midgam-r-c-hahadashot-12-2026-10-12",
+    "pollster": "מדגם ייעוץ ומחקר",
+    "publishedAt": "2026-10-12",
+    "publisher": "חדשות 12",
+    "sampleSize": 509,
+    "sourceUrl": "https://www.mako.co.il/news-israel-elections/2026/Article-cc91389788031a1026.htm"
+  },
+  {
+    "electionId": "election:26",
+    "fieldworkEnd": "2026-10-19",
+    "fieldworkStart": "2026-10-19",
+    "id": "poll:midgam-r-c-hahadashot-12-2026-10-19",
+    "pollster": "מדגם ייעוץ ומחקר",
+    "publishedAt": "2026-10-19",
+    "publisher": "חדשות 12",
+    "sampleSize": 507,
+    "sourceUrl": "https://www.mako.co.il/news-israel-elections/2026/Article-a6eb664b9d451a1026.htm"
+  },
+  {
+    "electionId": "election:26",
+    "fieldworkEnd": "2026-10-21",
+    "fieldworkStart": "2026-10-21",
+    "id": "poll:midgam-r-c-hahadashot-12-2026-10-21",
+    "pollster": "מדגם ייעוץ ומחקר",
+    "publishedAt": "2026-10-21",
+    "publisher": "חדשות 12",
+    "sampleSize": 505,
+    "sourceUrl": "https://www.mako.co.il/news-israel-elections/2026/Article-bf175ad340f51a1027.htm"
   },
   {
     "electionId": "election:26",

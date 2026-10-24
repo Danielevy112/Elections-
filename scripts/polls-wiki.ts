@@ -26,28 +26,48 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const MANUAL_DIR = join(ROOT, "data", "manual_overrides");
 
 /**
- * The 2026 table's seat columns, left to right, as party keys. Checked against the
- * Midgam / Channel 12 poll of 22.9.2026, which was entered by hand from the article: all
- * thirteen figures match. "RZP-Zehut" and "Reservists-NEP" span two header columns but one
- * cell per row (colspan=2).
+ * Party columns, as the table's header links them, to party keys. The column order is read
+ * from each table's own header: the page splits the 2026 polls into several tables, and a
+ * column disappears when a list leaves the race (Blue & White, 19.10.2026), so a fixed order
+ * would hand every later column's seats to the party beside it. "RZP-Zehut" and
+ * "Reservists-NEP" are one header cell linking two parties, and one cell per row; the first
+ * link names the column.
  */
-export const SEAT_COLUMNS = [
-  "k26-29", // Likud
-  "k26-01", // Together (ביחד)
-  "k26-31", // RZP-Zehut (הציונות הדתית)
-  "k26-14", // Otzma Yehudit
-  "k26-30", // Blue & White
-  "k26-19", // Shas
-  "k26-37", // UTJ
-  "k26-11", // Yisrael Beiteinu
-  "k26-18", // Ra'am
-  "k26-35", // Joint List
-  "k26-17", // The Democrats
-  "k26-02", // Yashar
-  "k26-16", // Reservists-NEP (המילואימניקים והכלכלית)
-  "k26-06", // Amcha Yisrael
-  "k26-20", // Haredi Public (הציבור החרדי)
-] as const;
+export const HEADER_PARTIES: Record<string, string> = {
+  Likud: "k26-29",
+  "Together (Israel)": "k26-01", // ביחד
+  "Religious Zionist Party": "k26-31", // RZP-Zehut (הציונות הדתית)
+  "Otzma Yehudit": "k26-14",
+  "Blue and White (political party)": "k26-30",
+  Shas: "k26-19",
+  "United Torah Judaism": "k26-37",
+  "Yisrael Beiteinu": "k26-11",
+  "Ra'am": "k26-18",
+  "Joint List": "k26-35",
+  "The Democrats (Israel)": "k26-17",
+  "Yashar (political party)": "k26-02",
+  "The Reservists (political party)": "k26-16", // Reservists-NEP (המילואימניקים והכלכלית)
+  "Amcha Yisrael": "k26-06",
+  "Haredi Public": "k26-20", // הציבור החרדי
+};
+
+/**
+ * A table's party columns, left to right, from its first header row. A column whose party is
+ * not in HEADER_PARTIES is kept by its link text, so its cells are never given to a neighbour.
+ */
+export function parseHeader(table: string): { key?: string; link: string }[] {
+  const columns: { key?: string; link: string }[] = [];
+  let seenHeader = false;
+  for (const line of table.split("\n")) {
+    if (line.startsWith("!")) seenHeader = true;
+    else if (seenHeader && line.startsWith("|-")) break;
+    else continue;
+    if (/\|\s*Others\s*$/.test(line)) break;
+    const link = /\[\[([^|\]]+)/.exec(line)?.[1]?.trim();
+    if (link) columns.push({ key: HEADER_PARTIES[link], link });
+  }
+  return columns;
+}
 
 /** Publisher as the table names it → Hebrew name and the domains of its own articles. */
 export const PUBLISHERS: Record<string, { nameHe: string; domains: string[] }> = {
@@ -92,6 +112,8 @@ export interface PollCheck {
   checkedAt: string;
   /** The article's own publication date, when the check read it. */
   publishedAt?: string;
+  /** false when the article does not state the sample size: the table's figure is then dropped. */
+  sampleSizeInArticle?: boolean;
 }
 
 export interface WikiPollRow {
@@ -103,6 +125,8 @@ export interface WikiPollRow {
   sourceUrl?: string;
   sourceDate?: string;
   seats: PollInput["seats"];
+  /** Header columns of this row's table that name no party we know; their cells are dropped. */
+  unknownColumns?: string[];
 }
 
 const MONTHS: Record<string, string> = {
@@ -169,10 +193,27 @@ function splitInline(line: string): string[] {
   return parts;
 }
 
+/** Whether a line leaves a {{template}} or <ref> open, so the next line continues it. */
+function isOpen(text: string): boolean {
+  const count = (re: RegExp) => (text.match(re) ?? []).length;
+  return count(/\{\{/g) > count(/\}\}/g) || count(/<ref(?![^>]*\/>)[^>]*>/g) > count(/<\/ref>/g);
+}
+
+/** The row's lines, with a citation broken over several lines ("…title=…\n|url=…") joined. */
+function logicalLines(row: string): string[] {
+  const lines: string[] = [];
+  for (const line of row.split("\n")) {
+    const last = lines.length - 1;
+    if (last >= 0 && isOpen(lines[last]!)) lines[last] += ` ${line}`;
+    else lines.push(line);
+  }
+  return lines;
+}
+
 /** Split a row into cells, keeping a cell's colspan so columns line up. */
 function cells(row: string): { text: string; span: number }[] {
   const out: { text: string; span: number }[] = [];
-  for (const line of row.split("\n")) {
+  for (const line of logicalLines(row)) {
     if (!line.startsWith("|") || line.startsWith("|-") || line.startsWith("|}")) continue;
     for (const raw of splitInline(line.slice(1))) {
       const span = /colspan\s*=\s*"?(\d+)"?/.exec(raw);
@@ -183,13 +224,25 @@ function cells(row: string): { text: string; span: number }[] {
   return out;
 }
 
-/** Every poll row of the "=== 2026 ===" seat table. Event rows (one wide cell) are skipped. */
+/** Every poll row of the "=== 2026 ===" seat tables. Event rows (one wide cell) are skipped. */
 export function parseWikiPolls(wikitext: string): WikiPollRow[] {
   const start = wikitext.indexOf("=== 2026 ===");
   if (start < 0) throw new Error('no "=== 2026 ===" section in the page');
-  const end = wikitext.indexOf("\n|}", start);
-  const table = wikitext.slice(start, end < 0 ? undefined : end);
+  const next = wikitext.indexOf("\n===", start + 1);
+  const section = wikitext.slice(start, next < 0 ? undefined : next);
 
+  const rows: WikiPollRow[] = [];
+  for (const chunk of section.split("\n{|").slice(1)) {
+    const end = chunk.indexOf("\n|}");
+    const table = end < 0 ? chunk : chunk.slice(0, end);
+    const columns = parseHeader(table);
+    const unknownColumns = columns.filter((c) => !c.key).map((c) => c.link);
+    rows.push(...parseTableRows(table, columns, unknownColumns));
+  }
+  return rows;
+}
+
+function parseTableRows(table: string, columns: { key?: string }[], unknownColumns: string[]): WikiPollRow[] {
   const rows: WikiPollRow[] = [];
   for (const row of table.split(/\n\|-/).slice(1)) {
     const fieldwork = parseFieldwork(row);
@@ -208,15 +261,12 @@ export function parseWikiPolls(wikitext: string): WikiPollRow[] {
     const refDate = /\|\s*date\s*=\s*([^|}]+)/.exec(publisherCell!.text)?.[1];
 
     const seats: PollInput["seats"] = {};
-    let column = 0;
-    for (const cell of seatCells) {
-      if (column >= SEAT_COLUMNS.length) break;
-      const key = SEAT_COLUMNS[column]!;
+    // One cell per header column; a header cell spanning two parties is one cell here.
+    seatCells.slice(0, columns.length).forEach((cell, i) => {
+      const key = columns[i]!.key;
       const value = parseSeatCell(cell.text);
-      if (value) seats[key] = value;
-      // Header columns spanned by one cell (RZP-Zehut, Reservists-NEP) are one party here.
-      column += 1;
-    }
+      if (key && value) seats[key] = value;
+    });
 
     const sampleSize = Number(sample!.text.replace(/[^\d]/g, ""));
     rows.push({
@@ -228,6 +278,7 @@ export function parseWikiPolls(wikitext: string): WikiPollRow[] {
       ...(url ? { sourceUrl: url } : {}),
       ...(refDate && parseRefDate(refDate) ? { sourceDate: parseRefDate(refDate)! } : {}),
       seats,
+      ...(unknownColumns.length ? { unknownColumns } : {}),
     });
   }
   return rows;
@@ -315,8 +366,13 @@ function main(): void {
       ? { ...parsed, sourceUrl: check.sourceUrl, ...(check.publishedAt ? { sourceDate: check.publishedAt } : {}) }
       : parsed;
     if (check && !check.publishedAt && check.sourceUrl !== parsed.sourceUrl) delete row.sourceDate;
+    if (check?.sampleSizeInArticle === false) delete row.sampleSize;
     if (row.sourceUrl && knownUrls.has(sameArticle(row.sourceUrl))) continue;
     if (knownDates.has(`${PUBLISHERS[row.publisher]?.nameHe ?? row.publisher}:${row.fieldworkEnd}`)) continue;
+    if (row.unknownColumns) {
+      review.push({ row, reason: `its table has columns for parties we cannot map: ${row.unknownColumns.join(", ")}` });
+      continue;
+    }
     if (!isPrimarySource(row)) {
       const reason = VIDEO_ONLY.has(row.publisher)
         ? "cited to a broadcast, not an article; figures cannot be checked against text"
