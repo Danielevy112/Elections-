@@ -1477,5 +1477,87 @@
     ],
     "sampleSize": 700,
     "sourceUrl": "https://www.maariv.co.il/news/politics/article-1375198"
+  },
+  {
+    "fieldworkEnd": "2026-10-23",
+    "fieldworkStart": "2026-10-22",
+    "key": "midgam-r-c-hahadashot-12-2026-10-23",
+    "pollster": "מדגם ייעוץ ומחקר",
+    "publishedAt": "2026-10-23",
+    "publisher": "חדשות 12",
+    "results": [
+      {
+        "belowThreshold": false,
+        "mandates": 21,
+        "partyKey": "k26-29"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 15,
+        "partyKey": "k26-01"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 6,
+        "partyKey": "k26-31"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 8,
+        "partyKey": "k26-14"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 8,
+        "partyKey": "k26-19"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 7,
+        "partyKey": "k26-37"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 8,
+        "partyKey": "k26-11"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 5,
+        "partyKey": "k26-18"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 9,
+        "partyKey": "k26-35"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 10,
+        "partyKey": "k26-17"
+      },
+      {
+        "belowThreshold": false,
+        "mandates": 23,
+        "partyKey": "k26-02"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-16"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-06"
+      },
+      {
+        "belowThreshold": true,
+        "mandates": 0,
+        "partyKey": "k26-20"
+      }
+    ],
+    "sampleSize": 1018,
+    "sourceUrl": "https://www.mako.co.il/news-israel-elections/2026/Article-8ea5e45ec2961a1027.htm"
   }
 ]
